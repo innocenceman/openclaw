@@ -1,0 +1,70 @@
+{
+  "target": {
+    "id": "Function:src/plugins/manifest.ts:resolvePluginManifestPath",
+    "name": "resolvePluginManifestPath",
+    "type": "Function",
+    "filePath": "src/plugins/manifest.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 5,
+  "risk": "LOW",
+  "summary": {
+    "direct": 1,
+    "processes_affected": 0,
+    "modules_affected": 1
+  },
+  "affected_processes": [],
+  "affected_modules": [
+    {
+      "name": "Plugins",
+      "hits": 5,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/plugins/manifest.ts:loadPluginManifest",
+        "name": "loadPluginManifest",
+        "filePath": "src/plugins/manifest.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/manifest-registry.ts:loadPluginManifestRegistry",
+        "name": "loadPluginManifestRegistry",
+        "filePath": "src/plugins/manifest-registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/install.ts:installPluginFromPackageDir",
+        "name": "installPluginFromPackageDir",
+        "filePath": "src/plugins/install.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/bundled-sources.ts:resolveBundledPluginSources",
+        "name": "resolveBundledPluginSources",
+        "filePath": "src/plugins/bundled-sources.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/channels/plugins/catalog.ts:resolveCatalogPluginId",
+        "name": "resolveCatalogPluginId",
+        "filePath": "src/channels/plugins/catalog.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}

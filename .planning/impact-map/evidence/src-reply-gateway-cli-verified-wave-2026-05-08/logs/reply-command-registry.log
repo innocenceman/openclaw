@@ -1,0 +1,9 @@
+### reply-command-registry
+pnpm test -- src/auto-reply/commands-args.test.ts src/auto-reply/commands-registry.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/auto-reply/commands-args.test.ts src/auto-reply/commands-registry.test.ts
+
+[test-parallel] start base workers=2 filters=2
+[test-parallel] done base code=0 elapsed=6.6s
+EXIT_CODE=0

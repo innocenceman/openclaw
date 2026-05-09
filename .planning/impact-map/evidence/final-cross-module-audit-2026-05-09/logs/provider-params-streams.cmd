@@ -1,0 +1,1 @@
+pnpm test -- src/agents/pi-embedded-runner/extra-params.google.test.ts src/agents/pi-embedded-runner/extra-params.openai.test.ts src/agents/pi-embedded-runner/extra-params.openrouter-cache-control.test.ts src/agents/pi-embedded-runner/proxy-stream-wrappers.test.ts src/agents/pi-embedded-runner/google.test.ts

@@ -1,0 +1,5 @@
+
+> openclaw@2026.3.24 release:openclaw:npm:check /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node --import tsx scripts/openclaw-npm-release-check.ts
+
+ ELIFECYCLE  Command failed.

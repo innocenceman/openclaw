@@ -1,0 +1,694 @@
+### GitNexus CLI impact/context smoke
+$ npx gitnexus impact Function:src/auto-reply/reply/agent-runner.ts:runReplyAgent --repo openclaw --direction upstream --depth 2
+{
+  "target": {
+    "id": "Function:src/auto-reply/reply/agent-runner.ts:runReplyAgent",
+    "name": "runReplyAgent",
+    "type": "Function",
+    "filePath": "src/auto-reply/reply/agent-runner.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 2,
+  "risk": "LOW",
+  "summary": {
+    "direct": 1,
+    "processes_affected": 1,
+    "modules_affected": 1
+  },
+  "affected_processes": [
+    {
+      "name": "runPreparedReply",
+      "type": "Function",
+      "filePath": "src/auto-reply/reply/get-reply-run.ts",
+      "affected_process_count": 6,
+      "total_hits": 6,
+      "earliest_broken_step": 1
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Agents",
+      "hits": 2,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/get-reply-run.ts:runPreparedReply",
+        "name": "runPreparedReply",
+        "filePath": "src/auto-reply/reply/get-reply-run.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/get-reply.ts:getReplyFromConfig",
+        "name": "getReplyFromConfig",
+        "filePath": "src/auto-reply/reply/get-reply.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}
+$ npx gitnexus impact Function:src/gateway/server-methods.ts:handleGatewayRequest --repo openclaw --direction upstream --depth 2
+{
+  "target": {
+    "id": "Function:src/gateway/server-methods.ts:handleGatewayRequest",
+    "name": "handleGatewayRequest",
+    "type": "Function",
+    "filePath": "src/gateway/server-methods.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 7,
+  "risk": "HIGH",
+  "summary": {
+    "direct": 2,
+    "processes_affected": 1,
+    "modules_affected": 3
+  },
+  "affected_processes": [
+    {
+      "name": "attachGatewayWsMessageHandler",
+      "type": "Function",
+      "filePath": "src/gateway/server/ws-connection/message-handler.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Gateway",
+      "hits": 4,
+      "impact": "direct"
+    },
+    {
+      "name": "Infra",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Ws-connection",
+      "hits": 1,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-plugins.ts:dispatchGatewayMethod",
+        "name": "dispatchGatewayMethod",
+        "filePath": "src/gateway/server-plugins.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server/ws-connection/message-handler.ts:attachGatewayWsMessageHandler",
+        "name": "attachGatewayWsMessageHandler",
+        "filePath": "src/gateway/server/ws-connection/message-handler.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/gateway/server-plugins.ts:getSessionMessages",
+        "name": "getSessionMessages",
+        "filePath": "src/gateway/server-plugins.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/gateway/server/ws-connection.ts:attachGatewayWsConnectionHandler",
+        "name": "attachGatewayWsConnectionHandler",
+        "filePath": "src/gateway/server/ws-connection.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Method:src/gateway/server-plugins.ts:run#1",
+        "name": "run",
+        "filePath": "src/gateway/server-plugins.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Method:src/gateway/server-plugins.ts:waitForRun#1",
+        "name": "waitForRun",
+        "filePath": "src/gateway/server-plugins.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Method:src/gateway/server-plugins.ts:deleteSession#1",
+        "name": "deleteSession",
+        "filePath": "src/gateway/server-plugins.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      }
+    ]
+  }
+}
+$ npx gitnexus impact Function:src/cli/program/build-program.ts:buildProgram --repo openclaw --direction upstream --depth 2
+{
+  "target": {
+    "id": "Function:src/cli/program/build-program.ts:buildProgram",
+    "name": "buildProgram",
+    "type": "Function",
+    "filePath": "src/cli/program/build-program.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "LOW",
+  "summary": {
+    "direct": 0,
+    "processes_affected": 0,
+    "modules_affected": 0
+  },
+  "affected_processes": [],
+  "affected_modules": [],
+  "byDepth": {}
+}
+$ npx gitnexus impact Function:src/auto-reply/reply/route-reply.ts:routeReply --repo openclaw --direction upstream --depth 2
+{
+  "target": {
+    "id": "Function:src/auto-reply/reply/route-reply.ts:routeReply",
+    "name": "routeReply",
+    "type": "Function",
+    "filePath": "src/auto-reply/reply/route-reply.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 17,
+  "risk": "CRITICAL",
+  "summary": {
+    "direct": 8,
+    "processes_affected": 2,
+    "modules_affected": 5
+  },
+  "affected_processes": [
+    {
+      "name": "dispatchReplyFromConfig",
+      "type": "Function",
+      "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+      "affected_process_count": 10,
+      "total_hits": 10,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "runPreparedReply",
+      "type": "Function",
+      "filePath": "src/auto-reply/reply/get-reply-run.ts",
+      "affected_process_count": 6,
+      "total_hits": 6,
+      "earliest_broken_step": 1
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Reply",
+      "hits": 11,
+      "impact": "direct"
+    },
+    {
+      "name": "Agents",
+      "hits": 2,
+      "impact": "indirect"
+    },
+    {
+      "name": "Plugin-sdk",
+      "hits": 2,
+      "impact": "direct"
+    },
+    {
+      "name": "Cluster_3327",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Plugins",
+      "hits": 1,
+      "impact": "indirect"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/get-reply-run.ts:sendResetSessionNotice",
+        "name": "sendResetSessionNotice",
+        "filePath": "src/auto-reply/reply/get-reply-run.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/followup-runner.ts:sendFollowupPayloads",
+        "name": "sendFollowupPayloads",
+        "filePath": "src/auto-reply/reply/followup-runner.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:dispatchReplyFromConfig",
+        "name": "dispatchReplyFromConfig",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:sendPayloadAsync",
+        "name": "sendPayloadAsync",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:sendBindingNotice",
+        "name": "sendBindingNotice",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:sendFinalPayload",
+        "name": "sendFinalPayload",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/dispatch-acp-delivery.ts:deliver",
+        "name": "deliver",
+        "filePath": "src/auto-reply/reply/dispatch-acp-delivery.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/commands-core.ts:emitResetCommandHooks",
+        "name": "emitResetCommandHooks",
+        "filePath": "src/auto-reply/reply/commands-core.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:extensions/feishu/src/bot.ts:handleFeishuMessage",
+        "name": "handleFeishuMessage",
+        "filePath": "extensions/feishu/src/bot.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:extensions/feishu/src/bot.ts:dispatchForAgent",
+        "name": "dispatchForAgent",
+        "filePath": "extensions/feishu/src/bot.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugin-sdk/inbound-reply-dispatch.ts:dispatchReplyFromConfigWithSettledDispatcher",
+        "name": "dispatchReplyFromConfigWithSettledDispatcher",
+        "filePath": "src/plugin-sdk/inbound-reply-dispatch.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/dispatch.ts:dispatchInboundMessage",
+        "name": "dispatchInboundMessage",
+        "filePath": "src/auto-reply/dispatch.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/get-reply.ts:maybeEmitMissingResetHooks",
+        "name": "maybeEmitMissingResetHooks",
+        "filePath": "src/auto-reply/reply/get-reply.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/get-reply-run.ts:runPreparedReply",
+        "name": "runPreparedReply",
+        "filePath": "src/auto-reply/reply/get-reply-run.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/followup-runner.ts:createFollowupRunner",
+        "name": "createFollowupRunner",
+        "filePath": "src/auto-reply/reply/followup-runner.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:run",
+        "name": "run",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/commands-core.ts:handleCommands",
+        "name": "handleCommands",
+        "filePath": "src/auto-reply/reply/commands-core.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      }
+    ]
+  }
+}
+$ npx gitnexus impact Function:src/auto-reply/commands-registry.ts:parseCommandArgs --repo openclaw --direction upstream --depth 2
+{
+  "target": {
+    "id": "Function:src/auto-reply/commands-registry.ts:parseCommandArgs",
+    "name": "parseCommandArgs",
+    "type": "Function",
+    "filePath": "src/auto-reply/commands-registry.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 3,
+  "risk": "LOW",
+  "summary": {
+    "direct": 1,
+    "processes_affected": 1,
+    "modules_affected": 2
+  },
+  "affected_processes": [
+    {
+      "name": "createTelegramBot",
+      "type": "Function",
+      "filePath": "extensions/telegram/src/bot.ts",
+      "affected_process_count": 8,
+      "total_hits": 8,
+      "earliest_broken_step": 1
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Auto-reply",
+      "hits": 2,
+      "impact": "direct"
+    },
+    {
+      "name": "Config",
+      "hits": 1,
+      "impact": "indirect"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:extensions/telegram/src/bot-native-commands.ts:registerTelegramNativeCommands",
+        "name": "registerTelegramNativeCommands",
+        "filePath": "extensions/telegram/src/bot-native-commands.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:extensions/telegram/src/bot.ts:createTelegramBot",
+        "name": "createTelegramBot",
+        "filePath": "extensions/telegram/src/bot.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:extensions/telegram/src/bot-native-commands.test-helpers.ts:createNativeCommandsHarness",
+        "name": "createNativeCommandsHarness",
+        "filePath": "extensions/telegram/src/bot-native-commands.test-helpers.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}
+$ npx gitnexus impact Function:src/agents/agent-command.ts:agentCommand --repo openclaw --direction upstream --depth 2
+{
+  "target": {
+    "id": "Function:src/agents/agent-command.ts:agentCommand",
+    "name": "agentCommand",
+    "type": "Function",
+    "filePath": "src/agents/agent-command.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 3,
+  "risk": "LOW",
+  "summary": {
+    "direct": 2,
+    "processes_affected": 0,
+    "modules_affected": 1
+  },
+  "affected_processes": [],
+  "affected_modules": [
+    {
+      "name": "Agents",
+      "hits": 3,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/boot.ts:runBootOnce",
+        "name": "runBootOnce",
+        "filePath": "src/gateway/boot.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/commands/agent-via-gateway.ts:agentCliCommand",
+        "name": "agentCliCommand",
+        "filePath": "src/commands/agent-via-gateway.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/cli/program/register.agent.ts:registerAgentCommands",
+        "name": "registerAgentCommands",
+        "filePath": "src/cli/program/register.agent.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}
+$ npx gitnexus impact Function:src/gateway/auth.ts:assertGatewayRequestAuthorized --repo openclaw --direction upstream --depth 2
+{
+  "error": "Target 'Function:src/gateway/auth.ts:assertGatewayRequestAuthorized' not found",
+  "target": {
+    "name": "Function:src/gateway/auth.ts:assertGatewayRequestAuthorized"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN"
+}
+$ npx gitnexus impact Function:src/commands/auth-choice.ts:authChoiceCommand --repo openclaw --direction upstream --depth 2
+{
+  "error": "Target 'Function:src/commands/auth-choice.ts:authChoiceCommand' not found",
+  "target": {
+    "name": "Function:src/commands/auth-choice.ts:authChoiceCommand"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN"
+}
+$ npx gitnexus impact Function:src/gateway/auth.ts:authorizeGatewayConnect --repo openclaw --direction upstream --depth 2
+{
+  "target": {
+    "id": "Function:src/gateway/auth.ts:authorizeGatewayConnect",
+    "name": "authorizeGatewayConnect",
+    "type": "Function",
+    "filePath": "src/gateway/auth.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "LOW",
+  "summary": {
+    "direct": 0,
+    "processes_affected": 0,
+    "modules_affected": 0
+  },
+  "affected_processes": [],
+  "affected_modules": [],
+  "byDepth": {}
+}
+$ npx gitnexus impact Function:src/gateway/auth.ts:resolveGatewayAuth --repo openclaw --direction upstream --depth 2
+{
+  "target": {
+    "id": "Function:src/gateway/auth.ts:resolveGatewayAuth",
+    "name": "resolveGatewayAuth",
+    "type": "Function",
+    "filePath": "src/gateway/auth.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 11,
+  "risk": "CRITICAL",
+  "partial": true,
+  "summary": {
+    "direct": 11,
+    "processes_affected": 0,
+    "modules_affected": 6
+  },
+  "affected_processes": [],
+  "affected_modules": [
+    {
+      "name": "Security",
+      "hits": 3,
+      "impact": "direct"
+    },
+    {
+      "name": "Commands",
+      "hits": 2,
+      "impact": "direct"
+    },
+    {
+      "name": "Gateway",
+      "hits": 2,
+      "impact": "direct"
+    },
+    {
+      "name": "Gateway-cli",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Browser",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Agents",
+      "hits": 1,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/startup-auth.ts:resolveGatewayAuthFromConfig",
+        "name": "resolveGatewayAuthFromConfig",
+        "filePath": "src/gateway/startup-auth.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-runtime-config.ts:resolveGatewayRuntimeConfig",
+        "name": "resolveGatewayRuntimeConfig",
+        "filePath": "src/gateway/server-runtime-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/security/audit.ts:collectGatewayConfigFindings",
+        "name": "collectGatewayConfigFindings",
+        "filePath": "src/security/audit.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/security/audit-extra.sync.ts:collectHooksHardeningFindings",
+        "name": "collectHooksHardeningFindings",
+        "filePath": "src/security/audit-extra.sync.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/security/audit-extra.sync.ts:collectGatewayHttpNoAuthFindings",
+        "name": "collectGatewayHttpNoAuthFindings",
+        "filePath": "src/security/audit-extra.sync.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server/health-state.ts:buildGatewaySnapshot",
+        "name": "buildGatewaySnapshot",
+        "filePath": "src/gateway/server/health-state.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/cli/gateway-cli/run.ts:runGatewayCommand",
+        "name": "runGatewayCommand",
+        "filePath": "src/cli/gateway-cli/run.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/commands/gateway-install-token.ts:resolveGatewayInstallToken",
+        "name": "resolveGatewayInstallToken",
+        "filePath": "src/commands/gateway-install-token.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/commands/doctor.ts:doctorCommand",
+        "name": "doctorCommand",
+        "filePath": "src/commands/doctor.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/commands/doctor-security.ts:noteSecurityWarnings",
+        "name": "noteSecurityWarnings",
+        "filePath": "src/commands/doctor-security.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/browser/control-auth.ts:resolveBrowserControlAuth",
+        "name": "resolveBrowserControlAuth",
+        "filePath": "src/browser/control-auth.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}

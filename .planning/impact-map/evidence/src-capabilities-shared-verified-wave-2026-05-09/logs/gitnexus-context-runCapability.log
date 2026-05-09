@@ -1,0 +1,105 @@
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Function:src/media-understanding/runner.ts:runCapability",
+    "name": "runCapability",
+    "kind": "Function",
+    "filePath": "src/media-understanding/runner.ts",
+    "startLine": 662,
+    "endLine": 808
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "Function:src/media-understanding/runtime.ts:runMediaUnderstandingFile",
+        "name": "runMediaUnderstandingFile",
+        "filePath": "src/media-understanding/runtime.ts"
+      },
+      {
+        "uid": "Function:src/media-understanding/runner.skip-tiny-audio.test.ts:runAudioCapabilityWithTranscriber",
+        "name": "runAudioCapabilityWithTranscriber",
+        "filePath": "src/media-understanding/runner.skip-tiny-audio.test.ts"
+      },
+      {
+        "uid": "Function:src/media-understanding/runner.auto-audio.test.ts:runAutoAudioCase",
+        "name": "runAutoAudioCase",
+        "filePath": "src/media-understanding/runner.auto-audio.test.ts"
+      },
+      {
+        "uid": "Function:src/media-understanding/audio-transcription-runner.ts:runAudioTranscription",
+        "name": "runAudioTranscription",
+        "filePath": "src/media-understanding/audio-transcription-runner.ts"
+      },
+      {
+        "uid": "Function:src/media-understanding/apply.ts:applyMediaUnderstanding",
+        "name": "applyMediaUnderstanding",
+        "filePath": "src/media-understanding/apply.ts"
+      },
+      {
+        "uid": "File:src/media-understanding/runner.video.test.ts",
+        "name": "runner.video.test.ts",
+        "filePath": "src/media-understanding/runner.video.test.ts"
+      },
+      {
+        "uid": "File:src/media-understanding/runner.deepgram.test.ts",
+        "name": "runner.deepgram.test.ts",
+        "filePath": "src/media-understanding/runner.deepgram.test.ts"
+      },
+      {
+        "uid": "File:src/media-understanding/runner.auto-audio.test.ts",
+        "name": "runner.auto-audio.test.ts",
+        "filePath": "src/media-understanding/runner.auto-audio.test.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "calls": [
+      {
+        "uid": "Function:src/media-understanding/runner.ts:resolveAutoEntries",
+        "name": "resolveAutoEntries",
+        "filePath": "src/media-understanding/runner.ts"
+      },
+      {
+        "uid": "Function:src/media-understanding/runner.ts:runAttachmentEntries",
+        "name": "runAttachmentEntries",
+        "filePath": "src/media-understanding/runner.ts"
+      },
+      {
+        "uid": "Function:src/media-understanding/runner.entries.ts:formatDecisionSummary",
+        "name": "formatDecisionSummary",
+        "filePath": "src/media-understanding/runner.entries.ts"
+      },
+      {
+        "uid": "Function:src/media-understanding/resolve.ts:resolveModelEntries",
+        "name": "resolveModelEntries",
+        "filePath": "src/media-understanding/resolve.ts"
+      },
+      {
+        "uid": "Function:src/media-understanding/attachments.select.ts:selectAttachments",
+        "name": "selectAttachments",
+        "filePath": "src/media-understanding/attachments.select.ts"
+      },
+      {
+        "uid": "Function:src/agents/model-catalog.ts:modelSupportsVision",
+        "name": "modelSupportsVision",
+        "filePath": "src/agents/model-catalog.ts"
+      },
+      {
+        "uid": "Function:src/agents/model-catalog.ts:findModelInCatalog",
+        "name": "findModelInCatalog",
+        "filePath": "src/agents/model-catalog.ts"
+      },
+      {
+        "uid": "Function:src/globals.ts:shouldLogVerbose",
+        "name": "shouldLogVerbose",
+        "filePath": "src/globals.ts"
+      },
+      {
+        "uid": "Function:src/globals.ts:logVerbose",
+        "name": "logVerbose",
+        "filePath": "src/globals.ts"
+      }
+    ]
+  },
+  "processes": []
+}

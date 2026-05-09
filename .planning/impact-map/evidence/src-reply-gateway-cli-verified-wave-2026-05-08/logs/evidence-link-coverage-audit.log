@@ -1,0 +1,4 @@
+### link/coverage audit
+checked roots: .planning/impact-map/src/reply-orchestration, .planning/impact-map/src/gateway-api-surface, .planning/impact-map/src/cli-commands
+issues: 0
+link_coverage_exit=0

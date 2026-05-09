@@ -1,0 +1,4 @@
+$ command -v java
+$ ls -d /usr/lib/jvm/*
+$ echo JAVA_HOME=$JAVA_HOME
+JAVA_HOME=

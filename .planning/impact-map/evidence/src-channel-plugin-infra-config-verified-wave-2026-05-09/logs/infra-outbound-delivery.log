@@ -1,0 +1,11 @@
+=== infra-outbound-delivery ===
+pnpm test -- src/infra/outbound/deliver.test.ts src/infra/outbound/delivery-queue.policy.test.ts src/infra/outbound/delivery-queue.recovery.test.ts src/infra/outbound/outbound-send-service.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/infra/outbound/deliver.test.ts src/infra/outbound/delivery-queue.policy.test.ts src/infra/outbound/delivery-queue.recovery.test.ts src/infra/outbound/outbound-send-service.test.ts
+
+[test-parallel] start unit-deliver-isolated workers=1 filters=1
+[test-parallel] done unit-deliver-isolated code=0 elapsed=7.4s
+[test-parallel] start unit workers=2 filters=3
+[test-parallel] done unit code=0 elapsed=8.2s
+--- exit=0 duration=17s ---

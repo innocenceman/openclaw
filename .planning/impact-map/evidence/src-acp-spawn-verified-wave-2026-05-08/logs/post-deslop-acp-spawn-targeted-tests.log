@@ -1,0 +1,15 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/acp-spawn.test.ts src/agents/acp-spawn-parent-stream.test.ts src/agents/acp-binding-architecture.guardrail.test.ts
+
+[test-parallel] start base workers=2 filters=3
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  3 passed (3)
+      Tests  32 passed (32)
+   Start at  23:11:44
+   Duration  6.11s (transform 4.62s, setup 11.83s, import 20ms, tests 96ms, environment 0ms)
+
+[test-parallel] done base code=0 elapsed=6.9s

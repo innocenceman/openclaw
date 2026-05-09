@@ -1,0 +1,6 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/skills-install.test.ts src/agents/skills-install.download.test.ts src/agents/skills-install-fallback.test.ts src/agents/skills/filter.test.ts src/agents/skills/frontmatter.test.ts src/agents/skills/refresh.test.ts
+
+[test-parallel] start base workers=2 filters=6
+[test-parallel] done base code=0 elapsed=9.7s

@@ -1,0 +1,7 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/skills.test.ts src/agents/skills-install.test.ts src/agents/skills-status.test.ts src/agents/skills/plugin-skills.test.ts
+
+[test-parallel] start base workers=2 filters=4
+[test-parallel] done base code=0 elapsed=7.2s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-wpa2nQ

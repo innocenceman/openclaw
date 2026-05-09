@@ -1,0 +1,31 @@
+[
+  {
+    "id": "clawdbot@2026.2.12",
+    "name": "clawdbot",
+    "version": "2026.2.12",
+    "size": 379,
+    "unpackedSize": 397,
+    "shasum": "5e056ecaeab76bd0944a2a6ed26f0be42f5d2e08",
+    "integrity": "sha512-X401OnMUWitMmvJgaFV2NZdSYTOrfLObjNOkmXU6qtCUjWiuNPWEhwk4w1S6UTtXuRSDqYjhyhpb1nHQ+ZUsFA==",
+    "filename": "clawdbot-2026.2.12.tgz",
+    "files": [
+      {
+        "path": "index.js",
+        "size": 26,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 325,
+        "mode": 420
+      },
+      {
+        "path": "scripts/postinstall.js",
+        "size": 46,
+        "mode": 420
+      }
+    ],
+    "entryCount": 3,
+    "bundled": []
+  }
+]

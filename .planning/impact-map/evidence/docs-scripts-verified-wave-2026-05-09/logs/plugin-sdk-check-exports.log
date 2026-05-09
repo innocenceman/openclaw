@@ -1,0 +1,10 @@
+=== plugin-sdk-check-exports ===
+pnpm plugin-sdk:check-exports
+start=2026-05-08T20:49:09Z
+
+> openclaw@2026.3.24 plugin-sdk:check-exports /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/sync-plugin-sdk-exports.mjs --check
+
+plugin-sdk exports synced.
+exit=0
+end=2026-05-08T20:49:09Z

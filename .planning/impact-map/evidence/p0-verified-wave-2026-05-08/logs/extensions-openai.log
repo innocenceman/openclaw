@@ -1,0 +1,27 @@
+# extensions-openai
+
+Command: pnpm test -- extensions/openai/index.test.ts extensions/openai/openai-provider.test.ts extensions/openai/openai-codex-auth-identity.test.ts
+Started: 2026-05-08T02:45:55.942Z
+Ended: 2026-05-08T02:46:13.589Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/openai/index.test.ts extensions/openai/openai-provider.test.ts extensions/openai/openai-codex-auth-identity.test.ts
+
+[test-parallel] start extensions workers=4 filters=3
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  3 passed (3)
+      Tests  11 passed | 7 skipped (18)
+   Start at  10:45:59
+   Duration  14.26s (transform 15.48s, setup 40.70s, import 787ms, tests 79ms, environment 1ms)
+
+[test-parallel] done extensions code=0 elapsed=15.4s
+
+
+## stderr
+

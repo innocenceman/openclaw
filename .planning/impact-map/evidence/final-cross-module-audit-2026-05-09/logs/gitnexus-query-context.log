@@ -1,0 +1,240 @@
+### gitnexus query residual surfaces
+[gitnexus] FTS index ensure failed for repo "openclaw" table "File" (index "file_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+[gitnexus] FTS index ensure failed for repo "openclaw" table "Function" (index "function_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+[gitnexus] FTS index ensure failed for repo "openclaw" table "Class" (index "class_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+[gitnexus] FTS index ensure failed for repo "openclaw" table "Method" (index "method_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+[gitnexus] FTS index ensure failed for repo "openclaw" table "Interface" (index "interface_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+GitNexus [query:timing] query="agent runtime sandbox filesystem bridge pi runner provider params streams skills…" totalMs=70 phases={"vector":12.5,"bm25":69.6,"merge":0,"symbol_lookup":0,"ranking":0,"formatting":0,"wall":70}
+{
+  "processes": [],
+  "process_symbols": [],
+  "definitions": [],
+  "timing": {
+    "vector": 12.5,
+    "bm25": 69.6,
+    "merge": 0,
+    "symbol_lookup": 0,
+    "ranking": 0,
+    "formatting": 0,
+    "wall": 70
+  }
+}
+exit=0
+
+### gitnexus context SandboxFsPathGuard
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Class:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard",
+    "name": "SandboxFsPathGuard",
+    "kind": "Class",
+    "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts",
+    "startLine": 46,
+    "endLine": 278
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge.ts:SandboxFsBridgeImpl.constructor#1",
+        "name": "constructor",
+        "filePath": "src/agents/sandbox/fs-bridge.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "has_property": [
+      {
+        "uid": "Property:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.mountsByContainer",
+        "name": "mountsByContainer",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Property:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.runCommand",
+        "name": "runCommand",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      }
+    ],
+    "has_method": [
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.constructor#1",
+        "name": "constructor",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.assertPathChecks#1",
+        "name": "assertPathChecks",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.assertPathSafety#2",
+        "name": "assertPathSafety",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.openReadableFile#1",
+        "name": "openReadableFile",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.resolveRequiredMount#2",
+        "name": "resolveRequiredMount",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.finalizePinnedEntry#1",
+        "name": "finalizePinnedEntry",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.assertGuardedPathSafety#3",
+        "name": "assertGuardedPathSafety",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.openBoundaryWithinRequiredMount#3",
+        "name": "openBoundaryWithinRequiredMount",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.resolvePinnedEntry#2",
+        "name": "resolvePinnedEntry",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.resolveAnchoredSandboxEntry#2",
+        "name": "resolveAnchoredSandboxEntry",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.resolveAnchoredPinnedEntry#2",
+        "name": "resolveAnchoredPinnedEntry",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.resolvePinnedDirectoryEntry#2",
+        "name": "resolvePinnedDirectoryEntry",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.pathIsExistingDirectory#1",
+        "name": "pathIsExistingDirectory",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.resolveMountByContainerPath#1",
+        "name": "resolveMountByContainerPath",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      },
+      {
+        "uid": "Method:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard.resolveCanonicalContainerPath#1",
+        "name": "resolveCanonicalContainerPath",
+        "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+      }
+    ]
+  },
+  "processes": []
+}
+exit=0
+
+### gitnexus context installSkill
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Function:src/agents/skills-install.ts:installSkill",
+    "name": "installSkill",
+    "kind": "Function",
+    "filePath": "src/agents/skills-install.ts",
+    "startLine": 425,
+    "endLine": 512
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "File:src/agents/skills-install.test.ts",
+        "name": "skills-install.test.ts",
+        "filePath": "src/agents/skills-install.test.ts"
+      },
+      {
+        "uid": "File:src/gateway/server-methods/skills.ts",
+        "name": "skills.ts",
+        "filePath": "src/gateway/server-methods/skills.ts"
+      },
+      {
+        "uid": "Function:src/commands/onboard-skills.ts:setupSkills",
+        "name": "setupSkills",
+        "filePath": "src/commands/onboard-skills.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "calls": [
+      {
+        "uid": "Function:src/agents/skills.ts:resolveSkillsInstallPreferences",
+        "name": "resolveSkillsInstallPreferences",
+        "filePath": "src/agents/skills.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install.ts:withWarnings",
+        "name": "withWarnings",
+        "filePath": "src/agents/skills-install.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install.ts:collectSkillInstallScanWarnings",
+        "name": "collectSkillInstallScanWarnings",
+        "filePath": "src/agents/skills-install.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install.ts:findInstallSpec",
+        "name": "findInstallSpec",
+        "filePath": "src/agents/skills-install.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install.ts:buildInstallCommand",
+        "name": "buildInstallCommand",
+        "filePath": "src/agents/skills-install.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install.ts:resolveBrewBinDir",
+        "name": "resolveBrewBinDir",
+        "filePath": "src/agents/skills-install.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install.ts:resolveBrewMissingFailure",
+        "name": "resolveBrewMissingFailure",
+        "filePath": "src/agents/skills-install.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install.ts:ensureUvInstalled",
+        "name": "ensureUvInstalled",
+        "filePath": "src/agents/skills-install.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install.ts:ensureGoInstalled",
+        "name": "ensureGoInstalled",
+        "filePath": "src/agents/skills-install.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install.ts:executeInstallCommand",
+        "name": "executeInstallCommand",
+        "filePath": "src/agents/skills-install.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills-install-download.ts:installDownloadSpec",
+        "name": "installDownloadSpec",
+        "filePath": "src/agents/skills-install-download.ts"
+      },
+      {
+        "uid": "Function:src/infra/brew.ts:resolveBrewExecutable",
+        "name": "resolveBrewExecutable",
+        "filePath": "src/infra/brew.ts"
+      },
+      {
+        "uid": "Function:src/agents/skills/workspace.ts:loadWorkspaceSkillEntries",
+        "name": "loadWorkspaceSkillEntries",
+        "filePath": "src/agents/skills/workspace.ts"
+      }
+    ]
+  },
+  "processes": []
+}
+exit=0

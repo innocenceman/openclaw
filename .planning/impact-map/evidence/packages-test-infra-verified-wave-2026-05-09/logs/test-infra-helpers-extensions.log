@@ -1,0 +1,10 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- test/extension-plugin-sdk-boundary.test.ts test/plugin-extension-import-boundary.test.ts extensions/telegram/src/bot.helpers.test.ts extensions/msteams/src/media-helpers.test.ts
+
+[test-parallel] start unit workers=2 filters=2
+[test-parallel] start channels workers=2 filters=1
+[test-parallel] start extensions workers=4 filters=1
+[test-parallel] done extensions code=0 elapsed=9.5s
+[test-parallel] done channels code=0 elapsed=9.9s
+[test-parallel] done unit code=0 elapsed=12.2s

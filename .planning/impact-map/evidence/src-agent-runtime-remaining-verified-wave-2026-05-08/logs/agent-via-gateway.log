@@ -1,0 +1,7 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/commands/agent-via-gateway.test.ts
+
+[test-parallel] start base workers=2 filters=1
+[test-parallel] done base code=0 elapsed=5.7s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-LkMm8y

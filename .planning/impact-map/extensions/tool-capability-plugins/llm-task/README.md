@@ -1,0 +1,53 @@
+# LLM Task Plugin
+
+Coverage: `verified`
+Freshness: 2026-05-08 P0 refresh-to-verified evidence recorded
+
+## Scope
+
+Bundled tool plugin `extensions/llm-task/` registering a JSON-only embedded-agent task tool with provider/model defaults, allowlists, and schema validation.
+
+## Why this remains one leaf
+
+LLM task is one optional tool plugin, but its single leaf owns the orchestration-sensitive embedded-agent contract and the JSON/schema safety envelope around that tool.
+
+## Entry contracts
+
+- Plugin id: `llm-task` from `extensions/llm-task/openclaw.plugin.json` and `index.ts`.
+- Package/install contract: `@openclaw/llm-task` from `extensions/llm-task/package.json`.
+- Loader boundary: `extensions/llm-task/index.ts` registers `createLlmTaskTool(api)` as an optional tool.
+
+## Primary behavior surfaces
+
+- `extensions/llm-task/src/llm-task-tool.ts`: tool schema, provider/model default resolution, thinking-level normalization, allowlist enforcement, embedded-agent execution, JSON parsing, and AJV validation.
+- `extensions/llm-task/api.ts`: local barrel re-exporting the narrow plugin-SDK surface used by the tool.
+
+## Detail files
+
+- `file-roles.md`: concrete file/path ownership and likely impact radius.
+- `code-paths.md`: behavior paths to trace before changing code.
+- `change-to-test.md`: smallest validation ladder for common changes.
+
+## Current validation state
+
+This map was deepened from repo-native source and test-path inspection only. No product code was modified, and no product tests/builds were run during this documentation pass.
+
+## 2026-05-08 P0 original wave evidence
+
+Decision: `validated-deep-partial`.
+
+Reason: GN-STALE + CRG-STALE; llm-task tests passed.
+
+Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-VERIFIED-WAVE.md` and validation logs `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/extensions-llm-task.log`.
+
+No product source was changed during this wave.
+
+## 2026-05-08 P0 refresh-to-verified evidence
+
+Decision: `verified`.
+
+Reason: GitNexus and code-review-graph are fresh; llm-task tool tests passed.
+
+Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/gitnexus-refresh.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/code-review-graph-refresh.md`.
+
+No product source was changed during this refresh pass.

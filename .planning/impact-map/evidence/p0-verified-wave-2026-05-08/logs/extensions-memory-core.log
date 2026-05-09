@@ -1,0 +1,49 @@
+# extensions-memory-core
+
+Command: pnpm test -- extensions/memory-core/index.test.ts src/plugins/slots.test.ts src/plugins/config-state.test.ts src/commands/status.scan.test.ts
+Started: 2026-05-08T02:47:42.513Z
+Ended: 2026-05-08T02:48:05.348Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/memory-core/index.test.ts src/plugins/slots.test.ts src/plugins/config-state.test.ts src/commands/status.scan.test.ts
+
+[test-parallel] start extensions workers=4 filters=1
+[test-parallel] start unit workers=2 filters=2
+[test-parallel] start base workers=2 filters=1
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  2 passed (2)
+      Tests  27 passed (27)
+   Start at  10:47:46
+   Duration  16.92s (transform 8.03s, setup 32.52s, import 202ms, tests 66ms, environment 1ms)
+
+[test-parallel] done unit code=0 elapsed=19.0s
+
+ Test Files  1 passed (1)
+      Tests  6 passed (6)
+   Start at  10:47:46
+   Duration  18.11s (transform 6.11s, setup 17.47s, import 73ms, tests 18ms, environment 0ms)
+
+[test-parallel] done extensions code=0 elapsed=20.3s
+
+ Test Files  1 passed (1)
+      Tests  9 passed (9)
+   Start at  10:47:46
+   Duration  18.54s (transform 6.51s, setup 17.68s, import 141ms, tests 296ms, environment 0ms)
+
+[test-parallel] done base code=0 elapsed=20.7s
+
+
+## stderr
+

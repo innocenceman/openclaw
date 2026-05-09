@@ -1,0 +1,11 @@
+=== docs-check-links ===
+pnpm docs:check-links
+start=2026-05-08T20:49:13Z
+
+> openclaw@2026.3.24 docs:check-links /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/docs-link-audit.mjs
+
+checked_internal_links=2233
+broken_links=0
+exit=0
+end=2026-05-08T20:49:14Z

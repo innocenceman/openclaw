@@ -1,0 +1,4 @@
+### gitnexus detect-changes
+$ npx gitnexus detect-changes --repo openclaw --scope all
+Error: Git diff failed: spawnSync git EPERM
+EXIT_CODE=0

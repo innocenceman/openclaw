@@ -1,0 +1,3 @@
+GitNexus detect_changes(scope="all") was invoked after G009 planning edits.
+Result: MCP returned "user cancelled MCP tool call" immediately.
+Fallback: code-review-graph detect-changes is recorded in code-review-graph-status-detect.log and reports 0 changed functions/classes, 0 affected flows, 0 test gaps, risk score 0.00. Product source diff logs are empty.

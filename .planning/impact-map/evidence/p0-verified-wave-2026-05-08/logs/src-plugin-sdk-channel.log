@@ -1,0 +1,27 @@
+# src-plugin-sdk-channel
+
+Command: pnpm test -- src/plugin-sdk/channel-lifecycle.test.ts src/plugin-sdk/channel-setup.test.ts src/plugin-sdk/channel-policy.test.ts src/plugin-sdk/channel-reply-pipeline.test.ts
+Started: 2026-05-08T02:36:58.094Z
+Ended: 2026-05-08T02:37:14.249Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/plugin-sdk/channel-lifecycle.test.ts src/plugin-sdk/channel-setup.test.ts src/plugin-sdk/channel-policy.test.ts src/plugin-sdk/channel-reply-pipeline.test.ts
+
+[test-parallel] start unit workers=2 filters=4
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  4 passed (4)
+      Tests  11 passed (11)
+   Start at  10:37:01
+   Duration  12.62s (transform 7.91s, setup 24.03s, import 285ms, tests 130ms, environment 0ms)
+
+[test-parallel] done unit code=0 elapsed=13.9s
+
+
+## stderr
+

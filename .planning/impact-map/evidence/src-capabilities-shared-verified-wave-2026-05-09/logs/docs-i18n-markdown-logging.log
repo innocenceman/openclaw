@@ -1,0 +1,9 @@
+== docs-i18n-markdown-logging ==
+timeout 600 pnpm test -- src/docs/slash-commands-doc.test.ts src/i18n/registry.test.ts src/markdown/frontmatter.test.ts src/markdown/ir.blockquote-spacing.test.ts src/markdown/ir.hr-spacing.test.ts src/markdown/ir.nested-lists.test.ts src/markdown/ir.table-bullets.test.ts src/markdown/ir.table-code.test.ts src/markdown/whatsapp.test.ts src/logging/console-capture.test.ts src/logging/console-settings.test.ts src/logging/console-timestamp.test.ts src/logging/diagnostic.test.ts src/logging/log-file-size-cap.test.ts src/logging/logger-env.test.ts src/logging/logger-settings.test.ts src/logging/logger-timestamp.test.ts src/logging/logger.browser-import.test.ts src/logging/logger.settings.test.ts src/logging/parse-log-line.test.ts src/logging/redact.test.ts src/logging/subsystem.test.ts src/logging/timestamps.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/docs/slash-commands-doc.test.ts src/i18n/registry.test.ts src/markdown/frontmatter.test.ts src/markdown/ir.blockquote-spacing.test.ts src/markdown/ir.hr-spacing.test.ts src/markdown/ir.nested-lists.test.ts src/markdown/ir.table-bullets.test.ts src/markdown/ir.table-code.test.ts src/markdown/whatsapp.test.ts src/logging/console-capture.test.ts src/logging/console-settings.test.ts src/logging/console-timestamp.test.ts src/logging/diagnostic.test.ts src/logging/log-file-size-cap.test.ts src/logging/logger-env.test.ts src/logging/logger-settings.test.ts src/logging/logger-timestamp.test.ts src/logging/logger.browser-import.test.ts src/logging/logger.settings.test.ts src/logging/parse-log-line.test.ts src/logging/redact.test.ts src/logging/subsystem.test.ts src/logging/timestamps.test.ts
+
+[test-parallel] start unit workers=2 filters=23
+[test-parallel] done unit code=0 elapsed=14.2s
+--- exit=0 duration=15s ---

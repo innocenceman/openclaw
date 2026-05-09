@@ -1,0 +1,184 @@
+## channel-abstraction (%/src/channels/%)
+src/channels/logging.ts	logInboundDrop	Function	1.0	15	untested	1
+src/channels/account-snapshot-fields.ts	readCredentialStatus	Function	1.0	14	untested	1
+src/channels/account-snapshot-fields.ts	hasConfiguredUnavailableCredentialStatus	Function	1.0	13	untested	1
+src/channels/session.ts	recordInboundSession	Function	0.85	7	untested	1
+src/channels/account-snapshot-fields.ts	hasResolvedCredentialValue	Function	0.85	4	untested	1
+src/channels/command-gating.ts	resolveCommandAuthorizedFromAuthorizers	Function	0.7	16	tested	1
+src/channels/session-envelope.ts	resolveInboundSessionEnvelopeContext	Function	0.7	3	untested	1
+src/channels/config-presence.ts	hasWhatsAppAuthState	Function	0.7	2	untested	1
+src/channels/plugins/actions/shared.ts	listTokenSourcedAccounts	Function	0.7	2	untested	1
+src/channels/plugins/setup-wizard-helpers.ts	promptSingleChannelToken	Function	0.7	2	untested	1
+src/channels/plugins/setup-wizard-helpers.ts	promptToken	Function	0.7	2	untested	1
+src/channels/plugins/setup-wizard.ts	collectCredentialValues	Function	0.7	2	untested	1
+src/channels/plugins/setup-wizard.ts	runCredentialSteps	Function	0.7	2	untested	1
+src/channels/session.ts	normalizeSessionStoreKey	Function	0.7	2	untested	1
+src/channels/account-snapshot-fields.ts	projectCredentialSnapshotFields	Function	0.7	1	untested	1
+src/channels/model-overrides.ts	resolveGroupIdFromSessionKey	Function	0.7	1	untested	1
+src/channels/plugins/binding-registry.ts	resolveConfiguredBindingRecordBySessionKey	Function	0.7	1	untested	1
+src/channels/plugins/configured-binding-session-lookup.ts	resolveConfiguredBindingRecordBySessionKeyFromRegistry	Function	0.7	1	untested	1
+
+## routing (%/src/routing/%)
+src/routing/session-key.ts	resolveAgentIdFromSessionKey	Function	1.0	40	untested	1
+src/routing/session-key.ts	buildAgentMainSessionKey	Function	1.0	15	untested	1
+src/routing/session-key.ts	normalizeToken	Function	0.85	5	untested	1
+src/routing/resolve-route.ts	buildAgentSessionKey	Function	0.7	21	tested	1
+src/routing/session-key.ts	classifySessionKeyShape	Function	0.7	16	tested	1
+src/routing/session-key.ts	resolveThreadSessionKeys	Function	0.7	14	tested	1
+src/routing/resolve-route.ts	normalizeToken	Function	0.7	3	untested	1
+src/routing/session-key.ts	toAgentRequestSessionKey	Function	0.7	2	untested	1
+src/routing/resolve-route.test.ts	test:coerces numeric peer ids to stable session keys@L185	Test	0.7	0	untested	1
+src/routing/resolve-route.test.ts	test:deriveLastRoutePolicy collapses only main-session routes@L81	Test	0.7	0	untested	1
+src/routing/resolve-route.test.ts	test:dmScope controls direct-message session key isolation@L36	Test	0.7	0	untested	1
+src/routing/resolve-route.test.ts	test:dmScope=per-account-channel-peer isolates DM sessions per account, channel and sender@L412	Test	0.7	0	untested	1
+src/routing/resolve-route.test.ts	test:resolveInboundLastRouteSessionKey follows route policy@L59	Test	0.7	0	untested	1
+src/routing/session-key.continuity.test.ts	describe:Discord Session Key Continuity@L4	Test	0.7	0	untested	1
+src/routing/session-key.test.ts	describe:classifySessionKeyShape@L14	Test	0.7	0	untested	1
+src/routing/session-key.test.ts	describe:deriveSessionChatType@L79	Test	0.7	0	untested	1
+src/routing/session-key.test.ts	describe:isCronSessionKey@L65	Test	0.7	0	untested	1
+src/routing/session-key.test.ts	describe:session key backward compatibility@L37	Test	0.7	0	untested	1
+
+## plugin-sdk (%/src/plugin-sdk/%)
+src/plugin-sdk/core.ts	buildChannelOutboundSessionRoute	Function	1.0	12	untested	1
+src/plugin-sdk/provider-auth-result.ts	buildOauthProviderAuthResult	Function	0.85	5	untested	1
+src/plugin-sdk/inbound-reply-dispatch.ts	recordInboundSessionAndDispatchReply	Function	0.7	2	untested	1
+src/plugin-sdk/command-auth.ts	resolveDirectDmAuthorizationOutcome	Function	0.7	1	untested	1
+src/plugin-sdk/command-auth.ts	resolveSenderCommandAuthorizationWithRuntime	Function	0.7	1	untested	1
+src/plugin-sdk/fetch-auth.ts	isAuthFailureStatus	Function	0.7	1	untested	1
+src/plugin-sdk/allowlist-config-edit.test.ts	it:delegates to the resolver when a token is present@L117	Test	0.7	0	untested	1
+src/plugin-sdk/allowlist-config-edit.test.ts	it:returns empty results when the resolved account has no token@L104	Test	0.7	0	untested	1
+src/plugin-sdk/command-auth.test.ts	describe:plugin-sdk/command-auth@L9	Test	0.7	0	untested	1
+src/plugin-sdk/command-auth.test.ts	it:authorizes group commands from explicit group allowlist@L10	Test	0.7	0	untested	1
+src/plugin-sdk/command-auth.test.ts	it:keeps pairing-store identities DM-only for group command auth@L31	Test	0.7	0	untested	1
+src/plugin-sdk/direct-dm.test.ts	it:builds a shared pre-crypto guard policy with partial overrides@L85	Test	0.7	0	untested	1
+src/plugin-sdk/direct-dm.test.ts	it:creates a pre-crypto authorizer that issues pairing and blocks unknown senders@L40	Test	0.7	0	untested	1
+src/plugin-sdk/direct-dm.test.ts	it:dispatches direct DMs through the standard route/session/reply pipeline@L100	Test	0.7	0	untested	1
+src/plugin-sdk/direct-dm.test.ts	it:resolves inbound DM access and command auth through one helper@L15	Test	0.7	0	untested	1
+src/plugin-sdk/fetch-auth.test.ts	describe:fetchWithBearerAuthScopeFallback@L6	Test	0.7	0	untested	1
+src/plugin-sdk/fetch-auth.test.ts	it:continues across scopes when token retrieval fails@L72	Test	0.7	0	untested	1
+src/plugin-sdk/fetch-auth.test.ts	it:does not attach auth when host predicate rejects url@L55	Test	0.7	0	untested	1
+
+## plugins-runtime (%/src/plugins/%)
+src/plugins/provider-auth-helpers.ts	buildApiKeyCredential	Function	1.0	26	untested	1
+src/plugins/provider-auth-storage.ts	resolveAuthAgentDir	Function	1.0	24	untested	1
+src/plugins/provider-api-key-auth.ts	createProviderApiKeyAuthMethod	Function	1.0	15	untested	1
+src/plugins/provider-auth-mode.ts	resolveSecretInputModeForEnvSelection	Function	0.85	7	untested	1
+src/plugins/provider-auth-ref.ts	promptSecretRefForSetup	Function	0.85	6	untested	1
+src/plugins/conversation-binding.ts	isPluginOwnedSessionBindingRecord	Function	0.85	4	untested	1
+src/plugins/provider-auth-helpers.ts	applyAuthProfileConfig	Function	0.7	15	tested	1
+src/plugins/provider-auth-choice-helpers.ts	pickAuthMethod	Function	0.7	3	untested	1
+src/plugins/provider-auth-input.ts	normalizeSecretInputModeInput	Function	0.7	3	untested	1
+src/plugins/provider-oauth-flow.ts	createVpsAwareOAuthHandlers	Function	0.7	3	untested	1
+src/plugins/provider-runtime.ts	prepareProviderRuntimeAuth	Function	0.7	3	untested	1
+src/plugins/provider-auth-helpers.ts	buildEnvSecretRef	Function	0.7	2	untested	1
+src/plugins/provider-auth-token.ts	buildTokenProfileId	Function	0.7	2	untested	1
+src/plugins/provider-ollama-setup.ts	checkOllamaCloudAuth	Function	0.7	2	untested	1
+src/plugins/provider-onboarding-config.ts	applyOnboardAuthAgentModelsAndProviders	Function	0.7	2	untested	1
+src/plugins/provider-runtime.runtime.ts	buildProviderAuthDoctorHintWithPlugin	Function	0.7	2	untested	1
+src/plugins/provider-runtime.runtime.ts	formatProviderAuthProfileApiKeyWithPlugin	Function	0.7	2	untested	1
+src/plugins/provider-runtime.runtime.ts	refreshProviderOAuthCredentialWithPlugin	Function	0.7	2	untested	1
+
+## infra-outbound (%/src/infra/outbound/%)
+src/infra/outbound/outbound-session.ts	buildBaseSessionKey	Function	1.0	17	untested	1
+src/infra/outbound/base-session-key.ts	buildOutboundBaseSessionKey	Function	0.85	6	untested	1
+src/infra/outbound/session-binding-service.ts	getSessionBindingService	Function	0.7	83	tested	1
+src/infra/outbound/session-binding-service.ts	registerSessionBindingAdapter	Function	0.7	29	tested	1
+src/infra/outbound/targets.ts	resolveSessionDeliveryTarget	Function	0.7	26	tested	1
+src/infra/outbound/outbound-session.ts	resolveZaloLikeSession	Function	0.7	2	untested	1
+src/infra/outbound/outbound-send-service.ts	executePollAction	Function	0.7	1	untested	1
+src/infra/outbound/outbound-send-service.ts	executeSendAction	Function	0.7	1	untested	1
+src/infra/outbound/outbound-session.ts	resolveFallbackSession	Function	0.7	1	untested	1
+src/infra/outbound/agent-delivery.test.ts	it:builds a delivery plan from session delivery context@L84	Test	0.7	0	untested	1
+src/infra/outbound/agent-delivery.test.ts	it:does not inject a default deliverable channel when session has none@L127	Test	0.7	0	untested	1
+src/infra/outbound/agent-delivery.test.ts	it:does not reuse mutable session to when only turnSourceChannel is provided@L185	Test	0.7	0	untested	1
+src/infra/outbound/agent-delivery.test.ts	it:prefers turn-source delivery context over session last route@L165	Test	0.7	0	untested	1
+src/infra/outbound/deliver.lifecycle.test.ts	it:does not emit internal message:sent hook when neither mirror nor sessionKey is provided@L177	Test	0.7	0	untested	1
+src/infra/outbound/deliver.lifecycle.test.ts	it:emits internal message:sent hook when sessionKey is provided without mirror@L184	Test	0.7	0	untested	1
+src/infra/outbound/deliver.lifecycle.test.ts	it:warns when session.agentId is set without a session key@L197	Test	0.7	0	untested	1
+src/infra/outbound/deliver.test.ts	it:does not emit internal message:sent hook when neither mirror nor sessionKey is provided@L902	Test	0.7	0	untested	1
+src/infra/outbound/deliver.test.ts	it:emits internal message:sent hook when sessionKey is provided without mirror@L909	Test	0.7	0	untested	1
+
+## infra-net (%/src/infra/net/%)
+src/infra/net/fetch-guard.ssrf.test.ts	it:blocks URLs that use credentials to obscure a private host@L303	Test	0.7	0	untested	1
+src/infra/net/fetch-guard.ssrf.test.ts	it:blocks private IPv6 addresses embedded in URLs with credentials@L315	Test	0.7	0	untested	1
+src/infra/net/fetch-guard.ssrf.test.ts	it:blocks redirect to a URL using credentials to obscure a private host@L326	Test	0.7	0	untested	1
+src/infra/net/proxy-env.test.ts	it:treats empty lower-case http_proxy as authoritative over upper-case HTTP_PROXY@L50	Test	0.7	0	untested	1
+src/infra/net/proxy-env.test.ts	it:treats empty lower-case https_proxy as authoritative over upper-case HTTPS_PROXY@L40	Test	0.7	0	untested	1
+src/infra/net/ssrf.ts	closeDispatcher	Function	0.45	8	untested	0
+src/infra/net/fetch-guard.ts	release	Function	0.45	7	untested	0
+src/infra/net/undici-global-dispatcher.ts	ensureGlobalUndiciEnvProxyDispatcher	Function	0.45	6	untested	0
+src/infra/net/proxy-fetch.ts	makeProxyFetch	Function	0.45	5	untested	0
+src/infra/net/fetch-guard.ts	fetchWithSsrFGuard	Function	0.3	36	tested	0
+src/infra/net/hostname.ts	normalizeHostname	Function	0.3	18	tested	0
+src/infra/net/ssrf.ts	isBlockedHostnameOrIp	Function	0.3	16	tested	0
+src/infra/net/ssrf.ts	resolvePinnedHostnameWithPolicy	Function	0.3	13	tested	0
+src/infra/net/fetch-guard.ssrf.test.ts	redirectResponse	Function	0.15	8	tested	0
+src/infra/net/proxy-env.ts	resolveEnvHttpProxyUrl	Function	0.15	8	tested	0
+src/infra/net/undici-global-dispatcher.test.ts	setCurrentDispatcher	Function	0.15	8	tested	0
+src/infra/net/fetch-guard.ssrf.test.ts	createPublicLookup	Function	0.15	7	tested	0
+src/infra/net/proxy-env.ts	hasEnvHttpProxyConfigured	Function	0.15	7	tested	0
+
+## infra-tls (%/src/infra/tls/%)
+src/infra/tls/fingerprint.ts	normalizeFingerprint	Function	0.3	13	tested	0
+src/infra/tls/gateway.ts	loadGatewayTlsRuntime	Function	0.15	7	tested	0
+
+## config (%/src/config/%)
+src/config/types.secrets.ts	hasConfiguredSecretInput	Function	1.0	46	untested	1
+src/config/types.secrets.ts	resolveSecretInputRef	Function	1.0	35	untested	1
+src/config/types.secrets.ts	coerceSecretRef	Function	1.0	25	untested	1
+src/config/types.secrets.ts	normalizeSecretInputString	Function	1.0	16	untested	1
+src/config/sessions/main-session.ts	canonicalizeMainSessionAlias	Function	0.85	9	untested	1
+src/config/sessions/store.ts	resolveSessionStoreEntry	Function	0.85	9	untested	1
+src/config/sessions/store.ts	readSessionUpdatedAt	Function	0.85	8	untested	1
+src/config/sessions/types.ts	resolveFreshSessionTotalTokens	Function	0.85	8	untested	1
+src/config/types.secrets.ts	normalizeResolvedSecretInputString	Function	0.85	8	untested	1
+src/config/sessions/group.ts	resolveGroupSessionKey	Function	0.85	7	untested	1
+src/config/sessions/paths.ts	resolveAgentSessionsDir	Function	0.85	7	untested	1
+src/config/sessions/store.ts	normalizeStoreSessionKey	Function	0.85	7	untested	1
+src/config/types.secrets.ts	isSecretRef	Function	0.85	6	untested	1
+src/config/types.secrets.ts	isValidEnvSecretRefId	Function	0.85	6	untested	1
+src/config/sessions/store.ts	withSessionStoreLock	Function	0.85	5	untested	1
+src/config/defaults.ts	applySessionDefaults	Function	0.85	4	untested	1
+src/config/sessions/delivery-info.ts	parseSessionThreadInfo	Function	0.85	4	untested	1
+src/config/sessions/main-session.ts	buildMainSessionKey	Function	0.85	4	untested	1
+
+## secrets (%/src/secrets/%)
+src/secrets/runtime-shared.ts	collectSecretInputAssignment	Function	1.0	45	untested	1
+src/secrets/ref-contract.ts	secretRefKey	Function	1.0	16	untested	1
+src/secrets/ref-contract.ts	resolveDefaultSecretProviderAlias	Function	0.85	10	untested	1
+src/secrets/runtime-config-collectors-channels.ts	normalizeSecretStringValue	Function	0.85	10	untested	1
+src/secrets/ref-contract.ts	formatExecSecretRefIdValidationMessage	Function	0.85	7	untested	1
+src/secrets/ref-contract.ts	isValidSecretProviderAlias	Function	0.85	6	untested	1
+src/secrets/config-io.ts	createSecretsConfigIO	Function	0.85	4	untested	1
+src/secrets/runtime-config-collectors-channels.ts	hasConfiguredSecretInputValue	Function	0.85	4	untested	1
+src/secrets/runtime-web-tools.ts	hasConfiguredSecretRef	Function	0.85	4	untested	1
+src/secrets/secret-value.ts	assertExpectedResolvedSecretValue	Function	0.85	4	untested	1
+src/secrets/audit.ts	runSecretsAudit	Function	0.7	19	tested	1
+src/secrets/apply.ts	runSecretsApply	Function	0.7	18	tested	1
+src/secrets/resolve.ts	resolveSecretRefString	Function	0.7	11	tested	1
+src/secrets/audit.ts	trackAuthProviderState	Function	0.7	3	untested	1
+src/secrets/command-config.ts	analyzeCommandSecretAssignmentsFromSnapshot	Function	0.7	3	untested	1
+src/secrets/runtime-gateway-auth-surfaces.ts	evaluateGatewayAuthSurfaceStates	Function	0.7	3	untested	1
+src/secrets/secret-value.ts	isExpectedResolvedSecretValue	Function	0.7	3	untested	1
+src/secrets/target-registry-query.ts	discoverConfigSecretTargets	Function	0.7	3	untested	1
+
+## security (%/src/security/%)
+src/security/audit-fs.ts	formatPermissionDetail	Function	1.0	15	untested	1
+src/security/audit-fs.ts	formatPermissionRemediation	Function	1.0	15	untested	1
+src/security/audit-fs.ts	inspectPathPermissions	Function	0.85	8	untested	1
+src/security/audit-extra.async.ts	hasSecretInput	Function	0.85	5	untested	1
+src/security/secret-equal.ts	safeEqualSecret	Function	0.7	14	tested	1
+src/security/external-content.ts	isExternalHookSession	Function	0.7	11	tested	1
+src/security/audit-extra.async.ts	hasAccountSecretInputKey	Function	0.7	3	untested	1
+src/security/safe-regex.ts	emitToken	Function	0.7	2	untested	1
+src/security/fix.ts	chmodCredentialsAndAgentState	Function	0.7	1	untested	1
+src/security/safe-regex.ts	analyzeTokensForNestedRepetition	Function	0.7	1	untested	1
+src/security/safe-regex.ts	emitSimpleToken	Function	0.7	1	untested	1
+src/security/safe-regex.ts	tokenizePattern	Function	0.7	1	untested	1
+src/security/windows-acl.ts	rightsFromTokens	Function	0.7	1	untested	1
+src/security/audit-extra.sync.test.ts	describe:safeEqualSecret@L37	Test	0.7	0	untested	1
+src/security/audit-extra.sync.test.ts	it:matches identical secrets@L38	Test	0.7	0	untested	1
+src/security/audit-extra.sync.test.ts	it:rejects different-length secrets@L46	Test	0.7	0	untested	1
+src/security/audit-extra.sync.test.ts	it:rejects mismatched secrets@L42	Test	0.7	0	untested	1
+src/security/audit-extra.sync.ts	collectGatewayHttpNoAuthFindings	Function	0.7	0	untested	1
+

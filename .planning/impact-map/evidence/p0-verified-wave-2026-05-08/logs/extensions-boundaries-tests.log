@@ -1,0 +1,27 @@
+# extensions-boundaries-tests
+
+Command: pnpm test -- src/plugins/bundled-plugin-naming.test.ts src/plugins/bundled-plugin-metadata.test.ts src/plugins/contracts/catalog.contract.test.ts
+Started: 2026-05-08T02:44:21.252Z
+Ended: 2026-05-08T02:44:39.015Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/plugins/bundled-plugin-naming.test.ts src/plugins/bundled-plugin-metadata.test.ts src/plugins/contracts/catalog.contract.test.ts
+
+[test-parallel] start unit workers=2 filters=3
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  3 passed (3)
+      Tests  11 passed (11)
+   Start at  10:44:24
+   Duration  14.00s (transform 8.61s, setup 25.24s, import 438ms, tests 1.12s, environment 1ms)
+
+[test-parallel] done unit code=0 elapsed=15.4s
+
+
+## stderr
+

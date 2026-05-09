@@ -1,0 +1,8 @@
+{
+  "summary": "Analyzed 726 changed file(s):\n  - 0 changed function(s)/class(es)\n  - 0 affected flow(s)\n  - 0 test gap(s)\n  - Overall risk score: 0.00",
+  "risk_score": 0.0,
+  "changed_functions": [],
+  "affected_flows": [],
+  "test_gaps": [],
+  "review_priorities": []
+}

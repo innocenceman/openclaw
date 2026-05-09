@@ -1,0 +1,9 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/commands/agent.test.ts
+
+[test-parallel] start base workers=2 filters=1
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-60JiDV/base-1778257753367.log meta=/tmp/openclaw-test-parallel-60JiDV/base-1778257753367-failure.json
+[test-parallel] done base code=1 elapsed=140.2s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-60JiDV
+ ELIFECYCLE  Test failed. See above for more details.

@@ -1,0 +1,9 @@
+# timeout 300s pnpm test -- extensions/device-pair/index.test.ts extensions/diagnostics-otel/src/service.test.ts extensions/lobster/src/lobster-tool.test.ts extensions/perplexity/src/perplexity-web-search-provider.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/device-pair/index.test.ts extensions/diagnostics-otel/src/service.test.ts extensions/lobster/src/lobster-tool.test.ts extensions/perplexity/src/perplexity-web-search-provider.test.ts
+
+[test-parallel] start extensions workers=4 filters=4
+[test-parallel] done extensions code=0 elapsed=10.0s
+
+[exit:0]

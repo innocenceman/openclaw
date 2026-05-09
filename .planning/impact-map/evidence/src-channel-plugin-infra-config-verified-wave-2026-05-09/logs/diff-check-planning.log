@@ -1,0 +1,3 @@
+=== diff-check-planning ===
+git diff --check -- .planning
+--- exit=0 duration=0s ---

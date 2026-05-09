@@ -1,0 +1,181 @@
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Class:src/memory/manager.ts:MemoryIndexManager",
+    "name": "MemoryIndexManager",
+    "kind": "Class",
+    "filePath": "src/memory/manager.ts",
+    "startLine": 76,
+    "endLine": 875
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "Method:src/memory/manager.ts:MemoryIndexManager.get#1",
+        "name": "get",
+        "filePath": "src/memory/manager.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "has_property": [
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.cacheKey",
+        "name": "cacheKey",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.cfg",
+        "name": "cfg",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.agentId",
+        "name": "agentId",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.workspaceDir",
+        "name": "workspaceDir",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.settings",
+        "name": "settings",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.provider",
+        "name": "provider",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.requestedProvider",
+        "name": "requestedProvider",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.providerInitPromise",
+        "name": "providerInitPromise",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.providerInitialized",
+        "name": "providerInitialized",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.fallbackFrom",
+        "name": "fallbackFrom",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.fallbackReason",
+        "name": "fallbackReason",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.providerUnavailableReason",
+        "name": "providerUnavailableReason",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.openAi",
+        "name": "openAi",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.gemini",
+        "name": "gemini",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.voyage",
+        "name": "voyage",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.mistral",
+        "name": "mistral",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.ollama",
+        "name": "ollama",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.batch",
+        "name": "batch",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.batchFailureCount",
+        "name": "batchFailureCount",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.batchFailureLastError",
+        "name": "batchFailureLastError",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Property:src/memory/manager.ts:MemoryIndexManager.batchFailureLastProvider",
+        "name": "batchFailureLastProvider",
+        "filePath": "src/memory/manager.ts"
+      }
+    ],
+    "extends": [
+      {
+        "uid": "Class:src/memory/manager-embedding-ops.ts:MemoryManagerEmbeddingOps",
+        "name": "MemoryManagerEmbeddingOps",
+        "filePath": "src/memory/manager-embedding-ops.ts"
+      }
+    ],
+    "implements": [
+      {
+        "uid": "Interface:src/memory/types.ts:MemorySearchManager",
+        "name": "MemorySearchManager",
+        "filePath": "src/memory/types.ts"
+      }
+    ],
+    "has_method": [
+      {
+        "uid": "Method:src/memory/manager.ts:MemoryIndexManager.loadProviderResult#1",
+        "name": "loadProviderResult",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Method:src/memory/manager.ts:MemoryIndexManager.get#1",
+        "name": "get",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Method:src/memory/manager.ts:MemoryIndexManager.constructor#1",
+        "name": "constructor",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Method:src/memory/manager.ts:MemoryIndexManager.applyProviderResult#1",
+        "name": "applyProviderResult",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Method:src/memory/manager.ts:MemoryIndexManager.ensureProviderInitialized#0",
+        "name": "ensureProviderInitialized",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Method:src/memory/manager.ts:MemoryIndexManager.warmSession#1",
+        "name": "warmSession",
+        "filePath": "src/memory/manager.ts"
+      },
+      {
+        "uid": "Method:src/memory/manager.ts:MemoryIndexManager.search#2",
+        "name": "search",
+        "filePath": "src/memory/manager.ts"
+      }
+    ]
+  },
+  "processes": []
+}

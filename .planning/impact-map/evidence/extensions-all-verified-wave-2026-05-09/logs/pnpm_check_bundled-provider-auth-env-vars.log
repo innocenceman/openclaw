@@ -1,0 +1,7 @@
+# pnpm check:bundled-provider-auth-env-vars
+
+> openclaw@2026.3.24 check:bundled-provider-auth-env-vars /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/generate-bundled-provider-auth-env-vars.mjs --check
+
+
+[exit:0]

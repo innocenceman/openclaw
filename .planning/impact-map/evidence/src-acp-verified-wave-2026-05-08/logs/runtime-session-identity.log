@@ -1,0 +1,17 @@
+===== runtime-session-identity =====
+command: pnpm test -- src/acp/session.test.ts src/acp/session-mapper.test.ts src/acp/runtime/session-identifiers.test.ts src/acp/runtime/registry.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/acp/session.test.ts src/acp/session-mapper.test.ts src/acp/runtime/session-identifiers.test.ts src/acp/runtime/registry.test.ts
+
+[test-parallel] start unit workers=2 filters=4
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  4 passed (4)
+      Tests  18 passed (18)
+   Start at  22:33:14
+   Duration  7.79s (transform 5.43s, setup 15.11s, import 141ms, tests 29ms, environment 0ms)
+
+[test-parallel] done unit code=0 elapsed=8.7s

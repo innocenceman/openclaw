@@ -1,0 +1,6 @@
+$ code-review-graph detect-changes --base HEAD --brief
+Analyzed 387 changed file(s):
+  - 0 changed function(s)/class(es)
+  - 0 affected flow(s)
+  - 0 test gap(s)
+  - Overall risk score: 0.00

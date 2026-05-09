@@ -1,0 +1,3 @@
+=== crg-diff-source-clean ===
+git diff --name-only f99ef11b272b -- src/channels src/routing src/plugin-sdk src/plugins src/infra src/config src/secrets src/security
+--- exit=0 duration=0s ---

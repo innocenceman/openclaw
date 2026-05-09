@@ -1,0 +1,27 @@
+# extensions-package-runtime-deps
+
+Command: pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts src/plugins/stage-bundled-plugin-runtime.test.ts
+Started: 2026-05-08T02:45:41.881Z
+Ended: 2026-05-08T02:45:55.942Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts src/plugins/stage-bundled-plugin-runtime.test.ts
+
+[test-parallel] start unit workers=2 filters=2
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  2 passed (2)
+      Tests  15 passed (15)
+   Start at  10:45:45
+   Duration  10.65s (transform 7.55s, setup 20.27s, import 215ms, tests 157ms, environment 0ms)
+
+[test-parallel] done unit code=0 elapsed=11.8s
+
+
+## stderr
+

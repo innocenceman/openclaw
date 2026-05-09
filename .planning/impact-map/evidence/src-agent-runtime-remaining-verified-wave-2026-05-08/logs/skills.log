@@ -1,0 +1,9 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/skills.test.ts src/agents/skills-install.test.ts src/agents/skills-install.download.test.ts src/agents/skills-install-fallback.test.ts src/agents/skills-status.test.ts src/agents/skills/plugin-skills.test.ts src/agents/skills/bundled-dir.test.ts src/agents/skills/filter.test.ts src/agents/skills/frontmatter.test.ts src/agents/skills/refresh.test.ts
+
+[test-parallel] start base workers=2 filters=10
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-Axl1zj/base-1778258780779.log meta=/tmp/openclaw-test-parallel-Axl1zj/base-1778258780779-failure.json
+[test-parallel] done base code=1 elapsed=8.6s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-Axl1zj
+ ELIFECYCLE  Test failed. See above for more details.

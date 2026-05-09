@@ -1,0 +1,38 @@
+# extensions-memory-lancedb
+
+Command: pnpm test -- extensions/memory-lancedb/index.test.ts src/plugins/bundled-runtime-deps.test.ts src/plugins/install-min-host-version-guardrails.test.ts
+Started: 2026-05-08T02:48:05.349Z
+Ended: 2026-05-08T02:48:23.913Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/memory-lancedb/index.test.ts src/plugins/bundled-runtime-deps.test.ts src/plugins/install-min-host-version-guardrails.test.ts
+
+[test-parallel] start extensions workers=4 filters=1
+[test-parallel] start unit workers=2 filters=2
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  2 passed (2)
+      Tests  9 passed (9)
+   Start at  10:48:09
+   Duration  12.68s (transform 6.84s, setup 24.58s, import 99ms, tests 28ms, environment 0ms)
+
+[test-parallel] done unit code=0 elapsed=14.4s
+
+ Test Files  1 passed (1)
+      Tests  17 passed | 1 skipped (18)
+   Start at  10:48:09
+   Duration  14.56s (transform 5.18s, setup 13.15s, import 171ms, tests 983ms, environment 0ms)
+
+[test-parallel] done extensions code=0 elapsed=16.1s
+
+
+## stderr
+
