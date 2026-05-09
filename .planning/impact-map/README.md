@@ -1,15 +1,28 @@
 # Impact Map
 
-Coverage: `partial`
+Coverage: `exceptioned-deep-partial`
 
 The impact map connects large module → submodule → file → key code path → behavior → validation. It exists so future file changes can quickly identify likely impact and the smallest safe test/integration-coordination set.
 
 ## Coverage labels
 
-- `stub`: structure exists but claims are not deeply verified.
-- `partial`: verified for selected files/symbols only, usually at module or submodule level.
-- `deep-partial`: leaf-level file roles, code paths, and change-to-test cards exist from repo-native structural inspection, but no fresh product tests, builds, or graph indexes are implied.
-- `verified`: checked against current code and tests with fresh evidence.
+- `stub`: placeholder only; not acceptable in final handoff.
+- `partial`: mapped but not source/test-grounded. No active complete leaf packet should stay in this state.
+- `deep-partial`: source-grounded and has a validation ladder, but lacks passing evidence.
+- `verified`: boundary, source, tool/test/check evidence passed for handoff readiness.
+- `exceptioned-deep-partial`: source-grounded, but verification is blocked or failed with an explicit reason.
+
+## Current normalized state
+
+The 2026-05-09 brownfield normalization pass treats this map as a GSD handoff input, not as a GSD mainline state file. Active final leaf packets now use only `verified`, `exceptioned-deep-partial`, or `deep-partial` labels:
+
+| Label                      | Active final leaf packets | Meaning                                                                                             |
+| -------------------------- | ------------------------: | --------------------------------------------------------------------------------------------------- |
+| `verified`                 |                        95 | Existing imported evidence records passing handoff readiness checks.                                |
+| `exceptioned-deep-partial` |                       117 | Source-grounded leaf with explicit blocked or failed validation.                                    |
+| `deep-partial`             |                        71 | Source/path/test-ladder packet exists, but no fresh passing evidence was recorded in this worktree. |
+
+See [`evidence/brownfield-normalization-2026-05-09/BROWNFIELD-NORMALIZATION.md`](evidence/brownfield-normalization-2026-05-09/BROWNFIELD-NORMALIZATION.md) for the current tool readiness and normalization ledger.
 
 ## Change workflow
 
@@ -41,4 +54,4 @@ The current read-only architecture overview is tracked in [`../architecture/ARCH
 
 ## Architecture blueprint
 
-The current architecture blueprint is tracked in [`../architecture/OPENCLAW-ARCHITECTURE-BLUEPRINT.md`](../architecture/OPENCLAW-ARCHITECTURE-BLUEPRINT.md). It records the large-module, submodule, leaf-module, dependency-DAG, runtime-flow, and hotspot interpretation of the existing repository without requiring source-code migration.
+The current architecture blueprint is merged into [`../architecture/ARCHITECTURE-ATLAS.md`](../architecture/ARCHITECTURE-ATLAS.md). It records the large-module, submodule, leaf-module, dependency-DAG, runtime-flow, and hotspot interpretation of the existing repository without requiring source-code migration.

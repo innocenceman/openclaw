@@ -1,6 +1,6 @@
 # Coverage Roadmap
 
-Coverage: `partial`
+Coverage: `exceptioned-deep-partial`
 
 This roadmap controls the progressive whole-repo impact-map program. It keeps OpenClaw coverage broad enough that every future file change can be placed somewhere, while preventing shallow notes from being mistaken for verified impact knowledge.
 
@@ -58,11 +58,13 @@ If code changes or tool coverage becomes stale, demote `verified` to `deep-parti
 
 ## Closeout status
 
-The final cross-module audit closed the active impact-map coverage program for the current `.planning` tree: every active `leaf-index.md` row is now either `verified` or `exceptioned-deep-partial`. No active row should remain `stub`, empty, plain `partial`, or plain `deep-partial`.
+The imported impact-map has been normalized for the `VersionAnalyze` brownfield handoff. Every active complete final leaf packet is now one of `verified`, `exceptioned-deep-partial`, or `deep-partial`; no active complete leaf packet remains `stub` or plain `partial`.
 
-Historical wave notes used `partial` and `deep-partial` as intermediate states. Those older labels are retained only inside evidence packets and git history; they are not the current active coverage state.
+The current normalized leaf counts are 95 `verified`, 117 `exceptioned-deep-partial`, and 71 `deep-partial`. The 71 `deep-partial` leaves are intentionally not promoted because this pass did not run fresh product tests/builds for those leaves.
 
-Final closeout evidence: [`evidence/final-cross-module-audit-2026-05-09/FINAL-CROSS-MODULE-AUDIT.md`](evidence/final-cross-module-audit-2026-05-09/FINAL-CROSS-MODULE-AUDIT.md).
+Historical wave notes used `partial` and `deep-partial` as intermediate states. Those older labels are retained only inside evidence packets and git history; they are not the current active final-leaf coverage state.
+
+Final imported closeout evidence: [`evidence/final-cross-module-audit-2026-05-09/FINAL-CROSS-MODULE-AUDIT.md`](evidence/final-cross-module-audit-2026-05-09/FINAL-CROSS-MODULE-AUDIT.md). Current normalization evidence: [`evidence/brownfield-normalization-2026-05-09/BROWNFIELD-NORMALIZATION.md`](evidence/brownfield-normalization-2026-05-09/BROWNFIELD-NORMALIZATION.md).
 
 ## Historical wave ledger
 

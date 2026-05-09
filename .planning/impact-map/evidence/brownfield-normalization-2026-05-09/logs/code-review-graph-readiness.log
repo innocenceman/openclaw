@@ -1,0 +1,60 @@
+$ code-review-graph register .
+Registered: /home/yanx/projects/openclaw/versionAnalyze
+
+$ code-review-graph build
+INFO: Progress: 200/8581 files parsed
+INFO: Progress: 400/8581 files parsed
+INFO: Progress: 600/8581 files parsed
+INFO: Progress: 800/8581 files parsed
+INFO: Progress: 1000/8581 files parsed
+INFO: Progress: 1200/8581 files parsed
+INFO: Progress: 1400/8581 files parsed
+INFO: Progress: 1600/8581 files parsed
+INFO: Progress: 1800/8581 files parsed
+INFO: Progress: 2000/8581 files parsed
+INFO: Progress: 2200/8581 files parsed
+INFO: Progress: 2400/8581 files parsed
+INFO: Progress: 2600/8581 files parsed
+INFO: Progress: 2800/8581 files parsed
+INFO: Progress: 3000/8581 files parsed
+INFO: Progress: 3200/8581 files parsed
+INFO: Progress: 3400/8581 files parsed
+INFO: Progress: 3600/8581 files parsed
+INFO: Progress: 3800/8581 files parsed
+INFO: Progress: 4000/8581 files parsed
+INFO: Progress: 4200/8581 files parsed
+INFO: Progress: 4400/8581 files parsed
+INFO: Progress: 4600/8581 files parsed
+INFO: Progress: 4800/8581 files parsed
+INFO: Progress: 5000/8581 files parsed
+INFO: Progress: 5200/8581 files parsed
+INFO: Progress: 5400/8581 files parsed
+INFO: Progress: 5600/8581 files parsed
+INFO: Progress: 5800/8581 files parsed
+INFO: Progress: 6000/8581 files parsed
+INFO: Progress: 6200/8581 files parsed
+INFO: Progress: 6400/8581 files parsed
+INFO: Progress: 6600/8581 files parsed
+INFO: Progress: 6800/8581 files parsed
+INFO: Progress: 7000/8581 files parsed
+INFO: Progress: 7200/8581 files parsed
+INFO: Progress: 7400/8581 files parsed
+INFO: Progress: 7600/8581 files parsed
+INFO: Progress: 7800/8581 files parsed
+INFO: Progress: 8000/8581 files parsed
+INFO: Progress: 8200/8581 files parsed
+INFO: Progress: 8400/8581 files parsed
+INFO: Progress: 8581/8581 files parsed
+INFO: FTS index rebuilt: 80939 rows indexed
+INFO: Loaded 72358 unique nodes, 732238 edges
+INFO: igraph not available, using file-based community detection
+Full build: 8581 files, 81845 nodes, 737985 edges (postprocess=full)
+
+$ code-review-graph status
+Nodes: 80939
+Edges: 732238
+Files: 8581
+Languages: javascript, typescript, python, bash, swift, kotlin, go, powershell
+Last updated: 2026-05-09T16:15:40
+Built on branch: VersionAnalyze
+Built at commit: ab54c932d998

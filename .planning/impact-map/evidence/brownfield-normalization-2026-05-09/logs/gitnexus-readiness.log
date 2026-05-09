@@ -1,0 +1,15 @@
+$ gitnexus status
+Repository not indexed.
+Run: gitnexus analyze
+
+$ gitnexus analyze .
+
+  GitNexus Analyzer
+
+[2K  Skipped 2 large files (>512KB, likely generated/vendored)
+[2KSkipping 606 swift file(s) — swift parser not available (native binding may not have built). Try: npm rebuild tree-sitter-swift
+[2KWorker pool parsing failed, falling back to sequential: Worker 0 sub-batch timed out after 30s (chunk: 1167 items).
+
+READINESS_RESULT: blocked
+Reason: gitnexus analyze . produced no additional output after falling back to sequential parsing; stopped by orchestrator after readiness gate timeout.
+First actionable issues from output: Swift parser unavailable (npm rebuild tree-sitter-swift); worker sub-batch timed out after 30s before sequential fallback.

@@ -3,7 +3,7 @@
 Coverage: `partial`
 Freshness: 2026-05-09 G005 src capabilities/shared verified wave
 
-`src/` owns the core OpenClaw runtime. This impact map is organized by the logical Core Runtime modules used by `.planning/architecture/ARCHITECTURE-ATLAS.md` and `.planning/architecture/OPENCLAW-ARCHITECTURE-BLUEPRINT.md`. It is a planning/ownership view only; product source directories were not moved.
+`src/` owns the core OpenClaw runtime. This impact map is organized by the logical Core Runtime modules used by `.planning/architecture/ARCHITECTURE-ATLAS.md`. It is a planning/ownership view only; product source directories were not moved.
 
 ## Canonical shape
 

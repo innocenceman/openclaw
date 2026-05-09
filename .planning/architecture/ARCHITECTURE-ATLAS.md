@@ -1,20 +1,89 @@
 # OpenClaw Architecture Atlas
 
-Coverage: `partial`
+Coverage: `exceptioned-deep-partial`
 
-This atlas captures the current architecture without moving or changing source code. It is a read-only interpretation layer over the existing repository layout, GitNexus index, import-boundary evidence, and observed runtime flows.
+This atlas captures the current architecture without moving or changing source code. It is a read-only interpretation layer over the existing repository layout, GitNexus index, import-boundary evidence, observed runtime flows, and the imported architecture blueprint content.
+
+## Brownfield normalization diagrams
+
+```mermaid
+flowchart TD
+  User[User channels and apps] --> Channel[Channel abstraction]
+  Channel --> Reply[Reply orchestration]
+  Reply --> Agent[Agent runtime]
+  Agent --> Providers[Provider and tool plugins]
+  Agent --> Gateway[Gateway API surface]
+  Gateway --> Apps[Native and web clients]
+  Providers --> External[External APIs and services]
+  Config[Config, secrets, security] --> Channel
+  Config --> Agent
+  Providers --> PluginSDK[Plugin runtime and SDK contracts]
+  Channel --> PluginSDK
+```
+
+```mermaid
+flowchart LR
+  Extensions[extensions/ plugins] --> PluginSDK[openclaw/plugin-sdk public contracts]
+  Src[src/ core runtime] --> PluginSDK
+  Src --> Apps[apps/ native clients]
+  Src --> UI[ui/ web control surface]
+  Packages[packages/ compatibility shims] --> OpenClawPkg[openclaw package]
+  Scripts[scripts/ automation] --> Src
+  Docs[docs/ docs and references] -. describes .-> Src
+  Tests[test/ and colocated tests] -. validates .-> Src
+```
+
+```mermaid
+sequenceDiagram
+  participant Ingress as Channel ingress
+  participant Router as Routing and bindings
+  participant Reply as Reply orchestration
+  participant Agent as Agent runtime
+  participant Plugin as Provider/tool plugin
+  participant Outbound as Channel delivery
+  Ingress->>Router: normalize account/session/recipient
+  Router->>Reply: authorized command or message event
+  Reply->>Agent: run agent turn with scoped context
+  Agent->>Plugin: model/tool/provider call
+  Plugin-->>Agent: result/tool output
+  Agent-->>Reply: final response
+  Reply->>Outbound: channel-shaped delivery
+```
 
 ## Scope and evidence
 
 Evidence used for this snapshot:
 
 - Repository-local directory inspection of `src/`, `extensions/`, `apps/`, `ui/`, `packages/`, `docs/`, and `scripts/`.
-- GitNexus repository index for `openclaw` with approximately `134490` symbols, `185920` relationships, `2607` communities, and `300` execution flows.
-- GitNexus process summary: `292` cross-community flows and `8` intra-community flows. This means OpenClaw should be modeled as a layered dependency graph, not as a strict tree.
+- GitNexus current-worktree index for `openclaw` at commit `ab54c93` with `139497` symbols, `198754` relationships, `3185` clusters, and `300` execution flows.
+- code-review-graph current-worktree build on branch `VersionAnalyze` at commit `ab54c932d998` with `8581` files, `80939` nodes, and `732238` edges.
+- The earlier imported GitNexus/code-review evidence from `openclaw-v2026.3.24` remains historical context, but current handoff readiness uses the `VersionAnalyze` tool status recorded under `.planning/impact-map/evidence/brownfield-normalization-2026-05-09/`.
 - Existing impact-map scaffolding under `.planning/impact-map/`.
 - Existing repository guardrails for plugin import boundaries, docs conventions, build/test commands, and module ownership.
 
 This document is intentionally descriptive. It does not require source-code migration.
+
+## Architecture judgment
+
+OpenClaw is best understood as a plugin-based, multi-channel, cross-platform agent runtime system.
+
+It is not a strict tree-shaped monolith. The maintainable model is a layered DAG:
+
+```text
+Apps / UI / CLI / Channels
+-> Gateway / Control Plane
+-> Auto Reply Orchestration
+-> Agent Runtime
+-> Tools / Providers / Memory / Browser / Media
+-> Outbound Delivery
+-> Channel / Plugin Response
+```
+
+The architecture should therefore be read through four views together:
+
+```text
+Ownership Tree + Dependency DAG + Runtime Flow + Hotspot Map
+```
 
 ## How to read the architecture
 
@@ -49,7 +118,7 @@ Top-level responsibilities:
 | `extensions/` | Plugins             | Channel, provider, tool, media, memory, and integration plugins                     | Extension surface through `openclaw/plugin-sdk/*` |
 | `apps/`       | Native apps         | macOS, iOS, Android app surfaces and platform config                                | User-facing clients                               |
 | `ui/`         | Web/control UI      | Browser-based control UI                                                            | User-facing web surface                           |
-| `packages/`   | Shared packages     | Small shared package surfaces                                                       | Package-level reusable support                    |
+| `packages/`   | Compatibility shims | Legacy compatibility packages that forward to `openclaw`                            | Package-name compatibility                        |
 | `docs/`       | Documentation       | Mintlify docs, help, install, release references                                    | User and maintainer knowledge                     |
 | `scripts/`    | Tooling             | Build, release, package, lint, docs, and maintenance scripts                        | Automation and CI support                         |
 | `test/`       | Cross-cutting tests | Integration helpers, fixtures, and broad test setup                                 | Validation support                                |
@@ -80,7 +149,7 @@ OpenClaw
 │  ├─ Shared App Code
 │  └─ Web / Control UI
 ├─ Docs
-└─ Tooling / Scripts / Packages
+└─ Tooling / Scripts / Compatibility Packages
 ```
 
 ## Core runtime module tree
@@ -134,6 +203,24 @@ src/
    └─ types/               # shared types and compatibility helpers
 ```
 
+### Detailed core runtime boundaries
+
+| Logical submodule            | Main paths                                                                                                                                                                                        | Responsibility                                                                                  | Planning granularity                                                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Agent execution core         | `src/agents/*.ts`                                                                                                                                                                                 | Agent command handling, scope, spawning, provider wiring, tool orchestration                    | Runner/tool/provider file groups with colocated tests                                             |
+| Agent tools                  | `src/agents/tools/`, `src/agents/*tools*`                                                                                                                                                         | Bash, apply-patch, browser/tool adapters, tool schemas                                          | One tool family per leaf                                                                          |
+| Sandbox and auth profiles    | `src/agents/sandbox/`, `src/agents/auth-profiles/`                                                                                                                                                | Sandboxed execution plus provider auth profile selection                                        | Sandbox runner and profile resolver leaves                                                        |
+| Pi embedded runner           | `src/agents/pi-embedded-runner/`, `src/agents/pi-embedded-helpers/`, `src/agents/pi-extensions/`                                                                                                  | Pi/local embedded agent runtime, compaction, extensions, provider support                       | Runner, helper, extension, and provider-specific slices                                           |
+| Skills and schemas           | `src/agents/skills/`, `src/agents/schema/`                                                                                                                                                        | Skill discovery/refresh and tool schema contracts                                               | Loader/refresh group and schema contract group                                                    |
+| Reply orchestration runner   | `src/auto-reply/reply/agent-runner*.ts`, `src/auto-reply/reply/commands-*.ts`, `src/auto-reply/reply/commands-acp/`, `src/auto-reply/reply/commands-subagents/`, `src/auto-reply/reply/channel-*` | Message-to-agent runner, command handling, streaming, channel shaping                           | Runner, commands, streaming, queue, export, exec, and channel-shaping leaves                      |
+| Gateway server and protocol  | `src/gateway/server/`, `src/gateway/protocol/`, `src/gateway/*.ts`                                                                                                                                | Gateway lifecycle, auth, protocol contracts, server startup, connection handling                | Server lifecycle and protocol groups                                                              |
+| Gateway server methods       | `src/gateway/server-methods/`                                                                                                                                                                     | API method handlers for agents, chat, config, nodes, browser, devices, skills, and system       | One handler domain per API leaf; check API impact before behavior or response-shape changes       |
+| Channel plugin bridge        | `src/channels/plugins/`, `src/channels/allowlists/`, `src/channels/transport/`, `src/channels/web/`                                                                                               | Core channel abstractions, plugin channel binding, allowlists, transport helpers                | Binding, actions, contracts, outbound, status, allowlist, and transport leaves                    |
+| Plugin runtime and contracts | `src/plugin-sdk/`, `src/plugins/runtime/`, `src/plugins/contracts/`, `src/plugins/test-helpers/`                                                                                                  | Public SDK subpaths, plugin loading, runtime adapters, metadata/contracts, test support         | One public SDK subpath or runtime adapter group per leaf                                          |
+| Outbound delivery            | `src/infra/outbound/`, `src/channels/plugins/outbound/`                                                                                                                                           | Delivery queue, routing, channel selection, send service, message actions                       | Delivery, routing, actions, identity, formatting, and plugin-outbound bridge leaves               |
+| Config, secrets, security    | `src/config/`, `src/config/sessions/`, `src/secrets/`, `src/security/`, `src/sessions/`                                                                                                           | Config IO, schema, sessions, credential resolution, path/security guards, runtime state helpers | Keep as lower-level support; avoid reverse dependencies on gateway, agents, or auto-reply details |
+| Capability modules           | `src/browser/`, `src/memory/`, `src/media/`, `src/media-understanding/`, `src/context-engine/`, `src/tts/`, `src/cron/`, `src/acp/`                                                               | Browser bridge, memory, media, context assembly, TTS, scheduled jobs, ACP integration           | Split by capability entrypoint, protocol, manager, route, or persistent binding                   |
+
 ## Plugin module tree
 
 ```text
@@ -184,6 +271,14 @@ Plugin architecture rule:
 extensions/*
   -> openclaw/plugin-sdk/*
   -> local files inside the same extension package
+```
+
+Forbidden production-code directions:
+
+```text
+extensions/<id> -> src/** direct relative import
+extensions/<id> -> another extension's src/**
+extensions/<id>/dependencies -> workspace:* runtime deps
 ```
 
 Avoid treating `extensions/*` as core internals. Extensions are packages, even when bundled in this repository.
@@ -352,6 +447,24 @@ src/agents/tools/
 src/gateway/server-methods/browser.ts
 ```
 
+### Outbound delivery flow
+
+```text
+agent/reply output
+-> outbound policy and channel selection
+-> delivery queue / send service
+-> channel adapter / plugin action
+-> external messaging surface
+```
+
+Primary ownership paths:
+
+```text
+src/infra/outbound/
+src/channels/plugins/outbound/
+extensions/*/src/send*
+```
+
 ## Hotspot map
 
 GitNexus and directory inspection point to these high-attention areas:
@@ -364,6 +477,7 @@ GitNexus and directory inspection point to these high-attention areas:
 | `src/infra/outbound/`         | Cross-channel delivery and action pipeline                                                     | Treat delivery, routing, actions, identity, and formatting as logical leaves                         |
 | `src/channels/plugins/`       | Shared channel plugin contracts, binding, status, actions                                      | Treat as the bridge between core channel abstractions and extensions                                 |
 | `src/plugins/runtime/`        | Plugin loading and runtime contracts                                                           | Treat as a published/internal boundary with build and SDK drift risk                                 |
+| `src/plugin-sdk/`             | Extension-facing public API surface                                                            | Treat as a published/API drift risk surface; run SDK API checks after public surface changes         |
 | `extensions/*`                | Package-level plugin ecosystem                                                                 | Treat each extension as a package/leaf; evaluate by plugin type and runtime deps                     |
 | `apps/*` and `ui/`            | User-facing control surfaces                                                                   | Keep provider/channel/status lists aligned with core capabilities                                    |
 
@@ -420,7 +534,7 @@ Main limitations:
 
 This plan improves architecture clarity without moving source files.
 
-1. Maintain this atlas as the canonical read-only architecture overview.
+1. Maintain this atlas as the canonical read-only architecture overview and the sole architecture entry point.
 2. Keep `.planning/impact-map/MODULE-INDEX.md` as the top-level ownership index.
 3. Add or refine leaf indexes for hot areas, especially:
    - `src/agents/`

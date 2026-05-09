@@ -1,6 +1,6 @@
 # xiaomi Provider Plugin
 
-Coverage: `partial`
+Coverage: `deep-partial`
 Freshness: 2026-05-07 repo-native structural inspection only
 
 ## Scope
