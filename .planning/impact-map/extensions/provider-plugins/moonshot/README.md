@@ -1,0 +1,50 @@
+# moonshot Provider Plugin
+
+Coverage: `deep-partial`
+Freshness: 2026-05-07 repo-native structural inspection only
+
+## Scope
+
+Leaf module for provider plugin `extensions/moonshot` with provider id(s) `moonshot`.
+
+## Leaf status
+
+This is a leaf module in the impact-map taxonomy: split further only when a single file path inside this leaf develops an independently testable ownership boundary.
+
+## Detail files
+
+- `file-roles.md`: concrete file/path ownership and likely impact radius.
+- `code-paths.md`: behavior paths to trace before changing code.
+- `change-to-test.md`: smallest validation ladder for common changes.
+<!-- version-diff-refresh:v2026.4.24:start -->
+
+## v2026.4.24 semantic refresh
+
+- Transition: `v2026.3.28 -> v2026.4.24`.
+- Feature group: `model-provider-plugins`.
+- Risk: `high`.
+- Compatibility: `behavior-change`.
+- Changed paths in this leaf: `21` (删除 4，新增 8，修改 9).
+- Target-existing changed paths listed here: `17`.
+- Deleted or renamed-away paths are intentionally not repeated in active impact-map: `4`; see `.planning/version-diff/v2026.3.28...v2026.4.24/deleted-paths.txt` and `obsolete-impact-map-references.json`.
+- Coverage source: active target-version impact-map plus `.planning/version-diff/v2026.3.28...v2026.4.24/leaf-impact.json`.
+
+Representative target-version paths:
+
+- `extensions/moonshot/index.test.ts`
+- `extensions/moonshot/index.ts`
+- `extensions/moonshot/media-understanding-provider.test.ts`
+- `extensions/moonshot/media-understanding-provider.ts`
+- `extensions/moonshot/moonshot.live.test.ts`
+- `extensions/moonshot/openclaw.plugin.json`
+- `extensions/moonshot/package.json`
+- `extensions/moonshot/provider-catalog.test.ts`
+- `extensions/moonshot/provider-catalog.ts`
+- `extensions/moonshot/provider-contract-api.ts`
+- `extensions/moonshot/provider-discovery.ts`
+- `extensions/moonshot/src/kimi-web-search-provider.runtime.ts`
+- `... 另有 5 个目标版本仍存在路径，完整列表见 `.planning/version-diff/v2026.3.28...v2026.4.24/leaf-impact.json`。`
+
+Refresh note: generated from target-version diff facts after GitNexus and code-review-graph target-source refresh. Active impact-map intentionally avoids exact references to target-deleted source paths.
+
+<!-- version-diff-refresh:v2026.4.24:end -->

@@ -1,0 +1,34 @@
+== startup-daemon-only ==
+src/daemon/cmd-argv.test.ts
+src/daemon/constants.test.ts
+src/daemon/inspect.test.ts
+src/daemon/launchd-restart-handoff.test.ts
+src/daemon/launchd.integration.e2e.test.ts
+src/daemon/launchd.test.ts
+src/daemon/program-args.test.ts
+src/daemon/runtime-binary.test.ts
+src/daemon/runtime-hints.test.ts
+src/daemon/runtime-hints.windows-paths.test.ts
+src/daemon/runtime-paths.test.ts
+src/daemon/schtasks-exec.test.ts
+src/daemon/schtasks.install.test.ts
+src/daemon/schtasks.startup-fallback.test.ts
+src/daemon/schtasks.stop.test.ts
+src/daemon/schtasks.test.ts
+src/daemon/service-audit.test.ts
+src/daemon/service-env.test.ts
+src/daemon/service.test.ts
+src/daemon/systemd-hints.test.ts
+src/daemon/systemd-unavailable.test.ts
+src/daemon/systemd-unit.test.ts
+src/daemon/systemd.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=22
+[test-parallel] start e2e workers=2 filters=1
+[test-parallel] done e2e code=0 elapsed=9.2s
+[test-parallel] failure artifacts unit log=/tmp/openclaw-test-parallel-jmBULf/unit-1778267219724.log meta=/tmp/openclaw-test-parallel-jmBULf/unit-1778267219724-failure.json
+[test-parallel] done unit code=1 elapsed=15.1s
+ ELIFECYCLE  Test failed. See above for more details.
+--- exit=1 duration=16s ---

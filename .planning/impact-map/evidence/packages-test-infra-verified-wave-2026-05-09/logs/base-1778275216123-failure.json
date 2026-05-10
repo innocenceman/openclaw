@@ -1,0 +1,22 @@
+{
+  "entry": "base",
+  "command": [
+    "pnpm",
+    "vitest",
+    "run",
+    "--config",
+    "vitest.config.ts",
+    "--isolate=false",
+    "src/commands/agent.test.ts",
+    "--maxWorkers",
+    "2",
+    "--silent=passed-only"
+  ],
+  "elapsedMs": 138159,
+  "error": null,
+  "exitCode": 1,
+  "fatalSeen": false,
+  "logPath": "/tmp/openclaw-test-parallel-IZDEgu/base-1778275216123.log",
+  "outputTail": "",
+  "signal": null
+}

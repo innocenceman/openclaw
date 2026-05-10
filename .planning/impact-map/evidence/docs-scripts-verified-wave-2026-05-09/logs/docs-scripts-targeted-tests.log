@@ -1,0 +1,10 @@
+=== docs-scripts-targeted-tests ===
+pnpm test -- src/scripts/docs-link-audit.test.ts src/config/doc-baseline.test.ts src/config/doc-baseline.integration.test.ts src/plugins/bundled-plugin-metadata.test.ts src/plugins/copy-bundled-plugin-metadata.test.ts test/scripts/stage-bundled-plugin-runtime-deps.test.ts test/release-check.test.ts test/openclaw-npm-release-check.test.ts
+start=2026-05-08T20:52:00Z
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=8
+[test-parallel] done unit code=0 elapsed=9.8s
+exit=0
+end=2026-05-08T20:52:11Z

@@ -1,0 +1,49 @@
+# kimi-coding Provider Plugin
+
+Coverage: `deep-partial`
+Freshness: 2026-05-07 repo-native structural inspection only
+
+## Scope
+
+Leaf module for provider plugin `extensions/kimi-coding` with provider id(s) `kimi`, `kimi-coding`.
+
+## Leaf status
+
+This is a leaf module in the impact-map taxonomy: split further only when a single file path inside this leaf develops an independently testable ownership boundary.
+
+## Detail files
+
+- `file-roles.md`: concrete file/path ownership and likely impact radius.
+- `code-paths.md`: behavior paths to trace before changing code.
+- `change-to-test.md`: smallest validation ladder for common changes.
+<!-- version-diff-refresh:v2026.4.24:start -->
+
+## v2026.4.24 semantic refresh
+
+- Transition: `v2026.3.28 -> v2026.4.24`.
+- Feature group: `model-provider-plugins`.
+- Risk: `high`.
+- Compatibility: `behavior-change`.
+- Changed paths in this leaf: `12` (新增 9，修改 3).
+- Target-existing changed paths listed here: `12`.
+- Deleted or renamed-away paths are intentionally not repeated in active impact-map: `0`; see `.planning/version-diff/v2026.3.28...v2026.4.24/deleted-paths.txt` and `obsolete-impact-map-references.json`.
+- Coverage source: active target-version impact-map plus `.planning/version-diff/v2026.3.28...v2026.4.24/leaf-impact.json`.
+
+Representative target-version paths:
+
+- `extensions/kimi-coding/implicit-provider.test.ts`
+- `extensions/kimi-coding/index.test.ts`
+- `extensions/kimi-coding/index.ts`
+- `extensions/kimi-coding/onboard.test.ts`
+- `extensions/kimi-coding/openclaw.plugin.json`
+- `extensions/kimi-coding/package.json`
+- `extensions/kimi-coding/provider-catalog.test.ts`
+- `extensions/kimi-coding/replay-policy.test.ts`
+- `extensions/kimi-coding/replay-policy.ts`
+- `extensions/kimi-coding/stream.test.ts`
+- `extensions/kimi-coding/stream.ts`
+- `extensions/kimi-coding/tsconfig.json`
+
+Refresh note: generated from target-version diff facts after GitNexus and code-review-graph target-source refresh. Active impact-map intentionally avoids exact references to target-deleted source paths.
+
+<!-- version-diff-refresh:v2026.4.24:end -->

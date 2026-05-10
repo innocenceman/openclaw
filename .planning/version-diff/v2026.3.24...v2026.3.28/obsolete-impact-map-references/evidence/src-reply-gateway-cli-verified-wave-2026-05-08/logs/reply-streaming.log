@@ -1,0 +1,11 @@
+### reply-streaming
+pnpm test -- src/auto-reply/heartbeat.test.ts src/auto-reply/reply/block-streaming.test.ts src/auto-reply/reply.heartbeat-typing.test.ts src/auto-reply/reply.raw-body.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/auto-reply/heartbeat.test.ts src/auto-reply/reply/block-streaming.test.ts src/auto-reply/reply.heartbeat-typing.test.ts src/auto-reply/reply.raw-body.test.ts
+
+[test-parallel] start base workers=2 filters=4
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-3MHxRy/base-1778261045053.log meta=/tmp/openclaw-test-parallel-3MHxRy/base-1778261045053-failure.json
+[test-parallel] done base code=1 elapsed=8.1s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1

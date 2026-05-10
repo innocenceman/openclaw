@@ -1,0 +1,9 @@
+$ bash -lc uname -a; command -v xcodebuild || true; command -v xcrun || true; command -v adb || true; adb devices 2>&1 || true; xcrun xctrace list devices 2>&1 || true; swift --version 2>&1 || true
+started_at=2026-05-08T20:32:40Z
+Linux yanx 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+bash: line 1: adb: command not found
+bash: line 1: xcrun: command not found
+bash: line 1: swift: command not found
+finished_at=2026-05-08T20:32:40Z
+exit_code=0
+duration_seconds=0

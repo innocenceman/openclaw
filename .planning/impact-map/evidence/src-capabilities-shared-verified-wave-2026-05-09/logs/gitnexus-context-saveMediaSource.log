@@ -1,0 +1,95 @@
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Function:src/media/store.ts:saveMediaSource",
+    "name": "saveMediaSource",
+    "kind": "Function",
+    "filePath": "src/media/store.ts",
+    "startLine": 344,
+    "endLine": 384
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "File:src/media/store.test.ts",
+        "name": "store.test.ts",
+        "filePath": "src/media/store.test.ts"
+      },
+      {
+        "uid": "File:src/media/store.test.ts",
+        "name": "store.test.ts",
+        "filePath": "src/media/store.test.ts"
+      },
+      {
+        "uid": "File:src/media/store.redirect.test.ts",
+        "name": "store.redirect.test.ts",
+        "filePath": "src/media/store.redirect.test.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "calls": [
+      {
+        "uid": "Function:src/media/store.ts:resolveMediaDir",
+        "name": "resolveMediaDir",
+        "filePath": "src/media/store.ts"
+      },
+      {
+        "uid": "Function:src/media/store.ts:retryAfterRecreatingDir",
+        "name": "retryAfterRecreatingDir",
+        "filePath": "src/media/store.ts"
+      },
+      {
+        "uid": "Function:src/media/store.ts:cleanOldMedia",
+        "name": "cleanOldMedia",
+        "filePath": "src/media/store.ts"
+      },
+      {
+        "uid": "Function:src/media/store.ts:looksLikeUrl",
+        "name": "looksLikeUrl",
+        "filePath": "src/media/store.ts"
+      },
+      {
+        "uid": "Function:src/media/store.ts:downloadToFile",
+        "name": "downloadToFile",
+        "filePath": "src/media/store.ts"
+      },
+      {
+        "uid": "Function:src/media/store.ts:buildSavedMediaId",
+        "name": "buildSavedMediaId",
+        "filePath": "src/media/store.ts"
+      },
+      {
+        "uid": "Function:src/media/store.ts:buildSavedMediaResult",
+        "name": "buildSavedMediaResult",
+        "filePath": "src/media/store.ts"
+      },
+      {
+        "uid": "Function:src/media/store.ts:writeSavedMediaBuffer",
+        "name": "writeSavedMediaBuffer",
+        "filePath": "src/media/store.ts"
+      },
+      {
+        "uid": "Function:src/media/store.ts:toSaveMediaSourceError",
+        "name": "toSaveMediaSourceError",
+        "filePath": "src/media/store.ts"
+      },
+      {
+        "uid": "Function:src/media/mime.ts:detectMime",
+        "name": "detectMime",
+        "filePath": "src/media/mime.ts"
+      },
+      {
+        "uid": "Function:src/media/mime.ts:extensionForMime",
+        "name": "extensionForMime",
+        "filePath": "src/media/mime.ts"
+      },
+      {
+        "uid": "Function:src/infra/fs-safe.ts:readLocalFileSafely",
+        "name": "readLocalFileSafely",
+        "filePath": "src/infra/fs-safe.ts"
+      }
+    ]
+  },
+  "processes": []
+}

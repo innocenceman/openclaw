@@ -1,0 +1,9 @@
+# timeout 90s pnpm test -- extensions/memory-core/index.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/memory-core/index.test.ts
+
+[test-parallel] start extensions workers=4 filters=1
+[test-parallel] done extensions code=0 elapsed=5.7s
+
+[exit:0]

@@ -1,0 +1,9 @@
+$ pnpm exec oxfmt --check .planning/impact-map/apps .planning/impact-map/ui .planning/impact-map/evidence/apps-ui-verified-wave-2026-05-09/APP-UI-VERIFIED-WAVE.md .planning/impact-map/MODULE-INDEX.md .planning/impact-map/COVERAGE-ROADMAP.md .planning/STATE.md
+started_at=2026-05-08T20:39:33Z
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 838ms on 67 files using 4 threads.
+finished_at=2026-05-08T20:39:35Z
+exit_code=0
+duration_seconds=2

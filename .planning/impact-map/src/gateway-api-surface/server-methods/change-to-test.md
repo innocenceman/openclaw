@@ -1,0 +1,24 @@
+# Server Methods Change-to-Test
+
+Coverage: `exceptioned-deep-partial`
+Freshness: 2026-05-08 P0 refresh-to-verified evidence recorded
+
+| Change scope      | First validation                                                                                                                                                                                                      | Escalation trigger                                                                                                                  | Notes                    |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| `server-methods/` | pnpm test -- src/gateway/server-methods/server-methods.test.ts src/gateway/server-methods/agent.test.ts src/gateway/server-methods/agents-mutate.test.ts src/gateway/server-methods/browser.profile-from-body.test.ts | Use GitNexus api_impact before code changes to specific handlers; escalate to pnpm test:gateway when shared method routing changes. | Priority completion unit |
+
+## Validation evidence
+
+Use recorded evidence from the parent module ledger unless this leaf has fresher local validation output.
+
+<!-- version-diff-refresh:v2026.4.24:start -->
+
+## v2026.4.24 refresh validation focus
+
+- Changed paths: `81` (修改 52，新增 29).
+- Target-existing path refs in active map: `81`; deleted/renamed-away refs kept only in transition artifacts: `0`.
+- Risk: `high`; compatibility: `behavior-change`.
+- First validation move: Run the closest targeted tests for this leaf before any broad suite, then add integration or contract coverage for the owning boundary.
+- Version-diff validation must keep active `.planning/impact-map` free of exact target-deleted path references.
+
+<!-- version-diff-refresh:v2026.4.24:end -->

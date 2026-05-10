@@ -1,0 +1,8 @@
+=== plugin-runtime-adapters ===
+pnpm test -- src/plugins/runtime.channel-pin.test.ts src/plugins/runtime/gateway-request-scope.test.ts src/plugins/provider-runtime.test.ts src/plugins/services.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=8.6s
+--- exit=0 duration=10s ---

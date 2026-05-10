@@ -1,0 +1,24 @@
+=== planning-oxfmt-check ===
+pnpm exec oxfmt --check .planning/impact-map/docs/generated-baselines/README.md .planning/impact-map/docs/generated-baselines/change-to-test.md .planning/impact-map/docs/generated-baselines/code-paths.md .planning/impact-map/docs/generated-baselines/file-roles.md .planning/impact-map/docs/generated-baselines/leaf-index.md .planning/impact-map/docs/mintlify/README.md .planning/impact-map/docs/mintlify/change-to-test.md .planning/impact-map/docs/mintlify/code-paths.md .planning/impact-map/docs/mintlify/file-roles.md .planning/impact-map/docs/mintlify/leaf-index.md .planning/impact-map/docs/provider-channel-settings-docs-sync/README.md .planning/impact-map/docs/provider-channel-settings-docs-sync/change-to-test.md .planning/impact-map/docs/provider-channel-settings-docs-sync/code-paths.md .planning/impact-map/docs/provider-channel-settings-docs-sync/file-roles.md .planning/impact-map/scripts/packaging/README.md .planning/impact-map/scripts/packaging/change-to-test.md .planning/impact-map/scripts/packaging/code-paths.md .planning/impact-map/scripts/packaging/file-roles.md .planning/impact-map/scripts/packaging/leaf-index.md .planning/impact-map/scripts/release-versioning/README.md .planning/impact-map/scripts/release-versioning/change-to-test.md .planning/impact-map/scripts/release-versioning/code-paths.md .planning/impact-map/scripts/release-versioning/file-roles.md .planning/impact-map/scripts/release-versioning/leaf-index.md .planning/impact-map/MODULE-INDEX.md .planning/impact-map/COVERAGE-ROADMAP.md .planning/STATE.md .planning/impact-map/evidence/docs-scripts-verified-wave-2026-05-09/logs/gitnexus-evidence.md
+start=2026-05-08T21:02:20Z
+Checking formatting...
+
+.planning/STATE.md (283ms)
+.planning/impact-map/COVERAGE-ROADMAP.md (348ms)
+.planning/impact-map/MODULE-INDEX.md (205ms)
+.planning/impact-map/docs/generated-baselines/file-roles.md (18ms)
+.planning/impact-map/docs/generated-baselines/leaf-index.md (22ms)
+.planning/impact-map/docs/mintlify/README.md (31ms)
+.planning/impact-map/docs/mintlify/file-roles.md (13ms)
+.planning/impact-map/docs/mintlify/leaf-index.md (12ms)
+.planning/impact-map/docs/provider-channel-settings-docs-sync/file-roles.md (19ms)
+.planning/impact-map/evidence/docs-scripts-verified-wave-2026-05-09/logs/gitnexus-evidence.md (67ms)
+.planning/impact-map/scripts/packaging/file-roles.md (23ms)
+.planning/impact-map/scripts/packaging/leaf-index.md (6ms)
+.planning/impact-map/scripts/release-versioning/file-roles.md (28ms)
+.planning/impact-map/scripts/release-versioning/leaf-index.md (1ms)
+
+Format issues found in above 14 files. Run without `--check` to fix.
+Finished in 445ms on 28 files using 4 threads.
+exit=1
+end=2026-05-08T21:02:22Z

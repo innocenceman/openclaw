@@ -1,0 +1,7 @@
+### markdownlint local fallback
+pnpm exec markdownlint-cli2 target docs
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command "markdownlint-cli2" not found
+
+Did you mean "pnpm exec markdown-it"?
+EXIT_CODE=254

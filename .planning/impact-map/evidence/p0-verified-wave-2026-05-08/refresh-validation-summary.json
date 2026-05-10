@@ -1,0 +1,37 @@
+[
+  {
+    "name": "test-infra-mocks",
+    "started": "2026-05-08T07:16:35.780Z",
+    "ended": "2026-05-08T07:20:57.976Z",
+    "exitCode": 1,
+    "timedOut": false,
+    "log": "logs/refresh-test-infra-mocks.log"
+  },
+  {
+    "name": "src-gateway-methods",
+    "command": "pnpm test -- src/gateway/server-methods/server-methods.test.ts src/gateway/server-methods/agent.test.ts src/gateway/server-methods/agents-mutate.test.ts src/gateway/server-methods/browser.profile-from-body.test.ts",
+    "started": "2026-05-08T07:20:57.976Z",
+    "ended": "2026-05-08T07:21:13.627Z",
+    "exitCode": 1,
+    "timedOut": false,
+    "log": "logs/refresh-src-gateway-methods.log"
+  },
+  {
+    "name": "plugin-sdk-api-check",
+    "command": "pnpm plugin-sdk:api:check",
+    "started": "2026-05-08T07:21:13.629Z",
+    "ended": "2026-05-08T07:22:10.353Z",
+    "exitCode": 134,
+    "timedOut": false,
+    "log": "logs/refresh-plugin-sdk-api-check.log"
+  },
+  {
+    "name": "src-cli-commands",
+    "command": "pnpm test -- src/commands/agent.test.ts src/commands/channels.status.command-flow.test.ts src/commands/doctor-config-flow.test.ts src/commands/configure.gateway.test.ts",
+    "started": "2026-05-08T07:22:10.354Z",
+    "ended": "2026-05-08T07:25:54.113Z",
+    "exitCode": 1,
+    "timedOut": false,
+    "log": "logs/refresh-src-cli-commands.log"
+  }
+]

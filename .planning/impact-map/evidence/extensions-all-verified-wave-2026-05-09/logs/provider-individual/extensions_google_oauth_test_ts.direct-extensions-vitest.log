@@ -1,0 +1,24 @@
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+(node:96) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ ❯ extensions/google/oauth.test.ts (8 tests | 2 failed) 31ms
+     × falls back across loadCodeAssist endpoints with aligned headers and metadata 18ms
+     × falls back to GOOGLE_CLOUD_PROJECT when all loadCodeAssist endpoints fail 2ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  extensions/google/oauth.test.ts > loginGeminiCliOAuth > falls back across loadCodeAssist endpoints with aligned headers and metadata
+ FAIL  extensions/google/oauth.test.ts > loginGeminiCliOAuth > falls back to GOOGLE_CLOUD_PROJECT when all loadCodeAssist endpoints fail
+Error: getaddrinfo EAI_AGAIN oauth2.googleapis.com
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 6 passed (8)
+   Start at  03:59:00
+   Duration  4.78s (transform 2.08s, setup 4.63s, import 5ms, tests 31ms, environment 0ms)
+
+
+[exit:1]

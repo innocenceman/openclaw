@@ -1,0 +1,186 @@
+$ npx gitnexus query "ui app render settings gateway web channel provider config" --repo openclaw
+[gitnexus] FTS index ensure failed for repo "openclaw" table "File" (index "file_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+[gitnexus] FTS index ensure failed for repo "openclaw" table "Function" (index "function_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+[gitnexus] FTS index ensure failed for repo "openclaw" table "Class" (index "class_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+[gitnexus] FTS index ensure failed for repo "openclaw" table "Method" (index "method_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+[gitnexus] FTS index ensure failed for repo "openclaw" table "Interface" (index "interface_fts"): Connection exception: Cannot execute write operations in a read-only database!. Will retry on next query.
+GitNexus [query:timing] query="ui app render settings gateway web channel provider config" totalMs=108.9 phases={"vector":14,"bm25":108.5,"merge":0,"symbol_lookup":0,"ranking":0,"formatting":0,"wall":108.9}
+{
+  "processes": [],
+  "process_symbols": [],
+  "definitions": [],
+  "timing": {
+    "vector": 14,
+    "bm25": 108.5,
+    "merge": 0,
+    "symbol_lookup": 0,
+    "ranking": 0,
+    "formatting": 0,
+    "wall": 108.9
+  }
+}
+
+$ npx gitnexus context handleChannelConfigSave --repo openclaw
+{
+  "status": "ambiguous",
+  "message": "Found 2 symbols matching 'handleChannelConfigSave'. Use uid, file_path, or kind to disambiguate.",
+  "candidates": [
+    {
+      "uid": "Function:ui/src/ui/app-channels.ts:handleChannelConfigSave",
+      "name": "handleChannelConfigSave",
+      "kind": "Function",
+      "filePath": "ui/src/ui/app-channels.ts",
+      "line": 26,
+      "score": 0.56
+    },
+    {
+      "uid": "Method:ui/src/ui/app.ts:OpenClawApp.handleChannelConfigSave#0",
+      "name": "handleChannelConfigSave",
+      "kind": "Method",
+      "filePath": "ui/src/ui/app.ts",
+      "line": 652,
+      "score": 0.54
+    }
+  ]
+}
+
+$ npx gitnexus impact connectGateway --repo openclaw --direction upstream --depth 2 --include-tests
+{
+  "target": {
+    "id": "Function:ui/src/ui/app-gateway.ts:connectGateway",
+    "name": "connectGateway",
+    "type": "Function",
+    "filePath": "ui/src/ui/app-gateway.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 6,
+  "risk": "LOW",
+  "summary": {
+    "direct": 3,
+    "processes_affected": 1,
+    "modules_affected": 2
+  },
+  "affected_processes": [
+    {
+      "name": "renderApp",
+      "type": "Function",
+      "filePath": "ui/src/ui/app-render.ts",
+      "affected_process_count": 8,
+      "total_hits": 11,
+      "earliest_broken_step": 3
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Ui",
+      "hits": 3,
+      "impact": "direct"
+    },
+    {
+      "name": "Chat",
+      "hits": 1,
+      "impact": "indirect"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "File:ui/src/ui/app-gateway.node.test.ts",
+        "name": "app-gateway.node.test.ts",
+        "filePath": "ui/src/ui/app-gateway.node.test.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Method:ui/src/ui/app.ts:OpenClawApp.connect#0",
+        "name": "connect",
+        "filePath": "ui/src/ui/app.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:ui/src/ui/app-lifecycle.ts:handleConnected",
+        "name": "handleConnected",
+        "filePath": "ui/src/ui/app-lifecycle.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "File:ui/src/ui/app-lifecycle-connect.node.test.ts",
+        "name": "app-lifecycle-connect.node.test.ts",
+        "filePath": "ui/src/ui/app-lifecycle-connect.node.test.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "Method:ui/src/ui/app.ts:OpenClawApp.connectedCallback#0",
+        "name": "connectedCallback",
+        "filePath": "ui/src/ui/app.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "Method:ui/src/ui/app.ts:OpenClawApp.handleGatewayUrlConfirm#0",
+        "name": "handleGatewayUrlConfirm",
+        "filePath": "ui/src/ui/app.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      }
+    ]
+  }
+}
+
+$ npx gitnexus cypher apps/ui files summary
+{
+  "markdown": "| prefix | files |\n| --- | --- |\n|  | 428 |",
+  "row_count": 1
+}
+$ npx gitnexus context --uid Function:ui/src/ui/app-channels.ts:handleChannelConfigSave --repo openclaw
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Function:ui/src/ui/app-channels.ts:handleChannelConfigSave",
+    "name": "handleChannelConfigSave",
+    "kind": "Function",
+    "filePath": "ui/src/ui/app-channels.ts",
+    "startLine": 26,
+    "endLine": 30
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "Method:ui/src/ui/app.ts:OpenClawApp.handleChannelConfigSave#0",
+        "name": "handleChannelConfigSave",
+        "filePath": "ui/src/ui/app.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "calls": [
+      {
+        "uid": "Function:ui/src/ui/controllers/config.ts:loadConfig",
+        "name": "loadConfig",
+        "filePath": "ui/src/ui/controllers/config.ts"
+      },
+      {
+        "uid": "Function:ui/src/ui/controllers/config.ts:saveConfig",
+        "name": "saveConfig",
+        "filePath": "ui/src/ui/controllers/config.ts"
+      },
+      {
+        "uid": "Function:ui/src/ui/controllers/channels.ts:loadChannels",
+        "name": "loadChannels",
+        "filePath": "ui/src/ui/controllers/channels.ts"
+      }
+    ]
+  },
+  "processes": []
+}

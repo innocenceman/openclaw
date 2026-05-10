@@ -1,0 +1,11 @@
+=== channel-plugin-bridge ===
+pnpm test -- src/channels/plugins/contracts/registry.contract.test.ts src/channels/plugins/contracts/inbound.contract.test.ts src/channels/plugins/contracts/outbound-payload.contract.test.ts src/channels/plugins/plugins-core.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/channels/plugins/contracts/registry.contract.test.ts src/channels/plugins/contracts/inbound.contract.test.ts src/channels/plugins/contracts/outbound-payload.contract.test.ts src/channels/plugins/plugins-core.test.ts
+
+[test-parallel] start unit workers=2 filters=3
+[test-parallel] done unit code=0 elapsed=9.1s
+[test-parallel] start unit-plugins-core-isolated workers=1 filters=1
+[test-parallel] done unit-plugins-core-isolated code=0 elapsed=6.9s
+--- exit=0 duration=17s ---

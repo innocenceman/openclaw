@@ -1,0 +1,6 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/sandbox/workspace.test.ts src/agents/sandbox/workspace-mounts.test.ts src/agents/sandbox/browser.create.test.ts src/agents/sandbox/browser.novnc-url.test.ts src/agents/sandbox/ssh.test.ts src/agents/sandbox/ssh-backend.test.ts src/agents/sandbox/docker.execDockerRaw.enoent.test.ts src/agents/sandbox/docker.windows.test.ts
+
+[test-parallel] start base workers=2 filters=8
+[test-parallel] done base code=0 elapsed=7.7s

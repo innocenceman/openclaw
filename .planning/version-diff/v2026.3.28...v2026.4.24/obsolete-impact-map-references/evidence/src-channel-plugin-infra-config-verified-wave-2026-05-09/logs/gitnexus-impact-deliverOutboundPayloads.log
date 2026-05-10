@@ -1,0 +1,36 @@
+{
+  "status": "ambiguous",
+  "message": "Found 3 symbols matching 'deliverOutboundPayloads'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "deliverOutboundPayloads"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/infra/outbound/deliver.ts:deliverOutboundPayloads",
+      "name": "deliverOutboundPayloads",
+      "kind": "Function",
+      "filePath": "src/infra/outbound/deliver.ts",
+      "line": 490,
+      "score": 0.56
+    },
+    {
+      "uid": "Const:src/infra/outbound/deliver.test.ts:deliverOutboundPayloads",
+      "name": "deliverOutboundPayloads",
+      "kind": "",
+      "filePath": "src/infra/outbound/deliver.test.ts",
+      "line": 90,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/infra/outbound/deliver.lifecycle.test.ts:deliverOutboundPayloads",
+      "name": "deliverOutboundPayloads",
+      "kind": "",
+      "filePath": "src/infra/outbound/deliver.lifecycle.test.ts",
+      "line": 19,
+      "score": 0.5
+    }
+  ]
+}

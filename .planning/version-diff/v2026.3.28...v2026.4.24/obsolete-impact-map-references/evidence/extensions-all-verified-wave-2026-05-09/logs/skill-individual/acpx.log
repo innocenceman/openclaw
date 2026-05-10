@@ -1,0 +1,11 @@
+# timeout 180s pnpm test -- extensions/acpx/src/config.test.ts extensions/acpx/src/ensure.test.ts extensions/acpx/src/runtime-internals/control-errors.test.ts extensions/acpx/src/runtime-internals/events.test.ts extensions/acpx/src/runtime-internals/jsonrpc.test.ts extensions/acpx/src/runtime-internals/mcp-agent-command.test.ts extensions/acpx/src/runtime-internals/mcp-proxy.test.ts extensions/acpx/src/runtime-internals/process.test.ts extensions/acpx/src/runtime.test.ts extensions/acpx/src/service.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/acpx/src/config.test.ts extensions/acpx/src/ensure.test.ts extensions/acpx/src/runtime-internals/control-errors.test.ts extensions/acpx/src/runtime-internals/events.test.ts extensions/acpx/src/runtime-internals/jsonrpc.test.ts extensions/acpx/src/runtime-internals/mcp-agent-command.test.ts extensions/acpx/src/runtime-internals/mcp-proxy.test.ts extensions/acpx/src/runtime-internals/process.test.ts extensions/acpx/src/runtime.test.ts extensions/acpx/src/service.test.ts
+
+[test-parallel] start extensions workers=4 filters=10
+[test-parallel] failure artifacts extensions log=/tmp/openclaw-test-parallel-hWiyKc/extensions-1778270666381.log meta=/tmp/openclaw-test-parallel-hWiyKc/extensions-1778270666381-failure.json
+[test-parallel] done extensions code=1 elapsed=11.4s
+ ELIFECYCLE  Test failed. See above for more details.
+
+[exit:1]

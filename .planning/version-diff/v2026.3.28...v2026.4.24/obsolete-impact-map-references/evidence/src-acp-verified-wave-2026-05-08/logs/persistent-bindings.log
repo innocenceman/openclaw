@@ -1,0 +1,17 @@
+===== persistent-bindings =====
+command: pnpm test -- src/acp/persistent-bindings.test.ts src/acp/persistent-bindings.lifecycle.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/acp/persistent-bindings.test.ts src/acp/persistent-bindings.lifecycle.test.ts
+
+[test-parallel] start unit workers=2 filters=2
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  2 passed (2)
+      Tests  30 passed (30)
+   Start at  22:33:37
+   Duration  7.61s (transform 5.57s, setup 14.01s, import 228ms, tests 641ms, environment 0ms)
+
+[test-parallel] done unit code=0 elapsed=8.6s

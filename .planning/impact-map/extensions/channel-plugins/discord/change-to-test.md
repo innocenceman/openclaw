@@ -1,0 +1,36 @@
+# Discord Channel Plugin Change-to-Test Matrix
+
+Coverage: `deep-partial`
+Freshness: 2026-05-07 repo-native structural inspection only
+
+No validation commands were run while creating this map.
+
+| Change type                                  | First validation                                                                                                                                                                                                                                         | Add when impact crosses boundary                                    |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Manifest/package/entry/runtime deps          | `pnpm test:contracts:channels` plus `pnpm test -- extensions/discord/src/channel.test.ts`                                                                                                                                                                | Runtime dependency staging/build if package deps or exports change. |
+| Account/token/setup/status/probe             | `pnpm test -- extensions/discord/src/accounts.test.ts extensions/discord/src/token.test.ts extensions/discord/src/setup-account-state.test.ts extensions/discord/src/status-issues.test.ts`                                                              | Probe/audit tests for intents/permissions/guild checks.             |
+| Client/API/retry/proxy                       | `pnpm test -- extensions/discord/src/client.test.ts extensions/discord/src/api.test.ts`                                                                                                                                                                  | Gateway/provider tests if transport lifecycle changes.              |
+| Gateway/provider lifecycle                   | `pnpm test -- extensions/discord/src/monitor.gateway.test.ts extensions/discord/src/monitor/provider.test.ts extensions/discord/src/monitor/provider.lifecycle.test.ts`                                                                                  | Live/mock gateway smoke for connection behavior.                    |
+| Inbound allowlist/commands/preflight/process | `pnpm test -- extensions/discord/src/monitor/message-handler.preflight.test.ts extensions/discord/src/monitor/message-handler.process.test.ts extensions/discord/src/monitor/commands.test.ts extensions/discord/src/monitor/provider.allowlist.test.ts` | Shared routing/command-gating tests when policy changes.            |
+| Inbound context/routing/thread binding       | `pnpm test -- extensions/discord/src/monitor/inbound-context.test.ts extensions/discord/src/monitor/route-resolution.test.ts extensions/discord/src/monitor/thread-bindings.lifecycle.test.ts`                                                           | Conversation/session tests if binding semantics change.             |
+| Reply delivery/outbound send                 | `pnpm test -- extensions/discord/src/outbound-adapter.test.ts extensions/discord/src/monitor/reply-delivery.test.ts extensions/discord/src/send.sends-basic-channel-messages.test.ts`                                                                    | Send permission/component/media tests for richer payloads.          |
+| Native commands/model picker/components      | `pnpm test -- extensions/discord/src/monitor/native-command*.test.ts extensions/discord/src/monitor/model-picker.test.ts extensions/discord/src/components.test.ts`                                                                                      | Security review if command auth/allowlist changes.                  |
+| Actions/moderation/presence                  | `pnpm test -- extensions/discord/src/actions/runtime.test.ts extensions/discord/src/actions/runtime.moderation.authz.test.ts extensions/discord/src/actions/runtime.presence.test.ts`                                                                    | Permission/authz review for destructive guild actions.              |
+| Streaming/chunking/format                    | `pnpm test -- extensions/discord/src/draft-stream.test.ts extensions/discord/src/draft-chunking.test.ts extensions/discord/src/chunk.test.ts`                                                                                                            | Reply delivery tests if final message semantics change.             |
+| Voice                                        | `pnpm test -- extensions/discord/src/voice/command.test.ts extensions/discord/src/voice/manager.e2e.test.ts`                                                                                                                                             | Real-device/gateway smoke only when explicitly requested.           |
+
+## Known validation gaps
+
+- This map is source-inspection based, not graph generated.
+- Test globs identify nearest anchors; inspect exact assertions before relying on coverage for a change.
+<!-- version-diff-refresh:v2026.4.24:start -->
+
+## v2026.4.24 refresh validation focus
+
+- Changed paths: `307` (新增 99，修改 197，删除 10，重命名/移动 1).
+- Target-existing path refs in active map: `297`; deleted/renamed-away refs kept only in transition artifacts: `10`.
+- Risk: `high`; compatibility: `behavior-change`.
+- First validation move: Run the closest targeted tests for this leaf before any broad suite, then add integration or contract coverage for the owning boundary.
+- Version-diff validation must keep active `.planning/impact-map` free of exact target-deleted path references.
+
+<!-- version-diff-refresh:v2026.4.24:end -->

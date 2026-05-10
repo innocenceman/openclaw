@@ -1,0 +1,8 @@
+=== config-sessions ===
+pnpm test -- src/config/sessions.cache.test.ts src/config/sessions.test.ts src/config/sessions/explicit-session-key-normalization.test.ts src/config/sessions/session-key.test.ts src/config/sessions/sessions.test.ts src/config/sessions/store.session-key-normalization.test.ts src/sessions/session-id.test.ts src/sessions/session-lifecycle-events.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=8
+[test-parallel] done unit code=0 elapsed=8.1s
+--- exit=0 duration=9s ---

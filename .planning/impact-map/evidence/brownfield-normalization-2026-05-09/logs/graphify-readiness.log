@@ -1,0 +1,4 @@
+$ command -v graphify
+graphify: unavailable (command -v graphify failed)
+
+Reason: graphify is not installed on PATH in this runtime. Also, `.planning/config.json` is absent, so graphify ownership/lifecycle is not established for this worktree.

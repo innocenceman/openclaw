@@ -1,0 +1,9 @@
+=== config-security ===
+pnpm test -- src/security/audit.test.ts src/security/fix.test.ts src/security/temp-path-guard.test.ts src/security/skill-scanner.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/security/audit.test.ts src/security/fix.test.ts src/security/temp-path-guard.test.ts src/security/skill-scanner.test.ts
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=9.6s
+--- exit=0 duration=11s ---

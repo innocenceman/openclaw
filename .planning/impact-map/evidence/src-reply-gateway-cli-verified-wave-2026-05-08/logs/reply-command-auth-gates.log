@@ -1,0 +1,8 @@
+### reply-command-auth-gates
+pnpm test -- src/auto-reply/command-auth.owner-default.test.ts src/auto-reply/command-control.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start base workers=2 filters=2
+[test-parallel] done base code=0 elapsed=6.5s
+EXIT_CODE=0

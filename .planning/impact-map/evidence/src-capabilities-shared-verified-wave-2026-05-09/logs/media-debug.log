@@ -1,0 +1,9 @@
+== media-debug ==
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=44
+[test-parallel] failure artifacts unit log=/tmp/openclaw-test-parallel-LNETVx/unit-1778266930999.log meta=/tmp/openclaw-test-parallel-LNETVx/unit-1778266930999-failure.json
+[test-parallel] done unit code=1 elapsed=24.1s
+ ELIFECYCLE  Test failed. See above for more details.
+--- exit=1 duration=26s ---

@@ -1,0 +1,6 @@
+[test-parallel] entry=base
+[test-parallel] cwd=/home/yanx/projects/openclaw/openclaw-v2026.3.24
+[test-parallel] command=pnpm vitest run --config vitest.config.ts --isolate=false src/commands/agent.test.ts --maxWorkers 2 --silent=passed-only
+
+
+[test-parallel] done base code=1 signal=none elapsed=138.2s

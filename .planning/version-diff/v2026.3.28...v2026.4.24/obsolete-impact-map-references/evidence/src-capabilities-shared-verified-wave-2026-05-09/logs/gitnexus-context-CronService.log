@@ -1,0 +1,197 @@
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Class:src/cron/service.ts:CronService",
+    "name": "CronService",
+    "kind": "Class",
+    "filePath": "src/cron/service.ts",
+    "startLine": 6,
+    "endLine": 59
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "Function:src/gateway/server-cron.ts:buildGatewayCronService",
+        "name": "buildGatewayCronService",
+        "filePath": "src/gateway/server-cron.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.test-harness.ts:createStartedCronServiceWithFinishedBarrier",
+        "name": "createStartedCronServiceWithFinishedBarrier",
+        "filePath": "src/cron/service.test-harness.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.test-harness.ts:withCronServiceForTest",
+        "name": "withCronServiceForTest",
+        "filePath": "src/cron/service.test-harness.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.store.migration.test.ts:migrateAndLoadFirstJob",
+        "name": "migrateAndLoadFirstJob",
+        "filePath": "src/cron/service.store.migration.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.store-migration.test.ts:createStartedCron",
+        "name": "createStartedCron",
+        "filePath": "src/cron/service.store-migration.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.runs-one-shot-main-job-disables-it.test.ts:createCronHarness",
+        "name": "createCronHarness",
+        "filePath": "src/cron/service.runs-one-shot-main-job-disables-it.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.runs-one-shot-main-job-disables-it.test.ts:createStartedCronService",
+        "name": "createStartedCronService",
+        "filePath": "src/cron/service.runs-one-shot-main-job-disables-it.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.restart-catchup.test.ts:createRestartCronService",
+        "name": "createRestartCronService",
+        "filePath": "src/cron/service.restart-catchup.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.persists-delivered-status.test.ts:createIsolatedCronWithFinishedBarrier",
+        "name": "createIsolatedCronWithFinishedBarrier",
+        "filePath": "src/cron/service.persists-delivered-status.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.main-job-passes-heartbeat-target-last.test.ts:createCronWithSpies",
+        "name": "createCronWithSpies",
+        "filePath": "src/cron/service.main-job-passes-heartbeat-target-last.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.issue-regressions.test-helpers.ts:startCronForStore",
+        "name": "startCronForStore",
+        "filePath": "src/cron/service.issue-regressions.test-helpers.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.issue-16156-list-skips-cron.test.ts:createCronFromStorePath",
+        "name": "createCronFromStorePath",
+        "filePath": "src/cron/service.issue-16156-list-skips-cron.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.heartbeat-ok-summary-suppressed.test.ts:createCronServiceForSummary",
+        "name": "createCronServiceForSummary",
+        "filePath": "src/cron/service.heartbeat-ok-summary-suppressed.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.get-job.test.ts:createCronService",
+        "name": "createCronService",
+        "filePath": "src/cron/service.get-job.test.ts"
+      },
+      {
+        "uid": "Function:src/cron/service.failure-alert.test.ts:createFailureAlertCron",
+        "name": "createFailureAlertCron",
+        "filePath": "src/cron/service.failure-alert.test.ts"
+      },
+      {
+        "uid": "File:src/cron/service.store-load-invalid-main-job.test.ts",
+        "name": "service.store-load-invalid-main-job.test.ts",
+        "filePath": "src/cron/service.store-load-invalid-main-job.test.ts"
+      },
+      {
+        "uid": "File:src/cron/service.read-ops-nonblocking.test.ts",
+        "name": "service.read-ops-nonblocking.test.ts",
+        "filePath": "src/cron/service.read-ops-nonblocking.test.ts"
+      },
+      {
+        "uid": "File:src/cron/service.prevents-duplicate-timers.test.ts",
+        "name": "service.prevents-duplicate-timers.test.ts",
+        "filePath": "src/cron/service.prevents-duplicate-timers.test.ts"
+      },
+      {
+        "uid": "File:src/cron/service.issue-regressions.test.ts",
+        "name": "service.issue-regressions.test.ts",
+        "filePath": "src/cron/service.issue-regressions.test.ts"
+      },
+      {
+        "uid": "File:src/cron/service.issue-35195-backup-timing.test.ts",
+        "name": "service.issue-35195-backup-timing.test.ts",
+        "filePath": "src/cron/service.issue-35195-backup-timing.test.ts"
+      },
+      {
+        "uid": "File:src/cron/service.every-jobs-fire.test.ts",
+        "name": "service.every-jobs-fire.test.ts",
+        "filePath": "src/cron/service.every-jobs-fire.test.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "has_method": [
+      {
+        "uid": "Method:src/cron/service.ts:CronService.constructor#1",
+        "name": "constructor",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.start#0",
+        "name": "start",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.stop#0",
+        "name": "stop",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.status#0",
+        "name": "status",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.list#1",
+        "name": "list",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.listPage#1",
+        "name": "listPage",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.add#1",
+        "name": "add",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.update#2",
+        "name": "update",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.remove#1",
+        "name": "remove",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.run#2",
+        "name": "run",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.enqueueRun#2",
+        "name": "enqueueRun",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.getJob#1",
+        "name": "getJob",
+        "filePath": "src/cron/service.ts"
+      },
+      {
+        "uid": "Method:src/cron/service.ts:CronService.wake#1",
+        "name": "wake",
+        "filePath": "src/cron/service.ts"
+      }
+    ],
+    "has_property": [
+      {
+        "uid": "Property:src/cron/service.ts:CronService.state",
+        "name": "state",
+        "filePath": "src/cron/service.ts"
+      }
+    ]
+  },
+  "processes": []
+}

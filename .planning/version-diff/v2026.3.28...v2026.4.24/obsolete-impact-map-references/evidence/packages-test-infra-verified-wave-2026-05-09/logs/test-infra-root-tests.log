@@ -1,0 +1,6 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/entry.test.ts src/dockerfile.test.ts src/docker-build-cache.test.ts src/docker-image-digests.test.ts
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=6.6s

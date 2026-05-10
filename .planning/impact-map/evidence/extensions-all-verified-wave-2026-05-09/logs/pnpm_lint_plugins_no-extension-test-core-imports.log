@@ -1,0 +1,8 @@
+# pnpm lint:plugins:no-extension-test-core-imports
+
+> openclaw@2026.3.24 lint:plugins:no-extension-test-core-imports /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node --import tsx scripts/check-no-extension-test-core-imports.ts
+
+OK: extension test files avoid direct core test/internal imports (684 checked).
+
+[exit:0]

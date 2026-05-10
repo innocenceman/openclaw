@@ -1,0 +1,23 @@
+# pnpm test:extensions
+
+> openclaw@2026.3.24 test:extensions /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start extensions workers=4 filters=all
+[test-parallel] done extensions code=0 elapsed=1795.1s
+[test-parallel] start extensions-sdk-isolated workers=1 filters=1
+[test-parallel] start extensions-file-sync-store-isolated workers=1 filters=1
+[test-parallel] start extensions-monitor.replay-isolated workers=1 filters=1
+[test-parallel] start extensions-ddg-search-provider-isolated workers=1 filters=1
+[test-parallel] done extensions-file-sync-store-isolated code=0 elapsed=17.7s
+[test-parallel] start extensions-download-isolated workers=1 filters=1
+[test-parallel] done extensions-ddg-search-provider-isolated code=0 elapsed=17.8s
+[test-parallel] start extensions-monitor.lifecycle-isolated workers=1 filters=1
+[test-parallel] done extensions-sdk-isolated code=0 elapsed=18.1s
+[test-parallel] start extensions-send-isolated workers=1 filters=1
+[test-parallel] done extensions-send-isolated code=0 elapsed=11.8s
+[test-parallel] done extensions-download-isolated code=0 elapsed=12.2s
+[test-parallel] done extensions-monitor.lifecycle-isolated code=0 elapsed=12.3s
+[test-parallel] failure artifacts extensions-monitor.replay-isolated log=/tmp/openclaw-test-parallel-ubMrbf/extensions-monitor.replay-isolated-1778270150394.log meta=/tmp/openclaw-test-parallel-ubMrbf/extensions-monitor.replay-isolated-1778270150394-failure.json
+[test-parallel] done extensions-monitor.replay-isolated code=1 elapsed=378.2s
+ ELIFECYCLE  Command failed with exit code 1.
+\n[exit:1]

@@ -1,0 +1,10 @@
+### gateway-auth-session
+pnpm test -- src/gateway/auth.test.ts src/gateway/auth-mode-policy.test.ts src/gateway/connection-auth.test.ts src/gateway/probe-auth.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start gateway workers=1 filters=4
+[test-parallel] failure artifacts gateway log=/tmp/openclaw-test-parallel-BVQmT4/gateway-1778261125779.log meta=/tmp/openclaw-test-parallel-BVQmT4/gateway-1778261125779-failure.json
+[test-parallel] done gateway code=1 elapsed=371.0s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1

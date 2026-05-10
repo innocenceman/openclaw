@@ -1,0 +1,18 @@
+# Package Runtime Dependencies Change-to-Test Matrix
+
+Coverage: `deep-partial`
+Freshness: 2026-05-08 repo-native inspection only
+
+| Change type                                                                               | First validation                                                                                                                                                        | Escalation trigger                                                                                              |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Extension runtime dependency added/removed/moved                                          | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts src/plugins/stage-bundled-plugin-runtime.test.ts`                                                  | Run `pnpm stage:bundled-plugin-runtime-deps` and targeted extension tests when production imports are affected. |
+| `workspace:*` or `openclaw` peer/dev dependency changed                                   | Re-run dependency scan and `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts`                                                                        | Release/package checks if install-on-demand or npm package behavior changes.                                    |
+| Bundled runtime staging script changed                                                    | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts src/plugins/stage-bundled-plugin-runtime.test.ts src/plugins/copy-bundled-plugin-metadata.test.ts` | `pnpm build` if build/package contents change.                                                                  |
+| Plugin-local fallback installer changed (for example `memory-lancedb/lancedb-runtime.ts`) | `pnpm test -- extensions/memory-lancedb/index.test.ts src/plugins/bundled-runtime-deps.test.ts`                                                                         | `pnpm build` if runtime entry/lazy-load behavior changes; inspect state-dir/runtime-install side effects.       |
+| Extension package name or package metadata changed                                        | `pnpm test -- src/plugins/bundled-plugin-naming.test.ts test/plugin-npm-release.test.ts test/openclaw-npm-release-check.test.ts`                                        | `pnpm release:plugins:npm:check` when release-readiness metadata changes; do not publish without approval.      |
+| Provider/client SDK lazy-loading boundary touched                                         | `pnpm build` and inspect for dynamic import warnings                                                                                                                    | Run targeted provider/extension tests when runtime behavior changes.                                            |
+| Docker/plugin install path changed                                                        | Targeted package/runtime tests first                                                                                                                                    | `pnpm test:docker:plugins` only when package install behavior needs Docker-level confirmation.                  |
+
+## Validation evidence
+
+No product tests/builds were run during Wave 2R documentation work. This matrix is based on root `package.json` scripts and repo-native inspection of extension package metadata and runtime-loader files.

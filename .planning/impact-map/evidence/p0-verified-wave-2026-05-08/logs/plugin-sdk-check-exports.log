@@ -1,0 +1,17 @@
+# plugin-sdk-check-exports
+
+Command: pnpm plugin-sdk:check-exports
+Started: 2026-05-08T02:38:31.616Z
+Ended: 2026-05-08T02:38:33.479Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 plugin-sdk:check-exports /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/sync-plugin-sdk-exports.mjs --check
+
+plugin-sdk exports synced.
+
+
+## stderr
+

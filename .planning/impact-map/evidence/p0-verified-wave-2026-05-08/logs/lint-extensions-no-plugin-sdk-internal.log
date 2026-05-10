@@ -1,0 +1,19 @@
+# lint-extensions-no-plugin-sdk-internal
+
+Command: pnpm lint:extensions:no-plugin-sdk-internal
+Started: 2026-05-08T02:45:03.511Z
+Ended: 2026-05-08T02:45:08.839Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 lint:extensions:no-plugin-sdk-internal /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/check-extension-plugin-sdk-boundary.mjs --mode=plugin-sdk-internal
+
+Rule: production extensions/** must not import src/plugin-sdk-internal/**
+No extension plugin-sdk boundary violations found.
+Baseline matches (0 entries).
+
+
+## stderr
+

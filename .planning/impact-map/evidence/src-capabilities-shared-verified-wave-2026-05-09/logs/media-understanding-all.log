@@ -1,0 +1,31 @@
+== media-understanding-all ==
+src/media-understanding/apply.echo-transcript.test.ts
+src/media-understanding/apply.test.ts
+src/media-understanding/attachments.guards.test.ts
+src/media-understanding/attachments.normalize.test.ts
+src/media-understanding/deepgram.audio.test.ts
+src/media-understanding/defaults.test.ts
+src/media-understanding/format.test.ts
+src/media-understanding/google.video.test.ts
+src/media-understanding/image.test.ts
+src/media-understanding/media-understanding-misc.test.ts
+src/media-understanding/mistral.provider.test.ts
+src/media-understanding/moonshot.video.test.ts
+src/media-understanding/openai.audio.test.ts
+src/media-understanding/provider-registry.test.ts
+src/media-understanding/resolve.test.ts
+src/media-understanding/runner.auto-audio.test.ts
+src/media-understanding/runner.deepgram.test.ts
+src/media-understanding/runner.entries.guards.test.ts
+src/media-understanding/runner.proxy.test.ts
+src/media-understanding/runner.skip-tiny-audio.test.ts
+src/media-understanding/runner.video.test.ts
+src/media-understanding/runner.vision-skip.test.ts
+src/media-understanding/runtime.test.ts
+src/media-understanding/transcribe-audio.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=24
+[test-parallel] done unit code=0 elapsed=14.2s
+--- exit=0 duration=16s ---

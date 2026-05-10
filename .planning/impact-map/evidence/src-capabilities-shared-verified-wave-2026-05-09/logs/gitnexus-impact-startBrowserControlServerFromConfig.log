@@ -1,0 +1,44 @@
+{
+  "status": "ambiguous",
+  "message": "Found 4 symbols matching 'startBrowserControlServerFromConfig'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "startBrowserControlServerFromConfig"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/browser/server.ts:startBrowserControlServerFromConfig",
+      "name": "startBrowserControlServerFromConfig",
+      "kind": "Function",
+      "filePath": "src/browser/server.ts",
+      "line": 19,
+      "score": 0.56
+    },
+    {
+      "uid": "Function:src/browser/server.control-server.test-harness.ts:startBrowserControlServerFromConfig",
+      "name": "startBrowserControlServerFromConfig",
+      "kind": "Function",
+      "filePath": "src/browser/server.control-server.test-harness.ts",
+      "line": 317,
+      "score": 0.56
+    },
+    {
+      "uid": "Const:src/browser/server.auth-fail-closed.test.ts:startBrowserControlServerFromConfig",
+      "name": "startBrowserControlServerFromConfig",
+      "kind": "",
+      "filePath": "src/browser/server.auth-fail-closed.test.ts",
+      "line": 58,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/browser/server.evaluate-disabled-does-not-block-storage.test.ts:startBrowserControlServerFromConfig",
+      "name": "startBrowserControlServerFromConfig",
+      "kind": "",
+      "filePath": "src/browser/server.evaluate-disabled-does-not-block-storage.test.ts",
+      "line": 67,
+      "score": 0.5
+    }
+  ]
+}

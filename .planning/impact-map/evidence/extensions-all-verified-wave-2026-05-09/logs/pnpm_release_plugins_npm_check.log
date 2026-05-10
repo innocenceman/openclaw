@@ -1,0 +1,21 @@
+# pnpm release:plugins:npm:check
+
+> openclaw@2026.3.24 release:plugins:npm:check /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node --import tsx scripts/plugin-npm-release-check.ts
+
+plugin-npm-release-check: publishable plugin metadata looks OK.
+  - @openclaw/bluebubbles@2026.3.22 (stable, bluebubbles)
+  - @openclaw/diagnostics-otel@2026.3.22 (stable, diagnostics-otel)
+  - @openclaw/discord@2026.3.22 (stable, discord)
+  - @openclaw/feishu@2026.3.22 (stable, feishu)
+  - @openclaw/lobster@2026.3.22 (stable, lobster)
+  - @openclaw/memory-lancedb@2026.3.22 (stable, memory-lancedb)
+  - @openclaw/msteams@2026.3.22 (stable, msteams)
+  - @openclaw/nextcloud-talk@2026.3.22 (stable, nextcloud-talk)
+  - @openclaw/nostr@2026.3.22 (stable, nostr)
+  - @openclaw/voice-call@2026.3.22 (stable, voice-call)
+  - @openclaw/whatsapp@2026.3.22 (stable, whatsapp)
+  - @openclaw/zalo@2026.3.22 (stable, zalo)
+  - @openclaw/zalouser@2026.3.22 (stable, zalouser)
+
+[exit:0]

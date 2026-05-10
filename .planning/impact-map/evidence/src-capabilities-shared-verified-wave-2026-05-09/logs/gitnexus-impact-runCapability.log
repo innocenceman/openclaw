@@ -1,0 +1,36 @@
+{
+  "status": "ambiguous",
+  "message": "Found 3 symbols matching 'runCapability'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "runCapability"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/media-understanding/runner.ts:runCapability",
+      "name": "runCapability",
+      "kind": "Function",
+      "filePath": "src/media-understanding/runner.ts",
+      "line": 662,
+      "score": 0.56
+    },
+    {
+      "uid": "Const:src/media-understanding/runner.proxy.test.ts:runCapability",
+      "name": "runCapability",
+      "kind": "",
+      "filePath": "src/media-understanding/runner.proxy.test.ts",
+      "line": 24,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/media-understanding/runner.vision-skip.test.ts:runCapability",
+      "name": "runCapability",
+      "kind": "",
+      "filePath": "src/media-understanding/runner.vision-skip.test.ts",
+      "line": 28,
+      "score": 0.5
+    }
+  ]
+}

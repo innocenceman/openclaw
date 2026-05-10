@@ -1,0 +1,27 @@
+# src-agents-auth
+
+Command: pnpm test -- src/agents/auth-health.test.ts src/agents/auth-profiles/oauth.test.ts src/agents/auth-profiles/order.test.ts src/agents/model-auth.test.ts
+Started: 2026-05-08T02:35:46.475Z
+Ended: 2026-05-08T02:36:05.214Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/auth-health.test.ts src/agents/auth-profiles/oauth.test.ts src/agents/auth-profiles/order.test.ts src/agents/model-auth.test.ts
+
+[test-parallel] start base workers=2 filters=4
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  4 passed (4)
+      Tests  44 passed (44)
+   Start at  10:35:50
+   Duration  14.49s (transform 8.08s, setup 21.29s, import 311ms, tests 3.73s, environment 1ms)
+
+[test-parallel] done base code=0 elapsed=16.3s
+
+
+## stderr
+

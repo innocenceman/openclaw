@@ -1,0 +1,10 @@
+# pnpm lint:extensions:no-src-outside-plugin-sdk
+
+> openclaw@2026.3.24 lint:extensions:no-src-outside-plugin-sdk /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/check-extension-plugin-sdk-boundary.mjs --mode=src-outside-plugin-sdk
+
+Rule: production extensions/** must not import src/** outside src/plugin-sdk/**
+No extension plugin-sdk boundary violations found.
+Baseline matches (0 entries).
+
+[exit:0]

@@ -1,0 +1,30 @@
+{
+  "target": {
+    "id": "Function:src/tts/provider-registry.ts:listSpeechProviders",
+    "name": "listSpeechProviders",
+    "type": "Function",
+    "filePath": "src/tts/provider-registry.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 1,
+  "risk": "LOW",
+  "summary": {
+    "direct": 1,
+    "processes_affected": 0,
+    "modules_affected": 0
+  },
+  "affected_processes": [],
+  "affected_modules": [],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "File:src/gateway/server-methods/tts.ts",
+        "name": "tts.ts",
+        "filePath": "src/gateway/server-methods/tts.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}

@@ -1,0 +1,670 @@
+{
+  "target": {
+    "id": "Function:src/plugin-sdk/plugin-entry.ts:definePluginEntry",
+    "name": "definePluginEntry",
+    "type": "Function",
+    "filePath": "src/plugin-sdk/plugin-entry.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 80,
+  "risk": "CRITICAL",
+  "summary": {
+    "direct": 46,
+    "processes_affected": 0,
+    "modules_affected": 1
+  },
+  "affected_processes": [],
+  "affected_modules": [
+    {
+      "name": "Plugin-sdk",
+      "hits": 2,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/plugin-sdk/provider-entry.ts:defineSingleProviderPluginEntry",
+        "name": "defineSingleProviderPluginEntry",
+        "filePath": "src/plugin-sdk/provider-entry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/plugin-sdk/core.ts:defineChannelPluginEntry",
+        "name": "defineChannelPluginEntry",
+        "filePath": "src/plugin-sdk/core.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/zai/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/zai/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/volcengine/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/volcengine/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/vllm/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/vllm/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/voice-call/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/voice-call/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/thread-ownership/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/thread-ownership/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/tavily/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/tavily/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/talk-voice/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/talk-voice/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/sglang/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/sglang/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/qwen-portal-auth/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/qwen-portal-auth/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/phone-control/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/phone-control/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/perplexity/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/perplexity/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/openrouter/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/openrouter/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/opencode-go/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/opencode-go/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/opencode/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/opencode/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/openai/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/openai/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/open-prose/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/open-prose/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/ollama/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/ollama/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/minimax/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/minimax/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/microsoft/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/microsoft/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/memory-lancedb/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/memory-lancedb/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/memory-core/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/memory-core/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/lobster/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/lobster/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/llm-task/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/llm-task/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/kimi-coding/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/kimi-coding/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/huggingface/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/huggingface/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/groq/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/groq/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/google/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/google/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/github-copilot/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/github-copilot/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/firecrawl/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/firecrawl/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/fal/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/fal/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/exa/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/exa/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/elevenlabs/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/elevenlabs/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/duckduckgo/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/duckduckgo/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/diffs/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/diffs/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/diagnostics-otel/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/diagnostics-otel/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/device-pair/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/device-pair/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/deepgram/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/deepgram/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/copilot-proxy/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/copilot-proxy/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/cloudflare-ai-gateway/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/cloudflare-ai-gateway/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/chutes/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/chutes/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/byteplus/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/byteplus/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/brave/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/brave/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/anthropic/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/anthropic/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/amazon-bedrock/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/amazon-bedrock/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "File:extensions/zalouser/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/zalouser/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/zalo/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/zalo/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/xiaomi/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/xiaomi/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/whatsapp/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/whatsapp/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/xai/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/xai/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/vercel-ai-gateway/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/vercel-ai-gateway/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/venice/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/venice/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/twitch/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/twitch/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/together/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/together/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/tlon/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/tlon/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/telegram/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/telegram/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/synthetic/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/synthetic/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/synology-chat/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/synology-chat/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/slack/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/slack/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/signal/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/signal/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/qianfan/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/qianfan/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/nvidia/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/nvidia/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/nostr/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/nostr/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/nextcloud-talk/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/nextcloud-talk/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/msteams/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/msteams/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/moonshot/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/moonshot/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/modelstudio/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/modelstudio/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/mistral/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/mistral/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/mattermost/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/mattermost/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/matrix/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/matrix/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/line/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/line/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/kilocode/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/kilocode/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/irc/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/irc/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/imessage/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/imessage/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/googlechat/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/googlechat/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/feishu/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/feishu/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/discord/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/discord/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/deepseek/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/deepseek/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/bluebubbles/index.ts",
+        "name": "index.ts",
+        "filePath": "extensions/bluebubbles/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      }
+    ]
+  }
+}

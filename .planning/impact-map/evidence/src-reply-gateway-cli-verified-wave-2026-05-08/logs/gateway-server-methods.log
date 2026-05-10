@@ -1,0 +1,10 @@
+### gateway-server-methods
+pnpm test -- src/gateway/server-methods/server-methods.test.ts src/gateway/server-methods/agent.test.ts src/gateway/server-methods/agents-mutate.test.ts src/gateway/server-methods/browser.profile-from-body.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start gateway workers=1 filters=4
+[test-parallel] failure artifacts gateway log=/tmp/openclaw-test-parallel-WCenNd/gateway-1778261102663.log meta=/tmp/openclaw-test-parallel-WCenNd/gateway-1778261102663-failure.json
+[test-parallel] done gateway code=1 elapsed=11.2s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1

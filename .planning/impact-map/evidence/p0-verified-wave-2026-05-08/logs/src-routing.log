@@ -1,0 +1,26 @@
+# src-routing
+
+Command: pnpm test -- src/routing/resolve-route.test.ts src/routing/account-id.test.ts src/routing/account-lookup.test.ts src/routing/session-key.test.ts src/routing/session-key.continuity.test.ts
+Started: 2026-05-08T02:34:44.104Z
+Ended: 2026-05-08T02:35:00.574Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=5
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  5 passed (5)
+      Tests  71 passed (71)
+   Start at  10:34:47
+   Duration  12.82s (transform 7.92s, setup 24.00s, import 286ms, tests 308ms, environment 1ms)
+
+[test-parallel] done unit code=0 elapsed=14.1s
+
+
+## stderr
+

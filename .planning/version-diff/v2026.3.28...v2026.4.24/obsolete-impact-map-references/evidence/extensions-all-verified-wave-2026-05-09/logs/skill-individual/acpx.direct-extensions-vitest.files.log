@@ -1,0 +1,326 @@
+# timeout 120s pnpm exec vitest run --config vitest.extensions.config.ts extensions/acpx/src/config.test.ts extensions/acpx/src/ensure.test.ts extensions/acpx/src/runtime-internals/control-errors.test.ts extensions/acpx/src/runtime-internals/events.test.ts extensions/acpx/src/runtime-internals/jsonrpc.test.ts extensions/acpx/src/runtime-internals/mcp-agent-command.test.ts extensions/acpx/src/runtime-internals/mcp-proxy.test.ts extensions/acpx/src/runtime-internals/process.test.ts extensions/acpx/src/runtime.test.ts extensions/acpx/src/service.test.ts 
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+(node:37) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:37) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:37) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:37) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ ❯ extensions/acpx/src/runtime-internals/mcp-proxy.test.ts (1 test | 1 failed) 68ms
+     × injects configured MCP servers into ACP session bootstrap requests 64ms
+ ❯ extensions/acpx/src/runtime.test.ts (22 tests | 17 failed) 1899ms
+     × passes the shared ACP adapter contract suite 86ms
+     × ensures sessions and streams prompt events 95ms
+     × uses sessions new with --resume-session when resumeSessionId is provided 49ms
+     × replaces dead named sessions returned by sessions ensure 91ms
+     × reuses a live named session when sessions ensure exits before returning identifiers 100ms
+     × creates a fresh named session when sessions ensure exits and status is dead 93ms
+     × serializes text plus image attachments into ACP prompt blocks 98ms
+     × preserves provider auth env vars when runtime uses a custom acpx command 89ms
+     × preserves leading spaces across streamed text deltas 93ms
+     × emits done once when ACP stream repeats stop reason responses 102ms
+     × maps acpx error events into ACP runtime error events 95ms
+     × maps acpx permission-denied exits to actionable guidance 75ms
+     × supports cancel and close using encoded runtime handle state 92ms
+     × exposes control capabilities and runs set-mode/set/status commands 82ms
+     × routes ACPX commands through an MCP proxy agent when MCP servers are configured 145ms
+     × skips prompt execution when runTurn starts with an already-aborted signal 111ms
+     × falls back to 'sessions new' when 'sessions ensure' returns no session IDs 68ms
+ ❯ extensions/acpx/src/runtime-internals/process.test.ts (16 tests | 3 failed) 3795ms
+     × strips shared provider auth env vars from spawned acpx children 1066ms
+     × strips provider auth env vars case-insensitively 850ms
+     × preserves provider auth env vars for explicit custom commands by default 796ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 21 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > passes the shared ACP adapter contract suite
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:contract-716466cf-18ea-49e3-b3b8-5072cfdd11e6.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ runAcpRuntimeAdapterContract src/acp/runtime/adapter-contract.testkit.ts:26:18
+ ❯ extensions/acpx/src/runtime.test.ts:91:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > ensures sessions and streams prompt events
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:123.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:110:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > uses sessions new with --resume-session when resumeSessionId is provided
+AcpRuntimeError: ACP session init failed: 'sessions new --resume-session' returned no session identifiers for agent:codex:acp:resume.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:182:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > replaces dead named sessions returned by sessions ensure
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:dead-session.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ expectSessionEnsureFallback extensions/acpx/src/runtime.test.ts:55:20
+ ❯ extensions/acpx/src/runtime.test.ts:205:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > reuses a live named session when sessions ensure exits before returning identifiers
+AcpRuntimeError: acpx exited with code 1
+ ❯ AcpxRuntime.runControlCommand extensions/acpx/src/runtime.ts:1000:13
+    998|
+    999|     if ((result.code ?? 0) !== 0) {
+    1000|       throw new AcpRuntimeError(
+       |             ^
+    1001|         params.fallbackCode,
+    1002|         formatAcpxExitMessage({
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:437:18
+ ❯ expectSessionEnsureFallback extensions/acpx/src/runtime.test.ts:55:20
+ ❯ extensions/acpx/src/runtime.test.ts:216:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > creates a fresh named session when sessions ensure exits and status is dead
+AcpRuntimeError: acpx exited with code 1
+ ❯ AcpxRuntime.runControlCommand extensions/acpx/src/runtime.ts:1000:13
+    998|
+    999|     if ((result.code ?? 0) !== 0) {
+    1000|       throw new AcpRuntimeError(
+       |             ^
+    1001|         params.fallbackCode,
+    1002|         formatAcpxExitMessage({
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:437:18
+ ❯ expectSessionEnsureFallback extensions/acpx/src/runtime.test.ts:55:20
+ ❯ extensions/acpx/src/runtime.test.ts:228:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > serializes text plus image attachments into ACP prompt blocks
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:with-image.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:242:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > preserves provider auth env vars when runtime uses a custom acpx command
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:custom-env.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:278:22
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > preserves leading spaces across streamed text deltas
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:space.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:312:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > emits done once when ACP stream repeats stop reason responses
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:double-done.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:354:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > maps acpx error events into ACP runtime error events
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:456.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:380:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > maps acpx permission-denied exits to actionable guidance
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:permission-denied.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:410:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > supports cancel and close using encoded runtime handle state
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:claude:acp:789.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:442:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > exposes control capabilities and runs set-mode/set/status commands
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:controls.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:465:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > routes ACPX commands through an MCP proxy agent when MCP servers are configured
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:mcp.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:521:22
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > skips prompt execution when runTurn starts with an already-aborted signal
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:codex:acp:aborted.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:556:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/21]⎯
+
+ FAIL  extensions/acpx/src/runtime.test.ts > AcpxRuntime > falls back to 'sessions new' when 'sessions ensure' returns no session IDs
+AcpRuntimeError: ACP session init failed: neither 'sessions ensure' nor 'sessions new' returned valid session identifiers for agent:claude:acp:fallback-test.
+ ❯ AcpxRuntime.ensureSession extensions/acpx/src/runtime.ts:502:13
+    500|     }
+    501|     if (!ensuredEvent) {
+    502|       throw new AcpRuntimeError(
+       |             ^
+    503|         "ACP_SESSION_INIT_FAILED",
+    504|         resumeSessionId
+ ❯ extensions/acpx/src/runtime.test.ts:650:22
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/21]⎯
+
+ FAIL  extensions/acpx/src/runtime-internals/mcp-proxy.test.ts > mcp-proxy > injects configured MCP servers into ACP session bootstrap requests
+SyntaxError: Unexpected end of JSON input
+ ❯ extensions/acpx/src/runtime-internals/mcp-proxy.test.ts:100:27
+     98|       .trim()
+     99|       .split(/\r?\n/)
+    100|       .map((line) => JSON.parse(line) as { method: string; params: Rec…
+       |                           ^
+    101|
+    102|     expect(lines[0].params.mcpServers).toEqual([
+ ❯ extensions/acpx/src/runtime-internals/mcp-proxy.test.ts:100:8
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/21]⎯
+
+ FAIL  extensions/acpx/src/runtime-internals/process.test.ts > spawnAndCollect > strips shared provider auth env vars from spawned acpx children
+SyntaxError: Unexpected end of JSON input
+ ❯ collectSpawnedEnvSnapshot extensions/acpx/src/runtime-internals/process.test.ts:344:17
+    342|     expect(result.code).toBe(0);
+    343|     expect(result.error).toBeNull();
+    344|     return JSON.parse(result.stdout) as SpawnedEnvSnapshot;
+       |                 ^
+    345|   }
+    346|
+ ❯ extensions/acpx/src/runtime-internals/process.test.ts:391:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/21]⎯
+
+ FAIL  extensions/acpx/src/runtime-internals/process.test.ts > spawnAndCollect > strips provider auth env vars case-insensitively
+SyntaxError: Unexpected end of JSON input
+ ❯ collectSpawnedEnvSnapshot extensions/acpx/src/runtime-internals/process.test.ts:344:17
+    342|     expect(result.code).toBe(0);
+    343|     expect(result.error).toBeNull();
+    344|     return JSON.parse(result.stdout) as SpawnedEnvSnapshot;
+       |                 ^
+    345|   }
+    346|
+ ❯ extensions/acpx/src/runtime-internals/process.test.ts:407:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[20/21]⎯
+
+ FAIL  extensions/acpx/src/runtime-internals/process.test.ts > spawnAndCollect > preserves provider auth env vars for explicit custom commands by default
+SyntaxError: Unexpected end of JSON input
+ ❯ collectSpawnedEnvSnapshot extensions/acpx/src/runtime-internals/process.test.ts:344:17
+    342|     expect(result.code).toBe(0);
+    343|     expect(result.error).toBeNull();
+    344|     return JSON.parse(result.stdout) as SpawnedEnvSnapshot;
+       |                 ^
+    345|   }
+    346|
+ ❯ extensions/acpx/src/runtime-internals/process.test.ts:425:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[21/21]⎯
+
+
+ Test Files  3 failed | 7 passed (10)
+      Tests  21 failed | 58 passed (79)
+   Start at  04:05:43
+   Duration  10.19s (transform 7.33s, setup 29.41s, import 132ms, tests 5.81s, environment 1ms)
+
+
+[exit:1]

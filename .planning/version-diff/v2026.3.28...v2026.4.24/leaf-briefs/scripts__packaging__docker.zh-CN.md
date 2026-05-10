@@ -1,0 +1,65 @@
+# scripts/packaging/docker
+
+## 一句话结论
+
+docker 所属的 Build, CI, scripts, tests and release automation 有 10 个路径变化（修改 10），兼容性判断为兼容。
+
+## Canonical facts
+
+- Feature group: `build-ci-tests`
+- Impact-map dir: `.planning/impact-map/scripts/packaging/docker`
+- Changed path count: `10`
+- Status counts: `修改 10`
+- Risk: `medium`
+- Compatibility: `compatible` (兼容)
+- Diff stat: `10` files, `+575` / `-105`
+
+## 功能变化摘要
+
+这个 leaf 属于 `Build, CI, scripts, tests and release automation`。本次版本差异显示它的主要变化是：修改 10。以下判断基于路径状态、leaf 所属模块和 active impact-map 说明生成，仍以 `leaf-impact.json` 与源码 diff 为事实来源。
+
+## 具体修改
+
+### 修改
+
+- `scripts/docker/cleanup-smoke/Dockerfile`
+- `scripts/docker/cleanup-smoke/run.sh`
+- `scripts/docker/install-sh-common/cli-verify.sh`
+- `scripts/docker/install-sh-common/version-parse.sh`
+- `scripts/docker/install-sh-e2e/Dockerfile`
+- `scripts/docker/install-sh-e2e/run.sh`
+- `scripts/docker/install-sh-nonroot/Dockerfile`
+- `scripts/docker/install-sh-nonroot/run.sh`
+- `scripts/docker/install-sh-smoke/run.sh`
+- `scripts/docker/setup.sh`
+
+## 兼容性判断
+
+结论：`compatible`（兼容），风险等级 `medium`。
+
+原因：
+
+- 当前分类未显示公开接口删除或高风险运行时行为变化，默认视为兼容，但仍需要按 leaf 验证。
+
+## 可能受影响的人或模块
+
+- CI/测试维护者
+- 发布/构建维护者
+
+## 建议验证
+
+- 首选验证：参考 leaf 的 `change-to-test.md`，先运行最小验证，再按风险扩大验证范围。
+- 如果该 leaf 是高风险或行为变化，继续检查相邻调用方和父 feature 的回归测试。
+- 若包含删除/重命名路径，确认 active `.planning/impact-map` 不再引用目标版本已删除路径。
+
+## 人类审查问题
+
+- 这些路径变化是否改变了用户可见行为、配置语义或插件/SDK 合约？
+- 是否存在未被 changed paths 直接覆盖、但会被调用链影响的相邻模块？
+- 当前建议验证是否足以覆盖兼容性风险？
+
+## 证据来源
+
+- `.planning/version-diff/v2026.3.28...v2026.4.24/leaf-impact.json` 中 leaf `scripts/packaging/docker` 的 mapping。
+- `.planning/version-diff/v2026.3.28...v2026.4.24/name-status.txt` 的路径状态。
+- `.planning/impact-map/scripts/packaging/docker/change-to-test.md` 的验证建议。

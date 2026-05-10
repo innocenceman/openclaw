@@ -1,0 +1,9 @@
+=== config-docs-check ===
+pnpm config:docs:check
+start=2026-05-08T20:48:48Z
+
+> openclaw@2026.3.24 config:docs:check /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node --import tsx scripts/generate-config-doc-baseline.ts --check
+
+exit=0
+end=2026-05-08T20:48:54Z

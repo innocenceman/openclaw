@@ -1,0 +1,12 @@
+# timeout 120s pnpm exec vitest run --config vitest.extensions.config.ts extensions/acpx/**/*.test.ts
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+No test files found, exiting with code 0
+
+filter: extensions/acpx/**/*.test.ts
+include: **/*.test.ts
+exclude:  dist/**, apps/macos/**, apps/macos/.build/**, **/node_modules/**, **/vendor/**, dist/OpenClaw.app/**, **/*.live.test.ts, **/*.e2e.test.ts, telegram/**, discord/**, whatsapp/**, slack/**, signal/**, imessage/**
+
+
+[exit:0]

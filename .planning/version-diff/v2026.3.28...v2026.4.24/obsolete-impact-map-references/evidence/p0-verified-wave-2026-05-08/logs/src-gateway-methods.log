@@ -1,0 +1,465 @@
+# src-gateway-methods
+
+Command: pnpm test -- src/gateway/server-methods/server-methods.test.ts src/gateway/server-methods/agent.test.ts src/gateway/server-methods/agents-mutate.test.ts src/gateway/server-methods/browser.profile-from-body.test.ts
+Started: 2026-05-08T02:34:10.260Z
+Ended: 2026-05-08T02:34:28.342Z
+Exit code: 1
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/gateway/server-methods/server-methods.test.ts src/gateway/server-methods/agent.test.ts src/gateway/server-methods/agents-mutate.test.ts src/gateway/server-methods/browser.profile-from-body.test.ts
+
+[test-parallel] start gateway workers=1 filters=4
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+ ❯ src/gateway/server-methods/agent.test.ts (20 tests | 15 failed) 63ms
+     × preserves ACP metadata from the current stored session entry 19ms
+     × forwards provider and model overrides for admin-scoped callers 3ms
+     × forwards provider and model overrides when internal override authorization is set 2ms
+     × preserves cliSessionIds from existing session entry 3ms
+     × reactivates completed subagent sessions and broadcasts send updates 3ms
+     × injects a timestamp into the message passed to agentCommand 3ms
+     × 'passes senderIsOwner=false for write-…' 3ms
+     × 'passes senderIsOwner=true for admin-s…' 2ms
+     × respects explicit bestEffortDeliver=false for main session runs 4ms
+     × only forwards workspaceDir for spawned sessions with stored workspace inheritance 2ms
+     × keeps origin messageChannel as webchat while delivery channel uses last session channel 2ms
+     × handles missing cliSessionIds gracefully 2ms
+     × prunes legacy main alias keys when writing a canonical session entry 4ms
+     × handles bare /new by resetting the same session and sending reset greeting prompt 3ms
+     × uses /reset suffix as the post-reset message and still injects timestamp 2ms
+
+ Test Files  1 failed | 3 passed (4)
+      Tests  15 failed | 93 passed (108)
+   Start at  10:34:13
+   Duration  14.63s (transform 4.46s, setup 11.27s, import 819ms, tests 2.31s, environment 0ms)
+
+[test-parallel] done gateway code=1 elapsed=15.9s
+ ELIFECYCLE  Test failed. See above for more details.
+
+
+## stderr
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 15 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > preserves ACP metadata from the current stored session entry
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ runMainAgent src/gateway/server-methods/agent.test.ts:210:3
+ ❯ src/gateway/server-methods/agent.test.ts:330:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > forwards provider and model overrides for admin-scoped callers
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:340:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > forwards provider and model overrides when internal override authorization is set
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:406:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > preserves cliSessionIds from existing session entry
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ runMainAgent src/gateway/server-methods/agent.test.ts:210:3
+ ❯ runMainAgentAndCaptureEntry src/gateway/server-methods/agent.test.ts:165:3
+ ❯ src/gateway/server-methods/agent.test.ts:447:27
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > reactivates completed subagent sessions and broadcasts send updates
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:502:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > injects a timestamp into the message passed to agentCommand
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:554:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > 'passes senderIsOwner=false for write-…'
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > 'passes senderIsOwner=true for admin-s…'
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:589:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > respects explicit bestEffortDeliver=false for main session runs
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:617:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > only forwards workspaceDir for spawned sessions with stored workspace inheritance
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:679:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > keeps origin messageChannel as webchat while delivery channel uses last session channel
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:712:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > handles missing cliSessionIds gracefully
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ runMainAgent src/gateway/server-methods/agent.test.ts:210:3
+ ❯ runMainAgentAndCaptureEntry src/gateway/server-methods/agent.test.ts:165:3
+ ❯ src/gateway/server-methods/agent.test.ts:743:27
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > prunes legacy main alias keys when writing a canonical session entry
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:779:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > handles bare /new by resetting the same session and sending reset greeting prompt
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:800:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > uses /reset suffix as the post-reset message and still injects timestamp
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:831:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/15]⎯
+
+[test-parallel] failure tail gateway
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:779:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > handles bare /new by resetting the same session and sending reset greeting prompt
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:800:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/15]⎯
+
+ FAIL  src/gateway/server-methods/agent.test.ts > gateway agent handler > uses /reset suffix as the post-reset message and still injects timestamp
+Error: [vitest] No "getLatestSubagentRunByChildSessionKey" export is defined on the "../../agents/subagent-registry.js" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("../../agents/subagent-registry.js"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ reactivateCompletedSubagentSession src/gateway/session-subagent-reactivation.ts:14:20
+     12|     return false;
+     13|   }
+     14|   const existing = getLatestSubagentRunByChildSessionKey(params.sessio…
+       |                    ^
+     15|   if (!existing || typeof existing.endedAt !== "number") {
+     16|     return false;
+ ❯ Object.agent src/gateway/server-methods/agent.ts:659:7
+ ❯ invokeAgent src/gateway/server-methods/agent.test.ts:265:3
+ ❯ src/gateway/server-methods/agent.test.ts:831:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/15]⎯
+
+
+ Test Files  1 failed | 3 passed (4)
+      Tests  15 failed | 93 passed (108)
+   Start at  10:34:13
+   Duration  14.63s (transform 4.46s, setup 11.27s, import 819ms, tests 2.31s, environment 0ms)
+[test-parallel] failure artifacts gateway log=/tmp/openclaw-test-parallel-iikkly/gateway-1778207652342.log meta=/tmp/openclaw-test-parallel-iikkly/gateway-1778207652342-failure.json
+

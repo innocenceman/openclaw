@@ -1,0 +1,9 @@
+# timeout 180s pnpm test -- selected voice-call manager/runtime/webhook tests
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/voice-call/src/manager.closed-loop.test.ts extensions/voice-call/src/runtime.test.ts extensions/voice-call/src/webhook-security.test.ts extensions/voice-call/src/webhook.test.ts extensions/voice-call/src/media-stream.test.ts
+
+[test-parallel] start extensions workers=4 filters=5
+ ELIFECYCLE  Test failed. See above for more details.
+
+[exit:124]

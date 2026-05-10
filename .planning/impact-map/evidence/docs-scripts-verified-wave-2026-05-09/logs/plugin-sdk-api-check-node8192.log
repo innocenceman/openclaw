@@ -1,0 +1,9 @@
+=== plugin-sdk-api-check-node8192 ===
+env NODE_OPTIONS=--max-old-space-size=8192 pnpm plugin-sdk:api:check
+start=2026-05-08T20:51:38Z
+
+> openclaw@2026.3.24 plugin-sdk:api:check /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node --import tsx scripts/generate-plugin-sdk-api-baseline.ts --check
+
+exit=0
+end=2026-05-08T20:51:55Z

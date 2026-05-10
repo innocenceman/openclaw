@@ -1,0 +1,9 @@
+### gateway-protocol
+timeout 240s pnpm test -- src/gateway/protocol/index.test.ts src/gateway/protocol/push.test.ts src/gateway/protocol/connect-error-details.test.ts src/gateway/protocol/talk-config.contract.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/gateway/protocol/index.test.ts src/gateway/protocol/push.test.ts src/gateway/protocol/connect-error-details.test.ts src/gateway/protocol/talk-config.contract.test.ts
+
+[test-parallel] start gateway workers=1 filters=4
+[test-parallel] done gateway code=0 elapsed=10.0s
+EXIT_CODE=0

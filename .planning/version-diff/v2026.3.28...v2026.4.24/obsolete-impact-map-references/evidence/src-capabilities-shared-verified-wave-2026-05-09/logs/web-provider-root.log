@@ -1,0 +1,13 @@
+== web-provider-root ==
+src/channels/channels-misc.test.ts
+src/plugins/bundled-web-search.test.ts
+src/web-search/runtime.test.ts
+src/plugins/contracts/registry.contract.test.ts
+src/plugins/contracts/loader.contract.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/channels/channels-misc.test.ts src/plugins/bundled-web-search.test.ts src/web-search/runtime.test.ts src/plugins/contracts/registry.contract.test.ts src/plugins/contracts/loader.contract.test.ts
+
+[test-parallel] start unit workers=2 filters=5
+[test-parallel] done unit code=0 elapsed=7.6s
+--- exit=0 duration=9s ---

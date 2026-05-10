@@ -1,0 +1,52 @@
+{
+  "status": "ambiguous",
+  "message": "Found 5 symbols matching 'runExec'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "runExec"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/process/exec.ts:runExec",
+      "name": "runExec",
+      "kind": "Function",
+      "filePath": "src/process/exec.ts",
+      "line": 99,
+      "score": 0.56
+    },
+    {
+      "uid": "Const:src/index.ts:runExec",
+      "name": "runExec",
+      "kind": "",
+      "filePath": "src/index.ts",
+      "line": 34,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/process/exec.windows.test.ts:runExec",
+      "name": "runExec",
+      "kind": "",
+      "filePath": "src/process/exec.windows.test.ts",
+      "line": 16,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/commands/doctor.e2e-harness.ts:runExec",
+      "name": "runExec",
+      "kind": "",
+      "filePath": "src/commands/doctor.e2e-harness.ts",
+      "line": 70,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/commands/doctor-sandbox.warns-sandbox-enabled-without-docker.test.ts:runExec",
+      "name": "runExec",
+      "kind": "",
+      "filePath": "src/commands/doctor-sandbox.warns-sandbox-enabled-without-docker.test.ts",
+      "line": 6,
+      "score": 0.5
+    }
+  ]
+}

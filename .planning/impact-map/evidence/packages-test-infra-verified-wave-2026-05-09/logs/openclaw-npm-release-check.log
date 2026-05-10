@@ -1,0 +1,38 @@
+
+> openclaw@2026.3.24 release:openclaw:npm:check /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node --import tsx scripts/openclaw-npm-release-check.ts
+
+openclaw-npm-release-check: Release tag must start with "v"; found "<missing>".
+openclaw-npm-release-check: Release tag must match vYYYY.M.D, vYYYY.M.D-beta.N, or fallback correction tag vYYYY.M.D-N; found "<missing>".
+openclaw-npm-release-check: Release tag <missing> does not match package.json version 2026.3.24; expected v2026.3.24 or v2026.3.24-N.
+openclaw-npm-release-check: Release version 2026.3.24 is 45 days away from current UTC date 2026-05-08; release CalVer date 2026-03-24 must be within 2 days.
+openclaw-npm-release-check: Failed to inspect npm tarball contents via `npm pack --json --dry-run`: Command failed: npm pack --json --dry-run
+file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/stage-bundled-plugin-runtime-deps.mjs:217
+  throw new Error(
+        ^
+
+Error: failed to stage bundled runtime deps for discord: npm install failed
+    at installPluginRuntimeDeps (file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/stage-bundled-plugin-runtime-deps.mjs:217:9)
+    at stageBundledPluginRuntimeDeps (file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/stage-bundled-plugin-runtime-deps.mjs:232:5)
+    at runRuntimePostBuild (file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/runtime-postbuild.mjs:12:3)
+    at file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/runtime-postbuild.mjs:17:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+
+Node.js v22.22.2
+ | stderr: file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/stage-bundled-plugin-runtime-deps.mjs:217
+  throw new Error(
+        ^
+
+Error: failed to stage bundled runtime deps for discord: npm install failed
+    at installPluginRuntimeDeps (file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/stage-bundled-plugin-runtime-deps.mjs:217:9)
+    at stageBundledPluginRuntimeDeps (file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/stage-bundled-plugin-runtime-deps.mjs:232:5)
+    at runRuntimePostBuild (file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/runtime-postbuild.mjs:12:3)
+    at file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/runtime-postbuild.mjs:17:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+
+Node.js v22.22.2 | stdout: A2UI bundle up to date; skipping.
+ ELIFECYCLE  Command failed with exit code 1.

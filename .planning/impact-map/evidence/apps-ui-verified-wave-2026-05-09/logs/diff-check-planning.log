@@ -1,0 +1,5 @@
+$ git diff --check -- .planning/impact-map/apps .planning/impact-map/ui .planning/impact-map/evidence/apps-ui-verified-wave-2026-05-09 .planning/impact-map/MODULE-INDEX.md .planning/impact-map/COVERAGE-ROADMAP.md .planning/STATE.md
+started_at=2026-05-08T20:39:33Z
+finished_at=2026-05-08T20:39:33Z
+exit_code=0
+duration_seconds=0

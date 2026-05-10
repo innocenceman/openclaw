@@ -1,0 +1,9 @@
+# product source diff
+# extension leaf/card audit
+extension leaf-index coverage labels, source paths, and standard card files OK
+# git diff --check -- .planning
+# oxfmt planning check
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 465ms on 27 files using 4 threads.

@@ -1,0 +1,56 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start extensions workers=4 filters=309
+[test-parallel] start channels workers=2 filters=221
+[test-parallel] start channels-api-isolated workers=1 filters=1
+[test-parallel] start channels-components-isolated workers=1 filters=1
+[test-parallel] done channels-api-isolated code=0 elapsed=15.2s
+[test-parallel] start channels-agent-components.wildcard-isolated workers=1 filters=1
+[test-parallel] done channels-components-isolated code=0 elapsed=15.6s
+[test-parallel] start channels-auto-presence-isolated workers=1 filters=1
+[test-parallel] done channels-auto-presence-isolated code=0 elapsed=33.4s
+[test-parallel] start channels-commands-isolated workers=1 filters=1
+[test-parallel] done channels-agent-components.wildcard-isolated code=0 elapsed=33.9s
+[test-parallel] start channels-dm-command-auth-isolated workers=1 filters=1
+[test-parallel] done channels-dm-command-auth-isolated code=0 elapsed=31.4s
+[test-parallel] start channels-dm-command-decision-isolated workers=1 filters=1
+[test-parallel] done channels-commands-isolated code=0 elapsed=31.5s
+[test-parallel] start channels-exec-approvals-isolated workers=1 filters=1
+[test-parallel] done channels-dm-command-decision-isolated code=0 elapsed=49.7s
+[test-parallel] start channels-gateway-supervisor-isolated workers=1 filters=1
+[test-parallel] done channels-exec-approvals-isolated code=0 elapsed=50.7s
+[test-parallel] start channels-inbound-context-isolated workers=1 filters=1
+[test-parallel] done channels-gateway-supervisor-isolated code=0 elapsed=45.8s
+[test-parallel] start channels-inbound-job-isolated workers=1 filters=1
+[test-parallel] done channels-inbound-context-isolated code=0 elapsed=44.9s
+[test-parallel] start channels-listeners-isolated workers=1 filters=1
+[test-parallel] done channels-inbound-job-isolated code=0 elapsed=33.8s
+[test-parallel] start channels-message-handler.bot-self-filter-isolated workers=1 filters=1
+[test-parallel] done channels-listeners-isolated code=0 elapsed=34.0s
+[test-parallel] start channels-message-handler.inbound-context-isolated workers=1 filters=1
+[test-parallel] done channels-message-handler.inbound-context-isolated code=0 elapsed=25.2s
+[test-parallel] start channels-message-handler.preflight.acp-bindings-isolated workers=1 filters=1
+[test-parallel] done channels-message-handler.bot-self-filter-isolated code=0 elapsed=25.5s
+[test-parallel] start channels-message-handler.preflight-isolated workers=1 filters=1
+[test-parallel] done channels-message-handler.preflight.acp-bindings-isolated code=0 elapsed=19.7s
+[test-parallel] start channels-message-handler.process-isolated workers=1 filters=1
+[test-parallel] done channels-message-handler.preflight-isolated code=0 elapsed=19.7s
+[test-parallel] start channels-message-handler.queue-isolated workers=1 filters=1
+[test-parallel] done channels-message-handler.process-isolated code=0 elapsed=14.6s
+[test-parallel] start channels-message-utils-isolated workers=1 filters=1
+[test-parallel] done channels-message-handler.queue-isolated code=0 elapsed=14.7s
+[test-parallel] start channels-model-picker-preferences-isolated workers=1 filters=1
+[test-parallel] done channels-model-picker-preferences-isolated code=0 elapsed=14.4s
+[test-parallel] start channels-model-picker-isolated workers=1 filters=1
+[test-parallel] done channels-message-utils-isolated code=0 elapsed=15.8s
+[test-parallel] start channels-monitor.agent-components-isolated workers=1 filters=1
+[test-parallel] failure artifacts channels-model-picker-isolated log=/tmp/openclaw-test-parallel-tFDHNn/channels-model-picker-isolated-1778270088269.log meta=/tmp/openclaw-test-parallel-tFDHNn/channels-model-picker-isolated-1778270088269-failure.json
+[test-parallel] done channels-model-picker-isolated code=1 elapsed=14.6s
+[test-parallel] failure artifacts channels-monitor.agent-components-isolated log=/tmp/openclaw-test-parallel-tFDHNn/channels-monitor.agent-components-isolated-1778270089441.log meta=/tmp/openclaw-test-parallel-tFDHNn/channels-monitor.agent-components-isolated-1778270089441-failure.json
+[test-parallel] done channels-monitor.agent-components-isolated code=1 elapsed=13.5s
+ ELIFECYCLE  Test failed. See above for more details.
+[test-parallel] failure artifacts channels log=/tmp/openclaw-test-parallel-tFDHNn/channels-1778269804109.log meta=/tmp/openclaw-test-parallel-tFDHNn/channels-1778269804109-failure.json
+[test-parallel] done channels code=1 elapsed=299.3s
+
+[exit:124]

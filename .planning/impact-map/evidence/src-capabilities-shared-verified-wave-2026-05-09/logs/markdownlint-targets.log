@@ -1,0 +1,14 @@
+pnpm dlx markdownlint-cli2 .planning/impact-map/src/capability-modules/**/*.md .planning/impact-map/src/shared-misc-runtime-support/**/*.md .planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/**/*.md
+ WARN  GET https://registry.npmjs.org/markdownlint-cli2 error (EPERM). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/markdownlint-cli2 error (EPERM). Will retry in 1 minute. 1 retries left.
+ ERR_PNPM_META_FETCH_FAIL  GET https://registry.npmjs.org/markdownlint-cli2: request to https://registry.npmjs.org/markdownlint-cli2 failed, reason: connect EPERM 127.0.0.1:7890 - Local (undefined:undefined)
+ ENOENT  ENOENT: no such file or directory, mkdir '/home/yanx/.cache/pnpm/dlx/37d7d47787ad0a59ea27753dc9a668db5179991dbe528e755a7058167b766658/19e08fddd80-4'
+
+pnpm: ENOENT: no such file or directory, mkdir '/home/yanx/.cache/pnpm/dlx/37d7d47787ad0a59ea27753dc9a668db5179991dbe528e755a7058167b766658/19e08fddd80-4'
+    at Object.mkdirSync (node:fs:1370:26)
+    at Object.handler [as dlx] (/mnt/d/software/Node-JS/node_global/node_modules/pnpm/dist/pnpm.cjs:182663:22)
+    at async /mnt/d/software/Node-JS/node_global/node_modules/pnpm/dist/pnpm.cjs:193782:23
+    at async main (/mnt/d/software/Node-JS/node_global/node_modules/pnpm/dist/pnpm.cjs:193740:34)
+    at async runPnpm (/mnt/d/software/Node-JS/node_global/node_modules/pnpm/dist/pnpm.cjs:194007:5)
+    at async /mnt/d/software/Node-JS/node_global/node_modules/pnpm/dist/pnpm.cjs:193999:7
+--- exit=254 duration=71s ---

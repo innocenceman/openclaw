@@ -1,0 +1,10 @@
+### cli-maintenance
+pnpm test -- src/commands/backup-verify.test.ts src/commands/backup.atomic.test.ts src/commands/backup.test.ts src/commands/cleanup-utils.test.ts src/commands/dashboard.links.test.ts src/commands/dashboard.test.ts src/commands/message.test.ts src/cli/update-cli.option-collisions.test.ts src/cli/update-cli.test.ts src/cli/completion-cli.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start base workers=2 filters=6
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-tVkrRQ/base-1778262333085.log meta=/tmp/openclaw-test-parallel-tVkrRQ/base-1778262333085-failure.json
+[test-parallel] done base code=1 elapsed=11.2s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1

@@ -1,0 +1,62 @@
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Function:src/browser/server.ts:startBrowserControlServerFromConfig",
+    "name": "startBrowserControlServerFromConfig",
+    "kind": "Function",
+    "filePath": "src/browser/server.ts",
+    "startLine": 19,
+    "endLine": 85
+  },
+  "incoming": {},
+  "outgoing": {
+    "calls": [
+      {
+        "uid": "Function:src/browser/server-middleware.ts:installBrowserCommonMiddleware",
+        "name": "installBrowserCommonMiddleware",
+        "filePath": "src/browser/server-middleware.ts"
+      },
+      {
+        "uid": "Function:src/browser/server-middleware.ts:installBrowserAuthMiddleware",
+        "name": "installBrowserAuthMiddleware",
+        "filePath": "src/browser/server-middleware.ts"
+      },
+      {
+        "uid": "Function:src/browser/server-context.ts:createBrowserRouteContext",
+        "name": "createBrowserRouteContext",
+        "filePath": "src/browser/server-context.ts"
+      },
+      {
+        "uid": "Function:src/browser/runtime-lifecycle.ts:createBrowserRuntimeState",
+        "name": "createBrowserRuntimeState",
+        "filePath": "src/browser/runtime-lifecycle.ts"
+      },
+      {
+        "uid": "Function:src/browser/control-auth.ts:resolveBrowserControlAuth",
+        "name": "resolveBrowserControlAuth",
+        "filePath": "src/browser/control-auth.ts"
+      },
+      {
+        "uid": "Function:src/browser/control-auth.ts:ensureBrowserControlAuth",
+        "name": "ensureBrowserControlAuth",
+        "filePath": "src/browser/control-auth.ts"
+      },
+      {
+        "uid": "Function:src/browser/config.ts:resolveBrowserConfig",
+        "name": "resolveBrowserConfig",
+        "filePath": "src/browser/config.ts"
+      },
+      {
+        "uid": "Function:src/browser/routes/index.ts:registerBrowserRoutes",
+        "name": "registerBrowserRoutes",
+        "filePath": "src/browser/routes/index.ts"
+      },
+      {
+        "uid": "Method:src/agents/openai-ws-connection.test.ts:MockWebSocket.once#2",
+        "name": "once",
+        "filePath": "src/agents/openai-ws-connection.test.ts"
+      }
+    ]
+  },
+  "processes": []
+}

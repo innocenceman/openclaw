@@ -1,0 +1,14 @@
+### cli-channel-plugin
+timeout 240s pnpm test -- src/commands/channels.add.test.ts src/commands/channels.adds-non-default-telegram-account.test.ts src/commands/channels.config-only-status-output.test.ts src/commands/channels.remove.test.ts src/commands/channels.resolve.test.ts src/commands/channels.status.command-flow.test.ts src/commands/channels.surfaces-signal-runtime-errors-channels-status-output.test.ts src/commands/channels/capabilities.test.ts src/commands/channel-setup/plugin-install.test.ts src/cli/channel-auth.test.ts src/cli/channel-options.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start base workers=2 filters=9
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-FiOlaw/base-1778261862143.log meta=/tmp/openclaw-test-parallel-FiOlaw/base-1778261862143-failure.json
+[test-parallel] done base code=1 elapsed=11.7s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-cvxYJ6/base-1778261669007.log meta=/tmp/openclaw-test-parallel-cvxYJ6/base-1778261669007-failure.json
+[test-parallel] done base code=1 elapsed=213.2s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1

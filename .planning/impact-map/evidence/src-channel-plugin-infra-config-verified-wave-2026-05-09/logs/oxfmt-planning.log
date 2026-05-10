@@ -1,0 +1,7 @@
+=== oxfmt-planning ===
+pnpm exec oxfmt --check .planning/impact-map/src/channel-abstraction .planning/impact-map/src/plugin-runtime-sdk .planning/impact-map/src/infra-outbound-delivery .planning/impact-map/src/config-secrets-security .planning/impact-map/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 439ms on 156 files using 4 threads.
+--- exit=0 duration=2s ---

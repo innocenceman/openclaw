@@ -1,0 +1,523 @@
+{
+  "target": {
+    "id": "Function:src/plugins/discovery.ts:discoverOpenClawPlugins",
+    "name": "discoverOpenClawPlugins",
+    "type": "Function",
+    "filePath": "src/plugins/discovery.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 53,
+  "risk": "CRITICAL",
+  "summary": {
+    "direct": 5,
+    "processes_affected": 1,
+    "modules_affected": 13
+  },
+  "affected_processes": [
+    {
+      "name": "compactEmbeddedPiSessionDirect",
+      "type": "Function",
+      "filePath": "src/agents/pi-embedded-runner/compact.ts",
+      "affected_process_count": 5,
+      "total_hits": 10,
+      "earliest_broken_step": 2
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Plugins",
+      "hits": 24,
+      "impact": "direct"
+    },
+    {
+      "name": "Agents",
+      "hits": 7,
+      "impact": "indirect"
+    },
+    {
+      "name": "Channel-setup",
+      "hits": 6,
+      "impact": "indirect"
+    },
+    {
+      "name": "Config",
+      "hits": 3,
+      "impact": "indirect"
+    },
+    {
+      "name": "Media-understanding",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Skills",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Tts",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Commands",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Context-engine",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Image-generation",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Runtime",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Scripts",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Hooks",
+      "hits": 1,
+      "impact": "indirect"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:scripts/check-no-monolithic-plugin-sdk-entry-imports.ts:main",
+        "name": "main",
+        "filePath": "scripts/check-no-monolithic-plugin-sdk-entry-imports.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/plugins/manifest-registry.ts:loadPluginManifestRegistry",
+        "name": "loadPluginManifestRegistry",
+        "filePath": "src/plugins/manifest-registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/plugins/loader.ts:loadOpenClawPlugins",
+        "name": "loadOpenClawPlugins",
+        "filePath": "src/plugins/loader.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/plugins/bundled-sources.ts:resolveBundledPluginSources",
+        "name": "resolveBundledPluginSources",
+        "filePath": "src/plugins/bundled-sources.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/channels/plugins/catalog.ts:listChannelPluginCatalogEntries",
+        "name": "listChannelPluginCatalogEntries",
+        "filePath": "src/channels/plugins/catalog.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/media-understanding/provider-registry.ts:buildMediaUnderstandingRegistry",
+        "name": "buildMediaUnderstandingRegistry",
+        "filePath": "src/media-understanding/provider-registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/image-generation/provider-registry.ts:resolvePluginImageGenerationProviders",
+        "name": "resolvePluginImageGenerationProviders",
+        "filePath": "src/image-generation/provider-registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/infra/matrix-plugin-helper.ts:resolveMatrixPluginRecord",
+        "name": "resolveMatrixPluginRecord",
+        "filePath": "src/infra/matrix-plugin-helper.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/agents/runtime-plugins.ts:ensureRuntimePluginsLoaded",
+        "name": "ensureRuntimePluginsLoaded",
+        "filePath": "src/agents/runtime-plugins.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/agents/pi-project-settings.ts:loadEnabledBundlePiSettingsSnapshot",
+        "name": "loadEnabledBundlePiSettingsSnapshot",
+        "filePath": "src/agents/pi-project-settings.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/hooks/plugin-hooks.ts:resolvePluginHookDirs",
+        "name": "resolvePluginHookDirs",
+        "filePath": "src/hooks/plugin-hooks.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/gateway/server-plugins.ts:loadGatewayPlugins",
+        "name": "loadGatewayPlugins",
+        "filePath": "src/gateway/server-plugins.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/runtime/runtime-plugin-boundary.ts:resolvePluginRuntimeRecord",
+        "name": "resolvePluginRuntimeRecord",
+        "filePath": "src/plugins/runtime/runtime-plugin-boundary.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/tts/provider-registry.ts:resolveSpeechProviderPluginEntries",
+        "name": "resolveSpeechProviderPluginEntries",
+        "filePath": "src/tts/provider-registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/config/validation.ts:ensureCompatConfig",
+        "name": "ensureCompatConfig",
+        "filePath": "src/config/validation.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/config/validation.ts:ensureRegistry",
+        "name": "ensureRegistry",
+        "filePath": "src/config/validation.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/config/plugin-auto-enable.ts:applyPluginAutoEnable",
+        "name": "applyPluginAutoEnable",
+        "filePath": "src/config/plugin-auto-enable.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/config/doc-baseline.ts:loadBundledConfigSchemaResponse",
+        "name": "loadBundledConfigSchemaResponse",
+        "filePath": "src/config/doc-baseline.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/cli/plugin-registry.ts:ensurePluginRegistryLoaded",
+        "name": "ensurePluginRegistryLoaded",
+        "filePath": "src/cli/plugin-registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/infra/outbound/channel-resolution.ts:maybeBootstrapChannelPlugin",
+        "name": "maybeBootstrapChannelPlugin",
+        "filePath": "src/infra/outbound/channel-resolution.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/gateway/server-methods/config.ts:loadSchemaWithPlugins",
+        "name": "loadSchemaWithPlugins",
+        "filePath": "src/gateway/server-methods/config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/commands/channel-setup/plugin-install.ts:ensureChannelSetupPluginInstalled",
+        "name": "ensureChannelSetupPluginInstalled",
+        "filePath": "src/commands/channel-setup/plugin-install.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/commands/channel-setup/plugin-install.ts:loadChannelSetupPluginRegistry",
+        "name": "loadChannelSetupPluginRegistry",
+        "filePath": "src/commands/channel-setup/plugin-install.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/commands/channel-setup/discovery.ts:listManifestInstalledChannelIds",
+        "name": "listManifestInstalledChannelIds",
+        "filePath": "src/commands/channel-setup/discovery.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/commands/channel-setup/discovery.ts:resolveChannelSetupEntries",
+        "name": "resolveChannelSetupEntries",
+        "filePath": "src/commands/channel-setup/discovery.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/commands/channel-setup/channel-plugin-resolution.ts:resolveCatalogChannelEntry",
+        "name": "resolveCatalogChannelEntry",
+        "filePath": "src/commands/channel-setup/channel-plugin-resolution.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/commands/channels/add.ts:resolveCatalogChannelEntry",
+        "name": "resolveCatalogChannelEntry",
+        "filePath": "src/commands/channels/add.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/web-search-providers.runtime.ts:resolveWebSearchCandidatePluginIds",
+        "name": "resolveWebSearchCandidatePluginIds",
+        "filePath": "src/plugins/web-search-providers.runtime.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/web-search-providers.runtime.ts:resolvePluginWebSearchProviders",
+        "name": "resolvePluginWebSearchProviders",
+        "filePath": "src/plugins/web-search-providers.runtime.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/update.ts:syncPluginsForUpdateChannel",
+        "name": "syncPluginsForUpdateChannel",
+        "filePath": "src/plugins/update.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/tools.ts:resolvePluginTools",
+        "name": "resolvePluginTools",
+        "filePath": "src/plugins/tools.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/status.ts:buildPluginStatusReport",
+        "name": "buildPluginStatusReport",
+        "filePath": "src/plugins/status.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/providers.ts:resolveBundledProviderCompatPluginIds",
+        "name": "resolveBundledProviderCompatPluginIds",
+        "filePath": "src/plugins/providers.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/providers.ts:resolveOwningPluginIdsForProvider",
+        "name": "resolveOwningPluginIdsForProvider",
+        "filePath": "src/plugins/providers.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/providers.ts:resolveNonBundledProviderPluginIds",
+        "name": "resolveNonBundledProviderPluginIds",
+        "filePath": "src/plugins/providers.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/providers.runtime.ts:resolvePluginProviders",
+        "name": "resolvePluginProviders",
+        "filePath": "src/plugins/providers.runtime.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/provider-auth-choices.ts:resolveManifestProviderAuthChoices",
+        "name": "resolveManifestProviderAuthChoices",
+        "filePath": "src/plugins/provider-auth-choices.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/cli.ts:registerPluginCliCommands",
+        "name": "registerPluginCliCommands",
+        "filePath": "src/plugins/cli.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/channel-plugin-ids.ts:resolveChannelPluginIds",
+        "name": "resolveChannelPluginIds",
+        "filePath": "src/plugins/channel-plugin-ids.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/channel-plugin-ids.ts:resolveConfiguredDeferredChannelPluginIds",
+        "name": "resolveConfiguredDeferredChannelPluginIds",
+        "filePath": "src/plugins/channel-plugin-ids.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/channel-plugin-ids.ts:resolveGatewayStartupPluginIds",
+        "name": "resolveGatewayStartupPluginIds",
+        "filePath": "src/plugins/channel-plugin-ids.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/bundled-web-search.ts:resolveBundledWebSearchPluginIds",
+        "name": "resolveBundledWebSearchPluginIds",
+        "filePath": "src/plugins/bundled-web-search.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/bundled-sources.ts:findBundledPluginSource",
+        "name": "findBundledPluginSource",
+        "filePath": "src/plugins/bundled-sources.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/bundle-config-shared.ts:loadEnabledBundleConfig",
+        "name": "loadEnabledBundleConfig",
+        "filePath": "src/plugins/bundle-config-shared.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugins/bundle-commands.ts:loadEnabledClaudeBundleCommands",
+        "name": "loadEnabledClaudeBundleCommands",
+        "filePath": "src/plugins/bundle-commands.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/commands/onboard-channels.ts:preloadConfiguredExternalPlugins",
+        "name": "preloadConfiguredExternalPlugins",
+        "filePath": "src/commands/onboard-channels.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/commands/doctor-workspace-status.ts:noteWorkspaceStatus",
+        "name": "noteWorkspaceStatus",
+        "filePath": "src/commands/doctor-workspace-status.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/channels/plugins/catalog.ts:getChannelPluginCatalogEntry",
+        "name": "getChannelPluginCatalogEntry",
+        "filePath": "src/channels/plugins/catalog.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/agents/skills/plugin-skills.ts:resolvePluginSkillDirs",
+        "name": "resolvePluginSkillDirs",
+        "filePath": "src/agents/skills/plugin-skills.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/commands/doctor/shared/stale-plugin-config.ts:collectPluginRegistryState",
+        "name": "collectPluginRegistryState",
+        "filePath": "src/commands/doctor/shared/stale-plugin-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:scripts/dev/test-device-pair-telegram.ts",
+        "name": "test-device-pair-telegram.ts",
+        "filePath": "scripts/dev/test-device-pair-telegram.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:scripts/test-built-plugin-singleton.mjs",
+        "name": "test-built-plugin-singleton.mjs",
+        "filePath": "scripts/test-built-plugin-singleton.mjs",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:scripts/check-no-monolithic-plugin-sdk-entry-imports.ts",
+        "name": "check-no-monolithic-plugin-sdk-entry-imports.ts",
+        "filePath": "scripts/check-no-monolithic-plugin-sdk-entry-imports.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      }
+    ]
+  }
+}

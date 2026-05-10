@@ -1,0 +1,147 @@
+# Obsolete Impact Map References
+
+Archived `59` active impact-map files that referenced source paths deleted by `v2026.3.28`.
+
+- `.planning/impact-map/evidence/extensions-all-verified-wave-2026-05-09/logs/provider-individual/extensions_qwen-portal-auth_refresh_test_ts.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/extensions-all-verified-wave-2026-05-09/logs/provider-individual/extensions_qwen-portal-auth_refresh_test_ts.log`
+  - deleted path: `extensions/qwen-portal-auth/refresh.test.ts`
+- `.planning/impact-map/evidence/extensions-all-verified-wave-2026-05-09/logs/provider-plugin-tests.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/extensions-all-verified-wave-2026-05-09/logs/provider-plugin-tests.log`
+  - deleted path: `extensions/qwen-portal-auth/refresh.test.ts`
+- `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/extensions-boundaries-tests.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/logs/extensions-boundaries-tests.log`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/extensions-memory-lancedb.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/logs/extensions-memory-lancedb.log`
+  - deleted path: `src/plugins/bundled-runtime-deps.test.ts`
+  - deleted path: `src/plugins/install-min-host-version-guardrails.test.ts`
+- `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/src-agents-runtime.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/logs/src-agents-runtime.log`
+  - deleted path: `src/agents/cli-runner.test.ts`
+- `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/test-infra-fixtures.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/logs/test-infra-fixtures.log`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/run-validation.mjs` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/run-validation.mjs`
+  - deleted path: `src/agents/cli-runner.test.ts`
+  - deleted path: `src/plugins/bundled-runtime-deps.test.ts`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+  - deleted path: `src/plugins/install-min-host-version-guardrails.test.ts`
+- `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/validation-summary.json` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/validation-summary.json`
+  - deleted path: `src/agents/cli-runner.test.ts`
+  - deleted path: `src/plugins/bundled-runtime-deps.test.ts`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+  - deleted path: `src/plugins/install-min-host-version-guardrails.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures-failure.json` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures-failure.json`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures-vite.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures-vite.log`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures.command` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures.command`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures.log`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/single-src-plugins-contracts-catalog-contract-test-ts.command` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/single-src-plugins-contracts-catalog-contract-test-ts.command`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/single-src-plugins-contracts-catalog-contract-test-ts.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/single-src-plugins-contracts-catalog-contract-test-ts.log`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/test-infra-fixtures.command` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/test-infra-fixtures.command`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/test-infra-fixtures.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/test-infra-fixtures.log`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/vitest-extensions-include-1.json` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/vitest-extensions-include-1.json`
+  - deleted path: `extensions/qwen-portal-auth/refresh.test.ts`
+- `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/vitest-unit-fast-include-1-1.json` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/vitest-unit-fast-include-1-1.json`
+  - deleted path: `src/channels/plugins/actions/actions.test.ts`
+  - deleted path: `src/channels/plugins/contracts/registry-backed.contract.test.ts`
+  - deleted path: `src/cli/browser-cli-manage.timeout-option.test.ts`
+  - deleted path: `src/extensionAPI.test.ts`
+  - deleted path: `src/memory/prompt-section.test.ts`
+  - deleted path: `src/plugins/bundled-runtime-deps.test.ts`
+  - deleted path: `src/plugins/contracts/auth.contract.test.ts`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+  - deleted path: `src/plugins/contracts/provider.contract.test.ts`
+  - deleted path: `src/plugins/contracts/web-search-provider.contract.test.ts`
+  - deleted path: `src/plugins/install-min-host-version-guardrails.test.ts`
+  - deleted path: `src/security/dm-policy-channel-smoke.test.ts`
+  - deleted path: `src/tts/tts.test.ts`
+  - deleted path: `test/scripts/test-find-thread-candidates.test.ts`
+- `.planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/cli-runner.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/cli-runner.log`
+  - deleted path: `src/agents/cli-runner.test.ts`
+- `.planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-context-subagents.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-context-subagents.log`
+  - deleted path: `src/agents/cli-runner.test.ts`
+- `.planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-core-low.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-core-low.log`
+  - deleted path: `src/agents/cli-runner.test.ts`
+- `.planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-core.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-core.log`
+  - deleted path: `src/agents/cli-runner.test.ts`
+- `.planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/context-cron-tts-all.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/context-cron-tts-all.log`
+  - deleted path: `src/tts/tts.test.ts`
+- `.planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/context-cron-tts.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/context-cron-tts.log`
+  - deleted path: `src/tts/tts.test.ts`
+- `.planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory-debug.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory-debug.log`
+  - deleted path: `src/memory/prompt-section.test.ts`
+- `.planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory-low.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory-low.log`
+  - deleted path: `src/memory/prompt-section.test.ts`
+- `.planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory.log`
+  - deleted path: `src/memory/prompt-section.test.ts`
+- `.planning/impact-map/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/channel-plugin-bridge.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/channel-plugin-bridge.log`
+  - deleted path: `src/channels/plugins/plugins-core.test.ts`
+- `.planning/impact-map/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/gitnexus-impact-definePluginEntry.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/gitnexus-impact-definePluginEntry.log`
+  - deleted path: `extensions/qwen-portal-auth/index.ts`
+- `.planning/impact-map/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/plugin-runtime-boundary.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/plugin-runtime-boundary.log`
+  - deleted path: `src/plugins/install-min-host-version-guardrails.test.ts`
+- `.planning/impact-map/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/plugin-runtime-contracts.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/plugin-runtime-contracts.log`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/evidence/src-reply-gateway-cli-verified-wave-2026-05-08/logs/cli-config-doctor.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-reply-gateway-cli-verified-wave-2026-05-08/logs/cli-config-doctor.log`
+  - deleted path: `src/commands/doctor.migrates-routing-allowfrom-channels-whatsapp-allowfrom.test.ts`
+- `.planning/impact-map/evidence/src-reply-gateway-cli-verified-wave-2026-05-08/logs/reply-streaming.log` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-reply-gateway-cli-verified-wave-2026-05-08/logs/reply-streaming.log`
+  - deleted path: `src/auto-reply/reply.heartbeat-typing.test.ts`
+- `.planning/impact-map/extensions/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/change-to-test.md`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/extensions/channel-plugins/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/channel-plugins/change-to-test.md`
+  - deleted path: `src/channels/plugins/contracts/registry-backed.contract.test.ts`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/extensions/channel-plugins/whatsapp/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/channel-plugins/whatsapp/change-to-test.md`
+  - deleted path: `src/channels/plugins/contracts/registry-backed.contract.test.ts`
+- `.planning/impact-map/extensions/memory-media-voice-plugins/memory-lancedb/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/memory-media-voice-plugins/memory-lancedb/change-to-test.md`
+  - deleted path: `src/plugins/bundled-runtime-deps.test.ts`
+  - deleted path: `src/plugins/install-min-host-version-guardrails.test.ts`
+- `.planning/impact-map/extensions/package-runtime-deps/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/package-runtime-deps/change-to-test.md`
+  - deleted path: `src/plugins/bundled-runtime-deps.test.ts`
+- `.planning/impact-map/extensions/package-runtime-deps/file-roles.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/package-runtime-deps/file-roles.md`
+  - deleted path: `src/plugins/bundled-runtime-deps.test.ts`
+- `.planning/impact-map/extensions/plugin-boundaries/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/plugin-boundaries/change-to-test.md`
+  - deleted path: `src/plugins/contracts/auth.contract.test.ts`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/extensions/provider-plugins/google/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/provider-plugins/google/change-to-test.md`
+  - deleted path: `src/plugins/contracts/web-search-provider.contract.test.ts`
+- `.planning/impact-map/extensions/provider-plugins/qwen-portal-auth/code-paths.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/provider-plugins/qwen-portal-auth/code-paths.md`
+  - deleted path: `extensions/qwen-portal-auth/index.ts`
+  - deleted path: `extensions/qwen-portal-auth/openclaw.plugin.json`
+- `.planning/impact-map/extensions/provider-plugins/qwen-portal-auth/file-roles.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/provider-plugins/qwen-portal-auth/file-roles.md`
+  - deleted path: `extensions/qwen-portal-auth/index.ts`
+  - deleted path: `extensions/qwen-portal-auth/openclaw.plugin.json`
+- `.planning/impact-map/src/agent-runtime/README.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/agent-runtime/README.md`
+  - deleted path: `src/agents/tool-policy-sandbox.ts`
+- `.planning/impact-map/src/agent-runtime/runtime/cli-runner/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/agent-runtime/runtime/cli-runner/change-to-test.md`
+  - deleted path: `src/agents/cli-runner.test.ts`
+- `.planning/impact-map/src/agent-runtime/sandbox/backend-policy/code-paths.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/agent-runtime/sandbox/backend-policy/code-paths.md`
+  - deleted path: `src/agents/tool-policy-sandbox.ts`
+- `.planning/impact-map/src/agent-runtime/sandbox/backend-policy/file-roles.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/agent-runtime/sandbox/backend-policy/file-roles.md`
+  - deleted path: `src/agents/tool-policy-sandbox.ts`
+- `.planning/impact-map/src/capability-modules/tts/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/capability-modules/tts/change-to-test.md`
+  - deleted path: `src/tts/tts.test.ts`
+- `.planning/impact-map/src/capability-modules/tts/file-roles.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/capability-modules/tts/file-roles.md`
+  - deleted path: `src/tts/tts.test.ts`
+- `.planning/impact-map/src/channel-abstraction/plugin-bridge/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/channel-abstraction/plugin-bridge/change-to-test.md`
+  - deleted path: `src/channels/plugins/plugins-core.test.ts`
+- `.planning/impact-map/src/channel-abstraction/plugin-bridge/file-roles.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/channel-abstraction/plugin-bridge/file-roles.md`
+  - deleted path: `src/channels/plugins/plugins-core.test.ts`
+- `.planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/boundary-enforcement/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/plugin-runtime-sdk/plugins-runtime/boundary-enforcement/change-to-test.md`
+  - deleted path: `src/plugins/install-min-host-version-guardrails.test.ts`
+- `.planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/boundary-enforcement/file-roles.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/plugin-runtime-sdk/plugins-runtime/boundary-enforcement/file-roles.md`
+  - deleted path: `src/plugins/install-min-host-version-guardrails.test.ts`
+- `.planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/contracts/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/plugin-runtime-sdk/plugins-runtime/contracts/change-to-test.md`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/contracts/file-roles.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/plugin-runtime-sdk/plugins-runtime/contracts/file-roles.md`
+  - deleted path: `src/plugins/contracts/catalog.contract.test.ts`
+- `.planning/impact-map/src/reply-orchestration/streaming/change-to-test.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/reply-orchestration/streaming/change-to-test.md`
+  - deleted path: `src/auto-reply/reply.heartbeat-typing.test.ts`
+- `.planning/impact-map/src/reply-orchestration/streaming/file-roles.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/reply-orchestration/streaming/file-roles.md`
+  - deleted path: `src/auto-reply/reply.heartbeat-typing.test.ts`
+- `.planning/impact-map/src/shared-misc-runtime-support/web-provider-root/code-paths.md` -> `.planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/shared-misc-runtime-support/web-provider-root/code-paths.md`
+  - deleted path: `src/bundled-web-search-registry.ts`

@@ -1,0 +1,34 @@
+== media-only-all ==
+src/media/audio.test.ts
+src/media/base64.test.ts
+src/media/fetch.telegram-network.test.ts
+src/media/fetch.test.ts
+src/media/ffmpeg-exec.test.ts
+src/media/file-context.test.ts
+src/media/host.test.ts
+src/media/image-ops.helpers.test.ts
+src/media/inbound-path-policy.test.ts
+src/media/input-files.fetch-guard.test.ts
+src/media/load-options.test.ts
+src/media/local-roots.test.ts
+src/media/mime.test.ts
+src/media/parse.test.ts
+src/media/read-response-with-limit.test.ts
+src/media/server.outside-workspace.test.ts
+src/media/server.test.ts
+src/media/store.outside-workspace.test.ts
+src/media/store.redirect.test.ts
+src/media/store.test.ts
+src/media/web-media.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/media/audio.test.ts src/media/base64.test.ts src/media/fetch.telegram-network.test.ts src/media/fetch.test.ts src/media/ffmpeg-exec.test.ts src/media/file-context.test.ts src/media/host.test.ts src/media/image-ops.helpers.test.ts src/media/inbound-path-policy.test.ts src/media/input-files.fetch-guard.test.ts src/media/load-options.test.ts src/media/local-roots.test.ts src/media/mime.test.ts src/media/parse.test.ts src/media/read-response-with-limit.test.ts src/media/server.outside-workspace.test.ts src/media/server.test.ts src/media/store.outside-workspace.test.ts src/media/store.redirect.test.ts src/media/store.test.ts src/media/web-media.test.ts
+
+[test-parallel] start unit workers=2 filters=20
+[test-parallel] start unit-fetch.telegram-network-isolated workers=1 filters=1
+[test-parallel] failure artifacts unit-fetch.telegram-network-isolated log=/tmp/openclaw-test-parallel-478uGz/unit-fetch.telegram-network-isolated-1778267343212.log meta=/tmp/openclaw-test-parallel-478uGz/unit-fetch.telegram-network-isolated-1778267343212-failure.json
+[test-parallel] done unit-fetch.telegram-network-isolated code=1 elapsed=7.6s
+[test-parallel] failure artifacts unit log=/tmp/openclaw-test-parallel-478uGz/unit-1778267343207.log meta=/tmp/openclaw-test-parallel-478uGz/unit-1778267343207-failure.json
+[test-parallel] done unit code=1 elapsed=11.6s
+ ELIFECYCLE  Test failed. See above for more details.
+--- exit=1 duration=13s ---

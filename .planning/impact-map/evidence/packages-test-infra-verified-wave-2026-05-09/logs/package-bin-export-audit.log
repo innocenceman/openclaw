@@ -1,0 +1,8 @@
+package clawdbot
+  bin clawdbot -> ./bin/clawdbot.js: MISSING
+  export . -> ./index.js: exists
+  export ./cli-entry -> ./bin/clawdbot.js: MISSING
+package moltbot
+  bin moltbot -> ./bin/moltbot.js: MISSING
+  export . -> ./index.js: exists
+  export ./cli-entry -> ./bin/moltbot.js: MISSING
