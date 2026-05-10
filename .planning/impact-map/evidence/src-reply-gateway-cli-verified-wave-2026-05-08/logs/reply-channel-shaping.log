@@ -1,0 +1,9 @@
+### reply-channel-shaping
+pnpm test -- src/auto-reply/chunk.test.ts src/auto-reply/envelope.test.ts src/auto-reply/media-note.test.ts src/auto-reply/reply/inbound-meta.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/auto-reply/chunk.test.ts src/auto-reply/envelope.test.ts src/auto-reply/media-note.test.ts src/auto-reply/reply/inbound-meta.test.ts
+
+[test-parallel] start base workers=2 filters=4
+[test-parallel] done base code=0 elapsed=7.8s
+EXIT_CODE=0

@@ -1,0 +1,7 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/pi-embedded-runner/model.test.ts src/agents/pi-embedded-runner/run.overflow-compaction.test.ts src/agents/pi-embedded-subscribe.handlers.lifecycle.test.ts src/agents/pi-extensions/context-pruning.test.ts
+
+[test-parallel] start base workers=2 filters=4
+[test-parallel] done base code=0 elapsed=6.7s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-3zMxY6

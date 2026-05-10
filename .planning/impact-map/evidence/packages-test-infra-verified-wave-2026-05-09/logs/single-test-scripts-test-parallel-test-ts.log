@@ -1,0 +1,9 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- test/scripts/test-parallel.test.ts
+
+[test-parallel] start unit workers=2 filters=1
+[test-parallel] failure artifacts unit log=/tmp/openclaw-test-parallel-ppKdM1/unit-1778275139684.log meta=/tmp/openclaw-test-parallel-ppKdM1/unit-1778275139684-failure.json
+[test-parallel] done unit code=1 elapsed=6.5s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-ppKdM1
+ ELIFECYCLE  Test failed. See above for more details.

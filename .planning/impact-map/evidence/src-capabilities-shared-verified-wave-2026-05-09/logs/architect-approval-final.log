@@ -1,0 +1,6 @@
+APPROVED.
+
+Both previously identified blockers are fixed:
+- src/leaf-index.md now aligns capability-modules/ and shared-misc-runtime-support/ to exceptioned-deep-partial without leaked coverage text in source ownership.
+- shared-misc-runtime-support/README.md child table includes root-entrypoints/ and web-provider-root/ as verified leaves.
+- Regression/audit logs are clean: architect-blocker-regression.log and evidence-link-coverage-audit-final5.log.

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "planning.versionDiff.refreshChecklist.v1",
+  "transitionRoot": ".planning/version-diff/v2026.3.24...v2026.3.28",
+  "baseVersion": "v2026.3.24",
+  "targetVersion": "v2026.3.28",
+  "targetSourceSha": "f9b1079283a8ee25a7cee77c8f8225d5c813bc30",
+  "planningRoot": ".planning",
+  "requiredRefreshes": [
+    ".planning/impact-map target-only cleanup",
+    ".planning/codebase or architecture atlas target-version refresh",
+    ".planning/STATE.md baseline update",
+    "version-diff human report projection check"
+  ],
+  "staleDeletedPathReferences": [],
+  "featureActions": [
+    {
+      "feature": "Bundled messaging channel plugins",
+      "risk": "high",
+      "compatibility": "behavior-change",
+      "suggestedAction": "review-and-refresh-planning-section"
+    },
+    {
+      "feature": "Plugin SDK, plugin registry, plugin loading boundaries",
+      "risk": "high",
+      "compatibility": "behavior-change",
+      "suggestedAction": "review-and-refresh-planning-section"
+    },
+    {
+      "feature": "Agent loop, ACP, spawning, command control",
+      "risk": "high",
+      "compatibility": "behavior-change",
+      "suggestedAction": "review-and-refresh-planning-section"
+    },
+    {
+      "feature": "Gateway, config, infrastructure, security and auth",
+      "risk": "high",
+      "compatibility": "behavior-change",
+      "suggestedAction": "review-and-refresh-planning-section"
+    },
+    {
+      "feature": "Model/search/provider plugins and tool surfaces",
+      "risk": "high",
+      "compatibility": "behavior-change",
+      "suggestedAction": "review-and-refresh-planning-section"
+    },
+    {
+      "feature": "Native apps and packaging",
+      "risk": "high",
+      "compatibility": "behavior-change",
+      "suggestedAction": "review-and-refresh-planning-section"
+    },
+    {
+      "feature": "Build, CI, scripts, tests and release automation",
+      "risk": "medium",
+      "compatibility": "compatible",
+      "suggestedAction": "review-and-refresh-planning-section"
+    },
+    {
+      "feature": "Miscellaneous repository surface",
+      "risk": "medium",
+      "compatibility": "unknown",
+      "suggestedAction": "review-and-refresh-planning-section"
+    },
+    {
+      "feature": "Memory, media, web UI and terminal UI surfaces",
+      "risk": "medium",
+      "compatibility": "behavior-change",
+      "suggestedAction": "review-and-refresh-planning-section"
+    },
+    {
+      "feature": "Docs, generated baselines, changelog and public guidance",
+      "risk": "medium",
+      "compatibility": "docs-only",
+      "suggestedAction": "review-and-refresh-planning-section"
+    }
+  ],
+  "status": "ready-for-semantic-refresh"
+}

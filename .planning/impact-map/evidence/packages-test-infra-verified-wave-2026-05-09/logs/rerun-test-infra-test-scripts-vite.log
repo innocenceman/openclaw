@@ -1,0 +1,6 @@
+[test-parallel] entry=unit
+[test-parallel] cwd=/home/yanx/projects/openclaw/openclaw-v2026.3.24
+[test-parallel] command=pnpm vitest run --config vitest.unit.config.ts --pool=threads --isolate=false test/scripts/run-vitest-profile.test.ts test/test-runner-manifest.test.ts test/scripts/test-parallel.test.ts test/scripts/test-report-utils.test.ts --maxWorkers 2 --silent=passed-only
+
+
+[test-parallel] done unit code=1 signal=none elapsed=7.1s

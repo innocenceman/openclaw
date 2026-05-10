@@ -1,0 +1,28 @@
+{
+  "status": "ambiguous",
+  "message": "Found 2 symbols matching 'listSpeechProviders'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "listSpeechProviders"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/tts/provider-registry.ts:listSpeechProviders",
+      "name": "listSpeechProviders",
+      "kind": "Function",
+      "filePath": "src/tts/provider-registry.ts",
+      "line": 70,
+      "score": 0.56
+    },
+    {
+      "uid": "Const:src/tts/provider-registry.test.ts:listSpeechProviders",
+      "name": "listSpeechProviders",
+      "kind": "",
+      "filePath": "src/tts/provider-registry.test.ts",
+      "line": 14,
+      "score": 0.5
+    }
+  ]
+}

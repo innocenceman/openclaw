@@ -1,0 +1,7 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/context.test.ts src/agents/context.lookup.test.ts src/agents/context-window-guard.test.ts src/agents/subagent-registry.test.ts src/agents/subagent-registry-queries.test.ts src/agents/subagent-registry-cleanup.test.ts src/agents/subagent-registry-completion.test.ts src/agents/subagent-registry.persistence.test.ts src/agents/subagent-registry.context-engine.test.ts src/agents/subagent-spawn.test.ts
+
+[test-parallel] start base workers=2 filters=10
+[test-parallel] done base code=0 elapsed=14.6s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-FNdAv5

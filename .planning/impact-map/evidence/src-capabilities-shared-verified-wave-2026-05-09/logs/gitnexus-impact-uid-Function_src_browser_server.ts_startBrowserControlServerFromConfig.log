@@ -1,0 +1,19 @@
+{
+  "target": {
+    "id": "Function:src/browser/server.ts:startBrowserControlServerFromConfig",
+    "name": "startBrowserControlServerFromConfig",
+    "type": "Function",
+    "filePath": "src/browser/server.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "LOW",
+  "summary": {
+    "direct": 0,
+    "processes_affected": 0,
+    "modules_affected": 0
+  },
+  "affected_processes": [],
+  "affected_modules": [],
+  "byDepth": {}
+}

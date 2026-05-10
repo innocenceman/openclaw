@@ -1,0 +1,9 @@
+$ git status --short | grep -Ev "^(..) \\.planning/|^(..) \\.omx/"
+ M .gitignore
+ M AGENTS.md
+?? .gitnexusignore
+$ stat -c "%y %n" .gitignore AGENTS.md .gitnexusignore
+2026-05-07 18:08:00.099602566 +0800 .gitignore
+2026-05-08 17:51:09.602925476 +0800 AGENTS.md
+2026-05-08 11:08:37.660291451 +0800 .gitnexusignore
+G007 note: these non-planning files were not edited by the G007 apps/UI work. They predate the active goal start (2026-05-08T20:16:39Z / 2026-05-09 local handoff) or were already recorded in .planning/STATE.md as unrelated outside-scope work; G007 product source diff remains empty.

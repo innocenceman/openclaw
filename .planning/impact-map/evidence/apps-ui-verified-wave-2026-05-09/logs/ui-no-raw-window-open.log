@@ -1,0 +1,9 @@
+$ pnpm lint:ui:no-raw-window-open
+started_at=2026-05-08T20:32:34Z
+
+> openclaw@2026.3.24 lint:ui:no-raw-window-open /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/check-no-raw-window-open.mjs
+
+finished_at=2026-05-08T20:32:35Z
+exit_code=0
+duration_seconds=1

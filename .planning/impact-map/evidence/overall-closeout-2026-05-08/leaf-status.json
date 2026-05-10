@@ -1,0 +1,2139 @@
+{
+  "generatedAt": "2026-05-08T15:36:00Z",
+  "rowCount": 266,
+  "indexCount": 41,
+  "coverageCounts": {
+    "deep-partial": 115,
+    "partial": 112,
+    "verified": 36,
+    "exceptioned-deep-partial": 3
+  },
+  "byTopModule": {
+    "apps": {
+      "deep-partial": 6,
+      "partial": 7
+    },
+    "docs": {
+      "deep-partial": 18,
+      "partial": 12
+    },
+    "extensions": {
+      "verified": 11,
+      "partial": 50,
+      "deep-partial": 21
+    },
+    "packages": {
+      "deep-partial": 2
+    },
+    "scripts": {
+      "partial": 5,
+      "deep-partial": 12
+    },
+    "src": {
+      "deep-partial": 52,
+      "verified": 19,
+      "partial": 35,
+      "exceptioned-deep-partial": 2
+    },
+    "test-infra": {
+      "verified": 6,
+      "exceptioned-deep-partial": 1
+    },
+    "ui": {
+      "partial": 3,
+      "deep-partial": 4
+    }
+  },
+  "byIndex": {
+    ".planning/impact-map/apps/ios-android/leaf-index.md": {
+      "deep-partial": 2,
+      "partial": 3
+    },
+    ".planning/impact-map/apps/leaf-index.md": {
+      "partial": 2,
+      "deep-partial": 1
+    },
+    ".planning/impact-map/apps/macos/leaf-index.md": {
+      "deep-partial": 2,
+      "partial": 2
+    },
+    ".planning/impact-map/apps/provider-channel-settings/leaf-index.md": {
+      "deep-partial": 1
+    },
+    ".planning/impact-map/docs/generated-baselines/leaf-index.md": {
+      "deep-partial": 3
+    },
+    ".planning/impact-map/docs/leaf-index.md": {
+      "partial": 1,
+      "deep-partial": 2
+    },
+    ".planning/impact-map/docs/mintlify/leaf-index.md": {
+      "deep-partial": 13,
+      "partial": 11
+    },
+    ".planning/impact-map/extensions/auth-integration-plugins/leaf-index.md": {
+      "verified": 2,
+      "partial": 3
+    },
+    ".planning/impact-map/extensions/channel-plugins/leaf-index.md": {
+      "deep-partial": 21
+    },
+    ".planning/impact-map/extensions/memory-media-voice-plugins/leaf-index.md": {
+      "verified": 2,
+      "partial": 5
+    },
+    ".planning/impact-map/extensions/provider-plugins/leaf-index.md": {
+      "partial": 30,
+      "verified": 5
+    },
+    ".planning/impact-map/extensions/skill-plugins/leaf-index.md": {
+      "partial": 6
+    },
+    ".planning/impact-map/extensions/tool-capability-plugins/leaf-index.md": {
+      "partial": 6,
+      "verified": 2
+    },
+    ".planning/impact-map/packages/shared-packages/leaf-index.md": {
+      "deep-partial": 2
+    },
+    ".planning/impact-map/scripts/leaf-index.md": {
+      "partial": 1,
+      "deep-partial": 1
+    },
+    ".planning/impact-map/scripts/packaging/leaf-index.md": {
+      "deep-partial": 8,
+      "partial": 4
+    },
+    ".planning/impact-map/scripts/release-versioning/leaf-index.md": {
+      "deep-partial": 3
+    },
+    ".planning/impact-map/src/agent-runtime/leaf-index.md": {
+      "deep-partial": 1,
+      "verified": 2,
+      "partial": 4
+    },
+    ".planning/impact-map/src/agent-runtime/runtime/leaf-index.md": {
+      "deep-partial": 5,
+      "verified": 1
+    },
+    ".planning/impact-map/src/capability-modules/acp/leaf-index.md": {
+      "verified": 5
+    },
+    ".planning/impact-map/src/capability-modules/leaf-index.md": {
+      "deep-partial": 3,
+      "partial": 4,
+      "verified": 1
+    },
+    ".planning/impact-map/src/channel-abstraction/leaf-index.md": {
+      "partial": 2,
+      "deep-partial": 4
+    },
+    ".planning/impact-map/src/channel-abstraction/routing/leaf-index.md": {
+      "verified": 2
+    },
+    ".planning/impact-map/src/cli-commands/command-implementations/leaf-index.md": {
+      "deep-partial": 6
+    },
+    ".planning/impact-map/src/cli-commands/leaf-index.md": {
+      "verified": 3,
+      "deep-partial": 1
+    },
+    ".planning/impact-map/src/config-secrets-security/leaf-index.md": {
+      "partial": 3,
+      "deep-partial": 3
+    },
+    ".planning/impact-map/src/config-secrets-security/secrets-resolution/leaf-index.md": {
+      "deep-partial": 5
+    },
+    ".planning/impact-map/src/gateway-api-surface/leaf-index.md": {
+      "verified": 2,
+      "exceptioned-deep-partial": 1,
+      "partial": 2
+    },
+    ".planning/impact-map/src/infra-outbound-delivery/leaf-index.md": {
+      "deep-partial": 2,
+      "partial": 5
+    },
+    ".planning/impact-map/src/leaf-index.md": {
+      "deep-partial": 9,
+      "partial": 1
+    },
+    ".planning/impact-map/src/plugin-runtime-sdk/leaf-index.md": {
+      "deep-partial": 2
+    },
+    ".planning/impact-map/src/plugin-runtime-sdk/plugin-sdk/leaf-index.md": {
+      "verified": 3,
+      "partial": 2,
+      "exceptioned-deep-partial": 1
+    },
+    ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/leaf-index.md": {
+      "deep-partial": 3,
+      "partial": 2
+    },
+    ".planning/impact-map/src/reply-orchestration/commands/leaf-index.md": {
+      "deep-partial": 3
+    },
+    ".planning/impact-map/src/reply-orchestration/leaf-index.md": {
+      "deep-partial": 3,
+      "partial": 4
+    },
+    ".planning/impact-map/src/shared-misc-runtime-support/leaf-index.md": {
+      "deep-partial": 2,
+      "partial": 6
+    },
+    ".planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md": {
+      "verified": 3,
+      "exceptioned-deep-partial": 1
+    },
+    ".planning/impact-map/test-infra/profiles-and-suites/leaf-index.md": {
+      "verified": 3
+    },
+    ".planning/impact-map/ui/leaf-index.md": {
+      "partial": 1,
+      "deep-partial": 1
+    },
+    ".planning/impact-map/ui/provider-channel-settings/leaf-index.md": {
+      "deep-partial": 1
+    },
+    ".planning/impact-map/ui/web-ui/leaf-index.md": {
+      "deep-partial": 2,
+      "partial": 2
+    }
+  },
+  "rows": [
+    {
+      "leaf directory": "android-app/",
+      "coverage": "deep-partial",
+      "entry": "apps/ios-android/android-app/README.md",
+      "index": ".planning/impact-map/apps/ios-android/leaf-index.md",
+      "leaf": "android-app/"
+    },
+    {
+      "leaf directory": "android-benchmark/",
+      "coverage": "partial",
+      "entry": "apps/ios-android/android-benchmark/README.md",
+      "index": ".planning/impact-map/apps/ios-android/leaf-index.md",
+      "leaf": "android-benchmark/"
+    },
+    {
+      "leaf directory": "ios-app/",
+      "coverage": "deep-partial",
+      "entry": "apps/ios-android/ios-app/README.md",
+      "index": ".planning/impact-map/apps/ios-android/leaf-index.md",
+      "leaf": "ios-app/"
+    },
+    {
+      "leaf directory": "ios-extensions-watch/",
+      "coverage": "partial",
+      "entry": "apps/ios-android/ios-extensions-watch/README.md",
+      "index": ".planning/impact-map/apps/ios-android/leaf-index.md",
+      "leaf": "ios-extensions-watch/"
+    },
+    {
+      "leaf directory": "shared-kit/",
+      "coverage": "partial",
+      "entry": "apps/ios-android/shared-kit/README.md",
+      "index": ".planning/impact-map/apps/ios-android/leaf-index.md",
+      "leaf": "shared-kit/"
+    },
+    {
+      "leaf/submodule": "macos/",
+      "coverage": "partial",
+      "docs": "macos/README.md",
+      "index": ".planning/impact-map/apps/leaf-index.md",
+      "leaf": "macos/"
+    },
+    {
+      "leaf/submodule": "ios-android/",
+      "coverage": "partial",
+      "docs": "ios-android/README.md",
+      "index": ".planning/impact-map/apps/leaf-index.md",
+      "leaf": "ios-android/"
+    },
+    {
+      "leaf/submodule": "provider-channel-settings/native-settings/",
+      "coverage": "deep-partial",
+      "docs": "provider-channel-settings/native-settings/README.md",
+      "index": ".planning/impact-map/apps/leaf-index.md",
+      "leaf": "provider-channel-settings/native-settings/"
+    },
+    {
+      "leaf directory": "app-sources/",
+      "coverage": "deep-partial",
+      "entry": "apps/macos/app-sources/README.md",
+      "index": ".planning/impact-map/apps/macos/leaf-index.md",
+      "leaf": "app-sources/"
+    },
+    {
+      "leaf directory": "packaging-restart/",
+      "coverage": "deep-partial",
+      "entry": "apps/macos/packaging-restart/README.md",
+      "index": ".planning/impact-map/apps/macos/leaf-index.md",
+      "leaf": "packaging-restart/"
+    },
+    {
+      "leaf directory": "resources-versioning/",
+      "coverage": "partial",
+      "entry": "apps/macos/resources-versioning/README.md",
+      "index": ".planning/impact-map/apps/macos/leaf-index.md",
+      "leaf": "resources-versioning/"
+    },
+    {
+      "leaf directory": "tests/",
+      "coverage": "partial",
+      "entry": "apps/macos/tests/README.md",
+      "index": ".planning/impact-map/apps/macos/leaf-index.md",
+      "leaf": "tests/"
+    },
+    {
+      "leaf directory": "native-settings/",
+      "coverage": "deep-partial",
+      "leaf docs": "native-settings/README.md",
+      "index": ".planning/impact-map/apps/provider-channel-settings/leaf-index.md",
+      "leaf": "native-settings/"
+    },
+    {
+      "leaf directory": "bundled-plugin-metadata/",
+      "coverage": "deep-partial",
+      "entry": "docs/generated-baselines/bundled-plugin-metadata/README.md",
+      "index": ".planning/impact-map/docs/generated-baselines/leaf-index.md",
+      "leaf": "bundled-plugin-metadata/"
+    },
+    {
+      "leaf directory": "config-docs/",
+      "coverage": "deep-partial",
+      "entry": "docs/generated-baselines/config-docs/README.md",
+      "index": ".planning/impact-map/docs/generated-baselines/leaf-index.md",
+      "leaf": "config-docs/"
+    },
+    {
+      "leaf directory": "plugin-sdk-api/",
+      "coverage": "deep-partial",
+      "entry": "docs/generated-baselines/plugin-sdk-api/README.md",
+      "index": ".planning/impact-map/docs/generated-baselines/leaf-index.md",
+      "leaf": "plugin-sdk-api/"
+    },
+    {
+      "leaf/submodule": "mintlify/",
+      "coverage": "partial",
+      "docs": "mintlify/README.md",
+      "index": ".planning/impact-map/docs/leaf-index.md",
+      "leaf": "mintlify/"
+    },
+    {
+      "leaf/submodule": "generated-baselines/",
+      "coverage": "deep-partial",
+      "docs": "generated-baselines/README.md",
+      "index": ".planning/impact-map/docs/leaf-index.md",
+      "leaf": "generated-baselines/"
+    },
+    {
+      "leaf/submodule": "provider-channel-settings-docs-sync/",
+      "coverage": "deep-partial",
+      "docs": "provider-channel-settings-docs-sync/README.md",
+      "index": ".planning/impact-map/docs/leaf-index.md",
+      "leaf": "provider-channel-settings-docs-sync/"
+    },
+    {
+      "leaf directory": ".generated/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/.generated/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": ".generated/"
+    },
+    {
+      "leaf directory": ".i18n/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/.i18n/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": ".i18n/"
+    },
+    {
+      "leaf directory": "assets/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/assets/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "assets/"
+    },
+    {
+      "leaf directory": "automation/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/automation/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "automation/"
+    },
+    {
+      "leaf directory": "channels/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/channels/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "channels/"
+    },
+    {
+      "leaf directory": "cli/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/cli/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "cli/"
+    },
+    {
+      "leaf directory": "concepts/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/concepts/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "concepts/"
+    },
+    {
+      "leaf directory": "debug/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/debug/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "debug/"
+    },
+    {
+      "leaf directory": "diagnostics/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/diagnostics/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "diagnostics/"
+    },
+    {
+      "leaf directory": "gateway/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/gateway/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "gateway/"
+    },
+    {
+      "leaf directory": "help/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/help/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "help/"
+    },
+    {
+      "leaf directory": "images/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/images/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "images/"
+    },
+    {
+      "leaf directory": "install/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/install/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "install/"
+    },
+    {
+      "leaf directory": "ja-jp/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/ja-jp/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "ja-jp/"
+    },
+    {
+      "leaf directory": "nodes/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/nodes/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "nodes/"
+    },
+    {
+      "leaf directory": "platforms/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/platforms/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "platforms/"
+    },
+    {
+      "leaf directory": "plugins/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/plugins/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "plugins/"
+    },
+    {
+      "leaf directory": "providers/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/providers/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "providers/"
+    },
+    {
+      "leaf directory": "reference/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/reference/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "reference/"
+    },
+    {
+      "leaf directory": "security/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/security/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "security/"
+    },
+    {
+      "leaf directory": "start/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/start/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "start/"
+    },
+    {
+      "leaf directory": "tools/",
+      "coverage": "partial",
+      "entry": "docs/mintlify/tools/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "tools/"
+    },
+    {
+      "leaf directory": "web/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/web/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "web/"
+    },
+    {
+      "leaf directory": "zh-cn/",
+      "coverage": "deep-partial",
+      "entry": "docs/mintlify/zh-cn/README.md",
+      "index": ".planning/impact-map/docs/mintlify/leaf-index.md",
+      "leaf": "zh-cn/"
+    },
+    {
+      "leaf directory": "device-pair/",
+      "coverage": "verified",
+      "source path": "extensions/device-pair/",
+      "index": ".planning/impact-map/extensions/auth-integration-plugins/leaf-index.md",
+      "leaf": "device-pair/"
+    },
+    {
+      "leaf directory": "diagnostics-otel/",
+      "coverage": "verified",
+      "source path": "extensions/diagnostics-otel/",
+      "index": ".planning/impact-map/extensions/auth-integration-plugins/leaf-index.md",
+      "leaf": "diagnostics-otel/"
+    },
+    {
+      "leaf directory": "groq/",
+      "coverage": "partial",
+      "source path": "extensions/groq/",
+      "index": ".planning/impact-map/extensions/auth-integration-plugins/leaf-index.md",
+      "leaf": "groq/"
+    },
+    {
+      "leaf directory": "lobster/",
+      "coverage": "partial",
+      "source path": "extensions/lobster/",
+      "index": ".planning/impact-map/extensions/auth-integration-plugins/leaf-index.md",
+      "leaf": "lobster/"
+    },
+    {
+      "leaf directory": "perplexity/",
+      "coverage": "partial",
+      "source path": "extensions/perplexity/",
+      "index": ".planning/impact-map/extensions/auth-integration-plugins/leaf-index.md",
+      "leaf": "perplexity/"
+    },
+    {
+      "leaf directory": "bluebubbles/",
+      "channel id": "bluebubbles",
+      "coverage": "deep-partial",
+      "source path": "extensions/bluebubbles/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "bluebubbles/"
+    },
+    {
+      "leaf directory": "discord/",
+      "channel id": "discord",
+      "coverage": "deep-partial",
+      "source path": "extensions/discord/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "discord/"
+    },
+    {
+      "leaf directory": "feishu/",
+      "channel id": "feishu",
+      "coverage": "deep-partial",
+      "source path": "extensions/feishu/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "feishu/"
+    },
+    {
+      "leaf directory": "googlechat/",
+      "channel id": "googlechat",
+      "coverage": "deep-partial",
+      "source path": "extensions/googlechat/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "googlechat/"
+    },
+    {
+      "leaf directory": "imessage/",
+      "channel id": "imessage",
+      "coverage": "deep-partial",
+      "source path": "extensions/imessage/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "imessage/"
+    },
+    {
+      "leaf directory": "irc/",
+      "channel id": "irc",
+      "coverage": "deep-partial",
+      "source path": "extensions/irc/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "irc/"
+    },
+    {
+      "leaf directory": "line/",
+      "channel id": "line",
+      "coverage": "deep-partial",
+      "source path": "extensions/line/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "line/"
+    },
+    {
+      "leaf directory": "matrix/",
+      "channel id": "matrix",
+      "coverage": "deep-partial",
+      "source path": "extensions/matrix/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "matrix/"
+    },
+    {
+      "leaf directory": "mattermost/",
+      "channel id": "mattermost",
+      "coverage": "deep-partial",
+      "source path": "extensions/mattermost/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "mattermost/"
+    },
+    {
+      "leaf directory": "msteams/",
+      "channel id": "msteams",
+      "coverage": "deep-partial",
+      "source path": "extensions/msteams/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "msteams/"
+    },
+    {
+      "leaf directory": "nextcloud-talk/",
+      "channel id": "nextcloud-talk",
+      "coverage": "deep-partial",
+      "source path": "extensions/nextcloud-talk/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "nextcloud-talk/"
+    },
+    {
+      "leaf directory": "nostr/",
+      "channel id": "nostr",
+      "coverage": "deep-partial",
+      "source path": "extensions/nostr/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "nostr/"
+    },
+    {
+      "leaf directory": "signal/",
+      "channel id": "signal",
+      "coverage": "deep-partial",
+      "source path": "extensions/signal/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "signal/"
+    },
+    {
+      "leaf directory": "slack/",
+      "channel id": "slack",
+      "coverage": "deep-partial",
+      "source path": "extensions/slack/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "slack/"
+    },
+    {
+      "leaf directory": "synology-chat/",
+      "channel id": "synology-chat",
+      "coverage": "deep-partial",
+      "source path": "extensions/synology-chat/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "synology-chat/"
+    },
+    {
+      "leaf directory": "telegram/",
+      "channel id": "telegram",
+      "coverage": "deep-partial",
+      "source path": "extensions/telegram/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "telegram/"
+    },
+    {
+      "leaf directory": "tlon/",
+      "channel id": "tlon",
+      "coverage": "deep-partial",
+      "source path": "extensions/tlon/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "tlon/"
+    },
+    {
+      "leaf directory": "twitch/",
+      "channel id": "twitch",
+      "coverage": "deep-partial",
+      "source path": "extensions/twitch/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "twitch/"
+    },
+    {
+      "leaf directory": "whatsapp/",
+      "channel id": "whatsapp",
+      "coverage": "deep-partial",
+      "source path": "extensions/whatsapp/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "whatsapp/"
+    },
+    {
+      "leaf directory": "zalo/",
+      "channel id": "zalo",
+      "coverage": "deep-partial",
+      "source path": "extensions/zalo/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "zalo/"
+    },
+    {
+      "leaf directory": "zalouser/",
+      "channel id": "zalouser",
+      "coverage": "deep-partial",
+      "source path": "extensions/zalouser/",
+      "index": ".planning/impact-map/extensions/channel-plugins/leaf-index.md",
+      "leaf": "zalouser/"
+    },
+    {
+      "leaf directory": "memory-core/",
+      "coverage": "verified",
+      "source path": "extensions/memory-core/",
+      "index": ".planning/impact-map/extensions/memory-media-voice-plugins/leaf-index.md",
+      "leaf": "memory-core/"
+    },
+    {
+      "leaf directory": "memory-lancedb/",
+      "coverage": "verified",
+      "source path": "extensions/memory-lancedb/",
+      "index": ".planning/impact-map/extensions/memory-media-voice-plugins/leaf-index.md",
+      "leaf": "memory-lancedb/"
+    },
+    {
+      "leaf directory": "deepgram/",
+      "coverage": "partial",
+      "source path": "extensions/deepgram/",
+      "index": ".planning/impact-map/extensions/memory-media-voice-plugins/leaf-index.md",
+      "leaf": "deepgram/"
+    },
+    {
+      "leaf directory": "elevenlabs/",
+      "coverage": "partial",
+      "source path": "extensions/elevenlabs/",
+      "index": ".planning/impact-map/extensions/memory-media-voice-plugins/leaf-index.md",
+      "leaf": "elevenlabs/"
+    },
+    {
+      "leaf directory": "microsoft/",
+      "coverage": "partial",
+      "source path": "extensions/microsoft/",
+      "index": ".planning/impact-map/extensions/memory-media-voice-plugins/leaf-index.md",
+      "leaf": "microsoft/"
+    },
+    {
+      "leaf directory": "talk-voice/",
+      "coverage": "partial",
+      "source path": "extensions/talk-voice/",
+      "index": ".planning/impact-map/extensions/memory-media-voice-plugins/leaf-index.md",
+      "leaf": "talk-voice/"
+    },
+    {
+      "leaf directory": "voice-call/",
+      "coverage": "partial",
+      "source path": "extensions/voice-call/",
+      "index": ".planning/impact-map/extensions/memory-media-voice-plugins/leaf-index.md",
+      "leaf": "voice-call/"
+    },
+    {
+      "leaf directory": "amazon-bedrock/",
+      "provider id(s)": "amazon-bedrock",
+      "coverage": "partial",
+      "source path": "extensions/amazon-bedrock/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "amazon-bedrock/"
+    },
+    {
+      "leaf directory": "anthropic/",
+      "provider id(s)": "anthropic",
+      "coverage": "verified",
+      "source path": "extensions/anthropic/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "anthropic/"
+    },
+    {
+      "leaf directory": "byteplus/",
+      "provider id(s)": "byteplus`, `byteplus-plan",
+      "coverage": "partial",
+      "source path": "extensions/byteplus/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "byteplus/"
+    },
+    {
+      "leaf directory": "chutes/",
+      "provider id(s)": "chutes",
+      "coverage": "partial",
+      "source path": "extensions/chutes/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "chutes/"
+    },
+    {
+      "leaf directory": "cloudflare-ai-gateway/",
+      "provider id(s)": "cloudflare-ai-gateway",
+      "coverage": "partial",
+      "source path": "extensions/cloudflare-ai-gateway/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "cloudflare-ai-gateway/"
+    },
+    {
+      "leaf directory": "copilot-proxy/",
+      "provider id(s)": "copilot-proxy",
+      "coverage": "partial",
+      "source path": "extensions/copilot-proxy/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "copilot-proxy/"
+    },
+    {
+      "leaf directory": "deepseek/",
+      "provider id(s)": "deepseek",
+      "coverage": "partial",
+      "source path": "extensions/deepseek/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "deepseek/"
+    },
+    {
+      "leaf directory": "fal/",
+      "provider id(s)": "fal",
+      "coverage": "partial",
+      "source path": "extensions/fal/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "fal/"
+    },
+    {
+      "leaf directory": "github-copilot/",
+      "provider id(s)": "github-copilot",
+      "coverage": "partial",
+      "source path": "extensions/github-copilot/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "github-copilot/"
+    },
+    {
+      "leaf directory": "google/",
+      "provider id(s)": "google`, `google-gemini-cli",
+      "coverage": "verified",
+      "source path": "extensions/google/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "google/"
+    },
+    {
+      "leaf directory": "huggingface/",
+      "provider id(s)": "huggingface",
+      "coverage": "partial",
+      "source path": "extensions/huggingface/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "huggingface/"
+    },
+    {
+      "leaf directory": "kilocode/",
+      "provider id(s)": "kilocode",
+      "coverage": "partial",
+      "source path": "extensions/kilocode/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "kilocode/"
+    },
+    {
+      "leaf directory": "kimi-coding/",
+      "provider id(s)": "kimi`, `kimi-coding",
+      "coverage": "partial",
+      "source path": "extensions/kimi-coding/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "kimi-coding/"
+    },
+    {
+      "leaf directory": "minimax/",
+      "provider id(s)": "minimax`, `minimax-portal",
+      "coverage": "partial",
+      "source path": "extensions/minimax/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "minimax/"
+    },
+    {
+      "leaf directory": "mistral/",
+      "provider id(s)": "mistral",
+      "coverage": "partial",
+      "source path": "extensions/mistral/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "mistral/"
+    },
+    {
+      "leaf directory": "modelstudio/",
+      "provider id(s)": "modelstudio",
+      "coverage": "partial",
+      "source path": "extensions/modelstudio/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "modelstudio/"
+    },
+    {
+      "leaf directory": "moonshot/",
+      "provider id(s)": "moonshot",
+      "coverage": "partial",
+      "source path": "extensions/moonshot/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "moonshot/"
+    },
+    {
+      "leaf directory": "nvidia/",
+      "provider id(s)": "nvidia",
+      "coverage": "partial",
+      "source path": "extensions/nvidia/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "nvidia/"
+    },
+    {
+      "leaf directory": "ollama/",
+      "provider id(s)": "ollama",
+      "coverage": "verified",
+      "source path": "extensions/ollama/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "ollama/"
+    },
+    {
+      "leaf directory": "openai/",
+      "provider id(s)": "openai`, `openai-codex",
+      "coverage": "verified",
+      "source path": "extensions/openai/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "openai/"
+    },
+    {
+      "leaf directory": "opencode/",
+      "provider id(s)": "opencode",
+      "coverage": "partial",
+      "source path": "extensions/opencode/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "opencode/"
+    },
+    {
+      "leaf directory": "opencode-go/",
+      "provider id(s)": "opencode-go",
+      "coverage": "partial",
+      "source path": "extensions/opencode-go/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "opencode-go/"
+    },
+    {
+      "leaf directory": "openrouter/",
+      "provider id(s)": "openrouter",
+      "coverage": "verified",
+      "source path": "extensions/openrouter/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "openrouter/"
+    },
+    {
+      "leaf directory": "qianfan/",
+      "provider id(s)": "qianfan",
+      "coverage": "partial",
+      "source path": "extensions/qianfan/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "qianfan/"
+    },
+    {
+      "leaf directory": "qwen-portal-auth/",
+      "provider id(s)": "qwen-portal",
+      "coverage": "partial",
+      "source path": "extensions/qwen-portal-auth/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "qwen-portal-auth/"
+    },
+    {
+      "leaf directory": "sglang/",
+      "provider id(s)": "sglang",
+      "coverage": "partial",
+      "source path": "extensions/sglang/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "sglang/"
+    },
+    {
+      "leaf directory": "synthetic/",
+      "provider id(s)": "synthetic",
+      "coverage": "partial",
+      "source path": "extensions/synthetic/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "synthetic/"
+    },
+    {
+      "leaf directory": "together/",
+      "provider id(s)": "together",
+      "coverage": "partial",
+      "source path": "extensions/together/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "together/"
+    },
+    {
+      "leaf directory": "venice/",
+      "provider id(s)": "venice",
+      "coverage": "partial",
+      "source path": "extensions/venice/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "venice/"
+    },
+    {
+      "leaf directory": "vercel-ai-gateway/",
+      "provider id(s)": "vercel-ai-gateway",
+      "coverage": "partial",
+      "source path": "extensions/vercel-ai-gateway/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "vercel-ai-gateway/"
+    },
+    {
+      "leaf directory": "vllm/",
+      "provider id(s)": "vllm",
+      "coverage": "partial",
+      "source path": "extensions/vllm/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "vllm/"
+    },
+    {
+      "leaf directory": "volcengine/",
+      "provider id(s)": "volcengine`, `volcengine-plan",
+      "coverage": "partial",
+      "source path": "extensions/volcengine/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "volcengine/"
+    },
+    {
+      "leaf directory": "xai/",
+      "provider id(s)": "xai",
+      "coverage": "partial",
+      "source path": "extensions/xai/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "xai/"
+    },
+    {
+      "leaf directory": "xiaomi/",
+      "provider id(s)": "xiaomi",
+      "coverage": "partial",
+      "source path": "extensions/xiaomi/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "xiaomi/"
+    },
+    {
+      "leaf directory": "zai/",
+      "provider id(s)": "zai",
+      "coverage": "partial",
+      "source path": "extensions/zai/",
+      "index": ".planning/impact-map/extensions/provider-plugins/leaf-index.md",
+      "leaf": "zai/"
+    },
+    {
+      "leaf directory": "acpx/",
+      "type": "skills=['./skills']",
+      "coverage": "partial",
+      "source path": "extensions/acpx/",
+      "index": ".planning/impact-map/extensions/skill-plugins/leaf-index.md",
+      "leaf": "acpx/"
+    },
+    {
+      "leaf directory": "diffs/",
+      "type": "skills=['./skills']",
+      "coverage": "partial",
+      "source path": "extensions/diffs/",
+      "index": ".planning/impact-map/extensions/skill-plugins/leaf-index.md",
+      "leaf": "diffs/"
+    },
+    {
+      "leaf directory": "feishu/",
+      "type": "skills=['./skills']",
+      "coverage": "partial",
+      "source path": "extensions/feishu/",
+      "index": ".planning/impact-map/extensions/skill-plugins/leaf-index.md",
+      "leaf": "feishu/"
+    },
+    {
+      "leaf directory": "open-prose/",
+      "type": "skills=['./skills']",
+      "coverage": "partial",
+      "source path": "extensions/open-prose/",
+      "index": ".planning/impact-map/extensions/skill-plugins/leaf-index.md",
+      "leaf": "open-prose/"
+    },
+    {
+      "leaf directory": "tavily/",
+      "type": "skills=['./skills']",
+      "coverage": "partial",
+      "source path": "extensions/tavily/",
+      "index": ".planning/impact-map/extensions/skill-plugins/leaf-index.md",
+      "leaf": "tavily/"
+    },
+    {
+      "leaf directory": "tlon/",
+      "type": "skills=['node_modules/@tloncorp/tlon-skill']",
+      "coverage": "partial",
+      "source path": "extensions/tlon/",
+      "index": ".planning/impact-map/extensions/skill-plugins/leaf-index.md",
+      "leaf": "tlon/"
+    },
+    {
+      "leaf directory": "brave/",
+      "coverage": "partial",
+      "source path": "extensions/brave/",
+      "index": ".planning/impact-map/extensions/tool-capability-plugins/leaf-index.md",
+      "leaf": "brave/"
+    },
+    {
+      "leaf directory": "duckduckgo/",
+      "coverage": "partial",
+      "source path": "extensions/duckduckgo/",
+      "index": ".planning/impact-map/extensions/tool-capability-plugins/leaf-index.md",
+      "leaf": "duckduckgo/"
+    },
+    {
+      "leaf directory": "exa/",
+      "coverage": "partial",
+      "source path": "extensions/exa/",
+      "index": ".planning/impact-map/extensions/tool-capability-plugins/leaf-index.md",
+      "leaf": "exa/"
+    },
+    {
+      "leaf directory": "firecrawl/",
+      "coverage": "partial",
+      "source path": "extensions/firecrawl/",
+      "index": ".planning/impact-map/extensions/tool-capability-plugins/leaf-index.md",
+      "leaf": "firecrawl/"
+    },
+    {
+      "leaf directory": "llm-task/",
+      "coverage": "verified",
+      "source path": "extensions/llm-task/",
+      "index": ".planning/impact-map/extensions/tool-capability-plugins/leaf-index.md",
+      "leaf": "llm-task/"
+    },
+    {
+      "leaf directory": "openshell/",
+      "coverage": "partial",
+      "source path": "extensions/openshell/",
+      "index": ".planning/impact-map/extensions/tool-capability-plugins/leaf-index.md",
+      "leaf": "openshell/"
+    },
+    {
+      "leaf directory": "phone-control/",
+      "coverage": "partial",
+      "source path": "extensions/phone-control/",
+      "index": ".planning/impact-map/extensions/tool-capability-plugins/leaf-index.md",
+      "leaf": "phone-control/"
+    },
+    {
+      "leaf directory": "thread-ownership/",
+      "coverage": "verified",
+      "source path": "extensions/thread-ownership/",
+      "index": ".planning/impact-map/extensions/tool-capability-plugins/leaf-index.md",
+      "leaf": "thread-ownership/"
+    },
+    {
+      "leaf directory": "clawdbot/",
+      "coverage": "deep-partial",
+      "source path": "packages/clawdbot/",
+      "index": ".planning/impact-map/packages/shared-packages/leaf-index.md",
+      "leaf": "clawdbot/"
+    },
+    {
+      "leaf directory": "moltbot/",
+      "coverage": "deep-partial",
+      "source path": "packages/moltbot/",
+      "index": ".planning/impact-map/packages/shared-packages/leaf-index.md",
+      "leaf": "moltbot/"
+    },
+    {
+      "leaf/submodule": "packaging/",
+      "coverage": "partial",
+      "docs": "packaging/README.md",
+      "index": ".planning/impact-map/scripts/leaf-index.md",
+      "leaf": "packaging/"
+    },
+    {
+      "leaf/submodule": "release-versioning/",
+      "coverage": "deep-partial",
+      "docs": "release-versioning/README.md",
+      "index": ".planning/impact-map/scripts/leaf-index.md",
+      "leaf": "release-versioning/"
+    },
+    {
+      "leaf directory": "dev/",
+      "coverage": "deep-partial",
+      "entry": "scripts/packaging/dev/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "dev/"
+    },
+    {
+      "leaf directory": "docker/",
+      "coverage": "deep-partial",
+      "entry": "scripts/packaging/docker/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "docker/"
+    },
+    {
+      "leaf directory": "docs-i18n/",
+      "coverage": "deep-partial",
+      "entry": "scripts/packaging/docs-i18n/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "docs-i18n/"
+    },
+    {
+      "leaf directory": "e2e/",
+      "coverage": "deep-partial",
+      "entry": "scripts/packaging/e2e/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "e2e/"
+    },
+    {
+      "leaf directory": "k8s/",
+      "coverage": "partial",
+      "entry": "scripts/packaging/k8s/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "k8s/"
+    },
+    {
+      "leaf directory": "lib/",
+      "coverage": "deep-partial",
+      "entry": "scripts/packaging/lib/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "lib/"
+    },
+    {
+      "leaf directory": "podman/",
+      "coverage": "partial",
+      "entry": "scripts/packaging/podman/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "podman/"
+    },
+    {
+      "leaf directory": "pre-commit/",
+      "coverage": "deep-partial",
+      "entry": "scripts/packaging/pre-commit/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "pre-commit/"
+    },
+    {
+      "leaf directory": "repro/",
+      "coverage": "partial",
+      "entry": "scripts/packaging/repro/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "repro/"
+    },
+    {
+      "leaf directory": "root-scripts/",
+      "coverage": "deep-partial",
+      "entry": "scripts/packaging/root-scripts/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "root-scripts/"
+    },
+    {
+      "leaf directory": "shell-helpers/",
+      "coverage": "deep-partial",
+      "entry": "scripts/packaging/shell-helpers/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "shell-helpers/"
+    },
+    {
+      "leaf directory": "systemd/",
+      "coverage": "partial",
+      "entry": "scripts/packaging/systemd/README.md",
+      "index": ".planning/impact-map/scripts/packaging/leaf-index.md",
+      "leaf": "systemd/"
+    },
+    {
+      "leaf directory": "app-versions/",
+      "coverage": "deep-partial",
+      "entry": "scripts/release-versioning/app-versions/README.md",
+      "index": ".planning/impact-map/scripts/release-versioning/leaf-index.md",
+      "leaf": "app-versions/"
+    },
+    {
+      "leaf directory": "cli-package-version/",
+      "coverage": "deep-partial",
+      "entry": "scripts/release-versioning/cli-package-version/README.md",
+      "index": ".planning/impact-map/scripts/release-versioning/leaf-index.md",
+      "leaf": "cli-package-version/"
+    },
+    {
+      "leaf directory": "release-docs/",
+      "coverage": "deep-partial",
+      "entry": "scripts/release-versioning/release-docs/README.md",
+      "index": ".planning/impact-map/scripts/release-versioning/leaf-index.md",
+      "leaf": "release-docs/"
+    },
+    {
+      "leaf directory": "runtime/",
+      "coverage": "deep-partial",
+      "purpose": "Runtime subtree split into command entrypoint, session/scope, command store, CLI runner, ACP spawn, and context/subagent leaves.",
+      "index": ".planning/impact-map/src/agent-runtime/leaf-index.md",
+      "leaf": "runtime/"
+    },
+    {
+      "leaf directory": "tools/",
+      "coverage": "verified",
+      "purpose": "Built-in tool adapters, exec/runtime wrappers, coding tool exposure, and MCP stdio bridging.",
+      "index": ".planning/impact-map/src/agent-runtime/leaf-index.md",
+      "leaf": "tools/"
+    },
+    {
+      "leaf directory": "providers-auth/",
+      "coverage": "verified",
+      "purpose": "Provider credential state, OAuth/API-key selection, auth profile ordering, and model/provider auth resolution.",
+      "index": ".planning/impact-map/src/agent-runtime/leaf-index.md",
+      "leaf": "providers-auth/"
+    },
+    {
+      "leaf directory": "sandbox/",
+      "coverage": "partial",
+      "purpose": "Sandbox backends, filesystem bridges, workspace mounts, browser bridges, and sandbox policy.",
+      "index": ".planning/impact-map/src/agent-runtime/leaf-index.md",
+      "leaf": "sandbox/"
+    },
+    {
+      "leaf directory": "pi-runner/",
+      "coverage": "partial",
+      "purpose": "Embedded Pi execution, stream subscription, compaction, tool result shaping, and extension hooks.",
+      "index": ".planning/impact-map/src/agent-runtime/leaf-index.md",
+      "leaf": "pi-runner/"
+    },
+    {
+      "leaf directory": "skills/",
+      "coverage": "partial",
+      "purpose": "Skill discovery, workspace skill snapshots, install/refresh helpers, and plugin-skill wiring.",
+      "index": ".planning/impact-map/src/agent-runtime/leaf-index.md",
+      "leaf": "skills/"
+    },
+    {
+      "leaf directory": "schema/",
+      "coverage": "partial",
+      "purpose": "Tool-schema cleanup helpers and provider-specific schema shaping.",
+      "index": ".planning/impact-map/src/agent-runtime/leaf-index.md",
+      "leaf": "schema/"
+    },
+    {
+      "leaf directory": "command-entrypoint/",
+      "coverage": "deep-partial",
+      "purpose": "Agent command entrypoint and gateway/CLI handoff into agent execution.",
+      "index": ".planning/impact-map/src/agent-runtime/runtime/leaf-index.md",
+      "leaf": "command-entrypoint/"
+    },
+    {
+      "leaf directory": "session-scope/",
+      "coverage": "deep-partial",
+      "purpose": "Agent scope, paths, session selection, and local runtime session state.",
+      "index": ".planning/impact-map/src/agent-runtime/runtime/leaf-index.md",
+      "leaf": "session-scope/"
+    },
+    {
+      "leaf directory": "command-session-store/",
+      "coverage": "deep-partial",
+      "purpose": "Agent command delivery/session store/run-context helpers.",
+      "index": ".planning/impact-map/src/agent-runtime/runtime/leaf-index.md",
+      "leaf": "command-session-store/"
+    },
+    {
+      "leaf directory": "cli-runner/",
+      "coverage": "deep-partial",
+      "purpose": "CLI backend runner, bundled MCP handoff, reliability, and watchdog glue.",
+      "index": ".planning/impact-map/src/agent-runtime/runtime/leaf-index.md",
+      "leaf": "cli-runner/"
+    },
+    {
+      "leaf directory": "acp-spawn/",
+      "coverage": "verified",
+      "purpose": "ACP-aware agent spawn and parent-stream bridge.",
+      "index": ".planning/impact-map/src/agent-runtime/runtime/leaf-index.md",
+      "leaf": "acp-spawn/"
+    },
+    {
+      "leaf directory": "context-subagents/",
+      "coverage": "deep-partial",
+      "purpose": "Context token lookup, subagent registry, and child-session tracking.",
+      "index": ".planning/impact-map/src/agent-runtime/runtime/leaf-index.md",
+      "leaf": "context-subagents/"
+    },
+    {
+      "leaf directory": "control-plane-session-manager/",
+      "coverage": "verified",
+      "purpose": "ACP control-plane manager, runtime cache, spawn, and controls.",
+      "index": ".planning/impact-map/src/capability-modules/acp/leaf-index.md",
+      "leaf": "control-plane-session-manager/"
+    },
+    {
+      "leaf directory": "runtime-session-identity/",
+      "coverage": "verified",
+      "purpose": "Runtime registry, session identity, session mapper, and IDs.",
+      "index": ".planning/impact-map/src/capability-modules/acp/leaf-index.md",
+      "leaf": "runtime-session-identity/"
+    },
+    {
+      "leaf directory": "translator-protocol/",
+      "coverage": "verified",
+      "purpose": "ACP client/server protocol translation and event mapping.",
+      "index": ".planning/impact-map/src/capability-modules/acp/leaf-index.md",
+      "leaf": "translator-protocol/"
+    },
+    {
+      "leaf directory": "persistent-bindings/",
+      "coverage": "verified",
+      "purpose": "Persistent binding lifecycle, resolution, and binding contracts.",
+      "index": ".planning/impact-map/src/capability-modules/acp/leaf-index.md",
+      "leaf": "persistent-bindings/"
+    },
+    {
+      "leaf directory": "secret-env-bridge/",
+      "coverage": "verified",
+      "purpose": "ACP secret files, policy, metadata, and env bridge handling.",
+      "index": ".planning/impact-map/src/capability-modules/acp/leaf-index.md",
+      "leaf": "secret-env-bridge/"
+    },
+    {
+      "leaf directory": "browser/",
+      "coverage": "deep-partial",
+      "purpose": "Browser bridge server, CDP/Playwright sessions, routes, profiles, screenshots, and browser tool runtime.",
+      "index": ".planning/impact-map/src/capability-modules/leaf-index.md",
+      "leaf": "browser/"
+    },
+    {
+      "leaf directory": "memory/",
+      "coverage": "deep-partial",
+      "purpose": "Embedding, search, manager, QMD, and session-file memory storage/runtime.",
+      "index": ".planning/impact-map/src/capability-modules/leaf-index.md",
+      "leaf": "memory/"
+    },
+    {
+      "leaf directory": "media/",
+      "coverage": "deep-partial",
+      "purpose": "Media fetch/store/server helpers, path policy, parsing, and local/remote media handling.",
+      "index": ".planning/impact-map/src/capability-modules/leaf-index.md",
+      "leaf": "media/"
+    },
+    {
+      "leaf directory": "media-understanding/",
+      "coverage": "partial",
+      "purpose": "Audio/video/image understanding runner, provider registry, and attachment guards.",
+      "index": ".planning/impact-map/src/capability-modules/leaf-index.md",
+      "leaf": "media-understanding/"
+    },
+    {
+      "leaf directory": "context-engine/",
+      "coverage": "partial",
+      "purpose": "Context assembly and registry support used by embedded agent/runtime flows.",
+      "index": ".planning/impact-map/src/capability-modules/leaf-index.md",
+      "leaf": "context-engine/"
+    },
+    {
+      "leaf directory": "cron/",
+      "coverage": "partial",
+      "purpose": "Cron scheduler, isolated-agent runs, store/timer management, and heartbeat delivery.",
+      "index": ".planning/impact-map/src/capability-modules/leaf-index.md",
+      "leaf": "cron/"
+    },
+    {
+      "leaf directory": "tts/",
+      "coverage": "partial",
+      "purpose": "Text-to-speech registry, text preparation, and provider selection.",
+      "index": ".planning/impact-map/src/capability-modules/leaf-index.md",
+      "leaf": "tts/"
+    },
+    {
+      "leaf directory": "acp/",
+      "coverage": "verified",
+      "purpose": "ACP subtree verified across control-plane, runtime/session identity, translator/protocol, persistent bindings, and secret/env bridge.",
+      "index": ".planning/impact-map/src/capability-modules/leaf-index.md",
+      "leaf": "acp/"
+    },
+    {
+      "leaf directory": "core-abstractions/",
+      "coverage": "partial",
+      "purpose": "Core shared channel config, command gating, session metadata, and target helpers.",
+      "index": ".planning/impact-map/src/channel-abstraction/leaf-index.md",
+      "leaf": "core-abstractions/"
+    },
+    {
+      "leaf directory": "plugin-bridge/",
+      "coverage": "deep-partial",
+      "purpose": "Plugin-backed channel catalog, registry, setup/status helpers, contracts, outbound helpers, and runtime forwarders.",
+      "index": ".planning/impact-map/src/channel-abstraction/leaf-index.md",
+      "leaf": "plugin-bridge/"
+    },
+    {
+      "leaf directory": "bindings/",
+      "coverage": "deep-partial",
+      "purpose": "Binding provider registry, configured-binding compiler, routing, and session lookup.",
+      "index": ".planning/impact-map/src/channel-abstraction/leaf-index.md",
+      "leaf": "bindings/"
+    },
+    {
+      "leaf directory": "allowlists/",
+      "coverage": "deep-partial",
+      "purpose": "Allowlist matching and shared authorization helpers for channel and plugin paths.",
+      "index": ".planning/impact-map/src/channel-abstraction/leaf-index.md",
+      "leaf": "allowlists/"
+    },
+    {
+      "leaf directory": "transport/",
+      "coverage": "partial",
+      "purpose": "Transport watchdogs and web channel helpers.",
+      "index": ".planning/impact-map/src/channel-abstraction/leaf-index.md",
+      "leaf": "transport/"
+    },
+    {
+      "leaf directory": "routing/",
+      "coverage": "deep-partial",
+      "purpose": "Cross-link to canonical routing leaf coverage for recipient/account/session resolution.",
+      "index": ".planning/impact-map/src/channel-abstraction/leaf-index.md",
+      "leaf": "routing/"
+    },
+    {
+      "leaf directory": "target-resolution/",
+      "coverage": "verified",
+      "purpose": "Recipient/account/session/channel resolution logic.",
+      "index": ".planning/impact-map/src/channel-abstraction/routing/leaf-index.md",
+      "leaf": "target-resolution/"
+    },
+    {
+      "leaf directory": "compatibility-paths/",
+      "coverage": "verified",
+      "purpose": "Binding-driven compatibility behavior and default-account warning/reporting for browser/device-session or custom-channel paths.",
+      "index": ".planning/impact-map/src/channel-abstraction/routing/leaf-index.md",
+      "leaf": "compatibility-paths/"
+    },
+    {
+      "leaf directory": "agent-command-cli/",
+      "coverage": "deep-partial",
+      "purpose": "Agent and agents command handlers plus command session helpers.",
+      "index": ".planning/impact-map/src/cli-commands/command-implementations/leaf-index.md",
+      "leaf": "agent-command-cli/"
+    },
+    {
+      "leaf directory": "channel-plugin-commands/",
+      "coverage": "deep-partial",
+      "purpose": "Channels, channel setup, and plugin-facing channel commands.",
+      "index": ".planning/impact-map/src/cli-commands/command-implementations/leaf-index.md",
+      "leaf": "channel-plugin-commands/"
+    },
+    {
+      "leaf directory": "auth-provider-commands/",
+      "coverage": "deep-partial",
+      "purpose": "Auth-choice, provider/model selection, and OAuth command flows.",
+      "index": ".planning/impact-map/src/cli-commands/command-implementations/leaf-index.md",
+      "leaf": "auth-provider-commands/"
+    },
+    {
+      "leaf directory": "config-doctor-commands/",
+      "coverage": "deep-partial",
+      "purpose": "Configure, doctor, repair, and config-analysis command flows.",
+      "index": ".planning/impact-map/src/cli-commands/command-implementations/leaf-index.md",
+      "leaf": "config-doctor-commands/"
+    },
+    {
+      "leaf directory": "secret-gateway-commands/",
+      "coverage": "deep-partial",
+      "purpose": "CLI command handlers for secret/gateway resolution surfaces.",
+      "index": ".planning/impact-map/src/cli-commands/command-implementations/leaf-index.md",
+      "leaf": "secret-gateway-commands/"
+    },
+    {
+      "leaf directory": "maintenance-commands/",
+      "coverage": "deep-partial",
+      "purpose": "Backup, cleanup, dashboard, docs, health, and utility commands.",
+      "index": ".planning/impact-map/src/cli-commands/command-implementations/leaf-index.md",
+      "leaf": "maintenance-commands/"
+    },
+    {
+      "leaf directory": "program-registration/",
+      "coverage": "verified",
+      "purpose": "Commander program tree wiring, argument parsing, and route registration.",
+      "index": ".planning/impact-map/src/cli-commands/leaf-index.md",
+      "leaf": "program-registration/"
+    },
+    {
+      "leaf directory": "command-implementations/",
+      "coverage": "deep-partial",
+      "purpose": "Command implementation subtree split into agent, channel/plugin, auth/provider, config/doctor, secret/gateway, and maintenance families.",
+      "index": ".planning/impact-map/src/cli-commands/leaf-index.md",
+      "leaf": "command-implementations/"
+    },
+    {
+      "leaf directory": "status-gateway-channel/",
+      "coverage": "verified",
+      "purpose": "Status/probe surfaces, gateway lifecycle commands, and channel status/config command flows.",
+      "index": ".planning/impact-map/src/cli-commands/leaf-index.md",
+      "leaf": "status-gateway-channel/"
+    },
+    {
+      "leaf directory": "terminal-output/",
+      "coverage": "verified",
+      "purpose": "ANSI-safe tables, palette, prompts, and progress rendering.",
+      "index": ".planning/impact-map/src/cli-commands/leaf-index.md",
+      "leaf": "terminal-output/"
+    },
+    {
+      "leaf directory": "config-io/",
+      "coverage": "partial",
+      "purpose": "Config read/write, path resolution, includes, runtime snapshot, and merge behavior.",
+      "index": ".planning/impact-map/src/config-secrets-security/leaf-index.md",
+      "leaf": "config-io/"
+    },
+    {
+      "leaf directory": "config-schema-validation/",
+      "coverage": "deep-partial",
+      "purpose": "Schema contracts, help/docs generation baselines, and fail-closed validation behavior.",
+      "index": ".planning/impact-map/src/config-secrets-security/leaf-index.md",
+      "leaf": "config-schema-validation/"
+    },
+    {
+      "leaf directory": "sessions/",
+      "coverage": "partial",
+      "purpose": "Session config defaults, main session state, and session-path helpers.",
+      "index": ".planning/impact-map/src/config-secrets-security/leaf-index.md",
+      "leaf": "sessions/"
+    },
+    {
+      "leaf directory": "legacy-migration/",
+      "coverage": "partial",
+      "purpose": "Legacy config/service migration helpers and doctor-facing compatibility repair.",
+      "index": ".planning/impact-map/src/config-secrets-security/leaf-index.md",
+      "leaf": "legacy-migration/"
+    },
+    {
+      "leaf directory": "secrets-resolution/",
+      "coverage": "deep-partial",
+      "purpose": "Secrets subtree split into ref contracts, target registry, runtime collection, gateway/CLI resolution, and storage/audit leaves.",
+      "index": ".planning/impact-map/src/config-secrets-security/leaf-index.md",
+      "leaf": "secrets-resolution/"
+    },
+    {
+      "leaf directory": "security-guards/",
+      "coverage": "deep-partial",
+      "purpose": "Audit/fix helpers, safe-regex/temp-path guards, skill scanning, and security policy enforcement.",
+      "index": ".planning/impact-map/src/config-secrets-security/leaf-index.md",
+      "leaf": "security-guards/"
+    },
+    {
+      "leaf directory": "secret-ref-contracts/",
+      "coverage": "deep-partial",
+      "purpose": "Secret input/ref contracts, parsing, JSON pointer, and schema.",
+      "index": ".planning/impact-map/src/config-secrets-security/secrets-resolution/leaf-index.md",
+      "leaf": "secret-ref-contracts/"
+    },
+    {
+      "leaf directory": "secret-target-registry/",
+      "coverage": "deep-partial",
+      "purpose": "Secret target registry, target query, and credential matrix.",
+      "index": ".planning/impact-map/src/config-secrets-security/secrets-resolution/leaf-index.md",
+      "leaf": "secret-target-registry/"
+    },
+    {
+      "leaf directory": "runtime-secret-collection/",
+      "coverage": "deep-partial",
+      "purpose": "Runtime/provider/gateway/web secret collection and env policy.",
+      "index": ".planning/impact-map/src/config-secrets-security/secrets-resolution/leaf-index.md",
+      "leaf": "runtime-secret-collection/"
+    },
+    {
+      "leaf directory": "gateway-cli-secret-resolution/",
+      "coverage": "deep-partial",
+      "purpose": "CLI/gateway command secret resolution and message secret scope.",
+      "index": ".planning/impact-map/src/config-secrets-security/secrets-resolution/leaf-index.md",
+      "leaf": "gateway-cli-secret-resolution/"
+    },
+    {
+      "leaf directory": "secret-storage-audit/",
+      "coverage": "deep-partial",
+      "purpose": "Secret storage paths, apply/configure/audit, and scan helpers.",
+      "index": ".planning/impact-map/src/config-secrets-security/secrets-resolution/leaf-index.md",
+      "leaf": "secret-storage-audit/"
+    },
+    {
+      "leaf directory": "server-runtime/",
+      "coverage": "verified",
+      "purpose": "Gateway startup/shutdown, HTTP serving, control UI, and channel health runtime.",
+      "index": ".planning/impact-map/src/gateway-api-surface/leaf-index.md",
+      "leaf": "server-runtime/"
+    },
+    {
+      "leaf directory": "server-methods/",
+      "coverage": "exceptioned-deep-partial",
+      "purpose": "RPC method handlers for agents, config, channels, devices, logs, send, and sessions.",
+      "index": ".planning/impact-map/src/gateway-api-surface/leaf-index.md",
+      "leaf": "server-methods/"
+    },
+    {
+      "leaf directory": "protocol/",
+      "coverage": "verified",
+      "purpose": "Gateway protocol schemas, primitives, and push/connect contracts.",
+      "index": ".planning/impact-map/src/gateway-api-surface/leaf-index.md",
+      "leaf": "protocol/"
+    },
+    {
+      "leaf directory": "client-call/",
+      "coverage": "partial",
+      "purpose": "Gateway client wrappers and RPC call helpers used by CLI/app callers.",
+      "index": ".planning/impact-map/src/gateway-api-surface/leaf-index.md",
+      "leaf": "client-call/"
+    },
+    {
+      "leaf directory": "auth-session/",
+      "coverage": "partial",
+      "purpose": "Gateway auth modes, connection/device auth, origin checks, and session reset/probe auth behavior.",
+      "index": ".planning/impact-map/src/gateway-api-surface/leaf-index.md",
+      "leaf": "auth-session/"
+    },
+    {
+      "leaf directory": "outbound-delivery/",
+      "coverage": "deep-partial",
+      "purpose": "Delivery queueing, send service, recovery, and direct outbound runtime behavior.",
+      "index": ".planning/impact-map/src/infra-outbound-delivery/leaf-index.md",
+      "leaf": "outbound-delivery/"
+    },
+    {
+      "leaf directory": "outbound-routing/",
+      "coverage": "deep-partial",
+      "purpose": "Channel selection, target resolution, session binding, and outbound policy.",
+      "index": ".planning/impact-map/src/infra-outbound-delivery/leaf-index.md",
+      "leaf": "outbound-routing/"
+    },
+    {
+      "leaf directory": "outbound-actions/",
+      "coverage": "partial",
+      "purpose": "Message action specs, params, normalization, runner, and threading helpers.",
+      "index": ".planning/impact-map/src/infra-outbound-delivery/leaf-index.md",
+      "leaf": "outbound-actions/"
+    },
+    {
+      "leaf directory": "outbound-identity/",
+      "coverage": "partial",
+      "purpose": "Identity, conversation-id, base session key, outbound session, and cache helpers.",
+      "index": ".planning/impact-map/src/infra-outbound-delivery/leaf-index.md",
+      "leaf": "outbound-identity/"
+    },
+    {
+      "leaf directory": "network/",
+      "coverage": "partial",
+      "purpose": "Proxy, SSRF, hostname, and fetch/runtime dispatcher helpers.",
+      "index": ".planning/impact-map/src/infra-outbound-delivery/leaf-index.md",
+      "leaf": "network/"
+    },
+    {
+      "leaf directory": "tls/",
+      "coverage": "partial",
+      "purpose": "TLS fingerprint and gateway TLS helpers.",
+      "index": ".planning/impact-map/src/infra-outbound-delivery/leaf-index.md",
+      "leaf": "tls/"
+    },
+    {
+      "leaf directory": "formatting/",
+      "coverage": "partial",
+      "purpose": "Envelope, payload, text sanitization, and formatting helpers for outbound delivery.",
+      "index": ".planning/impact-map/src/infra-outbound-delivery/leaf-index.md",
+      "leaf": "formatting/"
+    },
+    {
+      "module directory": "agent-runtime/",
+      "coverage": "deep-partial",
+      "primary source ownership": "src/agents/",
+      "purpose": "Agent runtime, tools, providers/auth, sandbox, Pi runner, skills, schema",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "agent-runtime/"
+    },
+    {
+      "module directory": "reply-orchestration/",
+      "coverage": "deep-partial",
+      "primary source ownership": "src/auto-reply/",
+      "purpose": "Message-to-agent orchestration, runner, commands, streaming, queue, exec, export",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "reply-orchestration/"
+    },
+    {
+      "module directory": "gateway-api-surface/",
+      "coverage": "deep-partial",
+      "primary source ownership": "src/gateway/",
+      "purpose": "Gateway server, protocol, server methods, auth/session, client/call helpers",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "gateway-api-surface/"
+    },
+    {
+      "module directory": "channel-abstraction/",
+      "coverage": "deep-partial",
+      "primary source ownership": "src/channels/`, `src/bindings/`, `src/routing/",
+      "purpose": "Shared channels, plugin bridge, bindings, allowlists, transport, routing",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "channel-abstraction/"
+    },
+    {
+      "module directory": "plugin-runtime-sdk/",
+      "coverage": "deep-partial",
+      "primary source ownership": "src/plugin-sdk/`, `src/plugins/`, `src/extensions/",
+      "purpose": "Public Plugin SDK plus internal plugin runtime/contracts/loading/boundary enforcement",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "plugin-runtime-sdk/"
+    },
+    {
+      "module directory": "infra-outbound-delivery/",
+      "coverage": "deep-partial",
+      "primary source ownership": "src/infra/",
+      "purpose": "Outbound delivery/routing/actions/identity, network, TLS, formatting",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "infra-outbound-delivery/"
+    },
+    {
+      "module directory": "config-secrets-security/",
+      "coverage": "deep-partial",
+      "primary source ownership": "src/config/`, `src/secrets/`, `src/security/`, `src/sessions/",
+      "purpose": "Config, sessions, secrets, legacy migration, security guards",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "config-secrets-security/"
+    },
+    {
+      "module directory": "capability-modules/",
+      "coverage": "deep-partial",
+      "primary source ownership": "src/acp/`, `src/browser/`, `src/context-engine/`, `src/cron/`, `src/media/`, `src/media-understanding/`, `src/memory/`, `src/tts/",
+      "purpose": "Cross-cutting agent/runtime capabilities",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "capability-modules/"
+    },
+    {
+      "module directory": "cli-commands/",
+      "coverage": "deep-partial",
+      "primary source ownership": "src/cli/`, `src/commands/`, `src/terminal/`, `src/tui/",
+      "purpose": "CLI, command wiring, status/gateway/channel commands, terminal UI/output",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "cli-commands/"
+    },
+    {
+      "module directory": "shared-misc-runtime-support/",
+      "coverage": "partial",
+      "primary source ownership": "src/bootstrap/`, `src/compat/`, `src/daemon/`, `src/hooks/`, `src/shared/`, `src/utils/`, `src/types/`, and other support/helper roots",
+      "purpose": "Cross-cutting support, compatibility, process/bootstrap, logging/markdown/i18n, test helpers",
+      "index": ".planning/impact-map/src/leaf-index.md",
+      "leaf": "shared-misc-runtime-support/"
+    },
+    {
+      "leaf directory": "plugin-sdk/",
+      "coverage": "deep-partial",
+      "purpose": "Public SDK subpaths, provider/channel/tool/media/memory contracts, and API drift checks.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/leaf-index.md",
+      "leaf": "plugin-sdk/"
+    },
+    {
+      "leaf directory": "plugins-runtime/",
+      "coverage": "deep-partial",
+      "purpose": "Runtime loading, adapters, contracts, boundary enforcement, and plugin test helpers.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/leaf-index.md",
+      "leaf": "plugins-runtime/"
+    },
+    {
+      "leaf directory": "public-subpaths/",
+      "coverage": "verified",
+      "purpose": "Public SDK subpath exports, root alias behavior, and runtime-API guardrails.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugin-sdk/leaf-index.md",
+      "leaf": "public-subpaths/"
+    },
+    {
+      "leaf directory": "provider-sdk/",
+      "coverage": "verified",
+      "purpose": "Provider entry, auth, model, stream, usage, and onboarding SDK contracts.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugin-sdk/leaf-index.md",
+      "leaf": "provider-sdk/"
+    },
+    {
+      "leaf directory": "channel-sdk/",
+      "coverage": "verified",
+      "purpose": "Channel plugin contracts, config/setup/status helpers, policy helpers, and reply pipeline SDK seams.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugin-sdk/leaf-index.md",
+      "leaf": "channel-sdk/"
+    },
+    {
+      "leaf directory": "tool-sdk/",
+      "coverage": "partial",
+      "purpose": "Tool/send/web-search/action SDK helpers used by plugin tools and provider integrations.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugin-sdk/leaf-index.md",
+      "leaf": "tool-sdk/"
+    },
+    {
+      "leaf directory": "media-memory-sdk/",
+      "coverage": "partial",
+      "purpose": "Media, media-understanding, memory, speech, and related helper contracts.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugin-sdk/leaf-index.md",
+      "leaf": "media-memory-sdk/"
+    },
+    {
+      "leaf directory": "api-drift/",
+      "coverage": "exceptioned-deep-partial",
+      "purpose": "SDK API baseline generation/check surfaces.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugin-sdk/leaf-index.md",
+      "leaf": "api-drift/"
+    },
+    {
+      "leaf directory": "runtime-loader/",
+      "coverage": "deep-partial",
+      "purpose": "Plugin discovery, install/update/uninstall, registry loading, and runtime entry setup.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/leaf-index.md",
+      "leaf": "runtime-loader/"
+    },
+    {
+      "leaf directory": "runtime-adapters/",
+      "coverage": "partial",
+      "purpose": "Runtime adapters for channels, providers, media, TTS, tools, and system services.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/leaf-index.md",
+      "leaf": "runtime-adapters/"
+    },
+    {
+      "leaf directory": "contracts/",
+      "coverage": "deep-partial",
+      "purpose": "Plugin metadata, manifest, contract suites, and schema validation.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/leaf-index.md",
+      "leaf": "contracts/"
+    },
+    {
+      "leaf directory": "boundary-enforcement/",
+      "coverage": "deep-partial",
+      "purpose": "Runtime/plugin boundary guardrails, naming checks, and install security scan helpers.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/leaf-index.md",
+      "leaf": "boundary-enforcement/"
+    },
+    {
+      "leaf directory": "test-helpers/",
+      "coverage": "partial",
+      "purpose": "Plugin runtime test fixtures and shared helper scaffolding.",
+      "index": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/leaf-index.md",
+      "leaf": "test-helpers/"
+    },
+    {
+      "leaf directory": "command-auth-gates/",
+      "coverage": "deep-partial",
+      "purpose": "Command detection, owner/auth checks, and rejection gates.",
+      "index": ".planning/impact-map/src/reply-orchestration/commands/leaf-index.md",
+      "leaf": "command-auth-gates/"
+    },
+    {
+      "leaf directory": "command-registry-families/",
+      "coverage": "deep-partial",
+      "purpose": "Command registry data/runtime wiring and argument parsing.",
+      "index": ".planning/impact-map/src/reply-orchestration/commands/leaf-index.md",
+      "leaf": "command-registry-families/"
+    },
+    {
+      "leaf directory": "command-handlers/",
+      "coverage": "deep-partial",
+      "purpose": "Reply command handlers for ACP, plugins, subagents, etc.",
+      "index": ".planning/impact-map/src/reply-orchestration/commands/leaf-index.md",
+      "leaf": "command-handlers/"
+    },
+    {
+      "leaf directory": "runner/",
+      "coverage": "deep-partial",
+      "purpose": "Inbound dispatch, reply-agent execution, ACP dispatch, memory hooks, and reply-run selection.",
+      "index": ".planning/impact-map/src/reply-orchestration/leaf-index.md",
+      "leaf": "runner/"
+    },
+    {
+      "leaf directory": "commands/",
+      "coverage": "deep-partial",
+      "purpose": "Commands subtree split into auth/gates, registry/families, and command handlers.",
+      "index": ".planning/impact-map/src/reply-orchestration/leaf-index.md",
+      "leaf": "commands/"
+    },
+    {
+      "leaf directory": "streaming/",
+      "coverage": "deep-partial",
+      "purpose": "Block streaming, heartbeat typing, inline action streaming, and raw-body shaping.",
+      "index": ".planning/impact-map/src/reply-orchestration/leaf-index.md",
+      "leaf": "streaming/"
+    },
+    {
+      "leaf directory": "exec/",
+      "coverage": "partial",
+      "purpose": "Reply-side exec helpers, directives, and command execution staging.",
+      "index": ".planning/impact-map/src/reply-orchestration/leaf-index.md",
+      "leaf": "exec/"
+    },
+    {
+      "leaf directory": "queue/",
+      "coverage": "partial",
+      "purpose": "Reply queue state, enqueue/drain flow, queue normalization, and queue policy.",
+      "index": ".planning/impact-map/src/reply-orchestration/leaf-index.md",
+      "leaf": "queue/"
+    },
+    {
+      "leaf directory": "export-html/",
+      "coverage": "partial",
+      "purpose": "Session/export HTML templates and security-sensitive transcript export shaping.",
+      "index": ".planning/impact-map/src/reply-orchestration/leaf-index.md",
+      "leaf": "export-html/"
+    },
+    {
+      "leaf directory": "channel-shaping/",
+      "coverage": "partial",
+      "purpose": "Chunking, envelope shaping, media-note formatting, and inbound metadata shaping before channel send.",
+      "index": ".planning/impact-map/src/reply-orchestration/leaf-index.md",
+      "leaf": "channel-shaping/"
+    },
+    {
+      "leaf directory": "root-entrypoints/",
+      "coverage": "deep-partial",
+      "purpose": "Root package entrypoints, runtime/bootstrap entry files, and global state.",
+      "index": ".planning/impact-map/src/shared-misc-runtime-support/leaf-index.md",
+      "leaf": "root-entrypoints/"
+    },
+    {
+      "leaf directory": "web-provider-root/",
+      "coverage": "deep-partial",
+      "purpose": "Root web provider/channel-web and bundled web-search registry surfaces.",
+      "index": ".planning/impact-map/src/shared-misc-runtime-support/leaf-index.md",
+      "leaf": "web-provider-root/"
+    },
+    {
+      "leaf directory": "startup-process/",
+      "coverage": "partial",
+      "purpose": "Bootstrap, daemon, process, and node-host runtime support.",
+      "index": ".planning/impact-map/src/shared-misc-runtime-support/leaf-index.md",
+      "leaf": "startup-process/"
+    },
+    {
+      "leaf directory": "compat-hooks/",
+      "coverage": "partial",
+      "purpose": "Compatibility helpers and workspace hook integration.",
+      "index": ".planning/impact-map/src/shared-misc-runtime-support/leaf-index.md",
+      "leaf": "compat-hooks/"
+    },
+    {
+      "leaf directory": "docs-i18n-markdown/",
+      "coverage": "partial",
+      "purpose": "Local docs helpers, i18n utilities, and Markdown support under `src/`.",
+      "index": ".planning/impact-map/src/shared-misc-runtime-support/leaf-index.md",
+      "leaf": "docs-i18n-markdown/"
+    },
+    {
+      "leaf directory": "shared-primitives/",
+      "coverage": "partial",
+      "purpose": "Shared primitives, utilities, and types used across runtime modules.",
+      "index": ".planning/impact-map/src/shared-misc-runtime-support/leaf-index.md",
+      "leaf": "shared-primitives/"
+    },
+    {
+      "leaf directory": "logging-support/",
+      "coverage": "partial",
+      "purpose": "Logging support surfaces that do not own a primary runtime flow.",
+      "index": ".planning/impact-map/src/shared-misc-runtime-support/leaf-index.md",
+      "leaf": "logging-support/"
+    },
+    {
+      "leaf directory": "test-support/",
+      "coverage": "partial",
+      "purpose": "Test helpers and test utilities consumed by colocated and integration tests.",
+      "index": ".planning/impact-map/src/shared-misc-runtime-support/leaf-index.md",
+      "leaf": "test-support/"
+    },
+    {
+      "leaf directory": "fixtures/",
+      "coverage": "verified",
+      "entry": "test-infra/fixtures-and-helpers/fixtures/README.md",
+      "index": ".planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md",
+      "leaf": "fixtures/"
+    },
+    {
+      "leaf directory": "helpers-core/",
+      "coverage": "verified",
+      "entry": "test-infra/fixtures-and-helpers/helpers-core/README.md",
+      "index": ".planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md",
+      "leaf": "helpers-core/"
+    },
+    {
+      "leaf directory": "helpers-extensions/",
+      "coverage": "verified",
+      "entry": "test-infra/fixtures-and-helpers/helpers-extensions/README.md",
+      "index": ".planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md",
+      "leaf": "helpers-extensions/"
+    },
+    {
+      "leaf directory": "mocks/",
+      "coverage": "exceptioned-deep-partial",
+      "entry": "test-infra/fixtures-and-helpers/mocks/README.md",
+      "index": ".planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md",
+      "leaf": "mocks/"
+    },
+    {
+      "leaf directory": "config-and-runner/",
+      "coverage": "verified",
+      "entry": "test-infra/profiles-and-suites/config-and-runner/README.md",
+      "index": ".planning/impact-map/test-infra/profiles-and-suites/leaf-index.md",
+      "leaf": "config-and-runner/"
+    },
+    {
+      "leaf directory": "root-tests/",
+      "coverage": "verified",
+      "entry": "test-infra/profiles-and-suites/root-tests/README.md",
+      "index": ".planning/impact-map/test-infra/profiles-and-suites/leaf-index.md",
+      "leaf": "root-tests/"
+    },
+    {
+      "leaf directory": "test-scripts/",
+      "coverage": "verified",
+      "entry": "test-infra/profiles-and-suites/test-scripts/README.md",
+      "index": ".planning/impact-map/test-infra/profiles-and-suites/leaf-index.md",
+      "leaf": "test-scripts/"
+    },
+    {
+      "leaf/submodule": "web-ui/",
+      "coverage": "partial",
+      "docs": "web-ui/README.md",
+      "index": ".planning/impact-map/ui/leaf-index.md",
+      "leaf": "web-ui/"
+    },
+    {
+      "leaf/submodule": "provider-channel-settings/web-settings/",
+      "coverage": "deep-partial",
+      "docs": "provider-channel-settings/web-settings/README.md",
+      "index": ".planning/impact-map/ui/leaf-index.md",
+      "leaf": "provider-channel-settings/web-settings/"
+    },
+    {
+      "leaf directory": "web-settings/",
+      "coverage": "deep-partial",
+      "leaf docs": "web-settings/README.md",
+      "index": ".planning/impact-map/ui/provider-channel-settings/leaf-index.md",
+      "leaf": "web-settings/"
+    },
+    {
+      "leaf directory": "components/",
+      "coverage": "deep-partial",
+      "entry": "ui/web-ui/components/README.md",
+      "index": ".planning/impact-map/ui/web-ui/leaf-index.md",
+      "leaf": "components/"
+    },
+    {
+      "leaf directory": "i18n/",
+      "coverage": "partial",
+      "entry": "ui/web-ui/i18n/README.md",
+      "index": ".planning/impact-map/ui/web-ui/leaf-index.md",
+      "leaf": "i18n/"
+    },
+    {
+      "leaf directory": "public-assets/",
+      "coverage": "partial",
+      "entry": "ui/web-ui/public-assets/README.md",
+      "index": ".planning/impact-map/ui/web-ui/leaf-index.md",
+      "leaf": "public-assets/"
+    },
+    {
+      "leaf directory": "styles-types/",
+      "coverage": "deep-partial",
+      "entry": "ui/web-ui/styles-types/README.md",
+      "index": ".planning/impact-map/ui/web-ui/leaf-index.md",
+      "leaf": "styles-types/"
+    }
+  ]
+}

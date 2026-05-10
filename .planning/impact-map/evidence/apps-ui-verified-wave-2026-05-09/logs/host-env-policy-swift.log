@@ -1,0 +1,10 @@
+$ pnpm check:host-env-policy:swift
+started_at=2026-05-08T20:32:39Z
+
+> openclaw@2026.3.24 check:host-env-policy:swift /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/generate-host-env-security-policy-swift.mjs --check
+
+OK apps/macos/Sources/OpenClaw/HostEnvSecurityPolicy.generated.swift
+finished_at=2026-05-08T20:32:40Z
+exit_code=0
+duration_seconds=1

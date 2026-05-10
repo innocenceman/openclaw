@@ -1,0 +1,107 @@
+{
+  "target": {
+    "id": "Function:src/media-understanding/runner.ts:runCapability",
+    "name": "runCapability",
+    "type": "Function",
+    "filePath": "src/media-understanding/runner.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 9,
+  "risk": "LOW",
+  "summary": {
+    "direct": 3,
+    "processes_affected": 0,
+    "modules_affected": 2
+  },
+  "affected_processes": [],
+  "affected_modules": [
+    {
+      "name": "Media-understanding",
+      "hits": 7,
+      "impact": "direct"
+    },
+    {
+      "name": "Agents",
+      "hits": 1,
+      "impact": "indirect"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/media-understanding/runtime.ts:runMediaUnderstandingFile",
+        "name": "runMediaUnderstandingFile",
+        "filePath": "src/media-understanding/runtime.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/media-understanding/audio-transcription-runner.ts:runAudioTranscription",
+        "name": "runAudioTranscription",
+        "filePath": "src/media-understanding/audio-transcription-runner.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/media-understanding/apply.ts:applyMediaUnderstanding",
+        "name": "applyMediaUnderstanding",
+        "filePath": "src/media-understanding/apply.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/media-understanding/runtime.ts:describeImageFile",
+        "name": "describeImageFile",
+        "filePath": "src/media-understanding/runtime.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/media-understanding/runtime.ts:describeVideoFile",
+        "name": "describeVideoFile",
+        "filePath": "src/media-understanding/runtime.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/media-understanding/runtime.ts:transcribeAudioFile",
+        "name": "transcribeAudioFile",
+        "filePath": "src/media-understanding/runtime.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/media-understanding/audio-preflight.ts:transcribeFirstAudio",
+        "name": "transcribeFirstAudio",
+        "filePath": "src/media-understanding/audio-preflight.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/get-reply.ts:applyMediaUnderstandingIfNeeded",
+        "name": "applyMediaUnderstandingIfNeeded",
+        "filePath": "src/auto-reply/reply/get-reply.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/dispatch-acp.ts:tryDispatchAcpReply",
+        "name": "tryDispatchAcpReply",
+        "filePath": "src/auto-reply/reply/dispatch-acp.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}

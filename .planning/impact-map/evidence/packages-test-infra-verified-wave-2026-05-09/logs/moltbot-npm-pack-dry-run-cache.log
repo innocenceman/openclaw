@@ -1,0 +1,31 @@
+[
+  {
+    "id": "moltbot@2026.2.12",
+    "name": "moltbot",
+    "version": "2026.2.12",
+    "size": 377,
+    "unpackedSize": 392,
+    "shasum": "55c9c148c6a29a3b2bab5117dfaf3f2a9d0ca1bd",
+    "integrity": "sha512-XZVSy8i7kMxZlsn81Bsyv3MF42ffdW1ohjvIkMo7OMjfXExbTf0yiW/3EYgHoiUWjFYQhy+NVwshBOJXRSA9bA==",
+    "filename": "moltbot-2026.2.12.tgz",
+    "files": [
+      {
+        "path": "index.js",
+        "size": 26,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 321,
+        "mode": 420
+      },
+      {
+        "path": "scripts/postinstall.js",
+        "size": 45,
+        "mode": 420
+      }
+    ],
+    "entryCount": 3,
+    "bundled": []
+  }
+]

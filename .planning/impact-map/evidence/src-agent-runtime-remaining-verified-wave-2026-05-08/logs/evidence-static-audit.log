@@ -1,0 +1,7 @@
+## git diff --check -- .planning
+## oxfmt check planning touched area
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 313ms on 79 files using 4 threads.
+## product source diff audit

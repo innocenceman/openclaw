@@ -1,0 +1,93 @@
+== context-cron-tts-all ==
+src/context-engine/context-engine.test.ts
+src/cron/cron-protocol-conformance.test.ts
+src/cron/delivery.failure-notify.test.ts
+src/cron/delivery.test.ts
+src/cron/heartbeat-policy.test.ts
+src/cron/isolated-agent.auth-profile-propagation.test.ts
+src/cron/isolated-agent.delivers-response-has-heartbeat-ok-but-includes.test.ts
+src/cron/isolated-agent.delivery-awareness.test.ts
+src/cron/isolated-agent.delivery-target-thread-session.test.ts
+src/cron/isolated-agent.direct-delivery-core-channels.test.ts
+src/cron/isolated-agent.direct-delivery-forum-topics.test.ts
+src/cron/isolated-agent.helpers.test.ts
+src/cron/isolated-agent.lane.test.ts
+src/cron/isolated-agent.model-formatting.test.ts
+src/cron/isolated-agent.skips-delivery-without-whatsapp-recipient-besteffortdeliver-true.test.ts
+src/cron/isolated-agent.subagent-model.test.ts
+src/cron/isolated-agent.uses-last-non-empty-agent-text-as.test.ts
+src/cron/isolated-agent/delivery-dispatch.double-announce.test.ts
+src/cron/isolated-agent/delivery-dispatch.named-agent.test.ts
+src/cron/isolated-agent/delivery-target.test.ts
+src/cron/isolated-agent/helpers.test.ts
+src/cron/isolated-agent/run.cron-model-override.test.ts
+src/cron/isolated-agent/run.fast-mode.test.ts
+src/cron/isolated-agent/run.interim-retry.test.ts
+src/cron/isolated-agent/run.message-tool-policy.test.ts
+src/cron/isolated-agent/run.owner-auth.test.ts
+src/cron/isolated-agent/run.payload-fallbacks.test.ts
+src/cron/isolated-agent/run.sandbox-config-preserved.test.ts
+src/cron/isolated-agent/run.session-key.test.ts
+src/cron/isolated-agent/run.skill-filter.test.ts
+src/cron/isolated-agent/session.test.ts
+src/cron/isolated-agent/subagent-followup.test.ts
+src/cron/normalize.test.ts
+src/cron/run-log.test.ts
+src/cron/schedule.test.ts
+src/cron/service.armtimer-tight-loop.test.ts
+src/cron/service.delivery-plan.test.ts
+src/cron/service.every-jobs-fire.test.ts
+src/cron/service.failure-alert.test.ts
+src/cron/service.get-job.test.ts
+src/cron/service.heartbeat-ok-summary-suppressed.test.ts
+src/cron/service.issue-13992-regression.test.ts
+src/cron/service.issue-16156-list-skips-cron.test.ts
+src/cron/service.issue-17852-daily-skip.test.ts
+src/cron/service.issue-19676-at-reschedule.test.ts
+src/cron/service.issue-22895-every-next-run.test.ts
+src/cron/service.issue-35195-backup-timing.test.ts
+src/cron/service.issue-regressions.test.ts
+src/cron/service.jobs.test.ts
+src/cron/service.jobs.top-of-hour-stagger.test.ts
+src/cron/service.list-page-sort-guards.test.ts
+src/cron/service.main-job-passes-heartbeat-target-last.test.ts
+src/cron/service.persists-delivered-status.test.ts
+src/cron/service.prevents-duplicate-timers.test.ts
+src/cron/service.read-ops-nonblocking.test.ts
+src/cron/service.rearm-timer-when-running.test.ts
+src/cron/service.restart-catchup.test.ts
+src/cron/service.runs-one-shot-main-job-disables-it.test.ts
+src/cron/service.session-reaper-in-finally.test.ts
+src/cron/service.skips-main-jobs-empty-systemevent-text.test.ts
+src/cron/service.store-load-invalid-main-job.test.ts
+src/cron/service.store-migration.test.ts
+src/cron/service.store.migration.test.ts
+src/cron/service/jobs.schedule-error-isolation.test.ts
+src/cron/service/ops.test.ts
+src/cron/service/state.test.ts
+src/cron/service/store.test.ts
+src/cron/service/timeout-policy.test.ts
+src/cron/service/timer.test.ts
+src/cron/session-reaper.test.ts
+src/cron/stagger.test.ts
+src/cron/store-migration.test.ts
+src/cron/store.test.ts
+src/tts/edge-tts-validation.test.ts
+src/tts/prepare-text.test.ts
+src/tts/provider-registry.test.ts
+src/tts/tts.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/context-engine/context-engine.test.ts src/cron/cron-protocol-conformance.test.ts src/cron/delivery.failure-notify.test.ts src/cron/delivery.test.ts src/cron/heartbeat-policy.test.ts src/cron/isolated-agent.auth-profile-propagation.test.ts src/cron/isolated-agent.delivers-response-has-heartbeat-ok-but-includes.test.ts src/cron/isolated-agent.delivery-awareness.test.ts src/cron/isolated-agent.delivery-target-thread-session.test.ts src/cron/isolated-agent.direct-delivery-core-channels.test.ts src/cron/isolated-agent.direct-delivery-forum-topics.test.ts src/cron/isolated-agent.helpers.test.ts src/cron/isolated-agent.lane.test.ts src/cron/isolated-agent.model-formatting.test.ts src/cron/isolated-agent.skips-delivery-without-whatsapp-recipient-besteffortdeliver-true.test.ts src/cron/isolated-agent.subagent-model.test.ts src/cron/isolated-agent.uses-last-non-empty-agent-text-as.test.ts src/cron/isolated-agent/delivery-dispatch.double-announce.test.ts src/cron/isolated-agent/delivery-dispatch.named-agent.test.ts src/cron/isolated-agent/delivery-target.test.ts src/cron/isolated-agent/helpers.test.ts src/cron/isolated-agent/run.cron-model-override.test.ts src/cron/isolated-agent/run.fast-mode.test.ts src/cron/isolated-agent/run.interim-retry.test.ts src/cron/isolated-agent/run.message-tool-policy.test.ts src/cron/isolated-agent/run.owner-auth.test.ts src/cron/isolated-agent/run.payload-fallbacks.test.ts src/cron/isolated-agent/run.sandbox-config-preserved.test.ts src/cron/isolated-agent/run.session-key.test.ts src/cron/isolated-agent/run.skill-filter.test.ts src/cron/isolated-agent/session.test.ts src/cron/isolated-agent/subagent-followup.test.ts src/cron/normalize.test.ts src/cron/run-log.test.ts src/cron/schedule.test.ts src/cron/service.armtimer-tight-loop.test.ts src/cron/service.delivery-plan.test.ts src/cron/service.every-jobs-fire.test.ts src/cron/service.failure-alert.test.ts src/cron/service.get-job.test.ts src/cron/service.heartbeat-ok-summary-suppressed.test.ts src/cron/service.issue-13992-regression.test.ts src/cron/service.issue-16156-list-skips-cron.test.ts src/cron/service.issue-17852-daily-skip.test.ts src/cron/service.issue-19676-at-reschedule.test.ts src/cron/service.issue-22895-every-next-run.test.ts src/cron/service.issue-35195-backup-timing.test.ts src/cron/service.issue-regressions.test.ts src/cron/service.jobs.test.ts src/cron/service.jobs.top-of-hour-stagger.test.ts src/cron/service.list-page-sort-guards.test.ts src/cron/service.main-job-passes-heartbeat-target-last.test.ts src/cron/service.persists-delivered-status.test.ts src/cron/service.prevents-duplicate-timers.test.ts src/cron/service.read-ops-nonblocking.test.ts src/cron/service.rearm-timer-when-running.test.ts src/cron/service.restart-catchup.test.ts src/cron/service.runs-one-shot-main-job-disables-it.test.ts src/cron/service.session-reaper-in-finally.test.ts src/cron/service.skips-main-jobs-empty-systemevent-text.test.ts src/cron/service.store-load-invalid-main-job.test.ts src/cron/service.store-migration.test.ts src/cron/service.store.migration.test.ts src/cron/service/jobs.schedule-error-isolation.test.ts src/cron/service/ops.test.ts src/cron/service/state.test.ts src/cron/service/store.test.ts src/cron/service/timeout-policy.test.ts src/cron/service/timer.test.ts src/cron/session-reaper.test.ts src/cron/stagger.test.ts src/cron/store-migration.test.ts src/cron/store.test.ts src/tts/edge-tts-validation.test.ts src/tts/prepare-text.test.ts src/tts/provider-registry.test.ts src/tts/tts.test.ts
+
+[test-parallel] start unit workers=2 filters=73
+[test-parallel] start unit-isolated-agent.skips-delivery-without-whatsapp-recipient-besteffortdeliver-true-isolated workers=1 filters=1
+[test-parallel] start unit-isolated-agent.uses-last-non-empty-agent-text-as-isolated workers=1 filters=1
+[test-parallel] start unit-run.cron-model-override-isolated workers=1 filters=1
+[test-parallel] done unit-run.cron-model-override-isolated code=0 elapsed=9.7s
+[test-parallel] start unit-run.skill-filter-isolated workers=1 filters=1
+[test-parallel] done unit-isolated-agent.skips-delivery-without-whatsapp-recipient-besteffortdeliver-true-isolated code=0 elapsed=11.7s
+[test-parallel] done unit-isolated-agent.uses-last-non-empty-agent-text-as-isolated code=0 elapsed=12.2s
+[test-parallel] done unit-run.skill-filter-isolated code=0 elapsed=11.4s
+[test-parallel] done unit code=0 elapsed=42.7s
+--- exit=0 duration=44s ---

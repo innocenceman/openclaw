@@ -1,0 +1,15 @@
+### cli-auth-provider
+pnpm test -- src/commands/auth-choice-options.test.ts src/commands/auth-choice.apply-helpers.test.ts src/commands/auth-choice.apply.plugin-provider.test.ts src/commands/auth-choice.moonshot.test.ts src/commands/auth-choice.preferred-provider.test.ts src/commands/auth-choice.test.ts src/commands/chutes-oauth.test.ts src/commands/models/auth.test.ts src/commands/models/list.auth-overview.test.ts src/commands/models/list.list-command.forward-compat.test.ts src/commands/models/list.probe.targets.test.ts src/commands/models/list.probe.test.ts src/commands/models/list.status.test.ts src/cli/models-cli.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/commands/auth-choice-options.test.ts src/commands/auth-choice.apply-helpers.test.ts src/commands/auth-choice.apply.plugin-provider.test.ts src/commands/auth-choice.moonshot.test.ts src/commands/auth-choice.preferred-provider.test.ts src/commands/auth-choice.test.ts src/commands/chutes-oauth.test.ts src/commands/models/auth.test.ts src/commands/models/list.auth-overview.test.ts src/commands/models/list.list-command.forward-compat.test.ts src/commands/models/list.probe.targets.test.ts src/commands/models/list.probe.test.ts src/commands/models/list.status.test.ts src/cli/models-cli.test.ts
+
+[test-parallel] start base workers=2 filters=13
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-J06ek3/base-1778261876004.log meta=/tmp/openclaw-test-parallel-J06ek3/base-1778261876004-failure.json
+[test-parallel] done base code=1 elapsed=166.6s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-mglCOX/base-1778261884549.log meta=/tmp/openclaw-test-parallel-mglCOX/base-1778261884549-failure.json
+[test-parallel] done base code=1 elapsed=166.0s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1

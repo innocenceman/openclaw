@@ -1,0 +1,1 @@
+pnpm test -- src/agents/skills-install.test.ts src/agents/skills-install.download.test.ts src/agents/skills-install-fallback.test.ts src/agents/skills/filter.test.ts src/agents/skills/frontmatter.test.ts src/agents/skills/refresh.test.ts

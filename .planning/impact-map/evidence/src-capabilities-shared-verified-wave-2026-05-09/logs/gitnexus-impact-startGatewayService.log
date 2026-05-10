@@ -1,0 +1,19 @@
+{
+  "target": {
+    "id": "Function:src/daemon/service.ts:startGatewayService",
+    "name": "startGatewayService",
+    "type": "Function",
+    "filePath": "src/daemon/service.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "LOW",
+  "summary": {
+    "direct": 0,
+    "processes_affected": 0,
+    "modules_affected": 0
+  },
+  "affected_processes": [],
+  "affected_modules": [],
+  "byDepth": {}
+}

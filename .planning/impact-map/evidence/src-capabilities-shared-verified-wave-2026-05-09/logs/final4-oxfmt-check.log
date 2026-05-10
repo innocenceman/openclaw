@@ -1,0 +1,8 @@
+Checking formatting...
+
+.planning/impact-map/src/capability-modules/README.md (111ms)
+.planning/impact-map/src/capability-modules/leaf-index.md (93ms)
+.planning/impact-map/src/shared-misc-runtime-support/leaf-index.md (14ms)
+
+Format issues found in above 3 files. Run without `--check` to fix.
+Finished in 365ms on 10 files using 4 threads.

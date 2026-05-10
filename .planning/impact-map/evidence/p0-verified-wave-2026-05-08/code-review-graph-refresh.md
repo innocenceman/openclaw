@@ -1,0 +1,21 @@
+# code-review-graph status refresh
+
+Command: code-review-graph status
+
+Nodes: 80930
+Edges: 732204
+Files: 8574
+Languages: javascript, typescript, swift, bash, kotlin, python, go, powershell
+Last updated: 2026-05-08T11:31:24
+Built on branch: HEAD
+Built at commit: f99ef11b272b
+
+Command: code-review-graph detect-changes
+{
+"summary": "Analyzed 660 changed file(s):\n - 0 changed function(s)/class(es)\n - 0 affected flow(s)\n - 0 test gap(s)\n - Overall risk score: 0.00",
+"risk_score": 0.0,
+"changed_functions": [],
+"affected_flows": [],
+"test_gaps": [],
+"review_priorities": []
+}

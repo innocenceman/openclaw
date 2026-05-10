@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "planning.versionDiff.manifest.v1",
+  "base": {
+    "version": "v2026.3.24",
+    "sourceSha": "cff6dc94e30794a269eb7805b6e636c3634a088c",
+    "planningRef": "refs/planning/v2026.3.24",
+    "planningCommitSha": "c8d319c053d45ff6abf674f756cb32e1c67d0109"
+  },
+  "target": {
+    "version": "v2026.3.28",
+    "sourceSha": "f9b1079283a8ee25a7cee77c8f8225d5c813bc30",
+    "planningRef": "refs/planning/v2026.3.28",
+    "planningCommitSha": null,
+    "codeReviewGraph": {
+      "status": "built",
+      "files": 9373,
+      "nodes": 86444,
+      "edges": 765441
+    },
+    "gitnexus": {
+      "status": "failed",
+      "error": "Napi::Error during analyze"
+    },
+    "planningCommitResolution": "Resolve through refs/planning/v2026.3.28 after final commit; commit hash is intentionally not embedded to avoid self-referential commit churn."
+  },
+  "direction": "forward-upgrade",
+  "paths": {
+    "nameStatus": "name-status.txt",
+    "addedPaths": "added-paths.txt",
+    "deletedPaths": "deleted-paths.txt",
+    "modifiedPaths": "modified-paths.txt",
+    "renamedPaths": "renamed-paths.tsv",
+    "commits": "commits.txt"
+  },
+  "pathCounts": {
+    "nameStatusRows": 3806,
+    "changedPathCount": 4137
+  },
+  "synthesis": {
+    "leafImpact": "leaf-impact.json",
+    "humanReports": [
+      "SUMMARY.zh-CN.md",
+      "FEATURE-IMPACT.zh-CN.md",
+      "LEAF-IMPACT.md",
+      "COMPATIBILITY.zh-CN.md"
+    ],
+    "featureCount": 10,
+    "coveredPathCount": 4137,
+    "unclassifiedPathCount": 0,
+    "highRiskFeatureCount": 6,
+    "leafImpactSchemaVersion": "planning.versionDiff.leafImpact.v2",
+    "finalLeafCount": 219,
+    "highRiskLeafCount": 125
+  },
+  "workflow": {
+    "allowedPlanningIntelligencePaths": [
+      ".planning/**",
+      ".gitnexusignore",
+      ".gitnexus/**",
+      ".code-review-graph/**"
+    ],
+    "reverseTransitionsAllowed": false,
+    "gitnexusPolicy": "analyze once after target source stabilization"
+  },
+  "validation": {
+    "status": "partial-tool-gap",
+    "results": [
+      {
+        "name": "raw-artifact-generation",
+        "status": "pass",
+        "evidence": "generate-version-diff-artifacts.py produced 4137 changed paths"
+      },
+      {
+        "name": "leaf-impact-counts",
+        "status": "pass",
+        "evidence": "validate-version-diff-artifacts.py ok"
+      },
+      {
+        "name": "planning-refresh-checklist",
+        "status": "pass",
+        "evidence": "refresh-planning-state.py ready-for-semantic-refresh, 0 stale deleted-path references after archive"
+      },
+      {
+        "name": "gitnexus-analyze",
+        "status": "fail",
+        "evidence": "npx gitnexus analyze failed twice after target stabilization with Napi::Error; second attempt used .gitnexusignore plus --skip-agents-md --no-stats"
+      },
+      {
+        "name": "code-review-graph-build",
+        "status": "pass",
+        "evidence": "code-review-graph build completed: 9373 files, 86444 nodes, 765441 edges"
+      }
+    ],
+    "notes": [
+      "GitNexus native analyzer failure is a tool/runtime gap; code-review-graph and version-diff mechanical validation completed."
+    ]
+  }
+}

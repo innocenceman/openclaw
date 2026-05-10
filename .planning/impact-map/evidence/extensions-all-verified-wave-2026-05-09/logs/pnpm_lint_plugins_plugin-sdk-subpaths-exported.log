@@ -1,0 +1,8 @@
+# pnpm lint:plugins:plugin-sdk-subpaths-exported
+
+> openclaw@2026.3.24 lint:plugins:plugin-sdk-subpaths-exported /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/check-plugin-sdk-subpath-exports.mjs
+
+OK: all referenced openclaw/plugin-sdk/<subpath> imports are exported.
+
+[exit:0]

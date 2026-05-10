@@ -1,0 +1,27 @@
+# src-plugin-sdk-provider
+
+Command: pnpm test -- src/plugin-sdk/provider-entry.test.ts src/plugin-sdk/fetch-auth.test.ts src/plugin-sdk/request-url.test.ts src/plugin-sdk/runtime.test.ts
+Started: 2026-05-08T02:36:37.039Z
+Ended: 2026-05-08T02:36:58.094Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/plugin-sdk/provider-entry.test.ts src/plugin-sdk/fetch-auth.test.ts src/plugin-sdk/request-url.test.ts src/plugin-sdk/runtime.test.ts
+
+[test-parallel] start unit workers=2 filters=4
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  4 passed (4)
+      Tests  12 passed (12)
+   Start at  10:36:42
+   Duration  15.08s (transform 8.85s, setup 28.48s, import 264ms, tests 66ms, environment 1ms)
+
+[test-parallel] done unit code=0 elapsed=17.4s
+
+
+## stderr
+

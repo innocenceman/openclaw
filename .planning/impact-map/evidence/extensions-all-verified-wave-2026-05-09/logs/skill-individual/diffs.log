@@ -1,0 +1,9 @@
+# timeout 180s pnpm test -- extensions/diffs/src/browser.test.ts extensions/diffs/src/config.test.ts extensions/diffs/src/store.test.ts extensions/diffs/src/tool.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/diffs/src/browser.test.ts extensions/diffs/src/config.test.ts extensions/diffs/src/store.test.ts extensions/diffs/src/tool.test.ts
+
+[test-parallel] start extensions workers=4 filters=4
+[test-parallel] done extensions code=0 elapsed=9.6s
+
+[exit:0]

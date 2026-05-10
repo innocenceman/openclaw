@@ -1,0 +1,35 @@
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Function:src/tts/provider-registry.ts:listSpeechProviders",
+    "name": "listSpeechProviders",
+    "kind": "Function",
+    "filePath": "src/tts/provider-registry.ts",
+    "startLine": 70,
+    "endLine": 72
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "File:src/gateway/server-methods/tts.ts",
+        "name": "tts.ts",
+        "filePath": "src/gateway/server-methods/tts.ts"
+      },
+      {
+        "uid": "File:src/gateway/server-methods/tts.ts",
+        "name": "tts.ts",
+        "filePath": "src/gateway/server-methods/tts.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "calls": [
+      {
+        "uid": "Function:src/tts/provider-registry.ts:buildProviderMaps",
+        "name": "buildProviderMaps",
+        "filePath": "src/tts/provider-registry.ts"
+      }
+    ]
+  },
+  "processes": []
+}

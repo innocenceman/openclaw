@@ -1,0 +1,10 @@
+== memory-low ==
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/memory/backend-config.test.ts src/memory/batch-error-utils.test.ts src/memory/batch-gemini.test.ts src/memory/batch-http.test.ts src/memory/batch-output.test.ts src/memory/batch-status.test.ts src/memory/batch-voyage.test.ts src/memory/embedding-chunk-limits.test.ts src/memory/embeddings-gemini.test.ts src/memory/embeddings-mistral.test.ts src/memory/embeddings-model-normalize.test.ts src/memory/embeddings-ollama.test.ts src/memory/embeddings-remote-fetch.test.ts src/memory/embeddings-voyage.test.ts src/memory/embeddings.test.ts src/memory/hybrid.test.ts src/memory/index.test.ts src/memory/internal.test.ts src/memory/manager.async-search.test.ts src/memory/manager.atomic-reindex.test.ts src/memory/manager.batch.test.ts src/memory/manager.embedding-batches.test.ts src/memory/manager.get-concurrency.test.ts src/memory/manager.mistral-provider.test.ts src/memory/manager.read-file.test.ts src/memory/manager.readonly-recovery.test.ts src/memory/manager.sync-errors-do-not-crash.test.ts src/memory/manager.vector-dedupe.test.ts src/memory/manager.watcher-config.test.ts src/memory/mmr.test.ts src/memory/post-json.test.ts src/memory/prompt-section.test.ts src/memory/qmd-manager.test.ts src/memory/qmd-process.test.ts src/memory/qmd-query-parser.test.ts src/memory/qmd-scope.test.ts src/memory/query-expansion.test.ts src/memory/search-manager.test.ts src/memory/session-files.test.ts src/memory/temporal-decay.test.ts
+
+[test-parallel] start unit workers=2 filters=40
+[test-parallel] failure artifacts unit log=/tmp/openclaw-test-parallel-kDbsEg/unit-1778266801578.log meta=/tmp/openclaw-test-parallel-kDbsEg/unit-1778266801578-failure.json
+[test-parallel] done unit code=1 elapsed=30.2s
+ ELIFECYCLE  Test failed. See above for more details.
+--- exit=1 duration=31s ---

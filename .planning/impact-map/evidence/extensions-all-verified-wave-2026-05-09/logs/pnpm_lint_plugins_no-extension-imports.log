@@ -1,0 +1,10 @@
+# pnpm lint:plugins:no-extension-imports
+
+> openclaw@2026.3.24 lint:plugins:no-extension-imports /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/check-plugin-extension-import-boundary.mjs
+
+Rule: src/plugins/** must not import extensions/**
+No plugin import boundary violations found.
+Baseline matches (0 entries).
+
+[exit:0]

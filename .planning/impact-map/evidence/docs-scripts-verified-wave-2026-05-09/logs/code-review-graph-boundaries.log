@@ -1,0 +1,136 @@
+=== code-review-graph docs/scripts wiki excerpts ===
+# docs-underline
+
+## Overview
+
+Directory-based community: docs
+
+- **Size**: 6 nodes
+- **Cohesion**: 0.1724
+- **Dominant Language**: javascript
+
+## Members
+
+| Name | Kind | File | Lines |
+|------|------|------|-------|
+| ensureUnderline | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/docs/nav-tabs-underline.js | 12-20 |
+| getActiveTab | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/docs/nav-tabs-underline.js | 22-25 |
+| updateUnderline | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/docs/nav-tabs-underline.js | 27-50 |
+| scheduleUpdate | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/docs/nav-tabs-underline.js | 52-54 |
+| setupNavTabsObserver | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/docs/nav-tabs-underline.js | 56-77 |
+| setupObservers | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/docs/nav-tabs-underline.js | 79-84 |
+
+## Execution Flows
+
+No execution flows pass through this community.
+
+## Dependencies
+
+### Outgoing
+
+- `setProperty` (4 edge(s))
+- `querySelector` (3 edge(s))
+- `add` (2 edge(s))
+- `getBoundingClientRect` (2 edge(s))
+- `createElement` (1 edge(s))
+- `appendChild` (1 edge(s))
+- `closest` (1 edge(s))
+- `requestAnimationFrame` (1 edge(s))
+- `disconnect` (1 edge(s))
+- `observe` (1 edge(s))
+- `remove` (1 edge(s))
+
+### Incoming
+
+- `/home/yanx/projects/openclaw/openclaw-v2026.3.24/docs/nav-tabs-underline.js` (6 edge(s))
+--- scripts-resolve excerpt
+# scripts-resolve
+
+## Overview
+
+Directory-based community: scripts
+
+- **Size**: 1336 nodes
+- **Cohesion**: 0.2089
+- **Dominant Language**: javascript
+
+## Members
+
+| Name | Kind | File | Lines |
+|------|------|------|-------|
+| compareStrings | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 15-15 |
+| collectWorkspacePackagePaths | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 38-45 |
+| normalizePath | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 47-49 |
+| readScannableText | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 51-64 |
+| redactNpmSpec | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 66-73 |
+| isCodeFile | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 75-77 |
+| isTestLikePath | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 79-86 |
+| isProductionLikeFile | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 88-90 |
+| walkCodeFiles | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 92-117 |
+| walk | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 123-148 |
+| walkAllCodeFiles | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 119-152 |
+| toLine | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 154-156 |
+| resolveRelativeSpecifier | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 158-163 |
+| normalizePluginSdkFamily | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 165-168 |
+| resolveOptionalClusterFromPath | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 170-180 |
+| compareImports | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 182-190 |
+| collectPluginSdkImports | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 192-232 |
+| push | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 259-279 |
+| visit | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 281-292 |
+| collectCorePluginSdkImports | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 234-254 |
+| collectOptionalClusterStaticImports | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 256-296 |
+| collectOptionalClusterStaticLeaks | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 298-327 |
+| buildDuplicatedSeamFamilies | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 329-362 |
+| buildOverlapFiles | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 364-389 |
+| buildOptionalClusterStaticLeaks | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 391-413 |
+| packageClusterMeta | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 415-433 |
+| classifyMissingPackageCluster | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 435-469 |
+| buildMissingPackages | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 471-533 |
+| stemFromRelativePath | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 535-537 |
+| splitNameTokens | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 539-544 |
+| escapeForRegExp | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 546-548 |
+| hasImportSource | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 550-555 |
+| hasAnyImportSource | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 557-559 |
+| isCronProductionPath | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 561-563 |
+| isSubagentProductionPath | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 565-573 |
+| describeCronSeamKinds | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 575-675 |
+| describeSubagentSeamKinds | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 677-771 |
+| describeSeamKinds | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 773-815 |
+| buildTestIndex | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 817-835 |
+| hasExecutableImportReference | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 837-847 |
+| hasModuleMockReference | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 849-857 |
+| matchQualityRank | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 859-872 |
+| findRelatedTests | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 874-928 |
+| determineSeamTestStatus | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 930-964 |
+| buildSeamTestInventory | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 966-1007 |
+| main | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/audit-seams.mjs | 1009-1029 |
+| send_notification | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/auth-monitor.sh | 32-66 |
+| parseFlagValue | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/bench-cli-startup.ts | 28-34 |
+| parsePositiveInt | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/bench-cli-startup.ts | 36-45 |
+| median | Function | /home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/bench-cli-startup.ts | 47-57 |
+
+*... and 1286 more members.*
+
+## Execution Flows
+
+No execution flows pass through this community.
+
+## Dependencies
+
+### Outgoing
+
+- `return` (374 edge(s))
+- `echo` (357 edge(s))
+- `join` (280 edge(s))
+- `push` (196 edge(s))
+- `trim` (173 edge(s))
+- `log` (164 edge(s))
+- `true` (151 edge(s))
+- `printf` (124 edge(s))
+- `map` (107 edge(s))
+- `exit` (106 edge(s))
+- `startsWith` (104 edge(s))
+- `filter` (102 edge(s))
+- `error` (98 edge(s))
+- `has` (95 edge(s))
+- `test` (92 edge(s))

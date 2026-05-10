@@ -1,0 +1,9 @@
+=== channel-allowlists ===
+pnpm test -- src/channels/allow-from.test.ts src/channels/allowlist-match.test.ts src/channels/allowlists/resolve-utils.test.ts src/channels/plugins/contracts/group-policy.contract.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/channels/allow-from.test.ts src/channels/allowlist-match.test.ts src/channels/allowlists/resolve-utils.test.ts src/channels/plugins/contracts/group-policy.contract.test.ts
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=7.1s
+--- exit=0 duration=8s ---

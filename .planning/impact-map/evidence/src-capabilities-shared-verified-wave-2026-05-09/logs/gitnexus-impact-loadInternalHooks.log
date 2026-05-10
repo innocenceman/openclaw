@@ -1,0 +1,60 @@
+{
+  "target": {
+    "id": "Function:src/hooks/loader.ts:loadInternalHooks",
+    "name": "loadInternalHooks",
+    "type": "Function",
+    "filePath": "src/hooks/loader.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 2,
+  "risk": "LOW",
+  "summary": {
+    "direct": 1,
+    "processes_affected": 1,
+    "modules_affected": 2
+  },
+  "affected_processes": [
+    {
+      "name": "startGatewayServer",
+      "type": "Function",
+      "filePath": "src/gateway/server.impl.ts",
+      "affected_process_count": 9,
+      "total_hits": 9,
+      "earliest_broken_step": 1
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Agents",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Gateway",
+      "hits": 1,
+      "impact": "indirect"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-startup.ts:startGatewaySidecars",
+        "name": "startGatewaySidecars",
+        "filePath": "src/gateway/server-startup.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/gateway/server.impl.ts:startGatewayServer",
+        "name": "startGatewayServer",
+        "filePath": "src/gateway/server.impl.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}

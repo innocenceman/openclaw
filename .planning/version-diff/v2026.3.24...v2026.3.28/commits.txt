@@ -1,0 +1,1267 @@
+f9b1079283 build: cut 2026.3.28 stable
+584e627d77 docs: add changelog for CJK memory chunking (#40271)
+f8547fcae4 fix: guard fine-split against breaking UTF-16 surrogate pairs
+3b95aa8804 fix: address second-round review — Latin backward compat and emoji consistency
+a5147d4d88 fix: address bot review — surrogate-pair counting and CJK line splitting
+971ecabe80 fix(memory): account for CJK characters in QMD memory chunking
+7f46b03de0 fix: keep memory flush daily files append-only (#53725) (thanks @HPluseven)
+9d1498b2c2 Agents: add memory flush append regression
+60b7613156 Agents: forward memory flush append guard
+e2d0b7c583 chore(test): harden mattermost slash-http module mocks
+72de33c976 chore: refresh plugin sdk api baseline
+148a65fe90 refactor: share webhook channel status helpers
+2afc655bd5 ACP: document Matrix bind-here support
+19e52a1ba2 fix(memory/qmd): honor embedInterval independent of update interval
+acbdafc4f4 fix: propagate webhook mode to health monitor snapshot
+acca306665 fix: polish LINE status snapshot checks (#45701) (thanks @tamaosamu)
+03941e2dbf fix(line): use configured field in collectStatusIssues instead of raw token
+b23ed7530b chore: ignore local tmp workspace
+5ebccf5e30 test: harden zalo webhook lifecycle tests
+9e1b524a00 fix: break mattermost runtime cycle
+fcc9fd1623 fix: land LINE timing-safe signature validation (#55663) (thanks @gavyngong)
+7626d18c64 fix(line): eliminate timing side-channel in HMAC signature validation
+92fb0caf35 fix: harden mac gateway attach smoke
+f9281d1b9d build: bump aws sdk and tsdown
+225d58b74a test: ignore stale isolated state dir in live env staging
+0e0945c5ed docs: reorder unreleased changelog fixes
+5cfb979766 docs: add missing CLAUDE symlinks
+5efed49208 fix: keep mac local gateway attached
+c9f1506d2f docs(xai): clarify x_search onboarding flow
+fcee6fa047 Docs: add boundary AGENTS guides (#56647)
+03826b8075 fix(test): harden planner artifact cleanup and profile env fallback
+c3a0304f63 chore(test): fix stale web search audit coverage
+3d69ad8308 fix: preserve Teams Entra JWT fallback on legacy validator errors
+5872f860c9 feat(xai): add plugin-owned x_search onboarding
+ebb4794952 Tests: reuse paired provider contract aliases
+680c30bc5d Tests: shim config runtime for capability contracts
+3cbd3960f9 test: add minimax parallels smoke lane
+d0e0150129 Tests: retry scoped contract registry loads
+d3673fd53e Tests: isolate xAI contract lanes
+4e74e7e26c fix(memory): resolve slugified qmd search paths (#50313)
+5289e8f0fe Tests: lazy-load web search contract registries
+3847ace25b fix(telegram): preserve forum topic routing for /new and /reset (#56654)
+094524a549 Types: tighten Teams validator return type
+bd1c48e4d9 Tests: lazy-load extension contract registries
+dc382b09be fix(msteams): accept strict Bot Framework and Entra service tokens (#56631)
+0b8bc0e1b4 Tests: cap CI extension batch concurrency
+81432d6b7e fix(matrix): encrypt thumbnails in E2EE rooms using thumbnail_file (#54711)
+468185d1b5 fix(agents): handle unhandled stop reasons gracefully instead of crashing (#56639)
+664680318e fix(release): validate built tarballs in workflows
+1249dad6c4 fix(release): skip lifecycle scripts in npm precheck
+587e18cd3f chore: prepare 2026.3.28-beta.1 release
+143fb34bf9 docs: remove stale code_execution secretref path
+45ecf5e2e9 fix(xai): narrow code execution config typing
+8a24cbf450 chore: bump version to 2026.3.28
+cb00d44ae4 fix(matrix): load crypto-nodejs via createRequire to fix __dirname in ESM (#54566)
+2022dfd0a1 chore: backfill changelog entries for recent fixes (#56625)
+216796f1e3 fix(xai): wire plugin-owned codeExecution config
+b7ab0ddb55 refactor(xai): move code_execution into plugin
+1617e0218f test(xai): add live x_search coverage
+6e0b67a2fd docs(secrets): sync credential surface matrix
+887d7584d6 refactor(plugins): expose bundled onboard helpers
+46c2928234 fix(plugins): stabilize provider contract loading
+dba1b31243 fix(xai): repair extension test boundaries
+1e424990a2 fix(xai): restore config-backed auth discovery
+2a950157b1 refactor(xai): move x_search into plugin
+396bf20cc6 Tools: add xAI-backed code_execution
+1c9684608a Docs: guide x_search toward exact-post stats lookups
+c8ed1638ea xAI: restore generic auth and x_search seams
+43143486eb Docs: refresh x_search secretref matrix
+0391e455bf Lint: drop stale model compat imports
+92fb4ad233 xAI: route x_search through public api seam
+4f3009f57e Tests: classify x_search secret target parity
+6e3b54430c Tests: keep extension onboarding coverage under extensions
+09e2ef965b Tests: fix rebased auth and runner type coverage
+b22f65992e Build: fix rebased provider secrets helper
+b918568b1e Rebase: reconcile xAI post-main conflicts
+fb989f0402 Tests: restore provider runtime contract wrapper
+df61660a26 xAI: centralize fallback auth resolution
+9dd08a49a4 xAI: reuse fallback auth for runtime and discovery
+800042a3d5 xAI: reuse plugin key for x_search
+8ca3710b90 xAI: strip unsupported payload fields
+fd748171b8 xAI: strip unsupported Responses reasoning params
+80a1ccc552 xAI: preserve session auth in embedded runs
+2765fdc2dd xAI: normalize stale Grok transport to Responses
+f0ce658fbb xAI: add auth resolution diagnostics
+d5fafbe3ce xAI: honor config-backed auth during provider bootstrap
+2d919cf63d xAI: reuse web search key for provider auth
+38e4b77e60 Tools: add x_search via xAI Responses
+5ed8ee6832 xAI: switch bundled provider defaults to Responses
+4d6c8edd74 fix(telegram): skip empty text replies instead of crashing with GrammyError 400 (#56620)
+eec290e68d fix: support anthropic parallels smoke lanes
+703e68a749 Fix HTTP OpenAI-compatible routes missing operator.write scope checks (#56618)
+17479ceb43 fix(auto-reply): suppress JSON-wrapped NO_REPLY payloads before channel delivery (#56612)
+ab2ef7bbfc fix(telegram): split long messages at word boundaries instead of mid-word (#56595)
+865160e572 fix(telegram): validate replyToMessageId before sending to Telegram API (#56587)
+e69ea1acb3 fix(bluebubbles): guard debounce flush against null text (#56573)
+756df2e955 test: tune gateway live probe skips
+914becee52 fix: isolate live test home from real config
+8ea4c4a6ba fix: tolerate npm stderr in Windows Parallels update smoke
+d1b0f8e8e2 fix(google): resolve Gemini 3.1 models for all Google provider aliases (#56567)
+6be14ab388 fix(cli): defer zsh compdef registration until compinit is available (#56555)
+f32f7d0809 Improve dashboard setup command copy UX (#56551)
+31112d5985 fix(security): audit web search keys for all bundled providers (#56540)
+02d4c1f2c3 refactor: derive channel metadata from plugin manifests
+c14b169a1b fix(acp): repair stale bindings after runtime exits (#56476)
+22de54d83d test: handle live model probe edge cases
+5194cf2019 refactor: load bundled provider catalogs dynamically
+54313a8730 fix(dev): rebuild dist after HEAD changes (#56510)
+840b806c2f fix(docs): remove broken Xfinity SSL troubleshooting links from FAQ (#56500)
+7a878164b0 ci: align bun shard counts with windows (#56429)
+23772bb785 test: exclude topology fixtures from vitest collection
+f3ecd9ca9c test: guard ui session storage access in node runs
+3a34e6b65d Add reusable TypeScript topology analyzer for public surface usage
+5302aa8947 test: use safe storage helpers in app mount hooks
+90e82fabb3 fix: display model name instead of ID in Telegram model selector (#56165) (#56175)
+e999f2aae3 test: silence lit dev-mode warnings in ui suite
+8c4cc61656 test: avoid raw localStorage access in chat view test
+bccbfdebfe fix: hydrate lazy tts provider config from source config
+3bb199aa43 refactor: lazy-load matrix setup bootstrap surfaces
+5df53a99b1 fix: set localstorage file for test planner workers
+41cf93efff fix: include extension channels in subagent announce delivery path (#56348)
+107969c725 test: silence warning filter stderr
+9b0b962f8c test: silence ui localstorage warning
+4757c32f63 test: silence planner fixture stderr
+241748ae60 test: align code region fence slices
+aa9454f270 fix: restore xai pricing cache fallback
+8061b792b2 test: repair focused unit lane drift
+aa33d585be fix: repair package contract and boundary drift
+f44d68a4f4 test: stabilize model auth label mocks
+c5a48a8c8a test: cover oauth profile store migration
+1c5a4d2a2b fix: stabilize implicit provider discovery merges
+e34a770b8a fix: keep provider discovery on mockable lazy runtime paths
+ff01d749fc fix: keep provider normalization on local sync paths
+cec1703734 fix: keep model selection on local normalization paths
+c1ae49e306 fix: keep cost lookup on sync pricing paths
+dec91c400d fix: keep status display on sync model metadata
+84d1781a3a fix: avoid status-time provider normalization recursion
+030d2e8b71 test: fix tts status helper temp-home prefs path
+0e11072b84 fix: avoid speech runtime import in status output
+85b3c1db30 fix: defer tts provider resolution until needed
+86dba6d906 fix: skip speech provider discovery on tts off path
+cfba0ab68f fix(process): wait for windows close state settlement
+0ebd7df9dc test(feishu): stabilize bot-menu lifecycle replay
+c3c1f9df54 fix(process): wait for windows exit code settlement
+bef4fa55f5 fix(model-fallback): add HTTP 410 to failover reason classification (#55201)
+b31cd35b36 test(plugin-sdk): align matrix runtime api guardrail
+8d8652257c test(providers): align active registry expectations
+c06dcf6b8b fix(plugins): preserve active capability providers
+8ea5c22985 fix(matrix): avoid heavy jiti runtime barrels
+a628d5d78b fix(irc): pin runtime barrel exports for jiti
+3145757f8f test: make minimax image path batch-stable
+6f6b55c072 fix: stabilize provider sdk runtime surfaces
+a955537a61 fix: slim provider sdk surfaces
+2212bd0d4a test: align runtime registry fixtures
+1d6ba41762 test: stabilize snapshot and typing helpers
+20aba8c518 fix(ci): restore extension test runtime deps and update voice-call expectations
+40a09cc582 fix(irc): avoid registry bootstrap in plugin sdk seam
+e0ba57e9c7 fix: preserve windows child exit codes
+7320973ab0 fix(provider-wizard): avoid hook-time model normalization
+ced88298d8 test: make media runtime seam mock bun-safe
+28074eeea3 fix: dedupe plugin sdk file-lock export
+0afd73c975 fix(daemon): surface probe close reasons (#56282)
+a68bef42eb test: align code region fence slices
+5d3104e699 fix: regenerate swift protocol models
+cb5afdf108 fix: prevent matrix-js-sdk plugin load crash (#56273) (thanks @aquaright1)
+3c0cf26e16 test: align media runtime registry seam
+5f82741d0f test: align telegram thread binding seam coverage
+4ef2615d7d test: fix bedrock discovery seam typing
+4dfd2cd60c feat: add support for extra headers in Tavily API requests (#55335)
+6777764a6b test: use bedrock plugin sdk seam in discovery tests
+a631604247 fix(ci): stabilize browser bundled integration tests
+a735a1a2d4 fix(text): handle fenced code fence termination
+c0a56ac1a1 test: use suite gateway hooks for channel mcp
+5224c5bbd5 test: isolate usage pricing cache state
+1c833b1eb5 test: align outbound telegram bootstrap mocks
+48b2eb2604 test: fix media and channel regression expectations
+7d000088a4 fix(ci): use process env for provider compat fallback
+f4fb45f1ee test: dedupe channel helper suites
+2181909f9a test: update image generation runtime seam
+0feeea0994 test: make media symlink fixture idempotent
+912bd1f5cc test: align media parse expectations
+bd4632b9c1 fix: mark buffered reply typing runs complete
+be38986141 fix: guard bundled channel runtime against TDZ imports
+04a40b2613 test: refresh base config schema snapshot
+8366c74ccd test: mock telegram conversation route seam
+d9e7178534 fix(ci): align embedded runner and bedrock typing drift
+71a3ad153a fix(ci): stabilize bundled capability contract loading
+f36354e401 test: dedupe pairing and channel contract suites
+e7c1fcba0c test: dedupe media utility suites
+155915e7dc test: dedupe routing and text suites
+30be04cd87 fix: include matrix runtime deps for bundled installs
+30bf4dd1ce test: isolate nextcloud talk from bundled channel imports
+2fd1a5274a fix: add getChat to telegram media test harness
+d69f20f451 fix: harden bundled channel runtime bootstrap
+f4cd06cb1a refactor: finish test cleanup off infra runtime
+5802d112da refactor: narrow telegram test mocks off infra runtime
+df4c9c5bd8 refactor: narrow test mocks off infra runtime
+61936938e9 refactor: move test harnesses off infra runtime
+f0a57fad42 fix: isolate device chat defaults (#53752) (thanks @lixuankai)
+7db10d2103 refactor: route discord channel through outbound runtime
+c65ec46490 refactor: trim remaining infra runtime residue
+922c90e9fa refactor: add approval runtime sdk seam
+0d98ce1065 refactor: add diagnostic and error runtime sdk seams
+70c2458861 refactor: add host and collection runtime sdk seams
+df204b1d8f fix: restore pi embedded runner transport typing
+eef4a7ae64 refactor(commands): drop provider default facade shims
+d042192c7c refactor(plugins): move provider policy hooks into plugins
+d042543539 Tests: share agents bind command harness
+5292622fec Tests: share partial module mock helper
+1db1c75a98 refactor: trim state persistence runtime seams
+7206ddea6f test: dedupe plugin contract suites
+48b2291b1e test: dedupe plugin provider runtime suites
+89bb2cf03e test: dedupe plugin bundle discovery suites
+69b54cbb1f test: align pi tool schema fixture type
+c222a44e6f refactor: add retry runtime sdk seam
+d42c2f6a17 test(pi-tools): use typebox schema fixture
+2c636fa3b8 docs(acp): clarify current conversation bind support
+e246efb288 fix(runtime): align channel runtime api seams
+06fba21a9d test(acp): cover persisted generic conversation binds
+83135c31c9 refactor(acp): extract generic current conversation binding store
+bde5bae69f Tests: preserve heartbeat-wake exports in mocks
+1e4241c34a Matrix: fix directory auth and credentials fallback
+b253ca70ef Tests: stabilize Matrix-related shared suites
+29b6e27c9e fix(android): auto-send voice turns on silence
+e7a61d13f0 fix: route signal runtime barrel off denied subpath
+a126d23f0d refactor: add fetch runtime sdk seam
+5b544c295a style(tests): normalize plugin runtime test formatting
+b236f39104 refactor(agents): generalize tool schema compat cleanup
+c7883fe892 refactor(plugins): register provider model id hooks
+49f693d06a refactor: widen webhook request guard sdk seam
+d5841f6412 refactor: centralize plugin API assembly
+6a556c6851 test(gateway): add live docker ACP bind coverage
+19e8e7190b fix(acp): avoid no-op gateway self-call after spawn
+b12f3ce6e5 fix(gateway): support synthetic chat origins
+26789db868 Fix TTS contract registry test context
+23f0486810 fix: stabilize plugin startup boundaries
+838013c87a refactor: expose webhook request guard sdk seam
+a7b8034a2b fix(android): use native tts in voice tab
+79fb980767 test(config): refresh base schema snapshot
+21c00165ef test: fix gateway handler and typing lease helper types
+e2a2492248 Secrets: fix Matrix default-account password activity
+38c65b4096 refactor: route slack prepare events through channel runtime
+f01f2ddc6d test(matrix): restore sdk mock ordering
+ccf54f263a refactor: route slack interactions through channel runtime
+16f8616d9d test(plugins): simplify typing pulse mock helper
+3a341355bf test(gateway): fill channels status handler options
+ab2bd34b66 refactor(xai): split provider compat facades
+c4e6fdf94d refactor(xai): move bundled xai runtime into plugin
+85064256a2 Refresh bundled plugin metadata snapshot
+02b8d47c6c test: align slots helper types
+6d3a6bda3d test: tighten typing lease mock helpers
+be31e7aa4c fix: unblock telegram typing and topic runtime builds
+ba02905c4f refactor: split mcp channel bridge internals
+fe679f0a90 fix(telegram): tighten reaction typings
+a790f63056 Fix typing lease background failure tests
+7d7883aa38 refactor: use temp-path sdk in discord voice manager
+0bcf076901 fix(regression): auto-enable channel status state
+dc87ffa46d fix(ci): guard telegram native command auth typing
+090a767754 fix: tighten telegram runtime type guards
+6b0e74000d fix(msteams): add blockStreaming config and progressive delivery (#56134)
+4900890626 test: align macOS config audit expectations
+a70d9beb3a build: update macOS package dependencies
+3e8bad0d31 Refresh bundled plugin metadata snapshot
+b8012221d2 fix(regression): restore slots test helper typing
+ff348d2063 fix(regression): auto-enable gateway send selection
+222ba9f174 fix(ci): tighten telegram and typing test types
+470d6aee0f Gateway: keep auto-enabled plugin config through startup
+5167841ff8 fix(regression): auto-enable channels resolve selection
+897a6a6c5b fix(regression): auto-enable message channel selection
+384bdde514 fix(regression): persist auto-enabled directory config
+687d23ae8d test: restore extension boundary guardrails
+d29d56c090 build: update Peekaboo for macOS SDK compatibility
+46ab177743 fix(regression): persist auto-enabled channel auth config
+8539886cd8 fix(regression): auto-enable directory channel selection
+811685b95f test: dedupe plugin bundle boundary suites
+fc84dd398b test: dedupe plugin runtime registry suites
+25fea00bc7 test: dedupe plugin utility config suites
+c9d5d12183 fix(regression): auto-enable channel auth selection
+324c621ebe fix(ci): align telegram runtime and test drift
+7779205aa1 Keep matrix SDK external in bundle checks
+363038828f fix(regression): auto-enable gateway bootstrap snapshots
+0c729b6d30 test: dedupe plugin runtime utility suites
+12318d25ae test: dedupe plugin provider runtime status suites
+6fc949862a fix(regression): repair channel setup discovery test
+37ab1513e0 fix(regression): auto-enable channel setup discovery
+84af16e9c7 fix(regression): handle telegram command error envelopes
+b5958ce5fd Changelog: note plugin runtime fixes
+1b5043f47b fix(regression): auto-enable gateway plugin loads
+6949e17429 refactor(telegram): simplify transport typing
+59535e3414 Matrix: align default account secret handling
+411494faa8 fix(regression): guard malformed telegram reaction payloads
+1a7dc22995 fix(regression): remove duplicate media runtime config
+afdcf16528 docs: note grouped git sync workflow
+f672782f38 Stabilize slack interaction event mocks
+3ccc58ae29 Restore channel test module rebinding
+22c9be197e docs: tighten Mistral changelog wording
+244b70051e test: fix docker mcp stdio notification hook
+47b3bf8c89 test: drop unused capability test helper
+9155f3914a test: dedupe plugin provider helper suites
+7e921050e3 test: dedupe plugin lifecycle runtime suites
+04792e6c44 test: dedupe plugin bundle and discovery suites
+8465ddc1cc refactor(telegram): tighten helper field readers
+f9aa226d93 refactor(telegram): simplify action button parsing
+ed441b180b refactor(telegram): simplify message helper parsing
+d69664e107 fix(regression): preserve googlechat pairing account context
+286d6b388f Tests: remove stale runtime state setup
+cdf19111e5 Plugins: narrow loader testing helper surface
+742e0c8597 fix(regression): track outbound bootstrap by channel surface
+eca6b8f4e8 refactor: use temp-path sdk in discord voice message
+d6fafb8af9 Add collect-all test failure planning
+39829b5dc6 refactor(telegram): unify inline button capability parsing
+4a014083ff refactor(telegram): tighten api result typings
+9905f39e9d refactor(telegram): unify chat metadata parsing
+12488f45c2 fix(regression): preserve announce thread ids
+c0d4c07b88 fix(regression): scope plugin registry reuse by gateway methods
+158e7c517e fix(matrix): resolve env SecretRef fallback in clean() for channel startup (#54980)
+9fa1674a56 refactor: use temp-path sdk in discord send
+392724ae57 Plugins: reuse shared bootstrap registry resolution
+ee7f5825c8 Plugins: share runtime registry resolution
+f811ce5052 fix(regression): preserve bluebubbles pairing account context
+c7e05f1f87 test(regression): cover mistral availability compat
+ee73342445 refactor: use channel runtime for imessage readiness
+a4c64d82f8 fix(regression): preserve telegram pairing account context
+bd28e6d444 refactor: move transport readiness onto channel runtime
+df4fd12225 test(matrix): mock chunkTextForOutbound in monitor registration test
+2aa09230c2 fix(regression): preserve feishu pairing account context
+efef319496 refactor(telegram): tighten chat action typings
+4018d04d56 refactor(telegram): simplify runtime handler typing
+3a2bf0aa1f refactor(telegram): share chat lookup types
+048a4e4f9e docs: clarify mcp server and client modes
+ec5877346c fix: harden mcp channel bridge smoke
+9b405f88d4 Plugins: reuse compatible runtime web search registries
+a00127bf5b Plugins: reuse compatible registries for runtime providers
+fd0aac297c Plugins: add runtime registry compatibility helper
+4beb231fd8 refactor: move heartbeat helpers onto channel runtime
+b9415ca24b fix(regression): preserve line pairing account context
+d50526dddc fix(regression): use active channel registry for generic bindings
+5e93419c31 fix: move Mistral compat into provider plugin
+fd48e4090a fix(regression): reject disabled channel auth stubs
+4e50548e46 fix: restore skill sourceInfo provenance handling
+102e313d55 fix(regression): refresh provider hook cache after config changes
+1e2e6fb613 fix(regression): allow auth-capable channel auto-pick without raw config
+578d02f40a test: dedupe plugin lifecycle registry suites
+e74f206a68 test: dedupe plugin provider runtime suites
+708ff9145e test: dedupe plugin utility config suites
+c5b1582d48 fix(regression): auto-enable web search provider loads
+f652d9fd81 fix: preserve indentation when stripping reply directives (#55960) (thanks @Nanako0129)
+0d0d46f5e9 refactor: route line media temp paths through temp-path sdk
+5acc4b5dc5 refactor: route acpx test temp paths through temp-path sdk
+ec122796f8 fix(regression): avoid loading memory runtime during shutdown
+c5c9640374 fix: harden config write auditing
+5853b1aab8 fix: replay skill source drift
+9058662d6f refactor: route signal event handler through channel runtime
+49968982a5 fix(plugin-sdk): avoid testing export drift
+dee2bde2f5 test(acp): cover generic conversation binds
+ec9f96cb2a refactor(plugin-sdk): align binding contract imports
+d0d4b73d25 refactor(acp): centralize conversation binding context
+09e35e69b2 fix(regression): auto-enable provider runtime loads
+cc9b2df97c test: stabilize telegram stalled-runner restart assertion
+921bb89b1a fix: add changelog for CJK MMR tokenize fix (#29396) (thanks @buyitsydney)
+4b69c6d3f1 fix(memory): add CJK/Kana/Hangul support to MMR tokenize() for diversity detection
+92b8839488 fix: normalize unsupported Brave country filters (#55695) (thanks @chen-zhang-cs-code)
+faae213ab7 refactor: route whatsapp monitor through channel runtime
+8147f5075b refactor: inline canonical skill source reads
+f4f492a410 fix(regression): scope channel setup reloads by channel registry
+ec6fba7d01 refactor: drop legacy skill source fallback
+24bb64b1c4 test: centralize canonical skill fixtures
+63e35b2d9d fix(regression): auto-enable memory runtime loads
+2ba5e7ebf9 fix(regression): align plugin inspect policy with auto-enabled config
+550c51bb6e refactor: route telegram bot deps through channel runtime
+2030c814ce fix(regression): auto-enable channel setup registry loads
+66c4c3bec8 test: align matrix runtime api allowlist
+36ac9224cc fix(regression): reload stale auto-enabled plugin tool registries
+e20823c741 fix(regression): auto-enable plugin status loads
+f3c8c27b3a fix: replay skill source fixture drift
+d83e3afc56 refactor: move slack system events onto channel runtime
+7918524229 fix(regression): reload stale preseeded cli channel registries
+cfd1e94e61 fix(regression): auto-enable plugin tool loads
+a6e597eda3 fix(regression): preserve plugin identity in hook test helpers
+8075641ce4 fix(regression): auto-enable plugin cli loads
+3f0b3a553a fix(regression): require channel scope in preseeded cli registry
+db2046f92f test: harden extension integration fixtures
+32fd469b2c test: align skill fixture source info
+ce7b3c94e0 fix(regression): merge aliased auth order provider keys
+b4c38c78f3 test: dedupe plugin provider runtime suites
+de173f0e3e test: dedupe plugin utility install suites
+1256943a46 test: dedupe plugin hook runner suites
+0946fdf625 fix(regression): widen preseeded cli plugin registry loads
+967702d928 test(regression): cover irc plugin-sdk facade exports
+cb802afcbb fix(control-ui): size grouped chat bubbles by content
+2b450ab629 refactor: move discord system events onto channel runtime
+52def05ecd fix(regression): canonicalize auth order provider keys
+7bccf68794 fix(regression): preserve voice call timeout markers before hangup
+83adbc840c fix(regression): restore irc cold-runtime chunking
+71795c5323 refactor: move discord error formatting onto ssrf runtime
+3b8564a7c6 test(regression): cover setup and policy plugin-sdk facades
+c04ceb5cc2 refactor: route discord preflight activity through channel runtime
+8c277121d9 refactor: dedupe channel secret collectors
+07d386c2bb fix: dedupe voice call lifecycle cleanup
+0825ff9619 refactor: move discord duration formatting onto runtime env
+c1abf7c8c0 test(regression): cover bluebubbles plugin-sdk facade exports
+8ed25f95dd refactor: route discord activity through channel runtime
+08cd52b7c6 test(regression): cover cold-runtime plugin-sdk chunking exports
+277af32485 refactor: remove plugin sdk extension facade smells
+8c60e4e9f9 fix(regression): normalize image tool provider config aliases
+21136238ce test(discord): add acp bind flow integration coverage
+e11a74843e test: dedupe plugin hook merger suites
+218a711d5e test: dedupe plugin command and runtime helpers
+95acd74d7c test: dedupe plugin bundle and discovery helpers
+7a6f32a730 fix: replay skill source fixture drift
+12b7327e16 refactor: move secure random helpers onto core sdk
+b98a6c223d gateway: reuse session workspace for HTTP tool loading (#56101)
+ae2b1aef10 fix(regression): normalize model picker provider endpoint aliases
+969294f8c5 test: dedupe plugin install and packaging suites
+39f6fe9ab1 test: dedupe plugin runtime and provider suites
+b34b03dd9e refactor: move channel dedupe helpers onto core sdk
+024f2cf6e6 style: apply oxfmt drift
+67d0ecf5ec fix(ci): align skill fixture source info
+68416fdf83 refactor(acp): generalize message-channel binds
+491969efb0 refactor: route channel activity through channel runtime
+684a1565a9 fix(regression): align feishu send helper runtime usage
+c69a70714c test: harden contract registry fixtures
+c9c1e456d1 fix: replay skill source fixture drift
+00dcfa1b3d refactor: move channel backoff helpers onto runtime-env
+01e3dd3508 fix(regression): normalize provider aliases in context window guard
+4ec51f2d5f fix(regression): align msteams send helper runtime usage
+912a26e759 fix(regression): align mattermost send helper runtime usage
+b171e42117 refactor: move telegram timing helpers onto runtime-env
+71f37a59ca feat: add openclaw channel mcp bridge
+a65d603b31 fix(regression): align irc send helper runtime usage
+ea92003384 test: replay skill source fixture drift
+6a2c5b2b54 refactor: move telegram error formatting onto ssrf runtime
+33e64cfb64 fix(regression): align nextcloud-talk send helper runtime usage
+295d1de8d9 fix(msteams): reset stream state after tool calls to prevent message loss (#56071)
+4752aca926 test: dedupe plugin runtime registry suites
+a9be5421d0 test: dedupe plugin provider runtime suites
+0454612083 test: dedupe plugin bundle and discovery suites
+c18d315858 fix: replay skill source fixture drift
+6b4d097b25 refactor: route telegram env helpers through runtime-env
+d027b442af fix(regression): restore zalouser cold-runtime chunking
+05719648a1 test(line): isolate status probe fallback import state
+a3961d098a fix(regression): preserve mattermost reaction channel routing
+42ecfffbff fix(regression): restore signal cold-runtime chunking
+bd7375f84a fix: normalize image provider alias selection
+1bf8d69d95 refactor(msteams): share conversation store helpers
+4031bb1914 refactor: trim secret and ssrf helper runtime seams
+18fe752c48 fix(regression): restore googlechat cold-runtime chunking
+70a0ce2179 test: align skill fixture source info
+d519beb925 fix: normalize model scan provider filters
+3143cf86e8 fix(regression): restore whatsapp cold-runtime chunking
+e57342c7f2 fix(regression): restore msteams cold-runtime chunking
+3b9eb2cd1b refactor: trim bluebubbles runtime seams
+e5c4e89dc6 fix: normalize explicit context provider aliases
+fc542671eb fix: normalize history session provider lookup
+c0c32445ab fix(regression): restore feishu cold-runtime chunking
+5426bdf391 fix: normalize model catalog provider lookup
+46a44c5044 refactor: trim tlon runtime helper seams
+23d5bad3ae fix(regression): restore matrix cold-runtime chunking
+e83b1d7c43 fix: normalize live model provider aliases
+196d347153 fix(regression): restore mattermost cold-runtime chunking
+185668f5c5 refactor: trim extension helper runtime seams
+4cc8f8a1c6 fix: normalize models list provider filters
+e4538a2a70 fix(regression): classify toolcall content as tool output
+ce2444403e refactor: trim provider oauth runtime seams
+2638b566f1 fix(regression): canonicalize chat final session routing
+2877a7d8b2 fix: normalize status summary provider config lookup
+c1fb18189b test: dedupe plugin hook runner suites
+7d79134cee test: dedupe plugin runtime utility suites
+2926c25e10 fix: prefer freshest Teams DM reference (#54702) (thanks @gumclaw)
+a717819f78 msteams: align memory store user resolution
+28eb5ece14 msteams: prefer freshest personal conversation reference
+2c15960ac2 fix: replay skill fixture source drift
+e8866fc738 refactor: narrow provider runtime auth seams
+a0f48f099e fix(regression): canonicalize chat inject session routing
+7ccf4552ac fix: normalize provider catalog config lookup
+59a0411a78 fix(regression): canonicalize exec session routing
+fe295b15a5 fix: normalize provider catalog template lookup
+269f461b2e test: isolate zai probe target env in alias coverage
+8aace2b448 fix(regression): hydrate node tool event metadata
+72ba2b3653 chore: bump version metadata to 2026.3.27
+392c15aa73 fix: dedupe canonical providers in models status
+ee72081373 fix(regression): restore googlechat cold-runtime media send
+50c87c4682 fix: normalize catalog provider ids for probe model selection
+e890cde041 fix(regression): hydrate run-scoped tool event metadata
+c42ec81e37 feat(acp): add conversation binds for message channels
+067f8db4c9 fix(regression): preserve lifecycle session ownership metadata
+923b316ddc fix: harden parallels smoke verification
+a724246547 fix(regression): restore imessage cold-runtime chunking
+dd78b16cdc fix: normalize auth health provider aliases
+a265c59418 fix(regression): preserve transcript session ownership metadata
+9a57bdfdf1 fix(regression): preserve session tool event metadata
+86d8b06da9 Matrix: preserve strict DM SAS fallback
+724a9cfdba fix: preserve fallback provider capabilities under partial overrides
+43ba3ab6b5 refactor: scope provider runtime to enabled provider plugins
+1425259274 refactor: split bedrock provider stream helpers
+02bce20dd0 fix: prefer canonical cli backend config keys
+c364fc8428 test: dedupe plugin manifest and wizard suites
+fad42b19ee test: dedupe plugin core utility suites
+2accc0391a test: dedupe security utility suites
+87875430a8 fix(regression): preserve chat lifecycle subagent metadata
+7a1f64e86b fix: prefer profile auth in provider summaries
+9e16374898 fix(regression): restore signal cold-runtime status probing
+b9b84f2572 fix(regression): restore line cold-runtime status probing
+d11dc8feba fix: summarize plugin tool descriptions in catalog
+5a92655f5d fix: follow canonical skill source in status bundling
+ae9b9575c5 fix(regression): preserve gateway subagent session change metadata
+1cfea0af07 fix(regression): restore plugin sdk compat export
+f4a45071e3 fix: preserve session thread ids in agent send events
+7fadb4f7ff fix(regression): preserve subagent session ownership metadata
+5eb3ea3028 fix(regression): tolerate legacy skill source metadata
+39048e054d fix(regression): invalidate remote skill snapshots on disconnect
+2d75288738 fix(regression): export direct-dm plugin sdk subpath
+d2e25b03fe fix(regression): preserve external command auth context
+d604ce9950 fix(regression): preserve numeric session thread ids
+1efa81bcab fix(regression): restore imessage sdk facade targets
+8a687bdbd7 fix(regression): preserve spawned metadata across auto-reply reset
+3ec1df86fa fix(regression): restore slack probe fallback without runtime
+b598cdf968 fix(regression): preserve discord thread bindings for plugin commands
+b1eeca3b00 fix(regression): stop cross-channel plugin thread defaults
+835441233d fix(regression): support contracts surface in test planner
+9cb3ce8e1a fix(regression): restore typed provider compat tests
+803f60105b fix(regression): align provider flow docs with bundled compat
+27decb9649 fix(regression): route contract paths through test wrapper
+67fba9c5e1 fix(regression): align model picker with bundled compat
+e817b3cfbc fix(regression): align provider wizard with bundled compat
+50a2f67258 fix(ci): align skill fixture source info
+b81bf005b9 refactor: trim models-config test async wrappers
+1fee91e431 fix: preserve session thread ids in sessions changed events
+762afb1bf0 fix: preserve session thread ids in transcript event payloads
+07bbf50419 fix: preserve session route metadata in node event touches
+627d6c80f2 fix: preserve session thread ids in chat session snapshots
+53861607f6 fix: use origin thread metadata in tools effective context
+1b16a112e7 fix: keep numeric session thread ids in sessions list
+f0d5d7a33a fix: preserve session origin account metadata in announce routing
+59cd79d37f fix: use session origin thread metadata in chat routing
+a9e9c7cbfd fix: use session origin delivery metadata in outbound targets
+8222d3a83a refactor: make models-config mode resolution synchronous
+0ffd6b202f test: dedupe security audit and acl suites
+c8c669537f test: dedupe plugin contract and loader suites
+1adf08a19d fix: replay skill source fixture drift
+b9560f4685 docs: clarify legacy provider sdk compat barrels
+b643f92447 refactor: use main sdk barrels for model and whatsapp helpers
+883ff949c0 fix(ci): align skill fixture source info
+659fe82d31 refactor: use split provider config type in models-json test
+dc8486f5e6 refactor: use provider config type from split secret helper
+6c9126ec19 macOS: test gateway version normalization
+8545cbd358 fix(macos): strip "OpenClaw " prefix before parsing gateway version
+2de896524f refactor: route models-config internals through split helpers
+2d6f4bf6c6 refactor: split models-config provider normalization helper
+8ab8f2c461 fix: center skills detail modal
+4aa5526271 refactor: route plugin-sdk model and whatsapp facades through public barrels
+7a1dce307d refactor: split models-config provider policy helpers
+d38ec0c9c9 test: dedupe loader heartbeat and audit cases
+d69aedcd3e fix: replay skill source fixture drift
+5c52824d3e refactor: split models-config source-managed helpers
+7db79b04c6 refactor: split models-config provider discovery helpers
+fa4da0ce5d fix(ci): replay compaction and skills api drift
+6a039bca30 test: dedupe loader and audit suites
+b4fe0faf1b test: dedupe config and utility suites
+48eae5f327 test: isolate browser plugin cli integration
+8f06ed8ef5 fix: short-circuit disabled media runtime
+c8ad0bde08 refactor: split models-config provider secret helpers
+262e5c57c8 fix(ci): stabilize module-bound exact regressions (#56085)
+ce21ef641a fix: replay compaction and skills api drift
+e1f300695a refactor: extract models-config api-key normalization helpers
+b6ead2dd3b fix(matrix): align outbound direct-room selection (#56076)
+6455606b90 refactor: extract models-config plugin catalog helpers
+1f24181495 fix(ci): replay compaction and skills api drift
+cb9c044025 refactor: extract models-config implicit provider orchestration
+0d12f1ab91 fix: replay compaction and skills api drift
+8056c5581b refactor: extract models-config provider auth helpers
+8c079a804c Plugins: clean up channel config on uninstall (#35915)
+87792c9050 test: dedupe gateway network and transcript suites
+fef688fb7a test: dedupe utility and config suites
+d8f97358d7 refactor: extract models-config provider normalization helpers
+4c213a5de7 fix(ci): replay compaction and skills api drift
+238d369a77 Plugins: add nested discovery regression test
+7b12de591b refactor: route models-config provider statics through shared barrel
+94f87d7b11 refactor: keep shared provider model sdk generic
+542d62ba93 fix: replay compaction and skills api drift
+b8069c2bd1 refactor: trim provider model compat seams
+78160b5f88 fix: align discord registry and runtime test helpers
+6b72de77ba Revert "Plugins: sync channel uninstall cleanup"
+96a4df49b9 fix(ci): align compaction and skills api drift
+29674d75fb fix: load pierre themes without json module imports (#45869)
+8e687613b6 refactor: move stream payload compat into provider seams
+958e3a4c69 Plugins: sync channel uninstall cleanup
+1fc7a4e952 fix(ci): type capability provider manifest mock
+2d8351b3b4 fix: align anthropic and skills helpers with shared sdk
+79c56d417b docs(changelog): add missing security release notes
+3dbd81e610 fix(regression): restore bundled capability provider compat
+d0cd645b4a style: format exec approval prompt template
+dd640e3c41 refactor: add focused global singleton sdk seam
+de7bba14cc fix(ci): align compaction and skills api drift
+2a98464a28 test: dedupe outbound routing and queue suites
+0b013bdd94 test: dedupe exec approval and system run suites
+378803987c fix(diffs): stage bundled runtime deps after updates (#56077)
+13316a9118 refactor: reuse shared model prefix helper in thinking
+7da92cc618 fix(regression): align doctor plugin status with runtime
+d343b11bf1 refactor: reuse shared openai model prefix helper
+4b5aa6fd0b fix: refresh skill fixtures for pi-coding-agent
+6ba0c434ba refactor: move plugin tool routing defaults into tool context
+44defeb71b fix: unify plugin tool thread defaults via delivery context
+1c412b1ac6 fix: resolve Telegram slash command bindings from sender peer
+ee2220ca08 fix(regression): align plugin status with runtime compat
+55b9ce1c9d fix(ci): use https for libsignal git dependency
+0b26e4d72a refactor: split shared provider catalog sdk helpers
+41eb7c5056 fix(ci): align compaction and skills api drift
+93f9ca00dd build: bump pi packages to 0.63.1
+e951838c33 docs: point sdk overview at provider model shared seam
+adb78fa5dd fix: note ollama think=false landing (#53200) (thanks @BruceMacD)
+773c57b418 fix(ollama): send think=false for thinking models when thinking is off
+3b51e6471a test: switch provider model barrel straggler imports
+0e3f517881 fix(ci): refresh bundled plugin metadata baselines
+898f3fa591 style: format compact skill test import
+8d95351217 fix: update skill and compaction test fixtures
+b39a7e8073 fix: break plugin-sdk provider barrel recursion
+ac68494dae fix(ci): harden discord rate-limit helpers
+232a96a0dc test(browser): spy tmp-dir seam in pw download test
+25a988c211 fix(ci): narrow browser config refresh seam
+5ca8be7323 matrix: guard invalid HTML entity mention labels
+eef2f82986 test: dedupe infra utility suites
+36b9ec9418 fix(ci): narrow browser logger and schema seams
+fc5e5f1e8e fix: resolve loader and test fallout after sdk split
+4ca07559ab refactor: move provider seams behind plugin sdk surfaces
+4f0ad16a00 fix(ci): route browser tmp path through public temp-path seam
+6fec75f15d test(browser): isolate auth and download mocks
+c720fa83bb fix(browser): narrow browser support facades
+a27624437e fix(ci): align skills api drift and tui keybindings
+5d82534af7 fix(matrix): mentions should work with displayName labels (with help from Antigravity) (#55393)
+04458c807c lockfile: restore microsoft-foundry importer
+8a788e2c0c test: dedupe infra and plugin-sdk utility suites
+0558f2470d fix(matrix): only use 2-member DM fallback when dm refresh fails (#54890)
+11952457af Docs: document skill source precedence
+1fc4d7259f Agents/TUI: align with current pi APIs
+c7fbd51890 fix(matrix): resolve reply context body and sender for quoted messages (#55056)
+65ad45a37f test(browser): stabilize cli runtime seams
+f7934d7024 fix(matrix): pass originalFilename to saveMediaBuffer and expose path via MEDIA tag (#55692)
+a74c50c861 test: align profile env bootstrap with lazy dotenv
+8908f6c23b fix(ci): pin patched path-to-regexp
+2fc386f0df test: dedupe plugin sdk helper suites
+90c50fd9d8 test: stabilize extension mocks for ci shards
+c52f89bd60 test: dedupe helper-heavy test suites
+0826fb4a00 fix(regression): export plugin-sdk huggingface facade
+d9d5688792 test: make extension no-test coverage dynamic
+a5cb9ec674 fix(ci): align skills api and trim status startup
+4d7c6519fc fix(regression): enable owning plugins for provider onboarding
+7d4fab3e73 test: debrand pairing and dm policy fixtures
+3106ad38f2 fix(regression): preserve ACP turns without admin provenance scope
+a1ab0d9886 test: debrand generic auth-choice placeholders
+a834832d26 test: debrand final helper placeholders
+634db43b3f test: debrand fallback and registry pin fixtures
+c815bddce7 test: debrand debounce and acp lifecycle fixtures
+b95a81498f test: debrand policy and registry fixtures
+12923eb612 fix(regression): align sdk config write account lookup
+d27b99c6af test: debrand helper fixture ids
+be67c0de1d test: debrand queue retry fixtures
+884247f8d8 test: debrand generic setup helper fixtures
+5f7f914796 fix(regression): restore external phone control commands
+2019b649af test: debrand generic session binding fixtures
+a9cc830ded test: debrand generic outbound channel fixtures
+a50455452d test: debrand plumbing labels and restore skill compat
+03e7e3cd27 test: debrand generic channel fixture names
+f09b449ab1 fix(ci): align skills source info and compaction args
+76d3c67a88 test: debrand session and allowlist placeholders
+adb20a9fa9 test: debrand generic formatting fixtures
+8ae90e16fc refactor: debrand core fixtures and align skill types
+a0cc684d02 fix(regression): restore modelstudio sdk facade exports
+992b30604d refactor: move extension-owned tests to extensions
+d506eea076 fix(ci): restore contract plugin-sdk source loading
+7d18799bbe Hooks: pass inbound attachment arrays to plugins (#55452)
+9134dbd252 fix(regression): fail discord startup on reconnect exhaustion
+c125c33724 fix(regression): honor internal provider auth for directives
+f41cd12b54 fix(regression): restore modelstudio facade exports
+85cf23a9d6 fix(regression): allow external device pair approvals
+eacd5ac3ef fix(regression): restore external talk voice updates
+1a9abb13bd fix(regression): preserve CLI continuity across chat reset
+b50b9b16ab fix(ci): isolate discord session-key facade
+c813222671 fix(ci): support discord rate limit ctor drift
+f8edd09a2c fix(regression): invalidate stale legacy CLI sessions
+c73c050276 fix(ci): align compaction and skills tests with upstream agent API
+03333100ba fix(ci): align discord rate limit calls and telegram test imports
+cb5aefb790 fix: sync plugin sdk guardrails and test drift
+2bdbb189bd refactor: route plugin sdk facades through extension barrels
+fa56682b3c fix(regression): preserve CLI bindings across session reset
+9446ee8ea3 fix(regression): restore Telegram fallback probe coverage
+8eaa3417c3 Config: skip nonexistent Tavily web-search migration
+fc570934de fix(regression): refresh Telegram probe test imports
+7772395618 fix(regression): isolate Telegram runtime helper tests
+366c1d6b9e fix(regression): tighten Telegram runtime helper coverage
+fa05c351a1 fix(ci): align compaction and skills tests with upstream agent API
+20c7cbbf78 Telegram: tighten media SSRF policy (#56004)
+511093d4b3 Discord: apply component interaction policy gates (#56014)
+e403decb6e nextcloud-talk: throttle repeated webhook auth failures (#56007)
+355abe5eba Discord: enforce approver checks for text approvals (#56015)
+be00fcfccb Gateway: align chat.send reset scope checks (#56009)
+aa66ae1fc7 Extensions: require admin for config write commands (#56002)
+e64a881ae0 Channels: preserve routed group policy (#56011)
+77060aa9f9 fix(regression): preserve Telegram status fallback without runtime
+ae7d93adc4 fix(ci): restore green check after upstream API changes
+41901c19bf fix: restore green check after upstream API changes
+79e495a627 fix: add OpenAI version attribution header
+d61f8e5672 Net: block missing IPv6 special-use ranges (#56008)
+85777e726c Voice Call: canonicalize Plivo V3 replay key (#56003)
+d73dbb6753 fix: restore provider auth and build checks
+c28e76c490 refactor: move provider model helpers into plugins
+5d3d54ee36 refactor: generate plugin sdk facades
+888be707cf fix(hooks): avoid repo-wide format churn
+4430805719 Allow inherited AWS config file paths
+8bcab7ec6f Allow manual remote URL after trust decline
+c3d45fbb19 Fallback to Jiti when bun is unavailable
+fa89d68e7a Fix compaction safeguard request auth lookup
+4505987b9c style(ui): format control views
+eb6a3fca26 telegram: use live runtime helpers in channel status
+953a438420 fix(discord): align rate-limit error callsites
+49dbf64ab1 fix(core): harden bundled provider runtime surfaces
+cf10183389 plugins: disable native jiti loading under bun
+3e4222e9d4 docs: fix duplicate testing heading
+02e3061aa7 fix(discord): stop queued reconnect exhaustion crash (#55991)
+496a1a35bd fix(test): stabilize line and irc extension suites
+1dae6cc617 docs(agent-loop): correct default timeoutSeconds from 600s to 172800s (48h) (#55419)
+16ed9bf147 config: fall back to jiti for channel config surfaces
+605c9306ab fix(ci): repair extension and discord test gates
+febcb01128 discord: fix Carbon RateLimitError calls
+4d7cc6bb4f gateway: restrict node pairing approvals (#55951)
+68ceaf7a5f zalo: gate image downloads before DM auth (#55979)
+9ec44fad39 Exec approvals: reject wrapper carrier allow-always targets (#55947)
+7ce2670043 fix(discord): update carbon beta (#55980)
+824e16f9dd fix(media): require fs access for dynamic local roots (#55946)
+c603123528 fix(gateway): require admin for persisted verbose defaults (#55916)
+55cd272fe1 changelog correction
+7a801cc451 Gateway: disconnect revoked device sessions (#55952)
+fef1b1918c SDK: break channel plugin import cycle
+80d1e8a11a fal: guard image fetches (#55948)
+2f13758f42 test: stabilize extension ci mocks
+4ee4960de2 Pairing: forward caller scopes during approval (#55950)
+2e23d44491 tests(feishu): reload chat tool after mock reset
+6eb82fba3c Infra: block additional host exec env keys (#55977)
+fdbcfced84 Agents: enforce session status visibility (#55904)
+b7b3c806b4 fix(compaction): guard legacy model registry auth lookup
+d6affb17d8 CLI: confirm discovered remote gateways before saving config (#55895)
+c9d68fb9c2 fix: repair ci test and loader regressions
+3cec3bd48b fix(memory): share embedding providers across plugin runtime splits (#55945)
+78e2f3d66d Exec: tighten jq safe-bin env checks (#55905)
+c774db9a1f fix(compaction): pass summary headers before abort signal
+25210317b8 fix(skills): adapt skill source metadata API
+694619caaf fix(runtime): narrow discord binding targets after rebase
+6e107b8857 fix(runtime): stabilize provider and channel runtime tests
+52ef2ef790 fix(agents): align compaction and skill metadata APIs
+894f57a4ce style(ui): apply formatter output
+69e67a764d refactor(feishu): remove docx table lint suppressions
+8f44bd6426 fix(ollama): emit streaming events for text content during generation (#53891)
+1086acf3c2 fix: repair latest-main ci gate
+47ae562cc9 Docs: unify link audit entrypoint (#55912)
+d35f37a58c style: format ui views
+6f7579803b refactor: route memory doctor suggestions through plugin metadata
+2d26f2d876 refactor: move legacy auth choice aliases into plugin manifests
+e25f634d50 refactor: move oauth profile repair metadata into providers
+570bfb655f refactor: route bundled provider catalog hooks through plugins
+910cb9f1af refactor: simplify provider auth storage setters
+67f609ea9a refactor: remove core provider model definitions compat
+3628451aa3 refactor: move provider default model refs into extension apis
+94780dde5d refactor: reduce provider auth storage boilerplate
+b568ccee7c refactor: route litellm sdk through public api barrel
+3702409427 refactor: trim remaining plugin sdk extension seams
+e599cb26de refactor: route provider catalogs through public api barrels
+4693813503 fix: re-format exec-approval view
+c352a018f1 chore: add lockfile entry for extensions
+ef1784d264 refactor: move bundled plugin policy into manifests
+ed055f44ae refactor: route plugin runtime through bundled seams
+e425056aa3 refactor: route plugin runtime media through sdk wrappers
+425032ed4d refactor: move public artifact metadata into plugins
+07df59287a refactor: share plugin capability provider resolution
+f1503bd5c7 refactor: route bundled capability providers through plugin runtime
+8d054e7892 test: move shared seams into contract suites
+09f2832670 test: split contract seams from unit lane
+89267f4273 test: finish reply seam cleanup
+ce5b0577d4 docs: fix Browserless and broken doc links (#55881)
+8ff39007c4 test: remove moved core duplicates
+cd92549119 test: split extension-owned core coverage
+6ade9c474c feat(hooks): add async requireApproval to before_tool_call (#55339)
+351a931a62 fix(ci): restore runtime-api guardrails
+df5b9ef0c6 update podman setup and docs (#55388)
+5e8db468ff fix(agents): preserve embedded auth on HTTP fallback
+9098e948ac fix(ci): route extension tests through public test bridges
+833636f0b2 style(ui): normalize control-ui formatting
+6a0f9afc4e style: normalize test and sdk formatting
+8ddeada97d test: move extension-owned coverage into plugins
+97297049e7 fix(ci): restore boundary and test seams
+454f094c36 fix: avoid source imports in cli startup metadata build
+be0e994cf0 feat(plugins): expose runId in agent hook context (#54265)
+87dddb818d fix(ci): restore plugin runtime boundaries
+f9b8499bf6 fix(chat): send button should use system theme variables (#55075)
+66a2e72bee fix: restore CI runtime seams
+a6f5e57f46 fix(plugins): apply bundled allowlist compat in plugin status report (#55267)
+c2ca99aa0b fix(test-planner): keep exit fallback timer referenced
+bb932beeac Media: respect umask and clean failed downloads
+206c29514c Media: enforce file mode after writes
+b1c982bb2d fix(agents): fail over and sanitize Codex server_error payloads (#42892)
+546a1aad98 refactor: replace plugin-sdk dist env hacks with loader option
+ad89fa669c fix: unstick provider contract tests
+b5a8d5a230 fix: stabilize plugin-sdk test loading
+9d10a2e242 refactor: shrink remaining test seam reach-ins
+f217a10780 refactor: route more runtime-boundary tests through public seams
+9917f3b3a1 refactor: route ollama sdk through public barrels
+858b1dffb8 refactor: route zalouser payload mocks through test api
+b70b99d46d refactor: route telegram gateway test through test api
+e42b4afd39 refactor: route reply plumbing test through slack entry
+d0c77c9dfd refactor: narrow outbound payload runtime mock reach-ins
+169bf6adba refactor: route outbound payload tests through extension test seams
+c7b4c34e89 refactor: route provider test seams through extension barrels
+02d9f0d631 refactor: route exec approval surface test through extension entrypoints
+4019671331 refactor: add runtime-boundary plugin test seams
+c2b28753e7 refactor: route more test seams through public plugin APIs
+4d630b7e92 refactor: expose dm policy test seams
+a79ef1591a refactor: trim health test extension mocks
+45849eb757 refactor: remove remaining core extension reach-ins
+fc3246d8fd refactor: add public channel contract test seams
+04bde8c2b1 refactor: route session-binding contract tests through public seams
+8d39fe5a76 refactor: route channel contract tests through public barrels
+051d6f9342 refactor: remove onboarding gateway compat shims
+7999577ce1 refactor: route plugin sdk through extension barrels
+a10763e118 refactor: generate bundled channel seams
+9a775aa59c refactor: continue plugin seam cleanup
+4c8ed2ce46 test(planner): force real timers in executor fallback
+398af90a22 fix(ci): makin it green
+4cf783b7c1 fix(skills): honor OPENAI_BASE_URL in whisper api skill (#55597)
+45535ff433 dev: speed up local check loop
+bcfddcc768 refactor: pluginize litellm auth onboarding
+324cddee4c fix: resolve bundled plugins from running CLI
+ac2c2ac954 fix: stop test-parallel from waiting forever on child close
+f625a0b106 style: apply current oxfmt output to ui views
+7dd196ed74 fix: apply live model switches during active retries
+d746690be5 ci: align bun artifact upload with node24-safe action
+c40884d306 Prefer non-user writeable paths (#54346)
+9d58f9e24f Replace killProcessTree references to shell-utils with process/kill-tree (#55213)
+d80b67124b docs: add changelog entries for #55732 and #55733
+c259ff7e01 docs: add changelog entry for #55730
+58cdcf74c7 fix(tui): validate activation slash commands
+14c63ca42a fix(tui): prune chat log system messages atomically
+32a3733dbe fix(google): strip empty required arrays from tool schemas for Gemini (#52106)
+8fa62985b9 fix: preserve tui local auth with url overrides
+f1de00c107 fix: keep tui out of browser origin checks
+2b96569e2d fix: add dedicated tui gateway client auth
+3d609b112e fix: repair local control ui auth on quickstart reruns
+8270baa1d0 fix: allow local quickstart control ui without pairing
+37538072e6 fix: clarify no-daemon onboarding gateway checks
+e765daaed3 fix: show resolved gateway port in setup wizard
+4b9542716c Gateway: require verified scope for chat provenance (#55700)
+83da3cfe31 infra: unwrap script wrapper approval targets (#55685)
+cb5f7e201f gateway: cap concurrent pre-auth websocket upgrades (#55294)
+76411b2afc Agents: block protected gateway config writes (#55682)
+4d5f762b7d fix: fall back from synthetic tool accounts (#55627) (thanks @MonkeyLeeT)
+2d80dbfeba fix(gateway): require read scope for models http (#55683)
+3a7cf5364f test(cleanup): isolate session lock queue coverage
+d6662e2aa7 fix(test): stabilize windows lock and cache paths
+a30dae3c71 fix: honor test planner cache paths by target platform
+1b77e6fd72 test: remove duplicate voice-call stdout assertion
+e1235ca7b4 test: fix voice-call cli stdout assertions
+53304ff704 test(voice-call): capture cli stdout
+9322481075 fix: route ollama helpers through plugin sdk
+ae72977076 fix(agents): restore ollama public seam
+23fae00fad Reduce script logging suppressions and Feishu any casts
+f5643544c2 Reduce lint suppressions in core tests and runtime
+7c00cc9d0a test: fix feishu batch insert test syntax
+854b71a4b0 test: fix feishu test typings
+3cbd4de95c fix(gateway): restore loopback detail probes and identity fallback (#51087)
+6f92148da9 fix(test-planner): shrink local extension batches on constrained hosts
+cfddce4196 fix(feishu): restore tsgo test typing
+a3e73daa6b refactor: remove ollama legacy shims
+bd2c208689 refactor(mattermost): type config seams
+e58170ddc1 build: refresh plugin sdk api baseline
+f2b2b12af4 test(feishu): type bot interaction fixtures
+59a25978dd test(feishu): type reply lifecycle fixtures
+6ad50ce474 test(feishu): type tool harness fixtures
+1042710e3b test(feishu): type policy fixtures
+b23dc5073f test(feishu): type basic fixtures
+9a7c8e186e test(plugin-sdk): refresh matrix runtime api guardrail
+a8066ad96d fix: align skills and compaction api drift
+599d880c49 build: refresh plugin sdk api baseline
+a729eab6ee build: refresh plugin sdk api baseline
+f86765cba3 style: refresh ui formatting
+e3e9a56b02 fix: export matrix account helpers in runtime api
+8923fb8766 style: normalize ui formatting
+9db096a98f refactor(feishu): remove docx explicit-any escapes
+571d4d52e9 refactor(feishu): remove stale explicit-any escapes
+f248fc8f86 refactor(feishu): type runtime payload seams
+9ce2dbe9aa refactor(feishu): type sender drive and typing helpers
+f799cd6a14 test(agents): align compaction safeguard auth mock
+55ab98dc40 fix(agents): adapt compaction and skill source types
+417024f9ad style(ui): apply formatting cleanup
+716c93f624 docs(plugin-sdk): refresh generated API baseline
+2b586b423a test(google): spy on image-generation auth surface
+04d01984ef fix(build): make bundled runtime-deps staging incremental
+bd4ecbfe49 refactor(feishu): type docx and media sdk seams
+2f979e9be0 test: fix memory-core host type import
+4c27c90fc2 refactor: finish moving provider runtime into extensions
+25879be46a test: stub summary transport in tts tests
+64bf80d4d5 refactor: move provider runtime into extensions
+53a3922e1c style: normalize ui slash executor formatting
+8ab6891d97 fix: remove dead .status assignment and add 503 error test
+517ae6ea14 fix: trigger model fallback on HTTP 503 Service Unavailable (#55178)
+5d91b68af3 fix(whatsapp): exclude quoted message mentionedJids from mention detection (#52711)
+85d5e4360d fix(skills): use skill sourceInfo
+39fae14c72 fix(agents): adapt compaction request auth
+9368f834c0 style(ui): format view templates
+f804da9444 test(mattermost): remove double-cast test helpers
+75534f7a47 docs(config): refresh bundled channel config metadata
+ee12f24760 fix: restore ci compatibility
+c13d6dbf55 docs: define YOLO mode for main verification
+ed2798417e check: restore bundled channel config metadata gate
+fbd8990e78 fix: resolve rebase fallout in runtime tests
+ffa2a47c58 test: stabilize slow contract and integration suites
+a9e241dacb fix: align runtime types with upstream changes
+a1f995053e refactor: migrate more boundary parsing to zod
+137a56194e test(mattermost): remove untyped mocks
+e2d0a808e0 refactor(mattermost): type action params
+38adeb888c fix: align Skill consumers with sourceInfo → source rename
+2942df6b9f fix: align compaction call sites with upstream API drift
+8cf1e46a94 style: format ui sources
+3557bce827 fix: adapt to upstream agent api changes
+a4b77ad33f refactor: shortcut bundled provider contract fixtures
+17203d0af9 fix: stabilize codex oauth refresh tests
+4629ab3d8a refactor: move model picker logic into flow module
+06820b6daf refactor(mattermost): define post schema once
+ca9659ffb0 style(mattermost): format websocket monitor
+51d851e092 fix(skills): use skill sourceInfo
+b1d853d88b fix(agents): adapt compaction request auth
+8b13710c09 refactor(plugin-sdk): expose zod subpath
+70184d0a5e fix: compaction API drift + Skill sourceInfo→source migration
+d8a1808bd6 fix: nextcloud-talk + mattermost type errors
+2b55708f40 docs(config): refresh generated baselines
+5eee793669 test(config): align legacy routing snapshot expectation
+4262abe05d test: lower prepare unit-fast batch target
+eebce9e9c7 refactor: move memory host into sdk package
+490b2f881c fix(ci): restore codex oauth refresh fallback
+b99b16d71e test: activate openrouter media registry in vision test
+513df9fdb0 build: refresh bundled plugin metadata
+4604d252b2 Media: allow active OpenRouter image models
+962cc740a0 fix: keep session settings in sessions list
+ef56d79a6a refactor: collapse zod setup validators
+e25965ed4a fix: keep session thread ids in sessions list
+a2cc0630d2 fix: use session origin provider in subagent queue routing
+6e5bc5647a fix: use session origin provider in chat delivery routing
+8e4115947b fix: use session origin provider for reset overrides
+5783c2e070 fix: use session origin provider in status queue settings
+bd5fe92c94 fix: use session origin provider in sessions list
+e6c5ce136e refactor: share zod setup validators across channels
+1d1f36adff refactor: parse extension event payloads with zod
+35b132884c refactor: add zod helpers for json file readers
+5b4669632a Avoid stale sessions_send reply carryover
+6ef6e80abe Avoid stale subagent reply carryover
+d81b5fc792 Fix status subagent ownership parity
+7016659dbe fix: land bundled plugin doctor migration (#55054) (thanks @SnowSky1)
+a9b982c954 refactor: remove memory-core engine barrel
+3e121edf20 fix(msteams): normalize memory store conversation ids
+be6b841334 fix: align skill and compaction API usage
+0235cca58a fix: preserve explicit reset transcript paths
+b15d9eb565 fix(agents): restore compaction headers typing
+158c4c1f4f fix(repo): restore gate after upstream drift
+f6de4cd766 refactor: remove memory-core runtime barrel
+c9ab095099 refactor: deduplicate plugin config schemas
+a331270f8a fix: restore green build after upstream API drift
+bd6c7969ea refactor: extract memory host sdk package
+dff3ca2018 fix: stabilize ci after deps refresh
+c959ac3a25 fix: WSL2 Ollama networking and provider discovery diagnostics (#55435)
+9df9bd436e refactor(config): dedupe legacy migration metadata
+66e7e29219 refactor(config): simplify version and allowed-value resolution
+417b3dd5e0 refactor: move channel prefer-over metadata into manifests
+b96f5d94db chore(telegram): downgrade default network logs
+465f830bcd fix(config): support uri formats in schema validation
+0b94382930 fix(plugins): prefer runtime version for host compatibility
+dd098596cf refactor: collapse bundled channel metadata into plugin manifests
+ea60bc01b9 refactor(config): drop stale legacy migrations
+10527ff8a3 build: refresh deps and vitest cache lanes
+b49accc273 test: add websocket replay planning coverage
+86bac4ee2a refactor: split openai websocket message conversion
+fa2a318f40 Align ACPX built-in agent registry with latest acpx (#55476)
+e9f54ca815 docs: update parallels smoke guidance
+1ff1679984 test: harden parallels windows smoke polling
+3e5d86384e fix: initialize reset transcript files
+77d15841d7 refactor: move manifest legacy migration into doctor
+5404b0eaa6 fix(msteams): preserve timezone on memory upsert
+708b9339a5 fix: assign reset transcript paths to new sessions
+14b3360c22 chore: bump versions to 2026.3.26
+7a35bca2ec refactor: make memory embedding adapters generic
+42be3fb059 refactor: collapse manifest contract mirrors
+b666ce692f refactor: extract openai ws replay helpers
+60a8dd95de refactor: split compaction safeguard quality helpers
+40bd36e35d refactor: move channel config metadata into plugin-owned manifests
+e1ff753790 fix: persist create transcript paths in session entries
+ca01595699 refactor: split tool display exec parsing
+d7b61228e2 fix: tighten openai ws reasoning replay (#53856)
+ad21d84940 docs: add apply_patch changelog note
+ab6ddf7245 refactor: slim plugin sdk provider entrypoints
+485bfe95ed fix: clean bundled contract metadata follow-ups
+ba7804df50 refactor: derive bundled contracts from extension manifests
+b75be09144 refactor: split subagent announce delivery helpers
+320c0d65a1 fix: keep session settings in chat lifecycle events
+3fdd7c9e00 refactor: split compaction hooks
+f862685ed8 refactor: split subagent registry lifecycle
+b33ad4d7cb fix: guarantee heartbeat timer re-arm with try/finally (#52270)
+cfbef8035d refactor: split subagent run manager
+18dc98b00e refactor: split embedded run auth controller
+f3b152e0d9 refactor: split channel setup into shared flow modules
+7d6d642cb8 refactor: move doctor orchestration into flow contributions
+23aded30d8 refactor: add provider and search flow contributions
+5e35e6a95f fix: lazy-load zca-js at the zalouser runtime boundary
+b9c60fd37a fix: default and gate apply_patch like write
+c326083ad8 fix: keep session settings in gateway live events
+48ff617169 fix: keep fast mode in gateway session rows
+ba60154826 fix: unify upload-file message actions
+046a950877 refactor: split agent command execution helpers
+6fd1725a06 fix: preserve ws reasoning replay (#53856) (thanks @xujingchen1996)
+cc359d4c9d fix: use runtime model and per-agent thinking defaults in status (thanks @scoootscooob, @xaeon2026, @ysfbsf) (#55425)
+c9556c257e docs: clarify memory plugin adapter ids
+dbf78de7c6 refactor: move memory engine behind plugin adapters
+aed6283faa refactor: split embedded run setup helpers
+d4da878d64 fix: preserve plugin sdk api baseline source link
+7de494fcec test: stabilize discord monitor ci isolation
+89e6b91b89 fix: decouple moonshot stream wrappers from provider runtime
+770c462c47 refactor: split subagent registry helpers
+fa0835dd32 test(agents): cover undersized model dispatch guard (#55369)
+5a98a1dbe2 refactor: split embedded run helpers
+540b98b23f refactor: split subagent announce output helpers
+0d9e4f20d5 refactor: split embedded attempt helpers
+48ae976333 refactor: split cli runner pipeline
+4329c93f85 test: wire discord monitor runtime seams
+984f98be95 Fix: treat HTTP 500 as a transient failover error (#55332)
+da845ce598 test: align discord lifecycle shutdown expectations
+2f43c6b334 refactor: split discord monitor startup and lifecycle
+e3cd209889 chore: remove stale README-header.png packlist entry (#55325)
+8e285d112d fix(cr-mbx-feishu-encryptkey-config-redaction-bypass): apply security fix (#53414)
+afc649255c fix: match guild-level entries in Discord exec allowlist (#55175)
+bdeb7d859b test: stabilize discord monitor ci mocks
+b8ff152a98 fix(cli): isolate claude MCP config
+85b169c453 fix: clamp copilot auth refresh overflow (#55360) (thanks @michael-abdo)
+f0c1057f68 fix: restore reveal-to-edit raw config flow
+d25c4fd6c5 test: tighten discord lifecycle gateway mocks
+4726593d6d test: refresh planner batching expectations
+96a44d979d fix: route memory test harness through plugin sdk
+623f4d3056 fix: use stream-json output for Claude CLI backend to prevent watchdog timeouts
+4ad7d51c01 fix: preserve CLI session ID in text output mode
+e46e655451 test: restore memory test seams (#55324) (thanks @joelnishanth)
+5b85d0efa4 discord: fix stale-socket reconnect crash from uncaught reconnect-exhausted error
+9f8c4efa9b fix(agents): use claude-cli backend in tools-disabled regression test
+99f0ea8d43 fix(agents): remove unconditional "Tools are disabled" prompt injection in CLI runner
+16565020a1 refactor: finish browser test path cleanup
+0ef2a9c8b5 refactor: remove core browser test duplicates
+9a7ceceffa refactor: move browser tests into plugin
+22348914cf refactor: centralize discord gateway ownership
+01bcbcf8d5 refactor: require legacy config migration on read
+cad83db8b2 refactor: move memory engine into memory plugin
+0e182dd3e1 refactor: share top-level setup dm policies
+abf95c5f99 refactor: share build copy script helpers
+0106b0488a refactor: share config section card rendering
+4890656d9d refactor: share matrix state file path helper
+bfad32aa16 refactor: share directory config listers
+4151b48d6c style(browser): format profiles service test
+8eeccb116d test(planner): refresh extension batch expectations
+d1d0887932 refactor: remove legacy browser bridge entrypoints
+4b40d4dfa8 perf: optimize cold import paths
+15181b3a77 docs(anthropic): dedupe config heading
+5f2876911a fix: harden discord gateway cleanup (#55373) (thanks @Takhoffman)
+a79c9d50f7 fix(discord): guard gateway cleanup races
+f406b20e50 chore(docs): refresh generated baselines
+eef27001de docs: explain anthropic claude cli migration
+ebf5bd75f4 feat: add anthropic claude cli migration
+b96fccadb9 refactor: clean memory plugin host boundary
+556ce5cdda test(browser): fix CI after compat re-exports
+09c186d5f9 refactor: remove browser compat shadow tree
+d72115c9df refactor: genericize speech provider config surface
+83ca6fbfc6 refactor: finish browser compat untangle
+8ee809f3cc refactor: share plugin entry exports
+8df6134a1b refactor: share usage metrics timeslice walker
+ff47ad58fc refactor: share config path traversal helper
+5445bc68b9 refactor: share tts auto mode normalization
+138a92373b fix(talk): prevent double TTS playback when system voice times out (#53511)
+0f5a77d058 refactor: route memory runtime through memory plugin
+2c6d099b01 refactor: plugin-own speech provider config
+8eeb7f0829 refactor: switch browser ownership to bundled plugin
+197510f693 refactor: add browser plugin runtime package
+1619090693 refactor: move memory plugin state into plugin host
+00aedb3414 refactor: split claude cli history import pipeline
+d0ce2d1044 refactor: split memory-core plugin helpers
+9dea807b28 test: share planner and sandbox test helpers
+672a24cbde fix: unify claude cli imported tool messages
+3d0050c306 refactor: add memory-core extension sources
+e955d574b2 refactor: move memory tooling into memory-core extension
+e0dfc776bb refactor: move memory flush ownership into memory plugin
+48a65f7749 refactor: simplify bundled plugin contracts
+8b42ad08e5 perf: speed up shared extension test batches
+29069bd250 refactor: share speech normalization helpers
+ce9dff1458 refactor: clean plugin capability boundaries
+d00dc5f46b fix(ci): repair discord and telegram follow-ups
+53f90af990 test: dedupe telegram polling session harness
+2a04053854 fix: skip cli backends in models auth warnings
+98ea8e244f fix: backfill claude cli chat history
+6aa9bec8d7 fix: export shared channel action enum helpers
+0c0f1e34cb refactor: split telegram polling and sdk surfaces
+0805078118 fix(ci): format discord provider follow-up
+aeee72426d fix(ci): restore discord provider test seams
+37894d0f1a test: dedupe discord provider proxy overrides
+eb328a85e3 fix(agents): classify "Failed to extract accountId from token" as auth error for failover (#27055) (#55206)
+53d3b8e92d fix(ci): clean up discord harness types
+a39e57a1bd fix(ci): repair discord harness regressions
+3f54076d37 refactor: dedupe cli runner session reuse
+61d29efc04 test: eliminate remaining clone seams
+5841e5fdf8 test: split cli agent command coverage
+12100719b8 fix: preserve cli sessions across model changes
+236e041ef9 test: share discord monitor fixtures
+e035a0d98c telegram: rebuild transport after stalled polling cycles
+663ba5a3cd perf: speed up test parallelism
+2fc017788c test: reduce remaining clone seams
+b20ae13c6b fix(ci): repair discord message handler tests
+be328e6cd1 test: dedupe extension channel fixtures
+e8f9d68bec test: share cli command and discord test helpers
+b48df79c0a test(gateway): strip MiniMax live scaffolding
+53f15afade fix(ci): repair discord regression tests
+ef381743d8 test: share cli and doctor test helpers
+ab4de18982 fix: auto-load bundled plugin capabilities from config refs
+8f1716ae5a refactor: share slack and telegram action helpers
+a1a9819be8 refactor: dedupe gateway session resolve visibility
+4069844795 refactor: share discord outbound session routing
+e774fe1286 refactor: share browser and sandbox helpers
+2b6375faf9 fix: keep spawned session owners in live events
+1062a048eb fix: expose spawned session owners in sessions list
+c041fcc04d fix: expose parent session keys in sessions list
+cb46b08efc fix: include dashboard children in owner filters
+c48a3e4fc9 ci: optimize windows test shard fanout (#55261)
+cca577a0cc refactor: share plugin setup helpers
+c98addeadd test: share auto-reply typing helpers
+1f740ff099 test: share cli and channel setup fixtures
+02cf12371f Gateway: require requester ownership for HTTP session kills (#55308)
+f29c1206cd test: dedupe extension channel fixtures
+48167a69b9 refactor: dedupe gateway and binding helpers
+1c45123231 Gateway: align HTTP session history scopes (#55285)
+f8c9863078 bluebubbles: honor reaction mention gating (#55283)
+e7e4fbcab9 test: dedupe secrets and guardrail fixtures
+d3d8e316bd gateway: require pairing for backend scope upgrades (#55286)
+b5d785f1a5 Gateway: require caller scope for subagent session deletion (#55281)
+ec2dbcff9a fix: keep plugin HTTP runtime scopes least-privileged (#55284)
+21a679e567 fix(ci): refresh plugin sdk api baseline
+07c41301e3 style: normalize ui slash executor formatting
+d6f7de392c test: dedupe ui chat seams
+7bb95354c4 test: dedupe matrix setup seams
+c12623a857 test: share plugin auth and ui storage fixtures
+d748ea9361 docs: note guest openclaw shim in parallels skill
+f0991aab57 test: add docker cli-backend smoke
+e1f0a85128 refactor: share auto-reply reply helpers
+615fe4a06b fix: preserve reset cli session linkage
+22f9c19a39 fix: preserve reset acp session metadata
+74b0a948e3 fix: preserve reset channel identity
+cb0a752156 fix: preserve reset session behavior config
+99d052a203 perf: overlap isolated channel runs with shared lane
+d5acd7dee5 test: share ui reconnect and storage helpers
+03ea6953e0 test: share gateway authz and watchdog fixtures
+d9a7dcec4b test: share matrix migration fixtures
+c2c136ae95 telegram: throttle repeated webhook auth guesses (#55142)
+a92fbf7d40 test: dedupe remaining agent test seams
+880b2fb7fd perf: enable local channel planner parallelism on node 25
+bac603a63e test: share subagent and policy test fixtures
+22520a2058 fix: preserve reset spawn context
+8c6be29454 fix: preserve reset elevated level
+b04ec4bada ci: make docker release tag-driven
+4ed5895637 test: dedupe config compatibility fixtures
+6bdf5e5634 fix: preserve reset spawn depth
+c4048aea41 test: share msteams monitor and pi runner fixtures
+339cc33cf8 perf: speed up channel test runs
+06b4a0a1f2 test: improve test runner help text (#55227)
+471da49c59 fix: preserve reset ownership metadata
+0b4d073374 synology-chat: throttle webhook token guesses (#55141)
+9bc3d33b53 test: dedupe web search provider fixtures
+df04ca7da3 fix: preserve metadata on voice session touches
+65a1afb9df test: share redact and approval fixtures
+5e78232bc5 test: share pi compaction fixtures
+d69ff3c022 fix(whatsapp): unwrap quoted wrapper messages
+f56a25a596 test: dedupe foundry auth fixtures
+a4a00aa1da feat: pluginize cli inference backends
+24dd7aec90 fix: prefer freshest duplicate store matches
+5f9f08394a refactor: share matrix and telegram dedupe helpers
+4b1c37a152 fix: avoid duplicate ACP Telegram finals (#55173)
+2ed11a375a refactor: share web media loader
+5e08ce36d5 fix(bluebubbles): throttle webhook auth guesses (#55133)
+5c3e018492 refactor: dedupe msteams graph actions
+a4e5b23dc3 docs: update PR template review guidance
+9f0305420a docs: add beta blocker contributor guidance (#55199)
+e403899cc1 test: fix portable stderr capture and env leakage (#55184)
+dd46c3d75b test(memory): initialize providers in lazy manager tests
+2513a8d852 fix(bluebubbles): refactor sendMessageBlueBubbles to use resolveBlueBubblesServerAccount and enhance private network handling in tests
+81c45976db Feishu: reject legacy raw card command payloads (#55130)
+11ea1f6786 Google Chat: require stable group ids (#55131)
+464e2c10a5 ACP: sanitize terminal tool titles (#55137)
+883239a560 build: prepare 2026.3.25 unreleased
+e3660f265c docs: sync config baseline
+cc7f18d6c2 fix: replace stale canonical duplicate rows
+fde3871ee7 fix: prefer freshest duplicate row promotion
+cc077ef1ef fix(bluebubbles): enable group participant enrichment by default, add fallback fetch and handle field aliases
+68c6abe32b docs: add beta release testing guidance
+b529d13477 test: fix bluebubbles attachment ssrf expectations
+6fbe9dd935 fix: surface provider-specific rate limit error message (#54433) (#54512)
+2383daf5c4 Matrix: gate verification notices on DM access (#55122)
+e43600c9e5 fix(bluebubbles): auto-allow private network for local serverUrl and add allowPrivateNetwork to channel schema
+c5415a474b fix(msteams): align feedback invoke authorization (#55108)
+269282ac69 Telegram: enforce DM auth for callbacks (#55112)
+d9810811b6 fix(agents): enforce session_status guard after sessionId resolution (#55105)
+5e8cb22176 Feishu: validate webhook signatures before parsing (#55083)
+a3b85e1583 fix(discord): force fresh gateway reconnects (#54697)
+8564480f3e chore: add lockfile entry for `extensions/microsoft-foundry`
+4c85fd8569 BlueBubbles: enrich group participants with local Contacts names (#54984)
+f92c92515b fix(extensions): route fetch calls through fetchWithSsrFGuard (#53929)
+dad68d319b Remove Qwen OAuth integration (qwen-portal-auth) (#52709)
+83e6c12f15 build: update plugin sdk api baseline
+432d5f863c fix: add slack upload-file action (#54987) (thanks @kevinlin-openai)
+78584413ec docs: refresh config baseline for microsoft foundry
+7ea17963b0 fix: wire microsoft foundry into contract registry
+143275687a Docs: rename modelstudio.md to qwen_modelstudio.md, add Standard API endpoints (#54407)
+d72cc7a380 fix: route codex responses over websocket and preserve tool warnings (#53702) (thanks @Nanako0129)
+00e932a83c fix: restore inbound image embedding for CLI routed BlueBubbles turns (#51373)
+a16dd967da feat: Add Microsoft Foundry provider with Entra ID authentication (#51973)
+06de515b6c fix(plugins): skip allowlist warning for config paths
+6329edfb8d msteams: add search message action (#54832)
+8c852d86f7 msteams: fetch thread history via Graph API for channel replies (#51643)
+6cbd2d36f8 Revert "feat: add video generation core infrastructure and extend image generation parameters (#53681)" (#54943)
+e45533d568 fix(whatsapp): drop fromMe echoes in self-chat DMs using outbound ID tracking (#54570)
+6fd9d2ff38 fix: support OpenAI Codex media understanding (#54829) (thanks @neeravmakwana)
+76ff0d9298 fix: restore image-tool generic provider fallback (#54858) (thanks @MonkeyLeeT)
+8efc6e001e fix: auto-enable configured channel plugins in routed CLI commands (#54809) (thanks @neeravmakwana)
+1bc30b7fb9 fix: restore Kimi Code under Moonshot setup (#54619) (thanks @sparkyrider)
+99deba798c fix: restore CLI message transcript mirroring (#54187) (thanks @KevInTheCloud5617)
+68d854cb9c fix: use provider-aware context window lookup (#54796) (thanks @neeravmakwana)
+14430ade57 fix: tighten systemd duplicate gateway detection (#45328) (thanks @gregretkowski)
+ebad7490b4 fix: resolve telegram token fallback for binding-created accounts (#54362) (thanks @openperf)
+bc1c308383 fix(whatsapp): clarify allowFrom policy error (#54850)
+5b68e52894 ci: collapse preflight manifest routing (#54773)
+4f297a094a docs: add WeChat channel via official Tencent iLink Bot plugin (#52131) (thanks @MonkeyLeeT)
+74ed75f2e7 fix: deliver verbose tool summaries in Telegram forum topics (#43236) (thanks @frankbuild)
+4cb8dde894 feat: add video generation core infrastructure and extend image generation parameters (#53681)
+39fbfd9b28 fix(mattermost): thread resolved cfg through reply delivery send calls (#48347)
+208ff68298 fix: allow msteams feedback and welcome config keys (#54679)
+81ebc7e034 fix(gateway): block silent reconnect scope-upgrade escalation (#54694)
+19d91aaa8f fix: make buttons schema optional in message tool (#54418)
+b6f631e045 fix(schema): tools.web.fetch.maxResponseBytes #53397 (#53401)
+fd934a566b feat(cli): add json schema to cli tool (#54523)
+ab37d8810d test: introduce planner-backed test runner, stabilize local builds (#54650)
+764394c78b fix: enforce localRoots sandbox on Feishu docx upload file reads (#54693)
+6a79324802 Filter untrusted CWD .env entries before OpenClaw startup (#54631)
+79fbcfc03b fix(ci): restore main green
+501190d2e8 refactor(sandbox): remove tool policy facade (#54684)
+c6d8318d07 Trigger preflight compaction from transcript estimates when usage is stale (#49479)
+c02ee8a3a4 OpenShell: exclude hooks/ from mirror sync (#54657)
+d1bfe08424 fix: apply host-env blocklist to auth-profile env refs in daemon install (#54627)
+e34694733f fix(talk-voice): enforce operator.admin scope on /voice set config writes (#54461)
+d81593c6e2 fix: trigger compaction on LLM timeout with high context usage (#46417)
+1b3a1246d0 Block reset-profile on lower-privilege browser request surfaces (#54618)
+4797bbc5b9 fix: reject path traversal and home-dir patterns in media parse layer (#54642)
+84401223c7 fix: per-model cooldown scope, stepped backoff, and user-facing rate-limit message (#49834)
+6efc4e8ef2 test: fix windows tmp root assertions
+b7d70ade3b Fix/telegram writeback admin scope gate (#54561)
+89c4c674d1 fix(compaction): surface safeguard cancel reasons and clarify /compact skips (#51072)
+7847e67f8a plugin-runtime: expose runHeartbeatOnce in system API (#40299)
+4ae4d1fabe fix: mid-turn 429 rate limit silent no-reply and context engine registration failure (#50930)
+e0972db7a2 fix: stop leaking reply tags in iMessage outbound text (#39512) (thanks @mvanhorn)
+f63c4b0856 test: keep vitest on forks only
+055ad65896 Telegram: ignore self-authored DM message updates (#54530)
+685f17460d build: update appcast for 2026.3.24
+2de32fbf14 fix: reconcile session compaction count after late compaction success (#45493)

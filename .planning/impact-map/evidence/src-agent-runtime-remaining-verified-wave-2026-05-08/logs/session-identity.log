@@ -1,0 +1,7 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/identity.test.ts src/agents/identity-file.test.ts src/agents/identity-avatar.test.ts src/agents/identity.per-channel-prefix.test.ts src/agents/identity.human-delay.test.ts
+
+[test-parallel] start base workers=2 filters=5
+[test-parallel] done base code=0 elapsed=6.5s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-FaogXw

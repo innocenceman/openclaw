@@ -1,0 +1,16 @@
+Checking formatting...
+
+.planning/impact-map/COVERAGE-ROADMAP.md (58ms)
+.planning/impact-map/MODULE-INDEX.md (45ms)
+.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md (26ms)
+.planning/impact-map/src/agent-runtime/leaf-index.md (6ms)
+.planning/impact-map/src/agent-runtime/pi-runner/leaf-index.md (5ms)
+.planning/impact-map/src/agent-runtime/sandbox/filesystem-bridge/leaf-index.md (2ms)
+.planning/impact-map/src/agent-runtime/sandbox/leaf-index.md (1ms)
+.planning/impact-map/src/agent-runtime/skills/leaf-index.md (5ms)
+.planning/impact-map/src/cli-commands/leaf-index.md (2ms)
+.planning/impact-map/src/reply-orchestration/README.md (5ms)
+.planning/impact-map/src/reply-orchestration/leaf-index.md (5ms)
+
+Format issues found in above 11 files. Run without `--check` to fix.
+Finished in 2196ms on 1130 files using 4 threads.

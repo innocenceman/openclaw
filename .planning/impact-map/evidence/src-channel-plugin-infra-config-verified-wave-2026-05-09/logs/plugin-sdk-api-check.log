@@ -1,0 +1,28 @@
+=== plugin-sdk-api-check ===
+pnpm plugin-sdk:api:check
+
+> openclaw@2026.3.24 plugin-sdk:api:check /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node --import tsx scripts/generate-plugin-sdk-api-baseline.ts --check
+
+
+<--- Last few GCs --->
+
+[40:0x23fc1000]    21527 ms: Mark-Compact (reduce) 2045.2 (2088.9) -> 2043.8 (2083.1) MB, pooled: 0 MB, 913.66 / 0.00 ms  (+ 0.6 ms in 0 steps since start of marking, biggest step 0.0 ms, walltime since start of marking 933 ms) (average mu = 0.183, curren[40:0x23fc1000]    22271 ms: Mark-Compact 2045.1 (2083.1) -> 2044.0 (2086.6) MB, pooled: 0 MB, 739.69 / 0.00 ms  (average mu = 0.109, current mu = 0.006) allocation failure; scavenge might not succeed
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0xe42d60 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [node]
+ 2: 0x121ded0 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [node]
+ 3: 0x121e1a7 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [node]
+ 4: 0x144d015  [node]
+ 5: 0x144d043  [node]
+ 6: 0x146611a  [node]
+ 7: 0x14692e8  [node]
+ 8: 0x1cd07a1  [node]
+Aborted (core dumped)
+ ELIFECYCLE  Command failed with exit code 134.
+--- exit=134 duration=51s ---

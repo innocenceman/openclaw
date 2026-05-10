@@ -1,0 +1,28 @@
+{
+  "status": "ambiguous",
+  "message": "Found 2 symbols matching 'resolveOutboundTarget'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "resolveOutboundTarget"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/infra/outbound/targets.ts:resolveOutboundTarget",
+      "name": "resolveOutboundTarget",
+      "kind": "Function",
+      "filePath": "src/infra/outbound/targets.ts",
+      "line": 195,
+      "score": 0.56
+    },
+    {
+      "uid": "Const:src/infra/outbound/targets.channel-resolution.test.ts:resolveOutboundTarget",
+      "name": "resolveOutboundTarget",
+      "kind": "",
+      "filePath": "src/infra/outbound/targets.channel-resolution.test.ts",
+      "line": 51,
+      "score": 0.5
+    }
+  ]
+}

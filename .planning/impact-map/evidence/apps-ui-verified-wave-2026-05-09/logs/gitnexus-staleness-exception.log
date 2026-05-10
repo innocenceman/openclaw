@@ -1,0 +1,5 @@
+$ git rev-parse HEAD
+67988132eaae83a11f26f3c64583913ff8f90221
+$ npx gitnexus analyze .
+FAILED/TIMEBOXED: initial `npx gitnexus analyze` without path reported not inside git repository because .git is a worktree file; `npx gitnexus analyze .` ran over 6 minutes after worker fallback and did not complete within the bounded slice.
+$ git diff --name-only 838c48ad1399f0d76f92d103ea355474dc1a7b94 -- apps ui

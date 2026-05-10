@@ -1,0 +1,8 @@
+=== config-docs-check ===
+pnpm config:docs:check
+
+> openclaw@2026.3.24 config:docs:check /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node --import tsx scripts/generate-config-doc-baseline.ts --check
+
+OK docs/.generated/config-baseline.json docs/.generated/config-baseline.jsonl
+--- exit=0 duration=9s ---

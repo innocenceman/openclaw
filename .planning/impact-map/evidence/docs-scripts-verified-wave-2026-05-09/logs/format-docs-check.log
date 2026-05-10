@@ -1,0 +1,13 @@
+=== format-docs-check ===
+pnpm format:docs:check
+start=2026-05-08T20:49:23Z
+
+> openclaw@2026.3.24 format:docs:check /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> git ls-files 'docs/**/*.md' 'docs/**/*.mdx' 'README.md' | xargs oxfmt --check
+
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 7624ms on 680 files using 4 threads.
+exit=0
+end=2026-05-08T20:49:32Z

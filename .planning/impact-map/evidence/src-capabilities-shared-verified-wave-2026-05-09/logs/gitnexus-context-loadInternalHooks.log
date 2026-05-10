@@ -1,0 +1,80 @@
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Function:src/hooks/loader.ts:loadInternalHooks",
+    "name": "loadInternalHooks",
+    "kind": "Function",
+    "filePath": "src/hooks/loader.ts",
+    "startLine": 59,
+    "endLine": 239
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "File:src/hooks/plugin-hooks.test.ts",
+        "name": "plugin-hooks.test.ts",
+        "filePath": "src/hooks/plugin-hooks.test.ts"
+      },
+      {
+        "uid": "File:src/hooks/loader.test.ts",
+        "name": "loader.test.ts",
+        "filePath": "src/hooks/loader.test.ts"
+      },
+      {
+        "uid": "File:src/hooks/hooks-install.test.ts",
+        "name": "hooks-install.test.ts",
+        "filePath": "src/hooks/hooks-install.test.ts"
+      },
+      {
+        "uid": "Function:src/hooks/loader.test.ts:expectNoCommandHookRegistration",
+        "name": "expectNoCommandHookRegistration",
+        "filePath": "src/hooks/loader.test.ts"
+      },
+      {
+        "uid": "Function:src/gateway/server-startup.ts:startGatewaySidecars",
+        "name": "startGatewaySidecars",
+        "filePath": "src/gateway/server-startup.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "calls": [
+      {
+        "uid": "Function:src/infra/safe-open-sync.test.ts:closeSync",
+        "name": "closeSync",
+        "filePath": "src/infra/safe-open-sync.test.ts"
+      },
+      {
+        "uid": "Function:src/infra/boundary-file-read.ts:openBoundaryFile",
+        "name": "openBoundaryFile",
+        "filePath": "src/infra/boundary-file-read.ts"
+      },
+      {
+        "uid": "Function:src/hooks/workspace.ts:loadWorkspaceHookEntries",
+        "name": "loadWorkspaceHookEntries",
+        "filePath": "src/hooks/workspace.ts"
+      },
+      {
+        "uid": "Function:src/hooks/module-loader.ts:resolveFunctionModuleExport",
+        "name": "resolveFunctionModuleExport",
+        "filePath": "src/hooks/module-loader.ts"
+      },
+      {
+        "uid": "Function:src/hooks/internal-hooks.ts:registerInternalHook",
+        "name": "registerInternalHook",
+        "filePath": "src/hooks/internal-hooks.ts"
+      },
+      {
+        "uid": "Function:src/hooks/import-url.ts:buildImportUrl",
+        "name": "buildImportUrl",
+        "filePath": "src/hooks/import-url.ts"
+      },
+      {
+        "uid": "Function:src/hooks/config.ts:shouldIncludeHook",
+        "name": "shouldIncludeHook",
+        "filePath": "src/hooks/config.ts"
+      }
+    ]
+  },
+  "processes": []
+}

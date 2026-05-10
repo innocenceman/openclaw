@@ -1,0 +1,36 @@
+{
+  "status": "ambiguous",
+  "message": "Found 3 symbols matching 'fetchWithSsrFGuard'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "fetchWithSsrFGuard"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/infra/net/fetch-guard.ts:fetchWithSsrFGuard",
+      "name": "fetchWithSsrFGuard",
+      "kind": "Function",
+      "filePath": "src/infra/net/fetch-guard.ts",
+      "line": 127,
+      "score": 0.56
+    },
+    {
+      "uid": "Const:extensions/slack/src/send.upload.test.ts:fetchWithSsrFGuard",
+      "name": "fetchWithSsrFGuard",
+      "kind": "",
+      "filePath": "extensions/slack/src/send.upload.test.ts",
+      "line": 6,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:extensions/nextcloud-talk/src/core.test.ts:fetchWithSsrFGuard",
+      "name": "fetchWithSsrFGuard",
+      "kind": "",
+      "filePath": "extensions/nextcloud-talk/src/core.test.ts",
+      "line": 30,
+      "score": 0.5
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+# Runtime Impact Subtree
+
+Coverage: `exceptioned-deep-partial`
+Freshness: 2026-05-08 remaining runtime verified wave
+
+## Parent module
+
+- Impact module: `agent-runtime/`
+- Subtree: `runtime/`
+
+## Purpose
+
+Runtime command entrypoints, session/scope ownership, CLI runner glue, ACP spawn bridge, and context/subagent session support.
+
+## Split basis
+
+GitNexus showed `src/agents/agent-command.ts` crossing gateway boot and CLI command boundaries. code-review-graph highlighted separate risk centers in context lookup, subagent registry, and internal session-key resolution, so this subtree is no longer treated as a single final leaf.
+
+Use `leaf-index.md` to choose the narrowest runtime leaf.
+
+## 2026-05-08 acp-spawn verified wave
+
+Decision: child leaf `acp-spawn/` promoted to `verified`; this runtime subtree remains `deep-partial` until sibling leaves receive equivalent targeted validation.
+
+Evidence: `.planning/impact-map/evidence/src-acp-spawn-verified-wave-2026-05-08/ACP-SPAWN-VERIFIED-WAVE.md`.
+
+## 2026-05-08 remaining runtime verified wave
+
+Decision: runtime subtree remains `exceptioned-deep-partial`.
+
+Reason: `session-scope/`, `command-session-store/`, `cli-runner/`, `acp-spawn/`, and split `context-subagents/` leaves are verified, but `command-entrypoint/` cannot be promoted while `src/commands/agent.test.ts` exits non-zero with no Vitest failure output in this environment.
+
+Evidence: `.planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/AGENT-RUNTIME-REMAINING-VERIFIED-WAVE.md`.

@@ -1,0 +1,9 @@
+=== docs-check-i18n-glossary ===
+pnpm docs:check-i18n-glossary
+start=2026-05-08T20:49:17Z
+
+> openclaw@2026.3.24 docs:check-i18n-glossary /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/check-docs-i18n-glossary.mjs
+
+exit=0
+end=2026-05-08T20:49:18Z

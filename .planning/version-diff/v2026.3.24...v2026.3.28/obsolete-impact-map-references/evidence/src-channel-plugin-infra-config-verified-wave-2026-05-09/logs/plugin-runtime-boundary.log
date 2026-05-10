@@ -1,0 +1,9 @@
+=== plugin-runtime-boundary ===
+pnpm test -- src/plugins/sdk-alias.test.ts src/plugins/bundled-plugin-naming.test.ts src/plugins/runtime-plugin-boundary.whatsapp.test.ts src/plugins/install-min-host-version-guardrails.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/plugins/sdk-alias.test.ts src/plugins/bundled-plugin-naming.test.ts src/plugins/runtime-plugin-boundary.whatsapp.test.ts src/plugins/install-min-host-version-guardrails.test.ts
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=8.3s
+--- exit=0 duration=10s ---

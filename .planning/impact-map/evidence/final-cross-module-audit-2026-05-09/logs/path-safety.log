@@ -1,0 +1,8 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/sandbox/fs-paths.test.ts src/agents/sandbox/host-paths.test.ts src/agents/sandbox/fs-bridge.boundary.test.ts src/agents/sandbox/fs-bridge.anchored-ops.test.ts src/agents/sandbox/fs-bridge-mutation-helper.test.ts
+
+[test-parallel] start base workers=2 filters=5
+ ELIFECYCLE  Test failed. See above for more details.
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-HDVeaf/base-1778276495949.log meta=/tmp/openclaw-test-parallel-HDVeaf/base-1778276495949-failure.json
+[test-parallel] done base code=1 elapsed=258.8s

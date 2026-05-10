@@ -1,0 +1,9 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/commands/agent.test.ts src/commands/agent-via-gateway.test.ts src/agents/agent-scope.test.ts src/agents/agent-paths.test.ts src/agents/identity.test.ts src/agents/identity-file.test.ts src/agents/identity-avatar.test.ts src/agents/identity.per-channel-prefix.test.ts src/agents/identity.human-delay.test.ts src/agents/command/delivery.test.ts src/agents/cli-runner.test.ts src/agents/cli-backends.test.ts src/agents/claude-cli-runner.test.ts src/agents/cli-runner/bundle-mcp.test.ts
+
+[test-parallel] start base workers=2 filters=14
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-CPUTe9/base-1778257255496.log meta=/tmp/openclaw-test-parallel-CPUTe9/base-1778257255496-failure.json
+[test-parallel] done base code=1 elapsed=143.1s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-CPUTe9
+ ELIFECYCLE  Test failed. See above for more details.

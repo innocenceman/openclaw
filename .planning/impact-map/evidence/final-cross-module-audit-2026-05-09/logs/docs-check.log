@@ -1,0 +1,30 @@
+
+> openclaw@2026.3.24 check:docs /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> pnpm format:docs:check && pnpm lint:docs && pnpm docs:check-i18n-glossary && pnpm docs:check-links
+
+
+> openclaw@2026.3.24 format:docs:check /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> git ls-files 'docs/**/*.md' 'docs/**/*.mdx' 'README.md' | xargs oxfmt --check
+
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 10165ms on 680 files using 4 threads.
+
+> openclaw@2026.3.24 lint:docs /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> pnpm dlx markdownlint-cli2
+
+ WARN  GET https://registry.npmjs.org/markdownlint-cli2 error (EPERM). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/markdownlint-cli2 error (EPERM). Will retry in 1 minute. 1 retries left.
+ ERR_PNPM_META_FETCH_FAIL  GET https://registry.npmjs.org/markdownlint-cli2: request to https://registry.npmjs.org/markdownlint-cli2 failed, reason: connect EPERM 127.0.0.1:7890 - Local (undefined:undefined)
+ ENOENT  ENOENT: no such file or directory, mkdir '/home/yanx/.cache/pnpm/dlx/37d7d47787ad0a59ea27753dc9a668db5179991dbe528e755a7058167b766658/19e0991e932-228'
+
+pnpm: ENOENT: no such file or directory, mkdir '/home/yanx/.cache/pnpm/dlx/37d7d47787ad0a59ea27753dc9a668db5179991dbe528e755a7058167b766658/19e0991e932-228'
+    at Object.mkdirSync (node:fs:1370:26)
+    at Object.handler [as dlx] (/home/yanx/.local/share/pnpm/.tools/pnpm/10.32.1_tmp_628317/node_modules/pnpm/dist/pnpm.cjs:190287:22)
+    at async /home/yanx/.local/share/pnpm/.tools/pnpm/10.32.1_tmp_628317/node_modules/pnpm/dist/pnpm.cjs:201431:23
+    at async main (/home/yanx/.local/share/pnpm/.tools/pnpm/10.32.1_tmp_628317/node_modules/pnpm/dist/pnpm.cjs:201389:34)
+    at async runPnpm (/home/yanx/.local/share/pnpm/.tools/pnpm/10.32.1_tmp_628317/node_modules/pnpm/dist/pnpm.cjs:201656:5)
+    at async /home/yanx/.local/share/pnpm/.tools/pnpm/10.32.1_tmp_628317/node_modules/pnpm/dist/pnpm.cjs:201648:7
+ ELIFECYCLE  Command failed with exit code 254.
+ ELIFECYCLE  Command failed with exit code 254.

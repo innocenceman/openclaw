@@ -1,0 +1,4 @@
+leaf_rows=302
+exceptioned-deep-partial=177
+verified=125
+PASS: final map has only verified/exceptioned active leaf rows, expected cards, and resolving relative links

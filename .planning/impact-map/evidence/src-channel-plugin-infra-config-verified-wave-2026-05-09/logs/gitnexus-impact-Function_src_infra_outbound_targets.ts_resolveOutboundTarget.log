@@ -1,0 +1,160 @@
+{
+  "target": {
+    "id": "Function:src/infra/outbound/targets.ts:resolveOutboundTarget",
+    "name": "resolveOutboundTarget",
+    "type": "Function",
+    "filePath": "src/infra/outbound/targets.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 15,
+  "risk": "HIGH",
+  "summary": {
+    "direct": 8,
+    "processes_affected": 0,
+    "modules_affected": 3
+  },
+  "affected_processes": [],
+  "affected_modules": [
+    {
+      "name": "Outbound",
+      "hits": 6,
+      "impact": "direct"
+    },
+    {
+      "name": "Agents",
+      "hits": 6,
+      "impact": "direct"
+    },
+    {
+      "name": "Infra",
+      "hits": 1,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-restart-sentinel.ts:scheduleRestartSentinelWake",
+        "name": "scheduleRestartSentinelWake",
+        "filePath": "src/gateway/server-restart-sentinel.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-node-events.ts:sendReceiptAck",
+        "name": "sendReceiptAck",
+        "filePath": "src/gateway/server-node-events.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/outbound/targets.ts:resolveHeartbeatDeliveryTarget",
+        "name": "resolveHeartbeatDeliveryTarget",
+        "filePath": "src/infra/outbound/targets.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/outbound/targets.shared-test.ts:runResolveOutboundTargetCoreTests",
+        "name": "runResolveOutboundTargetCoreTests",
+        "filePath": "src/infra/outbound/targets.shared-test.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/outbound/message.ts:sendMessage",
+        "name": "sendMessage",
+        "filePath": "src/infra/outbound/message.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/outbound/agent-delivery.ts:resolveAgentOutboundTarget",
+        "name": "resolveAgentOutboundTarget",
+        "filePath": "src/infra/outbound/agent-delivery.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/cron/isolated-agent/delivery-target.ts:resolveDeliveryTarget",
+        "name": "resolveDeliveryTarget",
+        "filePath": "src/cron/isolated-agent/delivery-target.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/gateway/server-methods/send.ts",
+        "name": "send.ts",
+        "filePath": "src/gateway/server-methods/send.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/infra/heartbeat-runner.ts:runHeartbeatOnce",
+        "name": "runHeartbeatOnce",
+        "filePath": "src/infra/heartbeat-runner.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/agents/command/delivery.ts:deliverAgentCommandResult",
+        "name": "deliverAgentCommandResult",
+        "filePath": "src/agents/command/delivery.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/gateway/server-startup.ts:startGatewaySidecars",
+        "name": "startGatewaySidecars",
+        "filePath": "src/gateway/server-startup.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/gateway/server-cron.ts:buildGatewayCronService",
+        "name": "buildGatewayCronService",
+        "filePath": "src/gateway/server-cron.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/cron/delivery.ts:sendFailureNotificationAnnounce",
+        "name": "sendFailureNotificationAnnounce",
+        "filePath": "src/cron/delivery.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/cron/isolated-agent/run.ts:resolveCronDeliveryContext",
+        "name": "resolveCronDeliveryContext",
+        "filePath": "src/cron/isolated-agent/run.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:src/gateway/server-methods/agent.ts",
+        "name": "agent.ts",
+        "filePath": "src/gateway/server-methods/agent.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}

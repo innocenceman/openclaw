@@ -1,0 +1,135 @@
+{
+  "status": "found",
+  "symbol": {
+    "uid": "Function:src/process/exec.ts:runExec",
+    "name": "runExec",
+    "kind": "Function",
+    "filePath": "src/process/exec.ts",
+    "startLine": 99,
+    "endLine": 153
+  },
+  "incoming": {
+    "calls": [
+      {
+        "uid": "Function:src/media-understanding/runner.ts:probeGeminiCli",
+        "name": "probeGeminiCli",
+        "filePath": "src/media-understanding/runner.ts"
+      },
+      {
+        "uid": "Function:src/media-understanding/runner.entries.ts:runCliEntry",
+        "name": "runCliEntry",
+        "filePath": "src/media-understanding/runner.entries.ts"
+      },
+      {
+        "uid": "Function:src/media/image-ops.ts:sipsMetadataFromBuffer",
+        "name": "sipsMetadataFromBuffer",
+        "filePath": "src/media/image-ops.ts"
+      },
+      {
+        "uid": "Function:src/media/image-ops.ts:sipsResizeToJpeg",
+        "name": "sipsResizeToJpeg",
+        "filePath": "src/media/image-ops.ts"
+      },
+      {
+        "uid": "Function:src/media/image-ops.ts:sipsConvertToJpeg",
+        "name": "sipsConvertToJpeg",
+        "filePath": "src/media/image-ops.ts"
+      },
+      {
+        "uid": "Function:src/media/image-ops.ts:sipsApplyOrientation",
+        "name": "sipsApplyOrientation",
+        "filePath": "src/media/image-ops.ts"
+      },
+      {
+        "uid": "Function:src/link-understanding/runner.ts:runCliEntry",
+        "name": "runCliEntry",
+        "filePath": "src/link-understanding/runner.ts"
+      },
+      {
+        "uid": "Function:src/infra/tailscale.ts:findTailscaleBinary",
+        "name": "findTailscaleBinary",
+        "filePath": "src/infra/tailscale.ts"
+      },
+      {
+        "uid": "Function:src/infra/tailscale.ts:checkBinary",
+        "name": "checkBinary",
+        "filePath": "src/infra/tailscale.ts"
+      },
+      {
+        "uid": "Function:src/gateway/server-discovery.ts:resolveTailnetDnsHint",
+        "name": "resolveTailnetDnsHint",
+        "filePath": "src/gateway/server-discovery.ts"
+      },
+      {
+        "uid": "Function:src/daemon/systemd-linger.ts:readSystemdUserLingerStatus",
+        "name": "readSystemdUserLingerStatus",
+        "filePath": "src/daemon/systemd-linger.ts"
+      },
+      {
+        "uid": "Function:src/commands/status.scan.ts:scanStatus",
+        "name": "scanStatus",
+        "filePath": "src/commands/status.scan.ts"
+      },
+      {
+        "uid": "Function:src/commands/status.scan.json-core.ts:scanStatusJsonCore",
+        "name": "scanStatusJsonCore",
+        "filePath": "src/commands/status.scan.json-core.ts"
+      },
+      {
+        "uid": "Function:src/commands/doctor-sandbox.ts:isDockerAvailable",
+        "name": "isDockerAvailable",
+        "filePath": "src/commands/doctor-sandbox.ts"
+      },
+      {
+        "uid": "Function:src/commands/doctor-sandbox.ts:dockerImageExists",
+        "name": "dockerImageExists",
+        "filePath": "src/commands/doctor-sandbox.ts"
+      },
+      {
+        "uid": "Function:src/browser/trash.ts:movePathToTrash",
+        "name": "movePathToTrash",
+        "filePath": "src/browser/trash.ts"
+      }
+    ]
+  },
+  "outgoing": {
+    "calls": [
+      {
+        "uid": "Function:src/logger.ts:logError",
+        "name": "logError",
+        "filePath": "src/logger.ts"
+      },
+      {
+        "uid": "Function:src/logger.ts:logDebug",
+        "name": "logDebug",
+        "filePath": "src/logger.ts"
+      },
+      {
+        "uid": "Function:src/globals.ts:shouldLogVerbose",
+        "name": "shouldLogVerbose",
+        "filePath": "src/globals.ts"
+      },
+      {
+        "uid": "Function:src/process/exec.ts:isWindowsBatchCommand",
+        "name": "isWindowsBatchCommand",
+        "filePath": "src/process/exec.ts"
+      },
+      {
+        "uid": "Function:src/process/exec.ts:buildCmdExeCommandLine",
+        "name": "buildCmdExeCommandLine",
+        "filePath": "src/process/exec.ts"
+      },
+      {
+        "uid": "Function:src/process/exec.ts:resolveNpmArgvForWindows",
+        "name": "resolveNpmArgvForWindows",
+        "filePath": "src/process/exec.ts"
+      },
+      {
+        "uid": "Function:src/process/exec.ts:resolveCommand",
+        "name": "resolveCommand",
+        "filePath": "src/process/exec.ts"
+      }
+    ]
+  },
+  "processes": []
+}

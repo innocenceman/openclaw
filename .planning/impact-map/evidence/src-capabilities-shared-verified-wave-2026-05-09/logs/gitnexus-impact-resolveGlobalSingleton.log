@@ -1,0 +1,406 @@
+{
+  "target": {
+    "id": "Function:src/shared/global-singleton.ts:resolveGlobalSingleton",
+    "name": "resolveGlobalSingleton",
+    "type": "Function",
+    "filePath": "src/shared/global-singleton.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 44,
+  "risk": "HIGH",
+  "summary": {
+    "direct": 22,
+    "processes_affected": 1,
+    "modules_affected": 4
+  },
+  "affected_processes": [
+    {
+      "name": "handleStopCommand",
+      "type": "Function",
+      "filePath": "src/auto-reply/reply/commands-session-abort.ts",
+      "affected_process_count": 2,
+      "total_hits": 2,
+      "earliest_broken_step": 3
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Process",
+      "hits": 8,
+      "impact": "direct"
+    },
+    {
+      "name": "Memory",
+      "hits": 8,
+      "impact": "direct"
+    },
+    {
+      "name": "Gateway-cli",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Agents",
+      "hits": 1,
+      "impact": "indirect"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/infra/warning-filter.ts:installProcessWarningFilter",
+        "name": "installProcessWarningFilter",
+        "filePath": "src/infra/warning-filter.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/dedupe.ts:resolveGlobalDedupeCache",
+        "name": "resolveGlobalDedupeCache",
+        "filePath": "src/infra/dedupe.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/agent-events.ts:getAgentEventState",
+        "name": "getAgentEventState",
+        "filePath": "src/infra/agent-events.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-plugins.ts:getFallbackGatewayContextState",
+        "name": "getFallbackGatewayContextState",
+        "filePath": "src/gateway/server-plugins.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-plugins.ts:getPluginSubagentPolicyState",
+        "name": "getPluginSubagentPolicyState",
+        "filePath": "src/gateway/server-plugins.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/shared/global-singleton.ts:resolveGlobalMap",
+        "name": "resolveGlobalMap",
+        "filePath": "src/shared/global-singleton.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/process/command-queue.ts:getQueueState",
+        "name": "getQueueState",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/memory/search-manager.ts:getMemorySearchManagerCacheStore",
+        "name": "getMemorySearchManagerCacheStore",
+        "filePath": "src/memory/search-manager.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/memory/qmd-manager.ts:getMcporterState",
+        "name": "getMcporterState",
+        "filePath": "src/memory/qmd-manager.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/memory/manager.ts:getMemoryIndexManagerCacheStore",
+        "name": "getMemoryIndexManagerCacheStore",
+        "filePath": "src/memory/manager.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/acp/runtime/registry.ts:resolveAcpRuntimeRegistryGlobalState",
+        "name": "resolveAcpRuntimeRegistryGlobalState",
+        "filePath": "src/acp/runtime/registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/context-engine/registry.ts",
+        "name": "registry.ts",
+        "filePath": "src/context-engine/registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/plugins/runtime/index.ts",
+        "name": "index.ts",
+        "filePath": "src/plugins/runtime/index.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/plugins/runtime/gateway-request-scope.ts",
+        "name": "gateway-request-scope.ts",
+        "filePath": "src/plugins/runtime/gateway-request-scope.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/agents/pi-embedded-runner/runs.ts",
+        "name": "runs.ts",
+        "filePath": "src/agents/pi-embedded-runner/runs.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/telegram/src/thread-bindings.ts",
+        "name": "thread-bindings.ts",
+        "filePath": "extensions/telegram/src/thread-bindings.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/telegram/src/draft-stream.ts",
+        "name": "draft-stream.ts",
+        "filePath": "extensions/telegram/src/draft-stream.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:extensions/feishu/src/thread-bindings.ts",
+        "name": "thread-bindings.ts",
+        "filePath": "extensions/feishu/src/thread-bindings.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/plugins/conversation-binding.ts",
+        "name": "conversation-binding.ts",
+        "filePath": "src/plugins/conversation-binding.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/infra/heartbeat-events.ts",
+        "name": "heartbeat-events.ts",
+        "filePath": "src/infra/heartbeat-events.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/hooks/internal-hooks.ts",
+        "name": "internal-hooks.ts",
+        "filePath": "src/hooks/internal-hooks.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/gateway/test-helpers.mocks.ts",
+        "name": "test-helpers.mocks.ts",
+        "filePath": "src/gateway/test-helpers.mocks.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "File:src/infra/outbound/session-binding-service.ts",
+        "name": "session-binding-service.ts",
+        "filePath": "src/infra/outbound/session-binding-service.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:src/auto-reply/reply/inbound-dedupe.ts",
+        "name": "inbound-dedupe.ts",
+        "filePath": "src/auto-reply/reply/inbound-dedupe.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:src/acp/runtime/registry.ts",
+        "name": "registry.ts",
+        "filePath": "src/acp/runtime/registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/slack/src/sent-thread-cache.ts",
+        "name": "sent-thread-cache.ts",
+        "filePath": "extensions/slack/src/sent-thread-cache.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:extensions/discord/src/components-registry.ts",
+        "name": "components-registry.ts",
+        "filePath": "extensions/discord/src/components-registry.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:src/auto-reply/reply/queue/state.ts",
+        "name": "state.ts",
+        "filePath": "src/auto-reply/reply/queue/state.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:src/auto-reply/reply/queue/enqueue.ts",
+        "name": "enqueue.ts",
+        "filePath": "src/auto-reply/reply/queue/enqueue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:src/auto-reply/reply/queue/drain.ts",
+        "name": "drain.ts",
+        "filePath": "src/auto-reply/reply/queue/drain.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:src/plugin-sdk/infra-runtime.ts",
+        "name": "infra-runtime.ts",
+        "filePath": "src/plugin-sdk/infra-runtime.ts",
+        "relationType": "IMPORTS",
+        "confidence": 1
+      },
+      {
+        "depth": 2,
+        "id": "File:src/memory/search-manager.ts",
+        "name": "search-manager.ts",
+        "filePath": "src/memory/search-manager.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "File:src/memory/manager.ts",
+        "name": "manager.ts",
+        "filePath": "src/memory/manager.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "File:src/infra/system-events.ts",
+        "name": "system-events.ts",
+        "filePath": "src/infra/system-events.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/process/command-queue.ts:getLaneState",
+        "name": "getLaneState",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/process/command-queue.ts:markGatewayDraining",
+        "name": "markGatewayDraining",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/process/command-queue.ts:enqueueCommandInLane",
+        "name": "enqueueCommandInLane",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/process/command-queue.ts:getQueueSize",
+        "name": "getQueueSize",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/process/command-queue.ts:getTotalQueueSize",
+        "name": "getTotalQueueSize",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/process/command-queue.ts:clearCommandLane",
+        "name": "clearCommandLane",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/process/command-queue.ts:resetAllLanes",
+        "name": "resetAllLanes",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/process/command-queue.ts:getActiveTaskCount",
+        "name": "getActiveTaskCount",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/process/command-queue.ts:waitForActiveTasks",
+        "name": "waitForActiveTasks",
+        "filePath": "src/process/command-queue.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Method:src/memory/qmd-manager.ts:QmdMemoryManager.ensureMcporterDaemonStarted#1",
+        "name": "ensureMcporterDaemonStarted",
+        "filePath": "src/memory/qmd-manager.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      }
+    ]
+  }
+}

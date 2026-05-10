@@ -1,0 +1,41 @@
+$ pnpm ui:build
+started_at=2026-05-08T20:32:31Z
+
+> openclaw@2026.3.24 ui:build /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/ui.js build
+
+
+> openclaw-control-ui@ build /home/yanx/projects/openclaw/openclaw-v2026.3.24/ui
+> vite build
+
+vite v8.0.1 building client environment for production...
+[2Ktransforming...✓ 613 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/control-ui/index.html                                  2.73 kB │ gzip:   1.03 kB
+../dist/control-ui/assets/index-CmL01vk_.css                 196.02 kB │ gzip:  32.24 kB
+../dist/control-ui/assets/channel-config-extras-ClZgd1ad.js    0.50 kB │ gzip:   0.32 kB │ map:     2.16 kB
+../dist/control-ui/assets/skills-shared-DMlqIU2G.js            1.56 kB │ gzip:   0.70 kB │ map:     4.63 kB
+../dist/control-ui/assets/instances-BQGyKX-S.js                2.86 kB │ gzip:   1.08 kB │ map:     5.71 kB
+../dist/control-ui/assets/logs-CK-znQv9.js                     3.12 kB │ gzip:   1.15 kB │ map:     6.55 kB
+../dist/control-ui/assets/format-DeRVtGzv.js                   3.71 kB │ gzip:   1.60 kB │ map:    19.61 kB
+../dist/control-ui/assets/debug-C7cARCeJ.js                    4.23 kB │ gzip:   1.28 kB │ map:     7.43 kB
+../dist/control-ui/assets/de-BlItdMWk.js                       4.32 kB │ gzip:   2.11 kB │ map:     6.89 kB
+../dist/control-ui/assets/zh-TW-fXiCeEUQ.js                    4.69 kB │ gzip:   2.67 kB │ map:     8.08 kB
+../dist/control-ui/assets/pt-BR-9Mq_iQ8G.js                    5.15 kB │ gzip:   2.41 kB │ map:     8.62 kB
+../dist/control-ui/assets/skills-Cqf2_pRr.js                   8.57 kB │ gzip:   2.68 kB │ map:    16.83 kB
+../dist/control-ui/assets/zh-CN-DcjYwvnZ.js                   10.95 kB │ gzip:   5.25 kB │ map:    18.70 kB
+../dist/control-ui/assets/sessions-DV3Qn8ZG.js                11.66 kB │ gzip:   3.19 kB │ map:    27.87 kB
+../dist/control-ui/assets/es-DZIi4jMr.js                      11.93 kB │ gzip:   4.82 kB │ map:    19.08 kB
+../dist/control-ui/assets/lit-BZwq2xLD.js                     15.03 kB │ gzip:   5.87 kB │ map:    34.52 kB
+../dist/control-ui/assets/channels-BHNFdqm0.js                22.46 kB │ gzip:   4.92 kB │ map:    60.56 kB
+../dist/control-ui/assets/dist-CUZJoQXw.js                    22.50 kB │ gzip:   6.69 kB │ map:    75.94 kB
+../dist/control-ui/assets/nodes-WLLAEs_x.js                   22.67 kB │ gzip:   5.06 kB │ map:    54.44 kB
+../dist/control-ui/assets/agents-BxjbKlLv.js                  45.98 kB │ gzip:  11.00 kB │ map:   131.26 kB
+../dist/control-ui/assets/cron-L9UojfXC.js                    49.78 kB │ gzip:   8.44 kB │ map:    97.38 kB
+../dist/control-ui/assets/index-Ij2djnNX.js                  604.98 kB │ gzip: 161.56 kB │ map: 1,745.84 kB
+
+✓ built in 1.11s
+finished_at=2026-05-08T20:32:34Z
+exit_code=0
+duration_seconds=3

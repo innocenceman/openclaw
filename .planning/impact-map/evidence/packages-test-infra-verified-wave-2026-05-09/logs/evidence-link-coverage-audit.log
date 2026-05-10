@@ -1,0 +1,166 @@
+--- status labels in packages/test-infra ---
+.planning/impact-map/test-infra/fixtures-and-helpers/code-paths.md:3:Coverage: `deep-partial`
+.planning/impact-map/packages/shared-packages/code-paths.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/code-paths.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/change-to-test.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/change-to-test.md:12:## Minimum evidence for `verified`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/change-to-test.md:14:Do not promote to `verified` until fresh scoped or full test output is recorded.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/README.md:3:Coverage: `verified`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/README.md:4:Freshness: 2026-05-08 P0 refresh-to-verified evidence recorded
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/README.md:26:Decision: `validated-deep-partial`.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/README.md:30:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-VERIFIED-WAVE.md` and validation logs `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/test-infra-helpers-core.log`.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/README.md:34:## 2026-05-08 P0 refresh-to-verified evidence
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/README.md:36:Decision: `verified`.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/README.md:40:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/gitnexus-refresh.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/code-review-graph-refresh.md`.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/README.md:46:Decision: `verified` retained.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/README.md:48:Reason: fresh G009 core helper targeted validation passed. Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md:8:| `fixtures/`           | `exceptioned-deep-partial` | `test-infra/fixtures-and-helpers/fixtures/README.md`           | aggregate fixture command exits 1; plugin metadata/catalog adjacent tests pass |
+.planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md:9:| `helpers-core/`       | `verified`                 | `test-infra/fixtures-and-helpers/helpers-core/README.md`       | fresh G009 core helper tests pass |
+.planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md:10:| `helpers-extensions/` | `verified`                 | `test-infra/fixtures-and-helpers/helpers-extensions/README.md` | fresh G009 extension helper tests pass |
+.planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md:11:| `mocks/`              | `exceptioned-deep-partial` | `test-infra/fixtures-and-helpers/mocks/README.md`              | standard mocks command and agent rerun exit 1 |
+.planning/impact-map/test-infra/fixtures-and-helpers/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/file-roles.md:10:| `test/fixtures/**`                 | Static fixtures and inventory-like contract files. | repo-inspected | Kept `partial` until consumer-specific evidence exists. |
+.planning/impact-map/packages/shared-packages/clawdbot/code-paths.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/shared-packages/clawdbot/code-paths.md:26:G009 confirmed npm pack dry-run output but also confirmed the metadata-declared CLI target is missing. Install smoke remains exceptioned until the target exists.
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md:3:Coverage: `partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/file-roles.md:3:Coverage: `partial`
+.planning/impact-map/packages/shared-packages/clawdbot/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md:3:Coverage: `verified`
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md:4:Freshness: 2026-05-08 P0 refresh-to-verified evidence recorded
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md:12:## Minimum evidence for `verified`
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md:14:This leaf is `verified` for the bounded P0 fixture slice because fresh graph evidence is recorded and the fixture validation passed in the P0 evidence packet. For future fixture edits, keep `verified` only after recording fresh scoped or full test output for the changed fixture contract.
+.planning/impact-map/packages/shared-packages/clawdbot/change-to-test.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/shared-packages/clawdbot/change-to-test.md:12:## Minimum evidence for `verified`
+.planning/impact-map/packages/shared-packages/clawdbot/change-to-test.md:14:Do not promote to `verified` until a fresh package pack/install or release-check output is recorded.
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md:26:Decision: `deep-partial`.
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md:28:Reason: GN-STALE + CRG-STALE; fixture validation passed; lifted from partial to deep-partial.
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md:30:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-VERIFIED-WAVE.md` and validation logs `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/test-infra-fixtures.log`.
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md:34:## 2026-05-08 P0 refresh-to-verified evidence
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md:36:Decision: `verified`.
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md:40:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/gitnexus-refresh.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/code-review-graph-refresh.md`.
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md:46:Decision: `exceptioned-deep-partial`.
+.planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md:50:Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/code-paths.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/shared-packages/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/shared-packages/README.md:17:G009 added package release tests, import-shim checks, and npm pack dry-runs. Do not promote to `verified` until the missing legacy `./bin/*.js` targets are fixed and the standard release/pack-install ladder passes.
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/packages/shared-packages/clawdbot/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/shared-packages/clawdbot/README.md:30:Decision: `exceptioned-deep-partial`.
+.planning/impact-map/packages/shared-packages/clawdbot/README.md:32:Reason: import shim and pack dry-run passed, but `packages/clawdbot/package.json` declares a legacy CLI `bin`/`./cli-entry` target under `./bin/` and that file is absent. Do not mark this package shim `verified` until the declared CLI target exists and the standard release/pack-install ladder passes.
+.planning/impact-map/packages/shared-packages/clawdbot/README.md:34:Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/change-to-test.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/change-to-test.md:12:## Minimum evidence for `verified`
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/change-to-test.md:14:Do not promote to `verified` until fresh scoped or full test output is recorded.
+.planning/impact-map/packages/shared-packages/leaf-index.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/shared-packages/leaf-index.md:8:| `clawdbot/`    | `exceptioned-deep-partial` | `packages/clawdbot/` | missing declared `./bin/clawdbot.js` bin/export target |
+.planning/impact-map/packages/shared-packages/leaf-index.md:9:| `moltbot/`     | `exceptioned-deep-partial` | `packages/moltbot/`  | missing declared `./bin/moltbot.js` bin/export target |
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/code-paths.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/README.md:26:Decision: `exceptioned-deep-partial`.
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/README.md:30:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-VERIFIED-WAVE.md` and validation logs `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/test-infra-mocks.log`.
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/README.md:34:## 2026-05-08 P0 refresh-to-verified evidence
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/README.md:36:Decision: `exceptioned-deep-partial`.
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/README.md:40:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/gitnexus-refresh.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/code-review-graph-refresh.md`.
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/README.md:46:Decision: `exceptioned-deep-partial`.
+.planning/impact-map/test-infra/fixtures-and-helpers/mocks/README.md:50:Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/packages/shared-packages/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/packages/shared-packages/file-roles.md:17:No package pack/install verification was run; keep leaves at `deep-partial` until fresh release/package evidence exists.
+.planning/impact-map/packages/shared-packages/moltbot/code-paths.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/shared-packages/moltbot/code-paths.md:26:G009 confirmed npm pack dry-run output but also confirmed the metadata-declared CLI target is missing. Install smoke remains exceptioned until the target exists.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/packages/shared-packages/moltbot/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/shared-packages/moltbot/README.md:30:Decision: `exceptioned-deep-partial`.
+.planning/impact-map/packages/shared-packages/moltbot/README.md:32:Reason: import shim and pack dry-run passed, but `packages/moltbot/package.json` declares a legacy CLI `bin`/`./cli-entry` target under `./bin/` and that file is absent. Do not mark this package shim `verified` until the declared CLI target exists and the standard release/pack-install ladder passes.
+.planning/impact-map/packages/shared-packages/moltbot/README.md:34:Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/packages/shared-packages/moltbot/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/packages/shared-packages/change-to-test.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/change-to-test.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/change-to-test.md:12:## Minimum evidence for `verified`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/change-to-test.md:14:Do not promote to `verified` until fresh scoped or full test output is recorded.
+.planning/impact-map/packages/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/README.md:16:G009 keeps `packages/` at `exceptioned-deep-partial`. Package release tests, import shims, and npm pack dry-runs passed, but both legacy packages declare missing `./bin/*.js` export/bin targets and the standard OpenClaw npm release check timed out. Evidence: `../evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/packages/shared-packages/moltbot/change-to-test.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/packages/shared-packages/moltbot/change-to-test.md:12:## Minimum evidence for `verified`
+.planning/impact-map/packages/shared-packages/moltbot/change-to-test.md:14:Do not promote to `verified` until a fresh package pack/install or release-check output is recorded.
+.planning/impact-map/test-infra/fixtures-and-helpers/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/fixtures-and-helpers/README.md:19:Repo-native structural inspection only. Static fixtures remain `partial` until consumer-specific test evidence is recorded.
+.planning/impact-map/test-infra/fixtures-and-helpers/README.md:21:## 2026-05-08 P0 refresh-to-verified evidence
+.planning/impact-map/test-infra/fixtures-and-helpers/README.md:23:`helpers-core/` and `helpers-extensions/` remain `verified` after fresh G009 targeted commands. `fixtures/` is now `exceptioned-deep-partial` because `test/scripts/test-extension.test.ts` exits 1, while adjacent plugin metadata/catalog tests pass. `mocks/` remains `exceptioned-deep-partial` because the refreshed G009 mocks command still exits 1.
+.planning/impact-map/test-infra/fixtures-and-helpers/README.md:25:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`.
+.planning/impact-map/test-infra/fixtures-and-helpers/change-to-test.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/README.md:17:Wave 5 closes `test-infra/` to partial by promoting runner/profile, root-test, script-test, helper, and mock leaves to `deep-partial`; static fixtures remain `partial` because they need consumer-specific test evidence before deeper promotion.
+.planning/impact-map/test-infra/README.md:19:## 2026-05-08 P0 refresh-to-verified evidence
+.planning/impact-map/test-infra/README.md:21:`profiles-and-suites/` is now `verified`; fixture/helper leaves are verified except `fixtures-and-helpers/mocks/`, which remains `exceptioned-deep-partial`. The aggregate test-infra map remains `exceptioned-deep-partial`: G009 retained `verified` for passing runner/root/helper leaves, but `test-scripts/`, `fixtures/`, and `mocks/` now have fresh failing standard commands.
+.planning/impact-map/test-infra/README.md:23:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`.
+.planning/impact-map/test-infra/README.md:27:`profiles-and-suites/config-and-runner`, `profiles-and-suites/root-tests`, `fixtures-and-helpers/helpers-core`, and `fixtures-and-helpers/helpers-extensions` have fresh passing targeted commands. `profiles-and-suites/test-scripts`, `fixtures-and-helpers/fixtures`, and `fixtures-and-helpers/mocks` are `exceptioned-deep-partial` because their standard targeted commands exit 1. Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/README.md:3:Coverage: `verified`
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/README.md:4:Freshness: 2026-05-08 P0 refresh-to-verified evidence recorded
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/README.md:26:Decision: `validated-deep-partial`.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/README.md:30:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-VERIFIED-WAVE.md` and validation logs `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/test-infra-helpers-extensions.log`.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/README.md:34:## 2026-05-08 P0 refresh-to-verified evidence
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/README.md:36:Decision: `verified`.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/README.md:40:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/gitnexus-refresh.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/code-review-graph-refresh.md`.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/README.md:46:Decision: `verified` retained.
+.planning/impact-map/test-infra/fixtures-and-helpers/helpers-extensions/README.md:48:Reason: fresh G009 extension helper targeted validation passed. Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/test-infra/profiles-and-suites/code-paths.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/leaf-index.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/leaf-index.md:8:| `config-and-runner/` | `verified`                 | `test-infra/profiles-and-suites/config-and-runner/README.md` | fresh G009 runner/profile tests pass |
+.planning/impact-map/test-infra/profiles-and-suites/leaf-index.md:9:| `root-tests/`        | `verified`                 | `test-infra/profiles-and-suites/root-tests/README.md`        | fresh G009 root tests pass |
+.planning/impact-map/test-infra/profiles-and-suites/leaf-index.md:10:| `test-scripts/`      | `exceptioned-deep-partial` | `test-infra/profiles-and-suites/test-scripts/README.md`      | aggregate and isolated `test/scripts/test-parallel.test.ts` commands exit 1 |
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/code-paths.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/change-to-test.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/change-to-test.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/change-to-test.md:12:## Minimum evidence for `verified`
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/change-to-test.md:14:Do not promote to `verified` until fresh scoped or full test output is recorded.
+.planning/impact-map/test-infra/profiles-and-suites/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/README.md:18:This aggregate is `verified` only for the bounded P0 profiles/suites slice. The P0 refresh uses fresh GitNexus and code-review-graph evidence plus the original passing targeted validation logs for `config-and-runner/`, `root-tests/`, and `test-scripts/`. Evidence packet: `../../evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`.
+.planning/impact-map/test-infra/profiles-and-suites/README.md:22:G009 keeps `config-and-runner/` and `root-tests/` verified, but the aggregate is `exceptioned-deep-partial` because `test-scripts/` now has a fresh failing targeted command. New changes still need the nearest scoped test output, and broad runner/profile changes should use the full or low-memory full-suite command when feasible.
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/README.md:3:Coverage: `exceptioned-deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/README.md:26:Decision: `validated-deep-partial`.
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/README.md:30:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-VERIFIED-WAVE.md` and validation logs `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/test-infra-test-scripts.log`.
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/README.md:34:## 2026-05-08 P0 refresh-to-verified evidence
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/README.md:36:Decision: `verified`.
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/README.md:40:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/gitnexus-refresh.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/code-review-graph-refresh.md`.
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/README.md:46:Decision: `exceptioned-deep-partial`.
+.planning/impact-map/test-infra/profiles-and-suites/test-scripts/README.md:50:Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/code-paths.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/code-paths.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/change-to-test.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/change-to-test.md:12:## Minimum evidence for `verified`
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/change-to-test.md:14:Do not promote to `verified` until fresh scoped or full test output is recorded.
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/file-roles.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md:3:Coverage: `verified`
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md:4:Freshness: 2026-05-08 P0 refresh-to-verified evidence recorded
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md:26:Decision: `validated-deep-partial`.
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md:30:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-VERIFIED-WAVE.md` and validation logs `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/test-infra-config-runner.log`.
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md:34:## 2026-05-08 P0 refresh-to-verified evidence
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md:36:Decision: `verified`.
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md:40:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/gitnexus-refresh.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/code-review-graph-refresh.md`.
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md:46:Decision: `verified` retained.
+.planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md:48:Reason: fresh G009 runner/profile targeted validation passed. Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/change-to-test.md:3:Coverage: `deep-partial`
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/change-to-test.md:12:## Minimum evidence for `verified`
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/change-to-test.md:14:Do not promote to `verified` until fresh scoped or full test output is recorded.
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/README.md:3:Coverage: `verified`
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/README.md:4:Freshness: 2026-05-08 P0 refresh-to-verified evidence recorded
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/README.md:26:Decision: `validated-deep-partial`.
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/README.md:30:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-VERIFIED-WAVE.md` and validation logs `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/test-infra-root-tests.log`.
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/README.md:34:## 2026-05-08 P0 refresh-to-verified evidence
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/README.md:36:Decision: `verified`.
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/README.md:40:Evidence: `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/P0-REFRESH-TO-VERIFIED.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/gitnexus-refresh.md`, `.planning/impact-map/evidence/p0-verified-wave-2026-05-08/code-review-graph-refresh.md`.
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/README.md:46:Decision: `verified` retained.
+.planning/impact-map/test-infra/profiles-and-suites/root-tests/README.md:48:Reason: fresh G009 root test targeted validation passed. Evidence: `.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md`.
+--- evidence links ---
+OK .planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md
+OK .planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/gitnexus-evidence.md
+OK .planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/code-review-graph-status-detect.log
+OK .planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/product-source-diff.log
+--- product source diff bytes ---
+0 .planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/product-source-diff.log

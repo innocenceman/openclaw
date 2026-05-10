@@ -1,0 +1,18 @@
+# Matrix Channel Plugin File Roles
+
+Coverage: `deep-partial`
+Freshness: 2026-05-07 repo-native structural inspection only
+
+| File or path                                                                                                                       | Role                                                                                          | Impact notes                                  |
+| ---------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `extensions/matrix/openclaw.plugin.json`, `package.json`, `index.ts`                                                               | Manifest/package/entry, crypto bootstrap methods, CLI registration.                           | Install/build/runtime/crypto boundary.        |
+| `extensions/matrix/api.ts`, `helper-api.ts`, `runtime-api.ts`, `thread-bindings-runtime.ts`, `setup-entry.ts`                      | Public/helper/runtime/setup barrels.                                                          | Export/runtime compatibility.                 |
+| `extensions/matrix/src/channel.ts`, `channel.runtime.ts`, `channel.setup.test.ts`, `config-schema.ts`                              | Channel composition/config/setup/runtime.                                                     | Main plugin capability surface.               |
+| `extensions/matrix/src/setup-*`, `onboarding.ts`, `account-selection.ts`, `auth-precedence.ts`, `env-vars.ts`, `storage-paths.ts`  | Setup/onboarding/account/env/storage decisions.                                               | Credential and migration behavior.            |
+| `extensions/matrix/src/matrix/accounts.ts`, `account-config.ts`, `credentials*.ts`, `config-update.ts`                             | Matrix account config and stored credentials.                                                 | Credential-sensitive and migration-sensitive. |
+| `extensions/matrix/src/matrix/client*.ts`, `client-bootstrap.ts`, `sdk.ts`, `active-client.ts`, `deps.ts`                          | Matrix SDK client lifecycle, runtime dependency seams, active client registry.                | Gateway/send/action reliability.              |
+| `extensions/matrix/src/matrix/backup-health.ts`, `device-health.ts`, `encryption-guidance.ts`, `legacy-crypto-inspector.ts`        | Crypto/backup/device health diagnostics.                                                      | Security and operator readiness.              |
+| `extensions/matrix/src/matrix/send.ts`, `outbound.ts`, `resolve-targets.ts`, `target-ids.ts`, `session-route.ts`, `direct-room.ts` | Outbound send, target/direct-room/session route resolution.                                   | Manual sends/replies/direct rooms.            |
+| `extensions/matrix/src/matrix/thread-bindings*.ts`                                                                                 | Thread binding managers/shared state.                                                         | Session/thread continuity.                    |
+| `extensions/matrix/src/matrix/actions/**`, `actions.ts`, `tool-actions.ts`, `tool-actions.runtime.ts`                              | Matrix actions/tools: messages, devices, pins, polls, profile, reactions, room, verification. | Tool/action side effects.                     |
+| `extensions/matrix/src/cli.ts`, `directory-live.ts`, `profile-update.ts`, `legacy-crypto-inspector.ts`                             | CLI/directory/profile/crypto inspection surfaces.                                             | Operator workflows.                           |

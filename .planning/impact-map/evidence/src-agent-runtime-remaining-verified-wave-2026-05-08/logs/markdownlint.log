@@ -1,0 +1,7 @@
+ WARN  GET https://registry.npmjs.org/markdownlint-cli2 error (EPERM). Will retry in 10 seconds. 2 retries left.
+ WARN  GET https://registry.npmjs.org/markdownlint-cli2 error (EPERM). Will retry in 1 minute. 1 retries left.
+ ERR_PNPM_META_FETCH_FAIL  GET https://registry.npmjs.org/markdownlint-cli2: request to https://registry.npmjs.org/markdownlint-cli2 failed, reason: connect EPERM 127.0.0.1:7890 - Local (undefined:undefined)
+markdownlint-cli2 v0.22.1 (markdownlint v0.40.0)
+Finding: .planning/impact-map/src/agent-runtime/**/*.md .planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/*.md docs/**/*.md docs/**/*.mdx README.md !docs/zh-CN/** !docs/.i18n/** !docs/reference/templates/** !**/.local/**
+Linting: 447 file(s)
+Summary: 0 error(s)

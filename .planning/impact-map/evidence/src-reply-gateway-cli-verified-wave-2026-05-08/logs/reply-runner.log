@@ -1,0 +1,11 @@
+### reply-runner
+pnpm test -- src/auto-reply/dispatch.test.ts src/auto-reply/inbound.test.ts src/auto-reply/reply/agent-runner-execution.test.ts src/auto-reply/reply/get-reply.message-hooks.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/auto-reply/dispatch.test.ts src/auto-reply/inbound.test.ts src/auto-reply/reply/agent-runner-execution.test.ts src/auto-reply/reply/get-reply.message-hooks.test.ts
+
+[test-parallel] start base workers=2 filters=4
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-Xb6ky7/base-1778260886149.log meta=/tmp/openclaw-test-parallel-Xb6ky7/base-1778260886149-failure.json
+[test-parallel] done base code=1 elapsed=7.1s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1
