@@ -1,0 +1,3 @@
+=== product-source-diff ===
+git diff --name-only -- src apps extensions packages scripts docs package.json pnpm-lock.yaml
+--- exit=0 duration=1s ---

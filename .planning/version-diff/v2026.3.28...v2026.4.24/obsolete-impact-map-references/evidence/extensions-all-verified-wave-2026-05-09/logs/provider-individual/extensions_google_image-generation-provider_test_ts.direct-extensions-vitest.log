@@ -1,0 +1,31 @@
+# timeout 90s pnpm exec vitest run --config vitest.extensions.config.ts extensions/google/image-generation-provider.test.ts
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+(node:36) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ ❯ extensions/google/image-generation-provider.test.ts (7 tests | 5 failed) 17ms
+     × generates image buffers from the Gemini generateContent API 8ms
+     × accepts OAuth JSON auth and inline_data responses 2ms
+     × sends reference images and explicit resolution for edit flows 1ms
+     × forwards explicit aspect ratio without forcing a default when size is omitted 1ms
+     × normalizes a configured bare Google host to the v1beta API root 1ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  extensions/google/image-generation-provider.test.ts > Google image-generation provider > generates image buffers from the Gemini generateContent API
+ FAIL  extensions/google/image-generation-provider.test.ts > Google image-generation provider > accepts OAuth JSON auth and inline_data responses
+ FAIL  extensions/google/image-generation-provider.test.ts > Google image-generation provider > sends reference images and explicit resolution for edit flows
+ FAIL  extensions/google/image-generation-provider.test.ts > Google image-generation provider > forwards explicit aspect ratio without forcing a default when size is omitted
+ FAIL  extensions/google/image-generation-provider.test.ts > Google image-generation provider > normalizes a configured bare Google host to the v1beta API root
+Error: getaddrinfo EAI_AGAIN generativelanguage.googleapis.com
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  5 failed | 2 passed (7)
+   Start at  03:58:54
+   Duration  4.89s (transform 2.12s, setup 4.74s, import 5ms, tests 17ms, environment 0ms)
+
+
+[exit:1]

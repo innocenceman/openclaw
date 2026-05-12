@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "planning.versionDiff.gitNexusVerification.v1",
+  "verifiedAt": "2026-05-12T03:17:02Z",
+  "repoName": "openclaw",
+  "expectedWorkspace": "current repository root",
+  "expectedIndexedCommitBeforeFinalSquash": "bb0637bbb466bc3d898112202c614f4740d47328",
+  "expectedTargetSourceSha": "325df3efefe9c0887d9357732e68fc8556e78d79",
+  "observedMeta": {
+    "lastCommit": "bb0637bbb466bc3d898112202c614f4740d47328",
+    "indexedAt": "2026-05-11T13:35:08.035Z",
+    "remoteUrl": "git@github.com:innocenceman/openclaw",
+    "stats": {
+      "files": 16403,
+      "nodes": 311865,
+      "edges": 862052,
+      "communities": 9342,
+      "processes": 300,
+      "embeddings": 0
+    },
+    "capabilities": {
+      "graph": {
+        "provider": "ladybugdb",
+        "status": "available"
+      },
+      "fts": {
+        "provider": "ladybugdb-fts",
+        "status": "available"
+      },
+      "vectorSearch": {
+        "provider": "ladybugdb-vector",
+        "status": "unavailable",
+        "exactScanLimit": 10000
+      }
+    }
+  },
+  "result": "passed",
+  "notes": [
+    "GitNexus registry and local metadata show the workspace indexed after the user reran analyze.",
+    "The subsequent topology repair squashes planning-only commits; product source remains the v2026.5.4 target source.",
+    "Embeddings are recorded as 0 and vector search unavailable in GitNexus metadata; graph, FTS, symbols, relationships, communities, and processes are available."
+  ]
+}

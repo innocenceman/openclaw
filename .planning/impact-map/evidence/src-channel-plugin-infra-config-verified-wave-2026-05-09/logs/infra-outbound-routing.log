@@ -1,0 +1,8 @@
+=== infra-outbound-routing ===
+pnpm test -- src/infra/outbound/channel-resolution.test.ts src/infra/outbound/channel-selection.test.ts src/infra/outbound/target-resolver.test.ts src/infra/outbound/session-binding-service.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=8.1s
+--- exit=0 duration=10s ---

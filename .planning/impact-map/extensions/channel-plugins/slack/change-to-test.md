@@ -1,0 +1,84 @@
+# slack Channel Plugin Change-to-Test Matrix
+
+Coverage: `deep-partial`
+Freshness: 2026-05-07 repo-native structural inspection only
+
+| Change type                          | First validation                                                                                                                                                                                                                                                                                                                      | Escalation trigger                                                                                        |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Manifest/package/entry changed       | `pnpm test:contracts:channels` plus `pnpm test -- extensions/slack/src/channel.test.ts extensions/slack/src/channel-migration.test.ts`                                                                                                                                                                                                | `pnpm build` is required if package exports, staged deps, lazy runtime, or setup entry boundaries change. |
+| Setup/accounts/config changed        | `pnpm test -- extensions/slack/src/accounts.test.ts extensions/slack/src/setup-surface.test.ts extensions/slack/src/channel-migration.test.ts extensions/slack/src/channel.test.ts`                                                                                                                                                   | Add app/provider/docs checks if setup prompts, docs links, status fields, or UI config fields change.     |
+| Client/probe/scopes changed          | `pnpm test -- extensions/slack/src/client.test.ts extensions/slack/src/probe.test.ts extensions/slack/src/resolve-users.test.ts extensions/slack/src/resolve-channels.test.ts`                                                                                                                                                        | Escalate to monitor/send/action tests if Web API response/error mapping changes.                          |
+| Monitor provider/lifecycle changed   | `pnpm test -- extensions/slack/src/monitor/provider.auth-errors.test.ts extensions/slack/src/monitor/provider.interop.test.ts extensions/slack/src/monitor/provider.reconnect.test.ts extensions/slack/src/monitor/monitor.test.ts extensions/slack/src/monitor.test.ts`                                                              | Add Socket Mode smoke only when validating real Slack credentials.                                        |
+| Inbound auth/policy changed          | `pnpm test -- extensions/slack/src/monitor/auth.test.ts extensions/slack/src/monitor/allow-list.test.ts extensions/slack/src/group-policy.test.ts extensions/slack/src/monitor/context.test.ts`                                                                                                                                       | Escalate to shared pairing/allowlist/group-policy tests when cross-channel policy semantics change.       |
+| Message event/handler changed        | `pnpm test -- extensions/slack/src/monitor/events/messages.test.ts extensions/slack/src/monitor/events/message-subtype-handlers.test.ts extensions/slack/src/monitor/message-handler.test.ts extensions/slack/src/monitor/message-handler.app-mention-race.test.ts extensions/slack/src/monitor/message-handler.debounce-key.test.ts` | Add tool-result and threading tests if dispatch, session, or reply behavior changes.                      |
+| Threading/session changed            | `pnpm test -- extensions/slack/src/threading.test.ts extensions/slack/src/threading-tool-context.test.ts extensions/slack/src/sent-thread-cache.test.ts extensions/slack/src/monitor.threading.missing-thread-ts.test.ts extensions/slack/src/monitor/message-handler/prepare.thread-session-key.test.ts`                             | Escalate to routing/session tests if base/thread session key contracts change.                            |
+| Outbound send/upload/targets changed | `pnpm test -- extensions/slack/src/outbound-adapter.test.ts extensions/slack/src/send.upload.test.ts extensions/slack/src/send.blocks.test.ts extensions/slack/src/targets.test.ts`                                                                                                                                                   | Add thread and streaming tests if send changes interact with threads or replies.                          |
+| Streaming/drafts changed             | `pnpm test -- extensions/slack/src/draft-stream.test.ts extensions/slack/src/stream-mode.test.ts extensions/slack/src/monitor/message-handler/dispatch.streaming.test.ts`                                                                                                                                                             | Escalate to manual Slack smoke if Web API stream methods or lifecycle semantics change.                   |
+| Media/download changed               | `pnpm test -- extensions/slack/src/monitor/media.test.ts extensions/slack/src/actions.download-file.test.ts`                                                                                                                                                                                                                          | Add security/media validation if private file URLs, token use, or remote downloads change.                |
+
+## Validation evidence
+
+No product tests/builds/graph indexes were run while creating this leaf. Promote beyond `deep-partial` only after recording dated command output for the affected paths.
+
+<!-- version-diff-refresh:v2026.4.24:start -->
+
+## v2026.4.24 refresh validation focus
+
+- Changed paths: `235` (新增 92，修改 130，删除 13).
+- Target-existing path refs in active map: `222`; deleted/renamed-away refs kept only in transition artifacts: `13`.
+- Risk: `high`; compatibility: `behavior-change`.
+- First validation move: Run the closest targeted tests for this leaf before any broad suite, then add integration or contract coverage for the owning boundary.
+- Version-diff validation must keep active `.planning/impact-map` free of exact target-deleted path references.
+
+<!-- version-diff-refresh:v2026.4.24:end -->
+
+<!-- version-diff-refresh:v2026.5.4:start -->
+
+## Version diff test focus: v2026.5.4
+
+- Risk: `high`
+- Compatibility: `behavior-change`
+- Prioritize regression checks around the target-existing changed paths below and use the compatibility report for cross-leaf review order.
+
+- `extensions/slack/account-inspect-api.ts`
+- `extensions/slack/api.ts`
+- `extensions/slack/config-api.ts`
+- `extensions/slack/index.test.ts`
+- `extensions/slack/openclaw.plugin.json`
+- `extensions/slack/package.json`
+- `extensions/slack/runtime-api.ts`
+- `extensions/slack/src/account-reply-mode.ts`
+- `extensions/slack/src/account-surface-fields.ts`
+- `extensions/slack/src/accounts.test.ts`
+- `extensions/slack/src/accounts.ts`
+- `extensions/slack/src/action-runtime.test.ts`
+- `extensions/slack/src/action-runtime.ts`
+- `extensions/slack/src/action-threading.test.ts`
+- `extensions/slack/src/actions.blocks.test.ts`
+- `extensions/slack/src/actions.download-file.test.ts`
+- `extensions/slack/src/actions.reactions.test.ts`
+- `extensions/slack/src/actions.read.test.ts`
+- `extensions/slack/src/actions.ts`
+- `extensions/slack/src/approval-auth.ts`
+- `extensions/slack/src/approval-handler.runtime.test.ts`
+- `extensions/slack/src/approval-handler.runtime.ts`
+- `extensions/slack/src/approval-native.test.ts`
+- `extensions/slack/src/approval-native.ts`
+- `extensions/slack/src/blocks-render.ts`
+- `extensions/slack/src/blocks.test-helpers.ts`
+- `extensions/slack/src/channel-actions-setup-status.contract.test.ts`
+- `extensions/slack/src/channel-actions.ts`
+- `extensions/slack/src/channel-api.ts`
+- `extensions/slack/src/channel-migration.ts`
+- `extensions/slack/src/channel.setup.ts`
+- `extensions/slack/src/channel.test.ts`
+- `extensions/slack/src/channel.ts`
+- `extensions/slack/src/client-options.ts`
+- `extensions/slack/src/config-schema.test.ts`
+- `extensions/slack/src/config-ui-hints.ts`
+- `extensions/slack/src/directory-config.ts`
+- `extensions/slack/src/directory-contract.test.ts`
+- `extensions/slack/src/directory-live.ts`
+- `extensions/slack/src/doctor-contract.ts`
+- … plus 112 more target-existing changed paths.
+<!-- version-diff-refresh:v2026.5.4:end -->

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "planning.versionDiff.manifest.v1",
+  "base": {
+    "version": "v2026.3.28",
+    "sourceSha": "f9b1079283a8ee25a7cee77c8f8225d5c813bc30",
+    "planningRef": "refs/planning/v2026.3.28",
+    "planningCommitSha": "61cfbb88a48b228ff5214f8721a328e640b6fcaf"
+  },
+  "target": {
+    "version": "v2026.4.24",
+    "sourceSha": "cbcfdf62c7297bda66009ea7476f053c3e9addab",
+    "planningRef": "refs/planning/v2026.4.24",
+    "planningCommitSha": null,
+    "planningResolution": "resolved through refs/planning/v2026.4.24; exact self-SHA cannot be embedded in a single final planning commit without changing the commit hash"
+  },
+  "direction": "forward-upgrade",
+  "paths": {
+    "nameStatus": "name-status.txt",
+    "addedPaths": "added-paths.txt",
+    "deletedPaths": "deleted-paths.txt",
+    "modifiedPaths": "modified-paths.txt",
+    "renamedPaths": "renamed-paths.tsv",
+    "commits": "commits.txt"
+  },
+  "pathCounts": {
+    "nameStatusRows": 13600,
+    "changedPathCount": 13746
+  },
+  "synthesis": {
+    "leafImpact": "leaf-impact.json",
+    "humanReports": [
+      "SUMMARY.zh-CN.md",
+      "FEATURE-IMPACT.zh-CN.md",
+      "LEAF-IMPACT.md",
+      "COMPATIBILITY.zh-CN.md",
+      "LEAF-CHANGE-BRIEF.zh-CN.md",
+      "leaf-briefs/"
+    ],
+    "featureCount": 13,
+    "coveredPathCount": 13746,
+    "unclassifiedPathCount": 0,
+    "leafImpactSchemaVersion": "planning.versionDiff.leafImpact.v2",
+    "finalLeafCount": 246,
+    "highRiskFeatureCount": 7,
+    "highRiskLeafCount": 154,
+    "leafChangeBrief": "leaf-change-brief.json"
+  },
+  "workflow": {
+    "allowedPlanningIntelligencePaths": [
+      ".planning/**",
+      "AGENTS.md",
+      ".gitnexusignore",
+      ".gitnexus/**",
+      ".code-review-graph/**"
+    ],
+    "sourceMovement": "git reset --hard target source commit",
+    "reverseTransitions": "disabled"
+  },
+  "validation": {
+    "leafImpactUnclassifiedPaths": 0,
+    "planningRefreshStatus": "ready-for-semantic-refresh",
+    "staleDeletedPathReferenceCount": 0,
+    "renameDetection": "git diff --find-renames with diff.renameLimit=20000",
+    "codeReviewGraphBuild": "passed: Full build 14109 files, 130354 nodes, 1195738 edges",
+    "gitNexusAnalyze": "passed: gitnexus analyze --max-file-size 10240 --embeddings completed after target source stabilization",
+    "json": "passed",
+    "artifactCounts": "passed",
+    "diffCheck": "passed for version-diff and touched planning docs",
+    "gitNexusDetectChanges": "passed: scope=all returned changed_files=5, changed_count=11, affected_count=0, risk_level=low after leaf brief/recovery-note update",
+    "miscRepoSurfaceRefinement": "passed: reclassified former misc leaves into cli-command-surface, shared-runtime-support, infra-outbound-delivery, skill-plugins, channel-plugins, memory-media-ui, and model-provider-plugins",
+    "impactMapSemanticRefresh": "passed: appended target-version semantic refresh blocks to 246 impacted final leaves; evidence at .planning/impact-map/evidence/version-diff-v2026-4-24-semantic-refresh/SEMANTIC-REFRESH.md",
+    "leafChangeBriefs": "passed: generated 246 per-leaf human-readable briefs",
+    "codeIntelligenceRecovery": "passed: historical manual GitNexus/code-review-graph evidence recorded in code-intelligence/RECOVERY-NOTE.zh-CN.md; future transitions must use refresh-code-intelligence.py"
+  },
+  "humanReports": {
+    "leafChangeBriefIndex": "LEAF-CHANGE-BRIEF.zh-CN.md",
+    "leafBriefsDir": "leaf-briefs/"
+  },
+  "codeIntelligence": {
+    "gitNexusAnalyze": {
+      "commandString": "gitnexus analyze --max-file-size 10240 --embeddings",
+      "status": "passed-historical-manual",
+      "targetSourceSha": "cbcfdf62c7297bda66009ea7476f053c3e9addab",
+      "log": "code-intelligence/RECOVERY-NOTE.zh-CN.md",
+      "summary": "Operator manually ran GitNexus after target source stabilization before this script existed; detect_changes later worked against the refreshed index."
+    },
+    "codeReviewGraphBuild": {
+      "commandString": "code-review-graph build",
+      "status": "passed-historical-manual",
+      "targetSourceSha": "cbcfdf62c7297bda66009ea7476f053c3e9addab",
+      "log": "code-intelligence/RECOVERY-NOTE.zh-CN.md",
+      "summary": "Full build: 14109 files, 130354 nodes, 1195738 edges."
+    }
+  }
+}

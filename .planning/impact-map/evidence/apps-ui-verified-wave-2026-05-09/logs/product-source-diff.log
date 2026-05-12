@@ -1,0 +1,2 @@
+$ git status --short -- apps ui src extensions packages scripts docs package.json pnpm-lock.yaml
+$ git diff --name-only -- apps ui src extensions packages scripts docs package.json pnpm-lock.yaml

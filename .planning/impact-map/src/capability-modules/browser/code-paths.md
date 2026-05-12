@@ -1,0 +1,51 @@
+# Browser Code Paths
+
+Coverage: `exceptioned-deep-partial`
+Freshness: 2026-05-09 G005 src capabilities/shared verified wave
+
+- Primary paths: `src/browser/**`
+- Runtime handoff: Browser sessions move from auth/profile selection into tool routes and screenshot/storage helpers.
+<!-- version-diff-refresh:v2026.4.24:start -->
+
+## v2026.4.24 target-existing changed source paths
+
+This target refresh maps `17` changed path(s) to this final leaf. `17` path(s) still exist in the target source and are listed below. Deleted or renamed-away paths remain only in version-diff artifacts, not active impact-map. Status counts: `{'A': 17}`.
+
+- `src/browser-lifecycle-cleanup.test.ts`
+- `src/browser-lifecycle-cleanup.ts`
+- `src/proxy-capture/blob-store.ts`
+- `src/proxy-capture/ca.ts`
+- `src/proxy-capture/coverage.test.ts`
+- `src/proxy-capture/coverage.ts`
+- `src/proxy-capture/env.test.ts`
+- `src/proxy-capture/env.ts`
+- `src/proxy-capture/paths.ts`
+- `src/proxy-capture/proxy-server.test.ts`
+- `src/proxy-capture/proxy-server.ts`
+- `src/proxy-capture/runtime.test.ts`
+- `src/proxy-capture/runtime.ts`
+- `src/proxy-capture/store.sqlite.test.ts`
+- `src/proxy-capture/store.sqlite.ts`
+- `src/proxy-capture/types.ts`
+
+<!-- version-diff-refresh:v2026.4.24:end -->
+
+<!-- version-diff-refresh:v2026.5.4:start -->
+
+## Version diff target paths: v2026.5.4
+
+The following changed paths still exist in the target source and are active ownership evidence for this leaf.
+
+- `src/browser-lifecycle-cleanup.test.ts`
+- `src/proxy-capture/env.test.ts`
+- `src/proxy-capture/paths.ts`
+- `src/proxy-capture/proxy-server.managed-proxy.test.ts`
+- `src/proxy-capture/proxy-server.ts`
+- `src/proxy-capture/runtime.test.ts`
+- `src/proxy-capture/runtime.ts`
+- `src/proxy-capture/store.sqlite.test.ts`
+- `src/proxy-capture/store.sqlite.ts`
+
+Deleted or renamed-away paths omitted from this active leaf: `1`. See the transition directory under `.planning/version-diff/` for historical evidence.
+
+<!-- version-diff-refresh:v2026.5.4:end -->

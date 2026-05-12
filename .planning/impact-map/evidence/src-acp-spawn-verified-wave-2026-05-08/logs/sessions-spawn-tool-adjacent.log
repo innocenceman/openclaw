@@ -1,0 +1,14 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start base workers=2 filters=1
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  1 passed (1)
+      Tests  9 passed (9)
+   Start at  22:57:24
+   Duration  7.15s (transform 2.40s, setup 5.49s, import 45ms, tests 1.47s, environment 0ms)
+
+[test-parallel] done base code=0 elapsed=8.0s

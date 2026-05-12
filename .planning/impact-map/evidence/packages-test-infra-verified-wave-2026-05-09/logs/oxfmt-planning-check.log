@@ -1,0 +1,11 @@
+Checking formatting...
+
+.planning/impact-map/COVERAGE-ROADMAP.md (220ms)
+.planning/impact-map/MODULE-INDEX.md (221ms)
+.planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/gitnexus-evidence.md (29ms)
+.planning/impact-map/packages/shared-packages/leaf-index.md (8ms)
+.planning/impact-map/test-infra/fixtures-and-helpers/leaf-index.md (24ms)
+.planning/impact-map/test-infra/profiles-and-suites/leaf-index.md (87ms)
+
+Format issues found in above 6 files. Run without `--check` to fix.
+Finished in 368ms on 19 files using 4 threads.

@@ -1,0 +1,90 @@
+code-review-graph status slice risk query
+
+## reply runner — src/auto-reply/reply/agent-runner.ts
+- touchActiveSessionEntry (Function) risk=0.7 callers=2 coverage=untested security=1 file=src/auto-reply/reply/agent-runner.ts
+- resetSession (Function) risk=0.7 callers=2 coverage=untested security=1 file=src/auto-reply/reply/agent-runner.ts
+- resetSessionAfterCompactionFailure (Function) risk=0.7 callers=0 coverage=untested security=1 file=src/auto-reply/reply/agent-runner.ts
+- resetSessionAfterRoleOrderingConflict (Function) risk=0.7 callers=0 coverage=untested security=1 file=src/auto-reply/reply/agent-runner.ts
+- activeSessionEntry (Function) risk=0.7 callers=0 coverage=untested security=1 file=src/auto-reply/reply/agent-runner.ts
+- runReplyAgent (Function) risk=0.3 callers=17 coverage=tested security=0 file=src/auto-reply/reply/agent-runner.ts
+
+## reply routing — src/auto-reply/reply/route-reply.ts
+- routeReply (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/auto-reply/reply/route-reply.ts
+- isRoutableChannel (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/auto-reply/reply/route-reply.ts
+- loadDeliverRuntime (Function) risk=0.3 callers=1 coverage=untested security=0 file=src/auto-reply/reply/route-reply.ts
+
+## reply registry — src/auto-reply/commands-registry.ts
+- normalizeCommandBody (Function) risk=0.3 callers=16 coverage=tested security=0 file=src/auto-reply/commands-registry.ts
+- listChatCommands (Function) risk=0.3 callers=11 coverage=tested security=0 file=src/auto-reply/commands-registry.ts
+- findCommandByNativeName (Function) risk=0.3 callers=11 coverage=tested security=0 file=src/auto-reply/commands-registry.ts
+- getTextAliasMap (Function) risk=0.3 callers=3 coverage=untested security=0 file=src/auto-reply/commands-registry.ts
+- buildSkillCommandDefinitions (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/auto-reply/commands-registry.ts
+- isCommandEnabled (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/auto-reply/commands-registry.ts
+- resolveNativeName (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/auto-reply/commands-registry.ts
+- listNativeSpecsFromCommands (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/auto-reply/commands-registry.ts
+
+## reply command gates — src/auto-reply/reply/command-gates.ts
+- rejectUnauthorizedCommand (Function) risk=1.0 callers=11 coverage=untested security=1 file=src/auto-reply/reply/command-gates.ts
+- requireGatewayClientScopeForInternalChannel (Function) risk=0.44999999999999996 callers=6 coverage=untested security=0 file=src/auto-reply/reply/command-gates.ts
+- rejectNonOwnerCommand (Function) risk=0.44999999999999996 callers=5 coverage=untested security=0 file=src/auto-reply/reply/command-gates.ts
+- requireCommandFlagEnabled (Function) risk=0.44999999999999996 callers=5 coverage=untested security=0 file=src/auto-reply/reply/command-gates.ts
+- buildNativeCommandGateReply (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/auto-reply/reply/command-gates.ts
+- buildDisabledCommandReply (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/auto-reply/reply/command-gates.ts
+
+## gateway methods — src/gateway/server-methods.ts
+- authorizeGatewayMethod (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/gateway/server-methods.ts
+- handleGatewayRequest (Function) risk=0.3 callers=3 coverage=untested security=0 file=src/gateway/server-methods.ts
+- invokeHandler (Function) risk=0.3 callers=0 coverage=untested security=0 file=src/gateway/server-methods.ts
+
+## gateway auth — src/gateway/auth.ts
+- authorizeHttpGatewayConnect (Function) risk=0.85 callers=4 coverage=untested security=1 file=src/gateway/auth.ts
+- resolveGatewayAuth (Function) risk=0.7 callers=21 coverage=tested security=1 file=src/gateway/auth.ts
+- authorizeGatewayConnect (Function) risk=0.7 callers=21 coverage=tested security=1 file=src/gateway/auth.ts
+- normalizeLogin (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/gateway/auth.ts
+- authorizeTrustedProxy (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/gateway/auth.ts
+- shouldAllowTailscaleHeaderAuth (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/gateway/auth.ts
+- authorizeWsControlUiGatewayConnect (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/gateway/auth.ts
+- assertGatewayAuthConfigured (Function) risk=0.55 callers=4 coverage=tested security=1 file=src/gateway/auth.ts
+
+## gateway client — src/gateway/client.ts
+- shouldPauseReconnectAfterAuthFailure (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/gateway/client.ts
+- shouldRetryWithStoredDeviceToken (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/gateway/client.ts
+- selectConnectAuth (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/gateway/client.ts
+- beginPreauthHandshake (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/gateway/client.ts
+- flushPendingErrors (Function) risk=0.44999999999999996 callers=4 coverage=untested security=0 file=src/gateway/client.ts
+- isTrustedDeviceRetryEndpoint (Function) risk=0.3 callers=3 coverage=untested security=0 file=src/gateway/client.ts
+- clearConnectChallengeTimeout (Function) risk=0.3 callers=3 coverage=untested security=0 file=src/gateway/client.ts
+- beginStop (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/gateway/client.ts
+
+## cli program — src/cli/program/build-program.ts
+- buildProgram (Function) risk=0.3 callers=0 coverage=untested security=0 file=src/cli/program/build-program.ts
+
+## cli agent command — src/agents/agent-command.ts
+- persistSessionEntry (Function) risk=0.85 callers=6 coverage=untested security=1 file=src/agents/agent-command.ts
+- runCliWithSession (Function) risk=0.7 callers=2 coverage=untested security=1 file=src/agents/agent-command.ts
+- agentCommand (Function) risk=0.3 callers=30 coverage=tested security=0 file=src/agents/agent-command.ts
+- normalizeExplicitOverrideInput (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/agents/agent-command.ts
+- agentCommandInternal (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/agents/agent-command.ts
+- containsControlCharacters (Function) risk=0.3 callers=1 coverage=untested security=0 file=src/agents/agent-command.ts
+- resolveFallbackRetryPrompt (Function) risk=0.3 callers=1 coverage=untested security=0 file=src/agents/agent-command.ts
+- prependInternalEventContext (Function) risk=0.3 callers=1 coverage=untested security=0 file=src/agents/agent-command.ts
+
+## cli gateway run — src/cli/gateway-cli/run.ts
+- warnInlinePasswordFlag (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/cli/gateway-cli/run.ts
+- resolveGatewayPasswordOption (Function) risk=0.7 callers=1 coverage=untested security=1 file=src/cli/gateway-cli/run.ts
+- parseEnumOption (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/cli/gateway-cli/run.ts
+- formatModeChoices (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/cli/gateway-cli/run.ts
+- formatModeErrorList (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/cli/gateway-cli/run.ts
+- addGatewayRunCommand (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/cli/gateway-cli/run.ts
+- resolveGatewayRunOptions (Function) risk=0.3 callers=1 coverage=untested security=0 file=src/cli/gateway-cli/run.ts
+- runGatewayCommand (Function) risk=0.3 callers=1 coverage=untested security=0 file=src/cli/gateway-cli/run.ts
+
+## terminal table — src/terminal/table.ts
+- getTerminalTableWidth (Function) risk=0.6 callers=21 coverage=untested security=0 file=src/terminal/table.ts
+- repeat (Function) risk=0.44999999999999996 callers=6 coverage=untested security=0 file=src/terminal/table.ts
+- shrink (Function) risk=0.44999999999999996 callers=4 coverage=untested security=0 file=src/terminal/table.ts
+- renderTable (Function) risk=0.3 callers=42 coverage=tested security=0 file=src/terminal/table.ts
+- flushAt (Function) risk=0.3 callers=3 coverage=untested security=0 file=src/terminal/table.ts
+- hLine (Function) risk=0.3 callers=3 coverage=untested security=0 file=src/terminal/table.ts
+- isSpaceChar (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/terminal/table.ts
+- bufToString (Function) risk=0.3 callers=2 coverage=untested security=0 file=src/terminal/table.ts

@@ -1,0 +1,322 @@
+{
+  "target": {
+    "id": "Function:src/infra/outbound/deliver.ts:deliverOutboundPayloads",
+    "name": "deliverOutboundPayloads",
+    "type": "Function",
+    "filePath": "src/infra/outbound/deliver.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 29,
+  "risk": "CRITICAL",
+  "summary": {
+    "direct": 14,
+    "processes_affected": 2,
+    "modules_affected": 10
+  },
+  "affected_processes": [
+    {
+      "name": "dispatchReplyFromConfig",
+      "type": "Function",
+      "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+      "affected_process_count": 10,
+      "total_hits": 10,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "startGatewayServer",
+      "type": "Function",
+      "filePath": "src/gateway/server.impl.ts",
+      "affected_process_count": 9,
+      "total_hits": 9,
+      "earliest_broken_step": 1
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Reply",
+      "hits": 8,
+      "impact": "direct"
+    },
+    {
+      "name": "Outbound",
+      "hits": 6,
+      "impact": "direct"
+    },
+    {
+      "name": "Agents",
+      "hits": 4,
+      "impact": "direct"
+    },
+    {
+      "name": "Media-understanding",
+      "hits": 2,
+      "impact": "direct"
+    },
+    {
+      "name": "Isolated-agent",
+      "hits": 2,
+      "impact": "direct"
+    },
+    {
+      "name": "Gateway",
+      "hits": 2,
+      "impact": "indirect"
+    },
+    {
+      "name": "Sessions",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Infra",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Service",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Plugin-sdk",
+      "hits": 1,
+      "impact": "indirect"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/media-understanding/echo-transcript.ts:sendTranscriptEcho",
+        "name": "sendTranscriptEcho",
+        "filePath": "src/media-understanding/echo-transcript.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/session-maintenance-warning.ts:deliverSessionMaintenanceWarning",
+        "name": "deliverSessionMaintenanceWarning",
+        "filePath": "src/infra/session-maintenance-warning.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/heartbeat-runner.ts:runHeartbeatOnce",
+        "name": "runHeartbeatOnce",
+        "filePath": "src/infra/heartbeat-runner.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/heartbeat-runner.ts:maybeSendHeartbeatOk",
+        "name": "maybeSendHeartbeatOk",
+        "filePath": "src/infra/heartbeat-runner.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/agents/command/delivery.ts:deliverAgentCommandResult",
+        "name": "deliverAgentCommandResult",
+        "filePath": "src/agents/command/delivery.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-restart-sentinel.ts:deliverRestartSentinelNotice",
+        "name": "deliverRestartSentinelNotice",
+        "filePath": "src/gateway/server-restart-sentinel.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-node-events.ts:sendReceiptAck",
+        "name": "sendReceiptAck",
+        "filePath": "src/gateway/server-node-events.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-cron.ts:buildGatewayCronService",
+        "name": "buildGatewayCronService",
+        "filePath": "src/gateway/server-cron.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/infra/outbound/message.ts:sendMessage",
+        "name": "sendMessage",
+        "filePath": "src/infra/outbound/message.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/cron/delivery.ts:sendFailureNotificationAnnounce",
+        "name": "sendFailureNotificationAnnounce",
+        "filePath": "src/cron/delivery.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "name": "runChunkedWhatsAppDelivery",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/cron/isolated-agent/delivery-dispatch.ts:runDelivery",
+        "name": "runDelivery",
+        "filePath": "src/cron/isolated-agent/delivery-dispatch.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/route-reply.ts:routeReply",
+        "name": "routeReply",
+        "filePath": "src/auto-reply/reply/route-reply.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "File:src/gateway/server-methods/send.ts",
+        "name": "send.ts",
+        "filePath": "src/gateway/server-methods/send.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/media-understanding/apply.ts:applyMediaUnderstanding",
+        "name": "applyMediaUnderstanding",
+        "filePath": "src/media-understanding/apply.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/gateway/server.impl.ts:startGatewayServer",
+        "name": "startGatewayServer",
+        "filePath": "src/gateway/server.impl.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/gateway/server-reload-handlers.ts:applyHotReload",
+        "name": "applyHotReload",
+        "filePath": "src/gateway/server-reload-handlers.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/agents/agent-command.ts:agentCommandInternal",
+        "name": "agentCommandInternal",
+        "filePath": "src/agents/agent-command.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/cron/service/timer.ts:executeJobCore",
+        "name": "executeJobCore",
+        "filePath": "src/cron/service/timer.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/cron/isolated-agent/delivery-dispatch.ts:deliverViaDirect",
+        "name": "deliverViaDirect",
+        "filePath": "src/cron/isolated-agent/delivery-dispatch.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/session.ts:initSessionState",
+        "name": "initSessionState",
+        "filePath": "src/auto-reply/reply/session.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/get-reply-run.ts:sendResetSessionNotice",
+        "name": "sendResetSessionNotice",
+        "filePath": "src/auto-reply/reply/get-reply-run.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/followup-runner.ts:sendFollowupPayloads",
+        "name": "sendFollowupPayloads",
+        "filePath": "src/auto-reply/reply/followup-runner.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:dispatchReplyFromConfig",
+        "name": "dispatchReplyFromConfig",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:sendPayloadAsync",
+        "name": "sendPayloadAsync",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:sendBindingNotice",
+        "name": "sendBindingNotice",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:sendFinalPayload",
+        "name": "sendFinalPayload",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/dispatch-acp-delivery.ts:deliver",
+        "name": "deliver",
+        "filePath": "src/auto-reply/reply/dispatch-acp-delivery.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/commands-core.ts:emitResetCommandHooks",
+        "name": "emitResetCommandHooks",
+        "filePath": "src/auto-reply/reply/commands-core.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}

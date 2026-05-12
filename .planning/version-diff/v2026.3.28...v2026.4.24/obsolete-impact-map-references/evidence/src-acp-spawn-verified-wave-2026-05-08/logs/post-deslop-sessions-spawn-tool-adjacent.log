@@ -1,0 +1,15 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/tools/sessions-spawn-tool.test.ts
+
+[test-parallel] start base workers=2 filters=1
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  1 passed (1)
+      Tests  9 passed (9)
+   Start at  23:11:52
+   Duration  8.13s (transform 2.83s, setup 6.45s, import 5ms, tests 1.53s, environment 0ms)
+
+[test-parallel] done base code=0 elapsed=9.1s

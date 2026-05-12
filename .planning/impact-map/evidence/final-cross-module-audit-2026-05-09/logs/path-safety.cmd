@@ -1,0 +1,1 @@
+pnpm test -- src/agents/sandbox/fs-paths.test.ts src/agents/sandbox/host-paths.test.ts src/agents/sandbox/fs-bridge.boundary.test.ts src/agents/sandbox/fs-bridge.anchored-ops.test.ts src/agents/sandbox/fs-bridge-mutation-helper.test.ts

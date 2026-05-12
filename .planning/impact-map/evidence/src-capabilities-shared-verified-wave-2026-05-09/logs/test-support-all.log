@@ -1,0 +1,11 @@
+== test-support-all ==
+src/test-helpers/state-dir-env.test.ts
+src/test-utils/channel-plugins.test.ts
+src/test-utils/env.test.ts
+src/test-utils/temp-home.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=8.3s
+--- exit=0 duration=10s ---

@@ -1,0 +1,12 @@
+### final static audit
+$ git diff --check -- .planning
+git_diff_check_exit=0
+$ pnpm exec oxfmt --check final touched ledger/evidence docs
+Checking formatting...
+
+All matched files use the correct format.
+Finished in 400ms on 4 files using 4 threads.
+oxfmt_exit=0
+$ git diff -- src apps extensions packages scripts docs package.json pnpm-lock.yaml | wc -c
+0
+product_diff_wc_exit=0

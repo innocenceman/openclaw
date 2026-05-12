@@ -1,0 +1,406 @@
+### npx gitnexus impact Class:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard
+{
+  "target": {
+    "id": "Class:src/agents/sandbox/fs-bridge-path-safety.ts:SandboxFsPathGuard",
+    "name": "SandboxFsPathGuard",
+    "type": "Class",
+    "filePath": "src/agents/sandbox/fs-bridge-path-safety.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 1,
+  "risk": "LOW",
+  "summary": {
+    "direct": 1,
+    "processes_affected": 0,
+    "modules_affected": 1
+  },
+  "affected_processes": [],
+  "affected_modules": [
+    {
+      "name": "Sandbox",
+      "hits": 1,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Method:src/agents/sandbox/fs-bridge.ts:SandboxFsBridgeImpl.constructor#1",
+        "name": "constructor",
+        "filePath": "src/agents/sandbox/fs-bridge.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}
+exit=0
+
+### npx gitnexus impact Function:src/agents/pi-embedded-runner/run.ts:runEmbeddedPiAgent
+{
+  "target": {
+    "id": "Function:src/agents/pi-embedded-runner/run.ts:runEmbeddedPiAgent",
+    "name": "runEmbeddedPiAgent",
+    "type": "Function",
+    "filePath": "src/agents/pi-embedded-runner/run.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 15,
+  "risk": "CRITICAL",
+  "summary": {
+    "direct": 10,
+    "processes_affected": 1,
+    "modules_affected": 7
+  },
+  "affected_processes": [
+    {
+      "name": "runAgentTurnWithFallback",
+      "type": "Function",
+      "filePath": "src/auto-reply/reply/agent-runner-execution.ts",
+      "affected_process_count": 6,
+      "total_hits": 6,
+      "earliest_broken_step": 1
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Reply",
+      "hits": 4,
+      "impact": "direct"
+    },
+    {
+      "name": "Plugins",
+      "hits": 3,
+      "impact": "direct"
+    },
+    {
+      "name": "Pi-embedded-runner",
+      "hits": 2,
+      "impact": "direct"
+    },
+    {
+      "name": "Agents",
+      "hits": 2,
+      "impact": "direct"
+    },
+    {
+      "name": "Models",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Cluster_3365",
+      "hits": 1,
+      "impact": "indirect"
+    },
+    {
+      "name": "Auto-reply",
+      "hits": 1,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:extensions/voice-call/src/response-generator.ts:generateVoiceResponse",
+        "name": "generateVoiceResponse",
+        "filePath": "extensions/voice-call/src/response-generator.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/hooks/llm-slug-generator.ts:generateSlugViaLLM",
+        "name": "generateSlugViaLLM",
+        "filePath": "src/hooks/llm-slug-generator.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/agents/agent-command.ts:runAgentAttempt",
+        "name": "runAgentAttempt",
+        "filePath": "src/agents/agent-command.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/commands/models/list.probe.ts:probeTarget",
+        "name": "probeTarget",
+        "filePath": "src/commands/models/list.probe.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply.triggers.trigger-handling.test-harness.ts:installPiEmbeddedMock",
+        "name": "installPiEmbeddedMock",
+        "filePath": "src/auto-reply/reply.triggers.trigger-handling.test-harness.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply.test-harness.ts:installReplyRuntimeMocks",
+        "name": "installReplyRuntimeMocks",
+        "filePath": "src/auto-reply/reply.test-harness.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/followup-runner.ts:createFollowupRunner",
+        "name": "createFollowupRunner",
+        "filePath": "src/auto-reply/reply/followup-runner.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/agent-runner-memory.ts:runMemoryFlushIfNeeded",
+        "name": "runMemoryFlushIfNeeded",
+        "filePath": "src/auto-reply/reply/agent-runner-memory.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/agent-runner-execution.ts:runAgentTurnWithFallback",
+        "name": "runAgentTurnWithFallback",
+        "filePath": "src/auto-reply/reply/agent-runner-execution.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Method:extensions/llm-task/src/llm-task-tool.ts:execute#2",
+        "name": "execute",
+        "filePath": "extensions/llm-task/src/llm-task-tool.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/agents/agent-command.ts:agentCommandInternal",
+        "name": "agentCommandInternal",
+        "filePath": "src/agents/agent-command.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/hooks/bundled/session-memory/handler.ts:saveSessionToMemory",
+        "name": "saveSessionToMemory",
+        "filePath": "src/hooks/bundled/session-memory/handler.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/reply/agent-runner.ts:runReplyAgent",
+        "name": "runReplyAgent",
+        "filePath": "src/auto-reply/reply/agent-runner.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Method:extensions/voice-call/src/webhook.ts:VoiceCallWebhookServer.handleInboundResponse#2",
+        "name": "handleInboundResponse",
+        "filePath": "extensions/voice-call/src/webhook.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "File:src/auto-reply/reply.triggers.trigger-handling.test-harness.ts",
+        "name": "reply.triggers.trigger-handling.test-harness.ts",
+        "filePath": "src/auto-reply/reply.triggers.trigger-handling.test-harness.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      }
+    ]
+  }
+}
+exit=0
+
+### npx gitnexus impact Function:src/agents/skills-install.ts:installSkill
+GitNexus [impact:depth-traversal]: Write operations are not allowed. The pool adapter is read-only.
+{
+  "target": {
+    "id": "Function:src/agents/skills-install.ts:installSkill",
+    "name": "installSkill",
+    "type": "Function",
+    "filePath": "src/agents/skills-install.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "LOW",
+  "partial": true,
+  "summary": {
+    "direct": 0,
+    "processes_affected": 0,
+    "modules_affected": 0
+  },
+  "affected_processes": [],
+  "affected_modules": [],
+  "byDepth": {}
+}
+exit=0
+
+### npx gitnexus impact Function:src/auto-reply/reply/dispatch-from-config.ts:sendFinalPayload
+{
+  "target": {
+    "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:sendFinalPayload",
+    "name": "sendFinalPayload",
+    "type": "Function",
+    "filePath": "src/auto-reply/reply/dispatch-from-config.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 9,
+  "risk": "LOW",
+  "summary": {
+    "direct": 1,
+    "processes_affected": 2,
+    "modules_affected": 2
+  },
+  "affected_processes": [
+    {
+      "name": "handlePost",
+      "type": "Function",
+      "filePath": "extensions/mattermost/src/mattermost/monitor.ts",
+      "affected_process_count": 7,
+      "total_hits": 7,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "monitorMattermostProvider",
+      "type": "Function",
+      "filePath": "extensions/mattermost/src/mattermost/monitor.ts",
+      "affected_process_count": 7,
+      "total_hits": 7,
+      "earliest_broken_step": 1
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Monitor",
+      "hits": 8,
+      "impact": "indirect"
+    },
+    {
+      "name": "Reply",
+      "hits": 1,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/auto-reply/reply/dispatch-from-config.ts:dispatchReplyFromConfig",
+        "name": "dispatchReplyFromConfig",
+        "filePath": "src/auto-reply/reply/dispatch-from-config.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:extensions/feishu/src/bot.ts:handleFeishuMessage",
+        "name": "handleFeishuMessage",
+        "filePath": "extensions/feishu/src/bot.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:extensions/feishu/src/bot.ts:dispatchForAgent",
+        "name": "dispatchForAgent",
+        "filePath": "extensions/feishu/src/bot.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/plugin-sdk/inbound-reply-dispatch.ts:dispatchReplyFromConfigWithSettledDispatcher",
+        "name": "dispatchReplyFromConfigWithSettledDispatcher",
+        "filePath": "src/plugin-sdk/inbound-reply-dispatch.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/auto-reply/dispatch.ts:dispatchInboundMessage",
+        "name": "dispatchInboundMessage",
+        "filePath": "src/auto-reply/dispatch.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:extensions/mattermost/src/mattermost/slash-http.ts:handleSlashCommandAsync",
+        "name": "handleSlashCommandAsync",
+        "filePath": "extensions/mattermost/src/mattermost/slash-http.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:extensions/mattermost/src/mattermost/monitor.ts:monitorMattermostProvider",
+        "name": "monitorMattermostProvider",
+        "filePath": "extensions/mattermost/src/mattermost/monitor.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:extensions/mattermost/src/mattermost/monitor.ts:runModelPickerCommand",
+        "name": "runModelPickerCommand",
+        "filePath": "extensions/mattermost/src/mattermost/monitor.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 2,
+        "id": "Function:extensions/mattermost/src/mattermost/monitor.ts:handlePost",
+        "name": "handlePost",
+        "filePath": "extensions/mattermost/src/mattermost/monitor.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}
+exit=0
+
+### npx gitnexus impact Function:src/gateway/server-methods.ts:handleGatewayMethod
+{
+  "error": "Target 'Function:src/gateway/server-methods.ts:handleGatewayMethod' not found",
+  "target": {
+    "name": "Function:src/gateway/server-methods.ts:handleGatewayMethod"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN"
+}
+exit=0
+
+### npx gitnexus impact Function:src/commands/agent.ts:agentCliCommand
+{
+  "error": "Target 'Function:src/commands/agent.ts:agentCliCommand' not found",
+  "target": {
+    "name": "Function:src/commands/agent.ts:agentCliCommand"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN"
+}
+exit=0
+

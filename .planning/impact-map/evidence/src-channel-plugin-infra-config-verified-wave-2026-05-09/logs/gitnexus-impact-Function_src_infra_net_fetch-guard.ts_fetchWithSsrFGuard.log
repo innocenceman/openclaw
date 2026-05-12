@@ -1,0 +1,201 @@
+GitNexus [impact:depth-traversal]: Write operations are not allowed. The pool adapter is read-only.
+{
+  "target": {
+    "id": "Function:src/infra/net/fetch-guard.ts:fetchWithSsrFGuard",
+    "name": "fetchWithSsrFGuard",
+    "type": "Function",
+    "filePath": "src/infra/net/fetch-guard.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 17,
+  "risk": "CRITICAL",
+  "partial": true,
+  "summary": {
+    "direct": 17,
+    "processes_affected": 0,
+    "modules_affected": 8
+  },
+  "affected_processes": [],
+  "affected_modules": [
+    {
+      "name": "Net",
+      "hits": 9,
+      "impact": "direct"
+    },
+    {
+      "name": "Media-understanding",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Infra",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Cluster_3301",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Google",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Cluster_3193",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Memory",
+      "hits": 1,
+      "impact": "direct"
+    },
+    {
+      "name": "Media",
+      "hits": 1,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/media-understanding/shared.ts:fetchWithTimeoutGuarded",
+        "name": "fetchWithTimeoutGuarded",
+        "filePath": "src/media-understanding/shared.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/media/input-files.ts:fetchWithGuard",
+        "name": "fetchWithGuard",
+        "filePath": "src/media/input-files.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/media/fetch.ts:runGuardedFetch",
+        "name": "runGuardedFetch",
+        "filePath": "src/media/fetch.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/agents/skills-install-download.ts:downloadFile",
+        "name": "downloadFile",
+        "filePath": "src/agents/skills-install-download.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/gateway/server-cron.ts:postCronWebhook",
+        "name": "postCronWebhook",
+        "filePath": "src/gateway/server-cron.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:extensions/google/oauth.http.ts:fetchWithTimeout",
+        "name": "fetchWithTimeout",
+        "filePath": "extensions/google/oauth.http.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:extensions/slack/src/send.ts:uploadSlackFile",
+        "name": "uploadSlackFile",
+        "filePath": "extensions/slack/src/send.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:extensions/nextcloud-talk/src/room-info.ts:resolveNextcloudTalkRoomKind",
+        "name": "resolveNextcloudTalkRoomKind",
+        "filePath": "extensions/nextcloud-talk/src/room-info.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:extensions/googlechat/src/api.ts:withGoogleChatResponse",
+        "name": "withGoogleChatResponse",
+        "filePath": "extensions/googlechat/src/api.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:extensions/feishu/src/streaming-card.ts:getToken",
+        "name": "getToken",
+        "filePath": "extensions/feishu/src/streaming-card.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/cli/nodes-camera.ts:writeUrlToFile",
+        "name": "writeUrlToFile",
+        "filePath": "src/cli/nodes-camera.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/memory/remote-http.ts:withRemoteHttpResponse",
+        "name": "withRemoteHttpResponse",
+        "filePath": "src/memory/remote-http.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/agents/tools/web-guarded-fetch.ts:fetchWithWebToolsNetworkGuard",
+        "name": "fetchWithWebToolsNetworkGuard",
+        "filePath": "src/agents/tools/web-guarded-fetch.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Method:extensions/feishu/src/streaming-card.ts:FeishuStreamingSession.start#3",
+        "name": "start",
+        "filePath": "extensions/feishu/src/streaming-card.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Method:extensions/feishu/src/streaming-card.ts:FeishuStreamingSession.updateCardContent#2",
+        "name": "updateCardContent",
+        "filePath": "extensions/feishu/src/streaming-card.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Method:extensions/feishu/src/streaming-card.ts:FeishuStreamingSession.updateNoteContent#1",
+        "name": "updateNoteContent",
+        "filePath": "extensions/feishu/src/streaming-card.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      },
+      {
+        "depth": 1,
+        "id": "Method:extensions/feishu/src/streaming-card.ts:FeishuStreamingSession.close#2",
+        "name": "close",
+        "filePath": "extensions/feishu/src/streaming-card.ts",
+        "relationType": "CALLS",
+        "confidence": 0.5
+      }
+    ]
+  }
+}

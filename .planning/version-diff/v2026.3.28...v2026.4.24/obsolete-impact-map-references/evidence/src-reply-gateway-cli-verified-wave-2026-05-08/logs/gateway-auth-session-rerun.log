@@ -1,0 +1,11 @@
+### gateway-auth-session-rerun
+timeout 240s pnpm test -- src/gateway/auth.test.ts src/gateway/auth-mode-policy.test.ts src/gateway/connection-auth.test.ts src/gateway/probe-auth.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/gateway/auth.test.ts src/gateway/auth-mode-policy.test.ts src/gateway/connection-auth.test.ts src/gateway/probe-auth.test.ts
+
+[test-parallel] start gateway workers=1 filters=4
+ ELIFECYCLE  Test failed. See above for more details.
+[test-parallel] failure artifacts gateway log=/tmp/openclaw-test-parallel-BBDP8k/gateway-1778261410448.log meta=/tmp/openclaw-test-parallel-BBDP8k/gateway-1778261410448-failure.json
+[test-parallel] done gateway code=1 elapsed=238.8s
+EXIT_CODE=124

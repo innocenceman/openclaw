@@ -1,0 +1,31 @@
+# test-contracts-plugins
+
+Command: pnpm test:contracts:plugins
+Started: 2026-05-08T02:45:14.185Z
+Ended: 2026-05-08T02:45:41.880Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test:contracts:plugins /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> OPENCLAW_TEST_PROFILE=low pnpm test -- src/plugins/contracts
+
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/plugins/contracts
+
+[test-parallel] start unit workers=2 filters=11
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  11 passed (11)
+      Tests  134 passed (134)
+   Start at  10:45:17
+   Duration  23.63s (transform 8.51s, setup 28.74s, import 1.23s, tests 13.81s, environment 1ms)
+
+[test-parallel] done unit code=0 elapsed=25.1s
+
+
+## stderr
+

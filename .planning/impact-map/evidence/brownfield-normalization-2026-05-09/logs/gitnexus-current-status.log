@@ -1,0 +1,43 @@
+$ gitnexus status
+Repository: /home/yanx/projects/openclaw/versionAnalyze
+Indexed: 5/9/2026, 5:57:01 PM
+Indexed commit: ab54c93
+Current commit: ab54c93
+Status: ✅ up-to-date
+
+$ gitnexus list
+
+  Indexed Repositories (4)
+
+  deepsearch
+    Path:    /home/yanx/projects/jiuwen/deepsearch/deepsearch
+    Indexed: 5/6/2026, 7:44:46 PM
+    Commit:  376cfdb
+    Stats:   407 files, 10669 symbols, 17624 edges
+    Clusters:   375
+    Processes:  253
+
+  openclaw  (/home/yanx/projects/openclaw/openclaw-v2026.3.24)
+    Path:    /home/yanx/projects/openclaw/openclaw-v2026.3.24
+    Indexed: 5/8/2026, 5:51:09 PM
+    Commit:  838c48a
+    Stats:   9115 files, 140086 symbols, 210569 edges
+    Clusters:   3699
+    Processes:  300
+
+  agent-protocol
+    Path:    /home/yanx/projects/mcp/agent-protocol
+    Indexed: 5/9/2026, 12:04:17 PM
+    Commit:  2f41e91
+    Stats:   225 files, 4253 symbols, 8812 edges
+    Clusters:   194
+    Processes:  139
+
+  openclaw  (/home/yanx/projects/openclaw/versionAnalyze)
+    Path:    /home/yanx/projects/openclaw/versionAnalyze
+    Indexed: 5/9/2026, 5:57:01 PM
+    Commit:  ab54c93
+    Stats:   9115 files, 139497 symbols, 198754 edges
+    Clusters:   3185
+    Processes:  300
+

@@ -1,0 +1,7 @@
+Checking formatting...
+
+.planning/impact-map/extensions/README.md (57ms)
+.planning/impact-map/src/leaf-index.md (21ms)
+
+Format issues found in above 2 files. Run without `--check` to fix.
+Finished in 285ms on 13 files using 4 threads.

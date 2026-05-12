@@ -1,0 +1,51 @@
+== shared-primitives-all ==
+src/shared/assistant-identity-values.test.ts
+src/shared/avatar-policy.test.ts
+src/shared/chat-content.test.ts
+src/shared/chat-envelope.test.ts
+src/shared/chat-message-content.test.ts
+src/shared/config-eval.test.ts
+src/shared/device-auth-store.test.ts
+src/shared/device-auth.test.ts
+src/shared/entry-metadata.test.ts
+src/shared/entry-status.test.ts
+src/shared/frontmatter.test.ts
+src/shared/gateway-bind-url.test.ts
+src/shared/global-singleton.test.ts
+src/shared/model-param-b.test.ts
+src/shared/net/ip.test.ts
+src/shared/net/ipv4.test.ts
+src/shared/node-list-parse.test.ts
+src/shared/node-match.test.ts
+src/shared/node-resolve.test.ts
+src/shared/operator-scope-compat.test.ts
+src/shared/pid-alive.test.ts
+src/shared/process-scoped-map.test.ts
+src/shared/requirements.test.ts
+src/shared/string-normalization.test.ts
+src/shared/string-sample.test.ts
+src/shared/subagents-format.test.ts
+src/shared/tailscale-status.test.ts
+src/shared/text-chunking.test.ts
+src/shared/text/assistant-visible-text.test.ts
+src/shared/text/code-regions.test.ts
+src/shared/text/join-segments.test.ts
+src/shared/text/reasoning-tags.test.ts
+src/shared/usage-aggregates.test.ts
+src/utils/delivery-context.test.ts
+src/utils/directive-tags.test.ts
+src/utils/mask-api-key.test.ts
+src/utils/message-channel.test.ts
+src/utils/normalize-secret-input.test.ts
+src/utils/queue-helpers.test.ts
+src/utils/reaction-level.test.ts
+src/utils/run-with-concurrency.test.ts
+src/utils/transcript-tools.test.ts
+src/utils/usage-format.test.ts
+src/utils/utils-misc.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=44
+[test-parallel] done unit code=0 elapsed=19.6s
+--- exit=0 duration=21s ---

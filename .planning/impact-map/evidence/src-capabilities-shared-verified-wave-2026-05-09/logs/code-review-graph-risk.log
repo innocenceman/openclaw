@@ -1,0 +1,179 @@
+# code-review-graph risk summary
+status: built at f99ef11b272b; current source-diff checked separately for target paths
+
+## browser count=739 max_risk=0.85 security_relevant=44
+- 0.85 callers=9 sec=1 cov=untested src/browser/chrome-mcp.test.ts :: Function createFakeSession
+- 0.85 callers=6 sec=1 cov=untested src/browser/control-auth.ts :: Function resolveBrowserControlAuth
+- 0.85 callers=4 sec=1 cov=untested src/browser/session-tab-registry.ts :: Function normalizeSessionKey
+- 0.70 callers=3 sec=1 cov=untested src/browser/chrome-mcp.ts :: Function closeChromeMcpSession
+- 0.70 callers=2 sec=1 cov=untested src/browser/chrome-mcp.ts :: Function buildChromeMcpSessionCacheKey
+- 0.70 callers=2 sec=1 cov=untested src/browser/chrome-mcp.ts :: Function closeChromeMcpSessionsForProfile
+- 0.70 callers=2 sec=1 cov=untested src/browser/chrome-mcp.ts :: Function getSession
+- 0.70 callers=2 sec=1 cov=untested src/browser/server-middleware.ts :: Function installBrowserAuthMiddleware
+
+## memory count=530 max_risk=0.85 security_relevant=35
+- 0.85 callers=4 sec=1 cov=untested src/memory/manager-sync-ops.ts :: Function syncSessionFiles
+- 0.70 callers=11 sec=1 cov=tested src/memory/index.test.ts :: Function getSessionHash
+- 0.70 callers=3 sec=1 cov=untested src/memory/manager-sync-ops.ts :: Function shouldSyncSessions
+- 0.70 callers=3 sec=1 cov=untested src/memory/qmd-scope.ts :: Function parseQmdSessionScope
+- 0.70 callers=3 sec=1 cov=untested src/memory/secret-input.ts :: Function resolveMemorySecretInputString
+- 0.70 callers=2 sec=1 cov=untested src/memory/manager-sync-ops.ts :: Function resetSessionDelta
+- 0.70 callers=2 sec=1 cov=untested src/memory/manager-sync-ops.ts :: Function isSessionFileForAgent
+- 0.70 callers=2 sec=1 cov=untested src/memory/manager-sync-ops.ts :: Function normalizeTargetSessionFiles
+
+## media count=180 max_risk=0.60 security_relevant=0
+- 0.60 callers=14 sec=0 cov=untested src/media/store.ts :: Function saveMediaBuffer
+- 0.45 callers=8 sec=0 cov=untested src/media/fetch.ts :: Function fetchRemoteMedia
+- 0.45 callers=8 sec=0 cov=untested src/media/input-files.ts :: Function normalizeMimeType
+- 0.45 callers=7 sec=0 cov=untested src/media/png-encode.ts :: Function fillPixel
+- 0.45 callers=6 sec=0 cov=untested src/media/image-ops.ts :: Function loadSharp
+- 0.45 callers=6 sec=0 cov=untested src/media/mime.ts :: Function getFileExtension
+- 0.45 callers=5 sec=0 cov=untested src/media/constants.ts :: Function maxBytesForKind
+- 0.45 callers=5 sec=0 cov=untested src/media/image-ops.ts :: Function getImageMetadata
+
+## media-understanding count=195 max_risk=0.70 security_relevant=4
+- 0.70 callers=1 sec=1 cov=untested src/media-understanding/image.ts :: Function resolveImageToolMaxTokens
+- 0.70 callers=1 sec=1 cov=untested src/media-understanding/runner.entries.ts :: Function resolveProviderExecutionAuth
+- 0.70 callers=0 sec=1 cov=untested src/media-understanding/audio.test-helpers.ts :: Function seenAuth
+- 0.45 callers=8 sec=0 cov=untested src/media-understanding/provider-id.ts :: Function normalizeMediaProviderId
+- 0.45 callers=7 sec=0 cov=untested src/media-understanding/fs.ts :: Function fileExists
+- 0.45 callers=6 sec=0 cov=untested src/media-understanding/runner.ts :: Function normalizeMediaAttachments
+- 0.45 callers=6 sec=0 cov=untested src/media-understanding/runner.ts :: Function checkProvider
+- 0.45 callers=5 sec=0 cov=untested src/media-understanding/runner.entries.ts :: Function findArgValue
+
+## context-engine count=57 max_risk=0.85 security_relevant=5
+- 0.85 callers=4 sec=1 cov=untested src/context-engine/context-engine.test.ts :: Function rejectSessionKey
+- 0.70 callers=1 sec=1 cov=untested src/context-engine/registry.ts :: Function isSessionKeyCompatMethodName
+- 0.70 callers=1 sec=1 cov=untested src/context-engine/registry.ts :: Function wrapContextEngineWithSessionKeyCompat
+- 0.70 callers=0 sec=1 cov=untested src/context-engine/context-engine.test.ts :: Class LegacySessionKeyStrictEngine
+- 0.70 callers=0 sec=1 cov=untested src/context-engine/context-engine.test.ts :: Class SessionKeyRuntimeErrorEngine
+- 0.45 callers=4 sec=0 cov=untested src/context-engine/registry.ts :: Function get
+- 0.45 callers=4 sec=0 cov=untested src/context-engine/registry.ts :: Function getContextEngineRegistryState
+- 0.30 callers=18 sec=0 cov=tested src/context-engine/registry.ts :: Function registerContextEngine
+
+## cron count=523 max_risk=0.85 security_relevant=26
+- 0.85 callers=5 sec=1 cov=untested src/cron/isolated-agent/run.ts :: Function withRunSession
+- 0.70 callers=11 sec=1 cov=tested src/cron/session-reaper.ts :: Function sweepCronRunSessions
+- 0.70 callers=3 sec=1 cov=untested src/cron/isolated-agent.test-harness.ts :: Function writeSessionStoreEntries
+- 0.70 callers=3 sec=1 cov=untested src/cron/isolated-agent/run.ts :: Function persistSessionEntry
+- 0.70 callers=3 sec=1 cov=untested src/cron/isolated-agent/session.ts :: Function resolveCronSession
+- 0.70 callers=3 sec=1 cov=untested src/cron/service/timer.ts :: Function executeJobCoreWithTimeout
+- 0.70 callers=2 sec=1 cov=untested src/cron/isolated-agent/delivery-dispatch.ts :: Function cleanupDirectCronSessionIfNeeded
+- 0.70 callers=2 sec=1 cov=untested src/cron/isolated-agent/run.test-harness.ts :: Function makeCronSessionEntry
+
+## tts count=79 max_risk=0.60 security_relevant=0
+- 0.60 callers=14 sec=0 cov=untested src/tts/provider-registry.ts :: Function normalizeSpeechProviderId
+- 0.45 callers=9 sec=0 cov=untested src/tts/tts.ts :: Function resolveTtsConfig
+- 0.45 callers=8 sec=0 cov=untested src/tts/tts-core.ts :: Function requireInRange
+- 0.45 callers=7 sec=0 cov=untested src/tts/tts.ts :: Function allow
+- 0.45 callers=6 sec=0 cov=untested src/tts/tts.ts :: Function getTtsMaxLength
+- 0.45 callers=5 sec=0 cov=untested src/tts/tts.ts :: Function resolveTtsPrefsPath
+- 0.45 callers=5 sec=0 cov=untested src/tts/tts.ts :: Function readPrefs
+- 0.45 callers=5 sec=0 cov=untested src/tts/tts.ts :: Function isSummarizationEnabled
+
+## bootstrap count=6 max_risk=0.15 security_relevant=0
+- 0.15 callers=8 sec=0 cov=tested src/bootstrap/node-startup-env.ts :: Function resolveNodeStartupTlsEnvironment
+- 0.15 callers=5 sec=0 cov=tested src/bootstrap/node-extra-ca-certs.test.ts :: Function allowOnly
+- 0.15 callers=4 sec=0 cov=tested src/bootstrap/node-extra-ca-certs.ts :: Function isNodeVersionManagerRuntime
+- 0.15 callers=4 sec=0 cov=tested src/bootstrap/node-extra-ca-certs.ts :: Function resolveAutoNodeExtraCaCerts
+- 0.00 callers=3 sec=0 cov=tested src/bootstrap/node-extra-ca-certs.ts :: Function resolveLinuxSystemCaBundle
+- 0.00 callers=2 sec=0 cov=tested src/bootstrap/node-startup-env.test.ts :: Function allowOnly
+
+## daemon count=300 max_risk=0.70 security_relevant=6
+- 0.70 callers=3 sec=1 cov=untested src/daemon/service-audit.ts :: Function readEmbeddedGatewayToken
+- 0.70 callers=2 sec=1 cov=untested src/daemon/systemd-linger.ts :: Function resolveLoginctlUser
+- 0.70 callers=1 sec=1 cov=untested src/daemon/launchd.ts :: Function throwBootstrapGuiSessionError
+- 0.70 callers=1 sec=1 cov=untested src/daemon/service-audit.ts :: Function auditGatewayToken
+- 0.60 callers=20 sec=0 cov=untested src/daemon/launchd.ts :: Function execLaunchctl
+- 0.60 callers=14 sec=0 cov=untested src/daemon/inspect.ts :: Function push
+- 0.60 callers=14 sec=0 cov=untested src/daemon/output.ts :: Function formatLine
+- 0.60 callers=12 sec=0 cov=untested src/daemon/systemd.ts :: Function execSystemctlUser
+
+## hooks count=192 max_risk=0.70 security_relevant=16
+- 0.70 callers=15 sec=1 cov=tested src/hooks/bundled/session-memory/handler.test.ts :: Function createMockSessionContent
+- 0.70 callers=3 sec=1 cov=untested src/hooks/bundled/session-memory/transcript.ts :: Function getRecentSessionContent
+- 0.70 callers=2 sec=1 cov=untested src/hooks/gmail.ts :: Function generateHookToken
+- 0.70 callers=1 sec=1 cov=untested src/hooks/bundled/session-memory/handler.test.ts :: Function writeSessionTranscript
+- 0.70 callers=1 sec=1 cov=untested src/hooks/bundled/session-memory/handler.ts :: Function resolveDisplaySessionKey
+- 0.70 callers=1 sec=1 cov=untested src/hooks/gmail-setup-utils.ts :: Function ensureGcloudAuth
+- 0.70 callers=1 sec=1 cov=untested src/hooks/gmail-setup-utils.ts :: Function resolveProjectIdFromGogCredentials
+- 0.70 callers=1 sec=1 cov=untested src/hooks/gmail-setup-utils.ts :: Function gogCredentialsPaths
+
+## logging count=137 max_risk=0.70 security_relevant=11
+- 0.70 callers=1 sec=1 cov=untested src/logging/diagnostic-session-state.ts :: Function resolveSessionKey
+- 0.70 callers=1 sec=1 cov=untested src/logging/diagnostic-session-state.ts :: Function findStateBySessionId
+- 0.70 callers=1 sec=1 cov=untested src/logging/diagnostic.ts :: Function logSessionStuck
+- 0.70 callers=1 sec=1 cov=untested src/logging/redact.ts :: Function maskToken
+- 0.70 callers=0 sec=1 cov=untested src/logging/diagnostic.ts :: Function getDiagnosticSessionStateCountForTest
+- 0.60 callers=12 sec=0 cov=untested src/logging/diagnostic.ts :: Function markActivity
+- 0.55 callers=9 sec=1 cov=tested src/logging/diagnostic-session-state.ts :: Function getDiagnosticSessionState
+- 0.55 callers=8 sec=1 cov=tested src/logging/diagnostic-session-state.ts :: Function resetDiagnosticSessionStateForTest
+
+## markdown count=61 max_risk=0.70 security_relevant=3
+- 0.70 callers=3 sec=1 cov=untested src/markdown/ir.ts :: Function createTextToken
+- 0.70 callers=3 sec=1 cov=untested src/markdown/ir.ts :: Function renderTokens
+- 0.70 callers=1 sec=1 cov=untested src/markdown/ir.ts :: Function applySpoilerTokens
+- 0.45 callers=10 sec=0 cov=untested src/markdown/code-spans.ts :: Function createInlineCodeState
+- 0.45 callers=7 sec=0 cov=untested src/markdown/fences.ts :: Function isSafeFenceBreak
+- 0.45 callers=7 sec=0 cov=untested src/markdown/ir.ts :: Function resolveRenderTarget
+- 0.45 callers=7 sec=0 cov=untested src/markdown/tables.ts :: Function convertMarkdownTables
+- 0.45 callers=6 sec=0 cov=untested src/markdown/ir.ts :: Function openStyle
+
+## node-host count=143 max_risk=0.70 security_relevant=8
+- 0.70 callers=1 sec=1 cov=untested src/node-host/invoke-system-run-plan.ts :: Function looksLikePathToken
+- 0.70 callers=1 sec=1 cov=untested src/node-host/invoke-system-run-plan.ts :: Function normalizePackageManagerExecToken
+- 0.70 callers=1 sec=1 cov=untested src/node-host/invoke-system-run.ts :: Function executeSystemRunPhase
+- 0.70 callers=1 sec=1 cov=untested src/node-host/runner.ts :: Function buildNodeHostLocalAuthConfig
+- 0.60 callers=13 sec=0 cov=untested src/node-host/invoke-system-run.ts :: Function sendSystemRunDenied
+- 0.55 callers=6 sec=1 cov=tested src/node-host/runner.ts :: Function resolveNodeHostGatewayCredentials
+- 0.45 callers=7 sec=0 cov=untested src/node-host/invoke-system-run-plan.ts :: Function resolvesToExistingFileSync
+- 0.45 callers=5 sec=0 cov=untested src/node-host/invoke.ts :: Function sendErrorResult
+
+## process count=113 max_risk=0.60 security_relevant=0
+- 0.60 callers=18 sec=0 cov=untested src/process/exec.ts :: Function runExec
+- 0.45 callers=10 sec=0 cov=untested src/process/command-queue.ts :: Function getQueueState
+- 0.45 callers=6 sec=0 cov=untested src/process/command-queue.ts :: Function enqueueCommandInLane
+- 0.45 callers=5 sec=0 cov=untested src/process/kill-tree.ts :: Function killProcessTree
+- 0.45 callers=4 sec=0 cov=untested src/process/command-queue.ts :: Function normalizeLane
+- 0.45 callers=4 sec=0 cov=untested src/process/supervisor/registry.ts :: Function get
+- 0.45 callers=4 sec=0 cov=untested src/process/supervisor/supervisor.ts :: Function requestCancel
+- 0.30 callers=57 sec=0 cov=tested src/process/exec.ts :: Function runCommandWithTimeout
+
+## shared count=151 max_risk=0.70 security_relevant=9
+- 0.70 callers=17 sec=1 cov=tested src/shared/device-auth.ts :: Function normalizeDeviceAuthScopes
+- 0.70 callers=12 sec=1 cov=tested src/shared/subagents-format.ts :: Function formatTokenShort
+- 0.55 callers=7 sec=1 cov=tested src/shared/device-auth.ts :: Function normalizeDeviceAuthRole
+- 0.55 callers=6 sec=1 cov=tested src/shared/device-auth-store.ts :: Function loadDeviceAuthTokenFromStore
+- 0.55 callers=6 sec=1 cov=tested src/shared/subagents-format.ts :: Function resolveTotalTokens
+- 0.55 callers=6 sec=1 cov=tested src/shared/subagents-format.ts :: Function formatTokenUsageDisplay
+- 0.55 callers=5 sec=1 cov=tested src/shared/device-auth-store.ts :: Function storeDeviceAuthTokenInStore
+- 0.55 callers=5 sec=1 cov=tested src/shared/device-auth-store.ts :: Function clearDeviceAuthTokenFromStore
+
+## utils count=85 max_risk=0.70 security_relevant=7
+- 0.70 callers=39 sec=1 cov=tested src/utils/normalize-secret-input.ts :: Function normalizeSecretInput
+- 0.70 callers=38 sec=1 cov=tested src/utils/normalize-secret-input.ts :: Function normalizeOptionalSecretInput
+- 0.70 callers=17 sec=1 cov=tested src/utils/usage-format.ts :: Function formatTokenCount
+- 0.70 callers=15 sec=1 cov=tested src/utils/delivery-context.ts :: Function deliveryContextFromSession
+- 0.70 callers=3 sec=1 cov=untested extensions/twitch/src/utils/twitch.ts :: Function normalizeToken
+- 0.70 callers=2 sec=1 cov=untested src/utils/shell-argv.ts :: Function pushToken
+- 0.60 callers=60 sec=0 cov=untested src/utils/message-channel.ts :: Function normalizeMessageChannel
+- 0.60 callers=22 sec=0 cov=untested src/utils/message-channel.ts :: Function isDeliverableMessageChannel
+
+## test-helpers count=19 max_risk=0.30 security_relevant=0
+- 0.30 callers=39 sec=0 cov=tested src/test-helpers/workspace.ts :: Function writeWorkspaceFile
+- 0.30 callers=32 sec=0 cov=tested src/test-helpers/temp-dir.ts :: Function withTempDir
+- 0.30 callers=28 sec=0 cov=tested src/test-helpers/workspace.ts :: Function makeTempWorkspace
+- 0.30 callers=22 sec=0 cov=tested src/test-helpers/state-dir-env.ts :: Function withStateDirEnv
+- 0.30 callers=2 sec=0 cov=untested src/test-helpers/state-dir-env.test.ts :: Function expectPathMissing
+- 0.30 callers=1 sec=0 cov=untested src/test-helpers/network-interfaces.ts :: Function makeNetworkInterfaceEntry
+- 0.15 callers=10 sec=0 cov=tested src/test-helpers/network-interfaces.ts :: Function makeNetworkInterfacesSnapshot
+- 0.15 callers=8 sec=0 cov=tested src/test-helpers/http.ts :: Function jsonResponse
+
+## test-utils count=84 max_risk=0.70 security_relevant=5
+- 0.70 callers=1 sec=1 cov=untested src/test-utils/ports.ts :: Function getFreePortBlockWithPermissionFallback
+- 0.55 callers=5 sec=1 cov=tested src/test-utils/secret-file-fixture.ts :: Function withTempSecretFiles
+- 0.55 callers=5 sec=1 cov=tested src/test-utils/session-state-cleanup.ts :: Function cleanupSessionStateForTest
+- 0.45 callers=7 sec=0 cov=untested src/test-utils/channel-plugin-test-fixtures.ts :: Function makeDirectPlugin
+- 0.40 callers=2 sec=1 cov=tested src/test-utils/auth-token-assertions.ts :: Function expectGeneratedTokenPersistedToGatewayAuth
+- 0.30 callers=136 sec=0 cov=tested src/test-utils/channel-plugins.ts :: Function createTestRegistry
+- 0.30 callers=122 sec=0 cov=tested src/test-utils/env.ts :: Function withEnvAsync

@@ -1,0 +1,8 @@
+== nodehost-process-shared-utils-testsupport ==
+timeout 900 pnpm test -- src/node-host/exec-policy.test.ts src/node-host/invoke-browser.test.ts src/node-host/invoke-system-run-plan.test.ts src/node-host/invoke-system-run.test.ts src/node-host/invoke.sanitize-env.test.ts src/node-host/runner.credentials.test.ts src/process/supervisor/registry.test.ts src/process/supervisor/supervisor.pty-command.test.ts src/process/supervisor/supervisor.test.ts src/shared/net/ip.test.ts src/shared/net/ipv4.test.ts src/shared/text/assistant-visible-text.test.ts src/shared/text/code-regions.test.ts src/shared/text/join-segments.test.ts src/shared/text/reasoning-tags.test.ts src/utils/delivery-context.test.ts src/utils/directive-tags.test.ts src/utils/mask-api-key.test.ts src/utils/message-channel.test.ts src/utils/normalize-secret-input.test.ts src/utils/queue-helpers.test.ts src/utils/reaction-level.test.ts src/utils/run-with-concurrency.test.ts src/utils/transcript-tools.test.ts src/utils/usage-format.test.ts src/utils/utils-misc.test.ts src/test-helpers/state-dir-env.test.ts src/test-utils/channel-plugins.test.ts src/test-utils/env.test.ts src/test-utils/temp-home.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=30
+[test-parallel] done unit code=0 elapsed=16.3s
+--- exit=0 duration=18s ---

@@ -1,0 +1,9 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start extensions workers=4 filters=73
+ ELIFECYCLE  Test failed. See above for more details.
+
+[exit:124]
+[test-parallel] failure artifacts extensions log=/tmp/openclaw-test-parallel-6lGcWI/extensions-1778269503988.log meta=/tmp/openclaw-test-parallel-6lGcWI/extensions-1778269503988-failure.json
+[test-parallel] done extensions code=1 elapsed=298.9s

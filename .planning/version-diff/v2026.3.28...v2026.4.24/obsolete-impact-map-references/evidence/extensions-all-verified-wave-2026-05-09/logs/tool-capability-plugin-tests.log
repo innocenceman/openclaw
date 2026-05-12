@@ -1,0 +1,11 @@
+# timeout 300s pnpm test -- extensions/brave/src/brave-web-search-provider.test.ts extensions/duckduckgo/src/ddg-search-provider.test.ts extensions/exa/src/exa-web-search-provider.test.ts extensions/firecrawl/src/firecrawl-tools.test.ts extensions/llm-task/src/llm-task-tool.test.ts extensions/openshell/src/openshell-core.test.ts extensions/phone-control/index.test.ts extensions/thread-ownership/index.test.ts extensions/tavily/src/tavily-tools.test.ts extensions/diffs/src/browser.test.ts extensions/diffs/src/config.test.ts extensions/diffs/src/store.test.ts extensions/diffs/src/tool.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/brave/src/brave-web-search-provider.test.ts extensions/duckduckgo/src/ddg-search-provider.test.ts extensions/exa/src/exa-web-search-provider.test.ts extensions/firecrawl/src/firecrawl-tools.test.ts extensions/llm-task/src/llm-task-tool.test.ts extensions/openshell/src/openshell-core.test.ts extensions/phone-control/index.test.ts extensions/thread-ownership/index.test.ts extensions/tavily/src/tavily-tools.test.ts extensions/diffs/src/browser.test.ts extensions/diffs/src/config.test.ts extensions/diffs/src/store.test.ts extensions/diffs/src/tool.test.ts
+
+[test-parallel] start extensions workers=4 filters=12
+[test-parallel] start extensions-ddg-search-provider-isolated workers=1 filters=1
+[test-parallel] done extensions-ddg-search-provider-isolated code=0 elapsed=11.8s
+[test-parallel] done extensions code=0 elapsed=15.0s
+
+[exit:0]

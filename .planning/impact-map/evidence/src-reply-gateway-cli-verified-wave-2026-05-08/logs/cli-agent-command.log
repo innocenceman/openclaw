@@ -1,0 +1,10 @@
+### cli-agent-command
+timeout 240s pnpm test -- src/commands/agent.test.ts src/commands/agent-via-gateway.test.ts src/commands/agents.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start base workers=2 filters=3
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-cwdjII/base-1778261686494.log meta=/tmp/openclaw-test-parallel-cwdjII/base-1778261686494-failure.json
+[test-parallel] done base code=1 elapsed=173.9s
+ ELIFECYCLE  Test failed. See above for more details.
+EXIT_CODE=1

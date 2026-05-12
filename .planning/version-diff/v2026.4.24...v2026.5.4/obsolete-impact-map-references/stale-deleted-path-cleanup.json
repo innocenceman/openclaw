@@ -1,0 +1,793 @@
+{
+  "removedReferenceCount": 153,
+  "removedReferences": [
+    {
+      "file": ".planning/impact-map/test-infra/profiles-and-suites/config-and-runner/README.md",
+      "line": "- `.agents/skills/blacksmith-testbox/SKILL.md`",
+      "deletedPaths": [".agents/skills/blacksmith-testbox/SKILL.md"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/profiles-and-suites/config-and-runner/code-paths.md",
+      "line": "- `.agents/skills/blacksmith-testbox/SKILL.md`",
+      "deletedPaths": [".agents/skills/blacksmith-testbox/SKILL.md"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/profiles-and-suites/config-and-runner/code-paths.md",
+      "line": "- `.codex`",
+      "deletedPaths": [".codex"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/profiles-and-suites/config-and-runner/code-paths.md",
+      "line": "- `.github/codeql/codeql-javascript-typescript.yml`",
+      "deletedPaths": [".github/codeql/codeql-javascript-typescript.yml"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/profiles-and-suites/root-tests/code-paths.md",
+      "line": "- `test/scripts/bundled-plugin-staged-runtime-deps.test.ts`",
+      "deletedPaths": ["test/scripts/bundled-plugin-staged-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md",
+      "line": "- `test/fixtures/extension-relative-outside-package-inventory.json`",
+      "deletedPaths": ["test/fixtures/extension-relative-outside-package-inventory.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md",
+      "line": "- `test/tsconfig/tsconfig.core.test.agents.json`",
+      "deletedPaths": ["tsconfig.core.test.agents.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md",
+      "line": "- `test/tsconfig/tsconfig.core.test.json`",
+      "deletedPaths": ["tsconfig.core.test.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md",
+      "line": "- `test/tsconfig/tsconfig.core.test.non-agents.json`",
+      "deletedPaths": ["tsconfig.core.test.non-agents.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md",
+      "line": "- `test/tsconfig/tsconfig.extensions.test.json`",
+      "deletedPaths": ["tsconfig.extensions.test.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md",
+      "line": "- `test/tsconfig/tsconfig.test.json`",
+      "deletedPaths": ["tsconfig.test.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md",
+      "line": "- `test/tsconfig/tsconfig.test.packages.json`",
+      "deletedPaths": ["tsconfig.test.packages.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md",
+      "line": "- `test/tsconfig/tsconfig.test.src.json`",
+      "deletedPaths": ["tsconfig.test.src.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/README.md",
+      "line": "- `test/tsconfig/tsconfig.test.ui.json`",
+      "deletedPaths": ["tsconfig.test.ui.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md",
+      "line": "- `test/tsconfig/tsconfig.core.test.agents.json`",
+      "deletedPaths": ["tsconfig.core.test.agents.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md",
+      "line": "- `test/tsconfig/tsconfig.core.test.json`",
+      "deletedPaths": ["tsconfig.core.test.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md",
+      "line": "- `test/tsconfig/tsconfig.core.test.non-agents.json`",
+      "deletedPaths": ["tsconfig.core.test.non-agents.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md",
+      "line": "- `test/tsconfig/tsconfig.extensions.test.json`",
+      "deletedPaths": ["tsconfig.extensions.test.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md",
+      "line": "- `test/tsconfig/tsconfig.test.json`",
+      "deletedPaths": ["tsconfig.test.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md",
+      "line": "- `test/tsconfig/tsconfig.test.packages.json`",
+      "deletedPaths": ["tsconfig.test.packages.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md",
+      "line": "- `test/tsconfig/tsconfig.test.src.json`",
+      "deletedPaths": ["tsconfig.test.src.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/change-to-test.md",
+      "line": "- `test/tsconfig/tsconfig.test.ui.json`",
+      "deletedPaths": ["tsconfig.test.ui.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md",
+      "line": "- `test/fixtures/extension-relative-outside-package-inventory.json`",
+      "deletedPaths": ["test/fixtures/extension-relative-outside-package-inventory.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md",
+      "line": "- `test/tsconfig/tsconfig.core.test.agents.json`",
+      "deletedPaths": ["tsconfig.core.test.agents.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md",
+      "line": "- `test/tsconfig/tsconfig.core.test.json`",
+      "deletedPaths": ["tsconfig.core.test.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md",
+      "line": "- `test/tsconfig/tsconfig.core.test.non-agents.json`",
+      "deletedPaths": ["tsconfig.core.test.non-agents.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md",
+      "line": "- `test/tsconfig/tsconfig.extensions.test.json`",
+      "deletedPaths": ["tsconfig.extensions.test.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md",
+      "line": "- `test/tsconfig/tsconfig.test.json`",
+      "deletedPaths": ["tsconfig.test.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md",
+      "line": "- `test/tsconfig/tsconfig.test.packages.json`",
+      "deletedPaths": ["tsconfig.test.packages.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md",
+      "line": "- `test/tsconfig/tsconfig.test.src.json`",
+      "deletedPaths": ["tsconfig.test.src.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/fixtures/code-paths.md",
+      "line": "- `test/tsconfig/tsconfig.test.ui.json`",
+      "deletedPaths": ["tsconfig.test.ui.json"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/code-paths.md",
+      "line": "- `test/helpers/channels/bundled-channel-plugin-loader.ts`",
+      "deletedPaths": ["test/helpers/channels/bundled-channel-plugin-loader.ts"]
+    },
+    {
+      "file": ".planning/impact-map/test-infra/fixtures-and-helpers/helpers-core/code-paths.md",
+      "line": "- `test/helpers/channels/lazy-object-surface.ts`",
+      "deletedPaths": ["test/helpers/channels/lazy-object-surface.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/package-runtime-deps/README.md",
+      "line": "- Package/runtime staging surfaces include `scripts/stage-bundled-plugin-runtime-deps.mjs`, `scripts/stage-bundled-plugin-runtime.mjs`, `scripts/lib/bundled-plugin-build-entries.mjs`, `src/plugins/stage-bundled-plugin-runtime.test.ts`, and `test/scripts/stage-bundled-plugin-runtime-deps.test.ts`.",
+      "deletedPaths": [
+        "scripts/stage-bundled-plugin-runtime-deps.mjs",
+        "test/scripts/stage-bundled-plugin-runtime-deps.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/extensions/package-runtime-deps/code-paths.md",
+      "line": "  -> scripts/stage-bundled-plugin-runtime-deps.mjs",
+      "deletedPaths": ["scripts/stage-bundled-plugin-runtime-deps.mjs"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/provider-plugins/openrouter/code-paths.md",
+      "line": "- `extensions/openrouter/register.runtime.ts`",
+      "deletedPaths": ["extensions/openrouter/register.runtime.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/auth-integration-plugins/lobster/README.md",
+      "line": "- `extensions/lobster/src/test-helpers.ts`",
+      "deletedPaths": ["extensions/lobster/src/test-helpers.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/auth-integration-plugins/lobster/code-paths.md",
+      "line": "- `extensions/lobster/src/test-helpers.ts`",
+      "deletedPaths": ["extensions/lobster/src/test-helpers.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/memory-media-voice-plugins/voice-call/code-paths.md",
+      "line": "- `extensions/voice-call/src/providers/index.ts`",
+      "deletedPaths": ["extensions/voice-call/src/providers/index.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/memory-media-voice-plugins/memory-lancedb/README.md",
+      "line": "- `extensions/memory-lancedb/lancedb-runtime.test.ts`",
+      "deletedPaths": ["extensions/memory-lancedb/lancedb-runtime.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/memory-media-voice-plugins/memory-lancedb/code-paths.md",
+      "line": "- `extensions/memory-lancedb/lancedb-runtime.test.ts`",
+      "deletedPaths": ["extensions/memory-lancedb/lancedb-runtime.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/signal/change-to-test.md",
+      "line": "| Runtime dependency/export changed    | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Signal tests                                                                                                           | `pnpm build` is required for runtime API or production dynamic import changes.                                  |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/twitch/change-to-test.md",
+      "line": "| Runtime dependency/export changed | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Twitch tests                                      | `pnpm build` is required for Twurple dependency, package export, or production runtime boundary changes.                                        |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/zalo/change-to-test.md",
+      "line": "| Runtime dependency/export changed | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Zalo tests                                                                            | `pnpm build` is required for package exports, undici/proxy boundaries, or production dynamic import changes. |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/nextcloud-talk/README.md",
+      "line": "- `extensions/nextcloud-talk/src/api.ts`",
+      "deletedPaths": ["extensions/nextcloud-talk/src/api.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/nextcloud-talk/change-to-test.md",
+      "line": "| Runtime dependency/export changed     | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Nextcloud Talk tests                              | `pnpm build` is required if package exports or production runtime boundaries change.                                                          |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/nextcloud-talk/code-paths.md",
+      "line": "- `extensions/nextcloud-talk/src/api.ts`",
+      "deletedPaths": ["extensions/nextcloud-talk/src/api.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/nostr/change-to-test.md",
+      "line": "| Runtime dependency/export changed                | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Nostr tests                                                                   | `pnpm build` is required for package exports, `nostr-tools` boundary changes, or production runtime behavior.          |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/slack/change-to-test.md",
+      "line": "| Runtime dependency/export changed    | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Slack tests                                                                                                                                                                                                                                        | `pnpm build` is required for staged deps, package exports, or production dynamic import changes.          |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/msteams/README.md",
+      "line": "- `extensions/msteams/src/actions.ts`",
+      "deletedPaths": ["extensions/msteams/src/actions.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/msteams/change-to-test.md",
+      "line": "| Runtime dependency/export changed        | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Teams tests                                                                                                                                                                          | `pnpm build` is required for package exports, SDK lazy loading, or production runtime boundary changes.    |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/msteams/code-paths.md",
+      "line": "- `extensions/msteams/src/actions.ts`",
+      "deletedPaths": ["extensions/msteams/src/actions.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/whatsapp/file-roles.md",
+      "line": "| `extensions/whatsapp/src/auto-reply/heartbeat-runner.ts`        | Heartbeat loop helper.                                                                                                                                                          | Affects monitor liveness and reconnect cadence.                                                                           |",
+      "deletedPaths": ["extensions/whatsapp/src/auto-reply/heartbeat-runner.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/mattermost/change-to-test.md",
+      "line": "| Runtime dependency/export changed     | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Mattermost tests                                                                                                                                                                                                                                                            | `pnpm build` is required if package exports, build output, or lazy-loading boundaries change.           |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/mattermost/file-roles.md",
+      "line": "| `extensions/mattermost/src/config-schema.ts`                                              | Channel config schema.                                                                  | Affects validation, onboarding, status diagnostics, and config compatibility.                             |",
+      "deletedPaths": ["extensions/mattermost/src/config-schema.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/mattermost/code-paths.md",
+      "line": "- `extensions/mattermost/src/config-schema.ts`",
+      "deletedPaths": ["extensions/mattermost/src/config-schema.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/synology-chat/change-to-test.md",
+      "line": "| Runtime dependency/export changed          | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Synology Chat tests                                    | `pnpm build` is required for package exports or production runtime boundary changes.                          |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/matrix/README.md",
+      "line": "- `extensions/matrix/.npmignore`",
+      "deletedPaths": [".npmignore"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/matrix/code-paths.md",
+      "line": "- `extensions/matrix/.npmignore`",
+      "deletedPaths": [".npmignore"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/tlon/change-to-test.md",
+      "line": "| Runtime dependency/export changed      | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Tlon tests                                                      | `pnpm build` is required for package exports, Urbit/Tlon dependency boundary, or bundled skill behavior.                           |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/zalouser/change-to-test.md",
+      "line": "| Runtime dependency/export changed | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts` and targeted Zalo Personal tests                                                             | `pnpm build` is required for package exports, `zca-js` boundaries, or production dynamic import changes.                   |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/telegram/change-to-test.md",
+      "line": "| Manifest id/package metadata/channel labels/runtime deps | `pnpm test:contracts:channels` and plugin catalog/invariant tests if available                                                                                                                                                        | `pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts`; `pnpm build` if build/published surface changes. |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/extensions/channel-plugins/telegram/file-roles.md",
+      "line": "| `extensions/telegram/src/bot-handlers.ts` and `extensions/telegram/src/bot-handlers.runtime.ts`                                                                                                | Registers update handlers, inbound debounce, forwarded burst coalescing, media group buffering, text fragment merge, callback/media handling.  | Main inbound handler fan-out.                                                |",
+      "deletedPaths": ["extensions/telegram/src/bot-handlers.ts"]
+    },
+    {
+      "file": ".planning/impact-map/docs/mintlify/code-paths.md",
+      "line": "- `docs/refactor/async-exec-duplicate-completion-investigation.md`",
+      "deletedPaths": ["docs/refactor/async-exec-duplicate-completion-investigation.md"]
+    },
+    {
+      "file": ".planning/impact-map/docs/mintlify/code-paths.md",
+      "line": "- `docs/refactor/qa.md`",
+      "deletedPaths": ["docs/refactor/qa.md"]
+    },
+    {
+      "file": ".planning/impact-map/docs/mintlify/.i18n/code-paths.md",
+      "line": "- `scripts/docs-i18n/pi_command.go`",
+      "deletedPaths": ["scripts/docs-i18n/pi_command.go"]
+    },
+    {
+      "file": ".planning/impact-map/docs/mintlify/.i18n/code-paths.md",
+      "line": "- `scripts/docs-i18n/pi_rpc_client.go`",
+      "deletedPaths": ["scripts/docs-i18n/pi_rpc_client.go"]
+    },
+    {
+      "file": ".planning/impact-map/docs/mintlify/.i18n/code-paths.md",
+      "line": "- `scripts/docs-i18n/pi_rpc_client_test.go`",
+      "deletedPaths": ["scripts/docs-i18n/pi_rpc_client_test.go"]
+    },
+    {
+      "file": ".planning/impact-map/scripts/packaging/e2e/README.md",
+      "line": "- `scripts/e2e/bundled-channel-runtime-deps-docker.sh`",
+      "deletedPaths": ["scripts/e2e/bundled-channel-runtime-deps-docker.sh"]
+    },
+    {
+      "file": ".planning/impact-map/scripts/packaging/e2e/code-paths.md",
+      "line": "- `scripts/e2e/bundled-channel-runtime-deps-docker.sh`",
+      "deletedPaths": ["scripts/e2e/bundled-channel-runtime-deps-docker.sh"]
+    },
+    {
+      "file": ".planning/impact-map/scripts/packaging/lib/README.md",
+      "line": "- `scripts/lib/bundled-plugin-root-runtime-mirrors.mjs`",
+      "deletedPaths": ["scripts/lib/bundled-plugin-root-runtime-mirrors.mjs"]
+    },
+    {
+      "file": ".planning/impact-map/scripts/packaging/lib/code-paths.md",
+      "line": "- `scripts/lib/bundled-plugin-root-runtime-mirrors.mjs`",
+      "deletedPaths": ["scripts/lib/bundled-plugin-root-runtime-mirrors.mjs"]
+    },
+    {
+      "file": ".planning/impact-map/scripts/packaging/root-scripts/README.md",
+      "line": "- `Makefile`",
+      "deletedPaths": ["Makefile"]
+    },
+    {
+      "file": ".planning/impact-map/scripts/packaging/root-scripts/README.md",
+      "line": "- `fix2.py`",
+      "deletedPaths": ["fix2.py"]
+    },
+    {
+      "file": ".planning/impact-map/scripts/packaging/root-scripts/code-paths.md",
+      "line": "- `Makefile`",
+      "deletedPaths": ["Makefile"]
+    },
+    {
+      "file": ".planning/impact-map/scripts/packaging/root-scripts/code-paths.md",
+      "line": "- `fix2.py`",
+      "deletedPaths": ["fix2.py"]
+    },
+    {
+      "file": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/README.md",
+      "line": "- `src/plugins/contracts/media-provider-registry.test.ts`",
+      "deletedPaths": ["src/plugins/contracts/media-provider-registry.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/README.md",
+      "line": "- `src/plugins/contracts/media-provider-registry.ts`",
+      "deletedPaths": ["src/plugins/contracts/media-provider-registry.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/cli-commands/command-implementations/channel-plugin-commands/code-paths.md",
+      "line": "- `src/commands/channel-test-helpers.ts`",
+      "deletedPaths": ["src/commands/channel-test-helpers.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/cli-commands/command-implementations/auth-provider-commands/code-paths.md",
+      "line": "- `src/commands/auth-choice.default-model.ts`",
+      "deletedPaths": ["src/commands/auth-choice.default-model.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/cli-commands/command-implementations/config-doctor-commands/code-paths.md",
+      "line": "- `src/commands/doctor-bundled-plugin-runtime-deps.test.ts`",
+      "deletedPaths": ["src/commands/doctor-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/cli-commands/command-implementations/config-doctor-commands/code-paths.md",
+      "line": "- `src/commands/doctor-bundled-plugin-runtime-deps.ts`",
+      "deletedPaths": ["src/commands/doctor-bundled-plugin-runtime-deps.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/cli-commands/command-implementations/agent-command-cli/README.md",
+      "line": "- `src/commands/agent-command.test-support.ts`",
+      "deletedPaths": ["src/commands/agent-command.test-support.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/cli-commands/command-implementations/agent-command-cli/code-paths.md",
+      "line": "- `src/commands/agent-command.test-support.ts`",
+      "deletedPaths": ["src/commands/agent-command.test-support.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/README.md",
+      "line": "- `src/memory-host-sdk/engine-embeddings.ts`",
+      "deletedPaths": ["src/memory-host-sdk/engine-embeddings.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/README.md",
+      "line": "- `src/memory-host-sdk/engine-foundation.ts`",
+      "deletedPaths": ["src/memory-host-sdk/engine-foundation.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/README.md",
+      "line": "- `src/memory-host-sdk/engine.ts`",
+      "deletedPaths": ["src/memory-host-sdk/engine.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/README.md",
+      "line": "- `src/memory-host-sdk/host/batch-error-utils.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-error-utils.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/README.md",
+      "line": "- `src/memory-host-sdk/host/batch-http.test.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-http.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/engine-embeddings.ts`",
+      "deletedPaths": ["src/memory-host-sdk/engine-embeddings.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/engine-foundation.ts`",
+      "deletedPaths": ["src/memory-host-sdk/engine-foundation.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/engine.ts`",
+      "deletedPaths": ["src/memory-host-sdk/engine.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/batch-error-utils.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-error-utils.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/batch-http.test.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-http.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/batch-http.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-http.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/batch-output.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-output.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/batch-provider-common.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-provider-common.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/batch-runner.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-runner.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/batch-status.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-status.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/batch-upload.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-upload.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/batch-utils.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/batch-utils.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/embedding-chunk-limits.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/embedding-chunk-limits.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/embedding-input-limits.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/embedding-input-limits.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/embedding-model-limits.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/embedding-model-limits.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/embedding-vectors.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/embedding-vectors.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/embeddings-debug.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/embeddings-debug.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/embeddings-model-normalize.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/embeddings-model-normalize.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/embeddings-remote-client.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/embeddings-remote-client.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/embeddings-remote-fetch.test.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/embeddings-remote-fetch.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/memory/code-paths.md",
+      "line": "- `src/memory-host-sdk/host/embeddings-remote-fetch.ts`",
+      "deletedPaths": ["src/memory-host-sdk/host/embeddings-remote-fetch.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/browser/README.md",
+      "line": "- `src/proxy-capture/query.ts`",
+      "deletedPaths": ["src/proxy-capture/query.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/browser/code-paths.md",
+      "line": "- `src/proxy-capture/query.ts`",
+      "deletedPaths": ["src/proxy-capture/query.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/media/change-to-test.md",
+      "line": "| `media/`     | pnpm test -- src/media/fetch.test.ts src/media/server.test.ts src/media/store.test.ts src/media/web-media.test.ts | Escalate to security/channel tests when remote fetch, SSRF, or attachment behavior broadens. | Priority completion unit |",
+      "deletedPaths": ["src/media/server.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/media/file-roles.md",
+      "line": "| `src/media/**`       | Media fetch/store/server helpers, path policy, parsing, and local/remote media handling. | pnpm test -- src/media/fetch.test.ts src/media/server.test.ts src/media/store.test.ts src/media/web-media.test.ts |",
+      "deletedPaths": ["src/media/server.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/media-understanding/README.md",
+      "line": "- `src/image-generation/provider-registry.allowlist.test.ts`",
+      "deletedPaths": ["src/image-generation/provider-registry.allowlist.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/media-understanding/change-to-test.md",
+      "line": "| `media-understanding/` | pnpm test -- src/media-understanding/runtime.test.ts src/media-understanding/provider-registry.test.ts src/media-understanding/runner.video.test.ts src/media-understanding/transcribe-audio.test.ts | Escalate to provider/media tests when model/provider or attachment handling changes. | Residual Wave 1R unit |",
+      "deletedPaths": ["src/media-understanding/transcribe-audio.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/media-understanding/file-roles.md",
+      "line": "| `src/media-understanding/**` | Audio/video/image understanding runner, provider registry, and attachment guards. | pnpm test -- src/media-understanding/runtime.test.ts src/media-understanding/provider-registry.test.ts src/media-understanding/runner.video.test.ts src/media-understanding/transcribe-audio.test.ts |",
+      "deletedPaths": ["src/media-understanding/transcribe-audio.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/capability-modules/media-understanding/code-paths.md",
+      "line": "- `src/image-generation/provider-registry.allowlist.test.ts`",
+      "deletedPaths": ["src/image-generation/provider-registry.allowlist.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/shared-misc-runtime-support/web-provider-root/README.md",
+      "line": "- `src/channel-web.ts`",
+      "deletedPaths": ["src/channel-web.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/shared-misc-runtime-support/test-support/code-paths.md",
+      "line": "- `src/test-utils/provider-registry-allowlist.test-helpers.ts`",
+      "deletedPaths": ["src/test-utils/provider-registry-allowlist.test-helpers.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/shared-misc-runtime-support/test-support/code-paths.md",
+      "line": "- `src/test-utils/repo-scan.ts`",
+      "deletedPaths": ["src/test-utils/repo-scan.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/config-secrets-security/sessions/code-paths.md",
+      "line": "- `src/config/sessions/store.lock.test.ts`",
+      "deletedPaths": ["src/config/sessions/store.lock.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/config-secrets-security/security-guards/README.md",
+      "line": "- `src/security/audit-channel-security.test-helpers.ts`",
+      "deletedPaths": ["src/security/audit-channel-security.test-helpers.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/config-secrets-security/security-guards/code-paths.md",
+      "line": "- `src/security/audit-channel-security.test-helpers.ts`",
+      "deletedPaths": ["src/security/audit-channel-security.test-helpers.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/providers-auth/README.md",
+      "line": "- `src/agents/auth-profiles.resolve-auth-profile-order.normalizes-z-ai-aliases-auth-order.test.ts`",
+      "deletedPaths": [
+        "src/agents/auth-profiles.resolve-auth-profile-order.normalizes-z-ai-aliases-auth-order.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/providers-auth/README.md",
+      "line": "- `src/agents/auth-profiles.resolve-auth-profile-order.orders-by-lastused-no-explicit-order-exists.test.ts`",
+      "deletedPaths": [
+        "src/agents/auth-profiles.resolve-auth-profile-order.orders-by-lastused-no-explicit-order-exists.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/providers-auth/README.md",
+      "line": "- `src/agents/auth-profiles.resolve-auth-profile-order.uses-stored-profiles-no-config-exists.test.ts`",
+      "deletedPaths": [
+        "src/agents/auth-profiles.resolve-auth-profile-order.uses-stored-profiles-no-config-exists.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/providers-auth/code-paths.md",
+      "line": "- `src/agents/auth-profiles.resolve-auth-profile-order.normalizes-z-ai-aliases-auth-order.test.ts`",
+      "deletedPaths": [
+        "src/agents/auth-profiles.resolve-auth-profile-order.normalizes-z-ai-aliases-auth-order.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/providers-auth/code-paths.md",
+      "line": "- `src/agents/auth-profiles.resolve-auth-profile-order.orders-by-lastused-no-explicit-order-exists.test.ts`",
+      "deletedPaths": [
+        "src/agents/auth-profiles.resolve-auth-profile-order.orders-by-lastused-no-explicit-order-exists.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/providers-auth/code-paths.md",
+      "line": "- `src/agents/auth-profiles.resolve-auth-profile-order.uses-stored-profiles-no-config-exists.test.ts`",
+      "deletedPaths": [
+        "src/agents/auth-profiles.resolve-auth-profile-order.uses-stored-profiles-no-config-exists.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/tools/code-paths.md",
+      "line": "- `src/agents/bash-tools.process.send-keys.test.ts`",
+      "deletedPaths": ["src/agents/bash-tools.process.send-keys.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/runtime/cli-runner/README.md",
+      "line": "- `src/agents/cli-runner/bundle-mcp.codex.test.ts`",
+      "deletedPaths": [".codex"]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/runtime/cli-runner/code-paths.md",
+      "line": "- Primary paths: `src/agents/cli-runner.ts`, `src/agents/cli-runner/**`, `src/agents/cli-backends.ts`, `src/agents/claude-cli-runner.ts`, `src/agents/cli-watchdog-defaults.ts`",
+      "deletedPaths": ["src/agents/claude-cli-runner.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/runtime/cli-runner/code-paths.md",
+      "line": "- `src/agents/cli-runner/bundle-mcp.codex.test.ts`",
+      "deletedPaths": [".codex"]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/pi-runner/core-run-loop/README.md",
+      "line": "- `src/agents/pi-embedded-runner.get-dm-history-limit-from-session-key.falls-back-provider-default-per-dm-not.test.ts`",
+      "deletedPaths": [
+        "src/agents/pi-embedded-runner.get-dm-history-limit-from-session-key.falls-back-provider-default-per-dm-not.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/pi-runner/core-run-loop/README.md",
+      "line": "- `src/agents/pi-embedded-runner.get-dm-history-limit-from-session-key.returns-undefined-sessionkey-is-undefined.test.ts`",
+      "deletedPaths": [
+        "src/agents/pi-embedded-runner.get-dm-history-limit-from-session-key.returns-undefined-sessionkey-is-undefined.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/pi-runner/core-run-loop/README.md",
+      "line": "- `src/agents/pi-embedded-runner.history-limit-from-session-key.test.ts`",
+      "deletedPaths": ["src/agents/pi-embedded-runner.history-limit-from-session-key.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/pi-runner/core-run-loop/code-paths.md",
+      "line": "- `src/agents/pi-embedded-runner.get-dm-history-limit-from-session-key.falls-back-provider-default-per-dm-not.test.ts`",
+      "deletedPaths": [
+        "src/agents/pi-embedded-runner.get-dm-history-limit-from-session-key.falls-back-provider-default-per-dm-not.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/pi-runner/core-run-loop/code-paths.md",
+      "line": "- `src/agents/pi-embedded-runner.get-dm-history-limit-from-session-key.returns-undefined-sessionkey-is-undefined.test.ts`",
+      "deletedPaths": [
+        "src/agents/pi-embedded-runner.get-dm-history-limit-from-session-key.returns-undefined-sessionkey-is-undefined.test.ts"
+      ]
+    },
+    {
+      "file": ".planning/impact-map/src/agent-runtime/pi-runner/core-run-loop/code-paths.md",
+      "line": "- `src/agents/pi-embedded-runner.history-limit-from-session-key.test.ts`",
+      "deletedPaths": ["src/agents/pi-embedded-runner.history-limit-from-session-key.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/evidence/src-acp-verified-wave-2026-05-08/ACP-VERIFIED-WAVE.md",
+      "line": "- `context(getAcpSessionManager)` found `src/acp/control-plane/manager.ts` with direct callers in `src/gateway/session-reset-service.ts`, `src/gateway/server-startup.ts`, `src/agents/agent-command.ts`, `src/agents/acp-spawn.ts`, `src/acp/persistent-bindings.lifecycle.ts`, `src/auto-reply/reply/dispatch-acp.ts`, and ACP reply command handlers.",
+      "deletedPaths": ["src/gateway/server-startup.ts"]
+    },
+    {
+      "file": ".planning/impact-map/evidence/p0-verified-wave-2026-05-08/gitnexus-refresh.md",
+      "line": "| `stageBundledPluginRuntimeDeps` | `scripts/stage-bundled-plugin-runtime-deps.mjs` | LOW risk; 3 impacted symbols; runtime postbuild and targeted test imports included.                                                                |",
+      "deletedPaths": ["scripts/stage-bundled-plugin-runtime-deps.mjs"]
+    },
+    {
+      "file": ".planning/impact-map/evidence/docs-scripts-verified-wave-2026-05-09/DOCS-SCRIPTS-VERIFIED-WAVE.md",
+      "line": "| `pnpm test -- src/scripts/docs-link-audit.test.ts src/config/doc-baseline.test.ts src/config/doc-baseline.integration.test.ts src/plugins/bundled-plugin-metadata.test.ts src/plugins/copy-bundled-plugin-metadata.test.ts test/scripts/stage-bundled-plugin-runtime-deps.test.ts test/release-check.test.ts test/openclaw-npm-release-check.test.ts` | PASS, wrapper completed 8 filters                                                                        | `logs/docs-scripts-targeted-tests.log`   |",
+      "deletedPaths": ["test/scripts/stage-bundled-plugin-runtime-deps.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/evidence/docs-scripts-verified-wave-2026-05-09/logs/gitnexus-evidence.md",
+      "line": "- `context(stageBundledPluginRuntimeDeps, scripts/stage-bundled-plugin-runtime-deps.mjs)`: incoming callers are `scripts/runtime-postbuild.mjs` and the CLI file itself; outgoing calls include package JSON read/write, runtime directory listing, and runtime dependency install.",
+      "deletedPaths": ["scripts/stage-bundled-plugin-runtime-deps.mjs"]
+    },
+    {
+      "file": ".planning/impact-map/evidence/docs-scripts-verified-wave-2026-05-09/logs/gitnexus-evidence.md",
+      "line": "| `stageBundledPluginRuntimeDeps`   | `scripts/stage-bundled-plugin-runtime-deps.mjs` | `scripts/runtime-postbuild.mjs`; `scripts/stage-bundled-plugin-runtime-deps.mjs`         |",
+      "deletedPaths": ["scripts/stage-bundled-plugin-runtime-deps.mjs"]
+    },
+    {
+      "file": ".planning/impact-map/ui/web-ui/public-assets/README.md",
+      "line": "- `dream-diary-preview-v2.html`",
+      "deletedPaths": ["dream-diary-preview-v2.html"]
+    },
+    {
+      "file": ".planning/impact-map/ui/web-ui/public-assets/README.md",
+      "line": "- `dream-diary-preview-v3.html`",
+      "deletedPaths": ["dream-diary-preview-v3.html"]
+    },
+    {
+      "file": ".planning/impact-map/ui/web-ui/public-assets/code-paths.md",
+      "line": "- `dream-diary-preview-v2.html`",
+      "deletedPaths": ["dream-diary-preview-v2.html"]
+    },
+    {
+      "file": ".planning/impact-map/ui/web-ui/public-assets/code-paths.md",
+      "line": "- `dream-diary-preview-v3.html`",
+      "deletedPaths": ["dream-diary-preview-v3.html"]
+    },
+    {
+      "file": ".planning/impact-map/ui/web-ui/components/app-shell-lifecycle/code-paths.md",
+      "line": "- `ui/src/ui/chat/context-notice.test.ts`",
+      "deletedPaths": ["ui/src/ui/chat/context-notice.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/ui/web-ui/components/app-shell-lifecycle/code-paths.md",
+      "line": "- `ui/src/ui/chat/session-controls.test.ts`",
+      "deletedPaths": ["ui/src/ui/chat/session-controls.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/ui/web-ui/components/app-shell-lifecycle/code-paths.md",
+      "line": "- `ui/src/ui/chat/status-indicators.test.ts`",
+      "deletedPaths": ["ui/src/ui/chat/status-indicators.test.ts"]
+    },
+    {
+      "file": ".planning/impact-map/apps/ios-android/android-app/code-paths.md",
+      "line": "- `apps/android/app/src/main/java/ai/openclaw/app/node/SmsManager.kt`",
+      "deletedPaths": ["apps/android/app/src/main/java/ai/openclaw/app/node/SmsManager.kt"]
+    }
+  ]
+}

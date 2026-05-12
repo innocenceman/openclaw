@@ -1,0 +1,10 @@
+
+> openclaw@2026.3.24 build /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> pnpm canvas:a2ui:bundle && node scripts/tsdown-build.mjs && node scripts/runtime-postbuild.mjs && node scripts/build-stamp.mjs && pnpm build:plugin-sdk:dts && node --import tsx scripts/write-plugin-sdk-entry-dts.ts && node --import tsx scripts/canvas-a2ui-copy.ts && node --import tsx scripts/copy-hook-metadata.ts && node --import tsx scripts/copy-export-html-templates.ts && node --import tsx scripts/write-build-info.ts && node --import tsx scripts/write-cli-startup-metadata.ts && node --import tsx scripts/write-cli-compat.ts
+
+
+> openclaw@2026.3.24 canvas:a2ui:bundle /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> bash scripts/bundle-a2ui.sh
+
+A2UI bundle up to date; skipping.
+ ELIFECYCLE  Command failed.

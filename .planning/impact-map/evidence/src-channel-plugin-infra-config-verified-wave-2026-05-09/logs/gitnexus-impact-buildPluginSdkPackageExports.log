@@ -1,0 +1,36 @@
+{
+  "status": "ambiguous",
+  "message": "Found 3 symbols matching 'buildPluginSdkPackageExports'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "buildPluginSdkPackageExports"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/plugin-sdk/entrypoints.ts:buildPluginSdkPackageExports",
+      "name": "buildPluginSdkPackageExports",
+      "kind": "Function",
+      "filePath": "src/plugin-sdk/entrypoints.ts",
+      "line": 19,
+      "score": 0.56
+    },
+    {
+      "uid": "Function:scripts/lib/plugin-sdk-entries.mjs:buildPluginSdkPackageExports",
+      "name": "buildPluginSdkPackageExports",
+      "kind": "Function",
+      "filePath": "scripts/lib/plugin-sdk-entries.mjs",
+      "line": 18,
+      "score": 0.56
+    },
+    {
+      "uid": "Function:scripts/lib/plugin-sdk-entries.d.mts:buildPluginSdkPackageExports",
+      "name": "buildPluginSdkPackageExports",
+      "kind": "Function",
+      "filePath": "scripts/lib/plugin-sdk-entries.d.mts",
+      "line": 5,
+      "score": 0.56
+    }
+  ]
+}

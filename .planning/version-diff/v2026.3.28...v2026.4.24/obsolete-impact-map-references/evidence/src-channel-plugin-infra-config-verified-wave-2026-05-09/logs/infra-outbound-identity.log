@@ -1,0 +1,9 @@
+=== infra-outbound-identity ===
+pnpm test -- src/infra/outbound/identity.test.ts src/infra/outbound/conversation-id.test.ts src/infra/outbound/outbound-session.test.ts src/infra/outbound/directory-cache.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/infra/outbound/identity.test.ts src/infra/outbound/conversation-id.test.ts src/infra/outbound/outbound-session.test.ts src/infra/outbound/directory-cache.test.ts
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=9.9s
+--- exit=0 duration=11s ---

@@ -1,0 +1,9 @@
+$ pnpm exec markdownlint-cli2 .planning/impact-map/apps/ios-android/README.md .planning/impact-map/apps/ios-android/change-to-test.md .planning/impact-map/apps/ios-android/code-paths.md .planning/impact-map/apps/ios-android/file-roles.md .planning/impact-map/apps/ios-android/leaf-index.md .planning/impact-map/apps/macos/README.md .planning/impact-map/apps/macos/change-to-test.md .planning/impact-map/apps/macos/code-paths.md .planning/impact-map/apps/macos/file-roles.md .planning/impact-map/apps/macos/leaf-index.md .planning/impact-map/apps/provider-channel-settings/README.md .planning/impact-map/apps/provider-channel-settings/leaf-index.md .planning/impact-map/ui/provider-channel-settings/README.md .planning/impact-map/ui/provider-channel-settings/leaf-index.md .planning/impact-map/ui/web-ui/README.md .planning/impact-map/ui/web-ui/change-to-test.md .planning/impact-map/ui/web-ui/code-paths.md .planning/impact-map/ui/web-ui/file-roles.md .planning/impact-map/ui/web-ui/leaf-index.md .planning/impact-map/evidence/apps-ui-verified-wave-2026-05-09/APP-UI-VERIFIED-WAVE.md
+started_at=2026-05-08T20:39:35Z
+undefined
+ ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command "markdownlint-cli2" not found
+
+Did you mean "pnpm exec markdown-it"?
+finished_at=2026-05-08T20:39:37Z
+exit_code=254
+duration_seconds=2

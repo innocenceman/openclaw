@@ -1,0 +1,8 @@
+# timeout 180s pnpm test -- extensions/tlon/src/core.test.ts extensions/tlon/src/monitor/processed-messages.test.ts extensions/tlon/src/monitor/settings-helpers.test.ts extensions/tlon/src/security.test.ts extensions/tlon/src/urbit/auth.ssrf.test.ts extensions/tlon/src/urbit/base-url.test.ts extensions/tlon/src/urbit/send.test.ts extensions/tlon/src/urbit/sse-client.test.ts extensions/tlon/src/urbit/upload.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start extensions workers=4 filters=9
+[test-parallel] done extensions code=0 elapsed=9.1s
+
+[exit:0]

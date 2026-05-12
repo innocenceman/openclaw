@@ -1,0 +1,27 @@
+# extensions-diagnostics-otel
+
+Command: pnpm test -- extensions/diagnostics-otel/src/service.test.ts
+Started: 2026-05-08T02:47:30.205Z
+Ended: 2026-05-08T02:47:42.513Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/diagnostics-otel/src/service.test.ts
+
+[test-parallel] start extensions workers=4 filters=1
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  1 passed (1)
+      Tests  8 passed (8)
+   Start at  10:47:33
+   Duration  9.05s (transform 3.99s, setup 8.65s, import 162ms, tests 28ms, environment 0ms)
+
+[test-parallel] done extensions code=0 elapsed=10.2s
+
+
+## stderr
+

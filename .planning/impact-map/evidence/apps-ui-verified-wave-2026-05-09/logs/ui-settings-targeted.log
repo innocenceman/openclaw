@@ -1,0 +1,31 @@
+$ bash -lc cd ui && pnpm exec vitest run --config vitest.config.ts src/ui/app-settings.test.ts src/ui/config-form.browser.test.ts src/ui/navigation.test.ts src/ui/navigation.browser.test.ts src/ui/navigation-groups.test.ts src/ui/storage.node.test.ts src/ui/theme.test.ts
+started_at=2026-05-08T20:33:05Z
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24/ui
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯ Unhandled Error ⎯⎯⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1:63315
+ ❯ Server.setupListenHandle [as _listen2] node:net:1918:21
+ ❯ listenInCluster node:net:1997:12
+ ❯ GetAddrInfoReqWrap.callback node:net:2206:7
+ ❯ GetAddrInfoReqWrap.onlookupall [as oncomplete] node:dns:134:8
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1', port: 63315 }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  5 passed (5)
+      Tests  56 passed (56)
+     Errors  1 error
+   Start at  04:33:06
+   Duration  3.57s (transform 1.56s, setup 0ms, import 1.77s, tests 357ms, environment 6.77s)
+
+finished_at=2026-05-08T20:33:10Z
+exit_code=1
+duration_seconds=5

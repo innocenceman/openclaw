@@ -1,0 +1,9 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/sandbox/bind-spec.test.ts src/agents/sandbox/config-hash.test.ts src/agents/sandbox/context.user-fallback.test.ts src/agents/sandbox/fs-bridge.anchored-ops.test.ts src/agents/sandbox/fs-bridge.boundary.test.ts src/agents/sandbox/fs-paths.test.ts src/agents/sandbox/host-paths.test.ts src/agents/sandbox/registry.test.ts src/agents/sandbox/sanitize-env-vars.test.ts src/agents/sandbox/workspace-mounts.test.ts src/agents/sandbox/workspace.test.ts src/agents/tool-policy-sandbox.test.ts src/agents/sandbox.resolveSandboxContext.test.ts src/agents/sandbox-paths.test.ts src/agents/sandbox-merge.test.ts src/agents/sandbox-create-args.test.ts src/agents/sandbox-explain.test.ts src/commands/sandbox-explain.test.ts src/commands/sandbox-formatters.test.ts
+
+[test-parallel] start base workers=2 filters=19
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-A6K3iQ/base-1778258247669.log meta=/tmp/openclaw-test-parallel-A6K3iQ/base-1778258247669-failure.json
+[test-parallel] done base code=1 elapsed=246.7s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-A6K3iQ
+ ELIFECYCLE  Test failed. See above for more details.

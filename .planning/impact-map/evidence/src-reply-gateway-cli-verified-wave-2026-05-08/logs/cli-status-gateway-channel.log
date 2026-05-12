@@ -1,0 +1,12 @@
+### cli-status-gateway-channel
+pnpm test -- src/commands/channels.status.command-flow.test.ts src/cli/gateway-cli.coverage.test.ts src/cli/daemon-cli/status.test.ts src/commands/status-all/report-lines.test.ts
+[test-parallel] done unit code=0 elapsed=10.3s
+EXIT_CODE=0
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start base workers=2 filters=2
+[test-parallel] done base code=0 elapsed=10.5s
+[test-parallel] start unit workers=2 filters=2
+[test-parallel] done unit code=0 elapsed=8.1s
+EXIT_CODE=0

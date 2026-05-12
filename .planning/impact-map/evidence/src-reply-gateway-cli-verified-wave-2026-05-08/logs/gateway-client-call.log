@@ -1,0 +1,8 @@
+### gateway-client-call
+pnpm test -- src/gateway/client.test.ts src/gateway/call.test.ts src/gateway/client-callsites.guard.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start gateway workers=1 filters=3
+[test-parallel] done gateway code=0 elapsed=9.1s
+EXIT_CODE=0

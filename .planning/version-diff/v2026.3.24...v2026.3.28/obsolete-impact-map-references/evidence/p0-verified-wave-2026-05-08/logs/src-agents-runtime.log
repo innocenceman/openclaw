@@ -1,0 +1,27 @@
+# src-agents-runtime
+
+Command: pnpm test -- src/agents/acp-spawn.test.ts src/agents/agent-scope.test.ts src/agents/cli-runner.test.ts src/agents/command/delivery.test.ts
+Started: 2026-05-08T02:35:00.574Z
+Ended: 2026-05-08T02:35:27.196Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/acp-spawn.test.ts src/agents/agent-scope.test.ts src/agents/cli-runner.test.ts src/agents/command/delivery.test.ts
+
+[test-parallel] start base workers=2 filters=4
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  4 passed (4)
+      Tests  58 passed (58)
+   Start at  10:35:04
+   Duration  22.77s (transform 11.41s, setup 24.52s, import 2.57s, tests 10.24s, environment 1ms)
+
+[test-parallel] done base code=0 elapsed=24.2s
+
+
+## stderr
+

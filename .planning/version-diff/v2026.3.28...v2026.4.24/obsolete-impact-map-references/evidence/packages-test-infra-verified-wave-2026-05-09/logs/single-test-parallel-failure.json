@@ -1,0 +1,23 @@
+{
+  "entry": "unit",
+  "command": [
+    "pnpm",
+    "vitest",
+    "run",
+    "--config",
+    "vitest.unit.config.ts",
+    "--pool=threads",
+    "--isolate=false",
+    "test/scripts/test-parallel.test.ts",
+    "--maxWorkers",
+    "2",
+    "--silent=passed-only"
+  ],
+  "elapsedMs": 6465,
+  "error": null,
+  "exitCode": 1,
+  "fatalSeen": false,
+  "logPath": "/tmp/openclaw-test-parallel-ppKdM1/unit-1778275139684.log",
+  "outputTail": "",
+  "signal": null
+}

@@ -1,0 +1,8 @@
+### cli-program-registration
+timeout 240s pnpm test -- src/cli/program/build-program.test.ts src/cli/program.smoke.test.ts src/cli/argv.test.ts src/cli/command-options.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=10.1s
+EXIT_CODE=0

@@ -1,0 +1,8 @@
+# pnpm plugin-sdk:check-exports
+
+> openclaw@2026.3.24 plugin-sdk:check-exports /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/sync-plugin-sdk-exports.mjs --check
+
+plugin-sdk exports synced.
+
+[exit:0]

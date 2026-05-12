@@ -1,0 +1,5 @@
+[test-parallel] entry=unit
+[test-parallel] cwd=/home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+[test-parallel] done unit code=1 signal=none elapsed=6.5s

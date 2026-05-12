@@ -1,0 +1,911 @@
+# test-infra-mocks
+
+Command: pnpm test -- src/gateway/boot.test.ts src/gateway/http-auth-helpers.test.ts src/commands/agent.test.ts
+Started: 2026-05-08T02:27:11.495Z
+Ended: 2026-05-08T02:33:16.210Z
+Exit code: 1
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/gateway/boot.test.ts src/gateway/http-auth-helpers.test.ts src/commands/agent.test.ts
+
+[test-parallel] start base workers=2 filters=1
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+ ❯ src/commands/agent.test.ts (38 tests | 28 failed) 338316ms
+     × creates a session entry when deriving from --to 297152ms
+     × persists thinking and verbose overrides 3488ms
+     × 'defaults senderIsOwner to true for lo…' 1306ms
+     × 'honors explicit senderIsOwner override' 1355ms
+     × honors explicit senderIsOwner for ingress runs 1701ms
+     × resumes when session-id is provided 1158ms
+     × resolves resumed session transcript path from custom session store directory 1083ms
+     × does not duplicate agent events from embedded runs 1213ms
+     × uses provider/model from agents.defaults.model.primary 1237ms
+     × uses default fallback list for session model overrides 1164ms
+     × keeps stored session model override when models allowlist is empty 1090ms
+     × persists cleared model and auth override fields when stored override falls back to default 1081ms
+     × applies per-run provider and model overrides without persisting them 2282ms
+     × keeps stored auth profile overrides during one-off cross-provider runs 1333ms
+     × keeps explicit sessionKey even when sessionId exists elsewhere 1275ms
+     × persists resolved sessionFile for existing session keys 1132ms
+     × preserves topic transcript suffix when persisting missing sessionFile 1037ms
+     × derives session key from --agent when no routing target is provided 1144ms
+     × defaults thinking to low for reasoning-capable models 1485ms
+     × defaults thinking to adaptive for Anthropic Claude 4.6 models 1098ms
+     × prefers per-model thinking over global thinkingDefault 1311ms
+     × prints JSON payload when requested 1187ms
+     × passes the message through as the agent prompt 1222ms
+     × passes through telegram accountId when delivering 1356ms
+     × uses reply channel as the message channel context 1370ms
+     × prefers runContext for embedded routing 1548ms
+     × forwards accountId to embedded runs 2330ms
+     × logs output when delivery is disabled 1849ms
+
+ Test Files  1 failed (1)
+      Tests  28 failed | 10 passed (38)
+   Start at  10:27:14
+   Duration  361.04s (transform 17.21s, setup 22.36s, import 150ms, tests 338.32s, environment 0ms)
+
+[test-parallel] done base code=1 elapsed=362.5s
+ ELIFECYCLE  Test failed. See above for more details.
+
+
+## stderr
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 28 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > creates a session entry when deriving from --to
+Error: Test timed out in 120000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ src/commands/agent.test.ts:438:3
+    436|   });
+    437|
+    438|   it("creates a session entry when deriving from --to", async () => {
+       |   ^
+    439|     await withTempHome(async (home) => {
+    440|       const store = path.join(home, "sessions.json");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > persists thinking and verbose overrides
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-2/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-2/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:459:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:455:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-2/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-2/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > 'defaults senderIsOwner to true for lo…'
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-3/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-3/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:182:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:487:22
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-3/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-3/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > 'honors explicit senderIsOwner override'
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-4/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-4/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:182:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:487:22
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-4/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-4/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > honors explicit senderIsOwner for ingress runs
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-7/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-7/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommandFromIngress src/agents/agent-command.ts:1324:10
+ ❯ src/commands/agent.test.ts:524:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:521:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-7/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-7/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > resumes when session-id is provided
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-8/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-8/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:546:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:535:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-8/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-8/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > resolves resumed session transcript path from custom session store directory
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-12/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-12/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:622:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:615:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-12/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-12/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > does not duplicate agent events from embedded runs
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-13/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-13/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:667:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:637:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-13/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-13/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > uses provider/model from agents.defaults.model.primary
+FailoverError: No API key found for provider "openai". Auth store: /tmp/openclaw-agent-pUNP5W/case-14/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-14/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:686:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:676:5
+
+Caused by: Error: No API key found for provider "openai". Auth store: /tmp/openclaw-agent-pUNP5W/case-14/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-14/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > uses default fallback list for session model overrides
+Error: All models failed (2): anthropic/claude-opus-4-5: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-15/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-15/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openai/gpt-5.2: No API key found for provider "openai". Auth store: /tmp/openclaw-agent-pUNP5W/case-15/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-15/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth)
+ ❯ throwFallbackFailureSummary src/agents/model-fallback.ts:203:9
+    201|   const summary =
+    202|     params.attempts.length > 0 ? params.attempts.map(params.formatAtte…
+    203|   throw new Error(
+       |         ^
+    204|     `All ${params.label} failed (${params.attempts.length || params.ca…
+    205|     {
+ ❯ runWithModelFallback src/agents/model-fallback.ts:756:3
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:731:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:693:5
+
+Caused by: FailoverError: No API key found for provider "openai". Auth store: /tmp/openclaw-agent-pUNP5W/case-15/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-15/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ throwAuthProfileFailover src/agents/pi-embedded-runner/run.ts:575:17
+ ❯ src/agents/pi-embedded-runner/run.ts:729:11
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { reason: 'auth', provider: 'openai', model: 'gpt-5.2', profileId: undefined, status: 401, code: undefined }
+Caused by: Error: No API key found for provider "openai". Auth store: /tmp/openclaw-agent-pUNP5W/case-15/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-15/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > keeps stored session model override when models allowlist is empty
+FailoverError: Unknown model: openai/gpt-custom-foo
+ ❯ src/agents/pi-embedded-runner/run.ts:326:15
+    324|       );
+    325|       if (!model) {
+    326|         throw new FailoverError(error ?? `Unknown model: ${provider}/$…
+       |               ^
+    327|           reason: "model_not_found",
+    328|           provider,
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > persists cleared model and auth override fields when stored override falls back to default
+FailoverError: No API key found for provider "openai". Auth store: /tmp/openclaw-agent-pUNP5W/case-17/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-17/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ runAgentWithSessionKey src/commands/agent.test.ts:269:3
+ ❯ src/commands/agent.test.ts:815:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:786:5
+
+Caused by: Error: No API key found for provider "openai". Auth store: /tmp/openclaw-agent-pUNP5W/case-17/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-17/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > applies per-run provider and model overrides without persisting them
+Error: All models failed (2): openai/gpt-4.1-mini: No API key found for provider "openai". Auth store: /tmp/openclaw-agent-pUNP5W/case-18/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-18/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | anthropic/claude-opus-4-5: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-18/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-18/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth)
+ ❯ throwFallbackFailureSummary src/agents/model-fallback.ts:203:9
+    201|   const summary =
+    202|     params.attempts.length > 0 ? params.attempts.map(params.formatAtte…
+    203|   throw new Error(
+       |         ^
+    204|     `All ${params.label} failed (${params.attempts.length || params.ca…
+    205|     {
+ ❯ runWithModelFallback src/agents/model-fallback.ts:756:3
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:854:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:845:5
+
+Caused by: FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-18/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-18/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:854:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:845:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { reason: 'auth', provider: 'anthropic', model: 'claude-opus-4-5', profileId: undefined, status: 401, code: undefined }
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-18/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-18/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > keeps stored auth profile overrides during one-off cross-provider runs
+Error: All models failed (2): openai/gpt-4.1-mini: No API key found for provider "openai". Auth store: /tmp/openclaw-agent-pUNP5W/case-21/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-21/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | anthropic/claude-opus-4-5: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-21/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-21/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth)
+ ❯ throwFallbackFailureSummary src/agents/model-fallback.ts:203:9
+    201|   const summary =
+    202|     params.attempts.length > 0 ? params.attempts.map(params.formatAtte…
+    203|   throw new Error(
+       |         ^
+    204|     `All ${params.label} failed (${params.attempts.length || params.ca…
+    205|     {
+ ❯ runWithModelFallback src/agents/model-fallback.ts:756:3
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:959:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:933:5
+
+Caused by: FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-21/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-21/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:959:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:933:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { reason: 'auth', provider: 'anthropic', model: 'claude-opus-4-5', profileId: undefined, status: 401, code: undefined }
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-21/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-21/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > keeps explicit sessionKey even when sessionId exists elsewhere
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-22/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-22/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:998:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:988:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-22/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-22/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > persists resolved sessionFile for existing session keys
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-23/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-23/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:259:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ expectPersistedSessionFile src/commands/agent.test.ts:250:3
+ ❯ src/commands/agent.test.ts:1019:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-23/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-23/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > preserves topic transcript suffix when persisting missing sessionFile
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-24/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-24/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:259:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ expectPersistedSessionFile src/commands/agent.test.ts:250:3
+ ❯ src/commands/agent.test.ts:1027:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-24/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-24/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > derives session key from --agent when no routing target is provided
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-25/.openclaw/agents/ops/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-25/.openclaw/agents/ops/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ runWithDefaultAgentConfig src/commands/agent.test.ts:169:3
+ ❯ src/commands/agent.test.ts:1036:24
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1035:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-25/.openclaw/agents/ops/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-25/.openclaw/agents/ops/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > defaults thinking to low for reasoning-capable models
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-28/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-28/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:281:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ expectDefaultThinkLevel src/commands/agent.test.ts:277:3
+ ❯ src/commands/agent.test.ts:1118:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-28/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-28/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > defaults thinking to adaptive for Anthropic Claude 4.6 models
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-29/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-29/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:281:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ expectDefaultThinkLevel src/commands/agent.test.ts:277:3
+ ❯ src/commands/agent.test.ts:1130:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-29/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-29/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[20/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > prefers per-model thinking over global thinkingDefault
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-30/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-30/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:281:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ expectDefaultThinkLevel src/commands/agent.test.ts:277:3
+ ❯ src/commands/agent.test.ts:1146:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-30/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-30/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[21/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > prints JSON payload when requested
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-31/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-31/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:1176:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1166:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-31/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-31/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > passes the message through as the agent prompt
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-32/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-32/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:182:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1190:22
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-32/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-32/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[23/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > passes through telegram accountId when delivering
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-33/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-33/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:1217:9
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1197:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-33/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-33/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[24/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > uses reply channel as the message channel context
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-34/.openclaw/agents/ops/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-34/.openclaw/agents/ops/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:182:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1244:22
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-34/.openclaw/agents/ops/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-34/.openclaw/agents/ops/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[25/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > prefers runContext for embedded routing
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-35/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-35/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:182:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1252:22
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-35/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-35/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[26/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > forwards accountId to embedded runs
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-36/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-36/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:182:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1265:22
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-36/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-36/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[27/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > logs output when delivery is disabled
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-37/.openclaw/agents/ops/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-37/.openclaw/agents/ops/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ runWithDefaultAgentConfig src/commands/agent.test.ts:169:3
+ ❯ src/commands/agent.test.ts:1273:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1272:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-37/.openclaw/agents/ops/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-37/.openclaw/agents/ops/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[28/28]⎯
+
+[test-parallel] failure tail base
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ src/commands/agent.test.ts:182:5
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1265:22
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-36/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-36/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[27/28]⎯
+
+ FAIL  src/commands/agent.test.ts > agentCommand > logs output when delivery is disabled
+FailoverError: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-37/.openclaw/agents/ops/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-37/.openclaw/agents/ops/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ coerceToFailoverError src/agents/failover-error.ts:321:10
+    319|   const code = getErrorCode(err);
+    320|
+    321|   return new FailoverError(message, {
+       |          ^
+    322|     reason,
+    323|     provider: context?.provider,
+ ❯ runFallbackCandidate src/agents/model-fallback.ts:150:32
+ ❯ runFallbackAttempt src/agents/model-fallback.ts:168:21
+ ❯ runWithModelFallback src/agents/model-fallback.ts:658:24
+ ❯ agentCommandInternal src/agents/agent-command.ts:1173:30
+ ❯ Module.agentCommand src/agents/agent-command.ts:1296:10
+ ❯ runWithDefaultAgentConfig src/commands/agent.test.ts:169:3
+ ❯ src/commands/agent.test.ts:1273:7
+ ❯ Module.withTempHome test/helpers/temp-home.ts:131:12
+ ❯ src/commands/agent.test.ts:1272:5
+
+Caused by: Error: No API key found for provider "anthropic". Auth store: /tmp/openclaw-agent-pUNP5W/case-37/.openclaw/agents/ops/agent/auth-profiles.json (agentDir: /tmp/openclaw-agent-pUNP5W/case-37/.openclaw/agents/ops/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir.
+ ❯ resolveApiKeyForProvider src/agents/model-auth.ts:390:9
+ ❯ getApiKeyForModel src/agents/model-auth.ts:518:10
+ ❯ resolveApiKeyForCandidate src/agents/pi-embedded-runner/run.ts:590:16
+ ❯ applyApiKeyInfo src/agents/pi-embedded-runner/run.ts:600:28
+ ❯ src/agents/pi-embedded-runner/run.ts:718:17
+ ❯ src/process/command-queue.ts:132:28
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[28/28]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  28 failed | 10 passed (38)
+   Start at  10:27:14
+   Duration  361.04s (transform 17.21s, setup 22.36s, import 150ms, tests 338.32s, environment 0ms)
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-smBEJ5/base-1778207233594.log meta=/tmp/openclaw-test-parallel-smBEJ5/base-1778207233594-failure.json
+

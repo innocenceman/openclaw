@@ -1,0 +1,31 @@
+# twitch Channel Plugin File Roles
+
+Coverage: `deep-partial`
+Freshness: 2026-05-07 repo-native structural inspection only
+
+| File or path                                                                | Role                                                                                       | Impact notes                                                                                       |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| `extensions/twitch/openclaw.plugin.json`                                    | Plugin manifest for id/channel registration.                                               | Affects channel catalog and bundled plugin invariants.                                             |
+| `extensions/twitch/package.json`                                            | Package metadata and Twurple runtime dependencies.                                         | Affects runtime dependency staging, install compatibility, and docs metadata.                      |
+| `extensions/twitch/index.ts`                                                | Plugin entrypoint and monitor export.                                                      | Affects loader registration, runtime setter, and direct monitor imports.                           |
+| `extensions/twitch/api.ts` / `runtime-api.ts`                               | Runtime API barrels.                                                                       | Keep imports on approved local/public SDK surfaces.                                                |
+| `extensions/twitch/src/plugin.ts`                                           | Main Twitch channel plugin composition.                                                    | Affects setup/status/monitor/outbound/actions wiring.                                              |
+| `extensions/twitch/src/runtime.ts`                                          | Runtime injection getter/setter.                                                           | Affects tests and runtime access.                                                                  |
+| `extensions/twitch/src/config-schema.ts` / `src/config.ts` / `src/types.ts` | Zod schema, account config resolution, and Twitch types.                                   | Affects single vs multi-account config, token fields, roles, allowlists, and compatibility.        |
+| `extensions/twitch/src/setup-surface.ts`                                    | Setup wizard/adapter for OAuth token, client ID, channel, refresh token, roles, allowFrom. | Affects onboarding, env token support, token refresh prompts, and group access policy.             |
+| `extensions/twitch/src/status.ts` / `src/probe.ts`                          | Status/probe logic.                                                                        | Affects configured status, token/client checks, and diagnostics.                                   |
+| `extensions/twitch/src/token.ts`                                            | Token resolution/refresh support.                                                          | Affects OAuth token source, refresh tokens, expiry fields, and auth provider behavior.             |
+| `extensions/twitch/src/twitch-client.ts`                                    | Twurple client creation and chat/API helpers.                                              | Affects monitor, send, probe, reconnect, and API behavior.                                         |
+| `extensions/twitch/src/monitor.ts`                                          | Twitch chat monitor provider.                                                              | Affects inbound chat connection, event handling, and route dispatch.                               |
+| `extensions/twitch/src/access-control.ts`                                   | Role/allowlist/mention checks.                                                             | Affects who can trigger the bot and when mention gating applies.                                   |
+| `extensions/twitch/src/outbound.ts`                                         | Channel outbound adapter, target resolution, text/media send wrapper.                      | Affects manual sends, implicit targets, allowlist behavior, and media-as-URL sends.                |
+| `extensions/twitch/src/send.ts`                                             | Internal Twitch message send.                                                              | Affects Twurple chat sends, channel normalization, error mapping, and result IDs.                  |
+| `extensions/twitch/src/actions.ts`                                          | Message action adapter for sending Twitch messages.                                        | Affects tool action discovery and `send` action behavior.                                          |
+| `extensions/twitch/src/resolver.ts`                                         | Runtime resolver helpers.                                                                  | Affects account/client resolution for plugin behavior.                                             |
+| `extensions/twitch/src/utils/markdown.ts` / `utils/twitch.ts`               | Markdown stripping/chunking and Twitch channel/account utilities.                          | Affects outbound text limits, channel normalization, account configured checks, and target errors. |
+| `extensions/twitch/test/setup.ts` / `src/test-fixtures.ts`                  | Test support.                                                                              | Shared by Twitch colocated tests.                                                                  |
+| `extensions/twitch/src/*.test.ts`                                           | Colocated access/config/outbound/plugin/probe/send/setup/status/token/client tests.        | First validation layer for this plugin.                                                            |
+
+## Update rule
+
+When a changed file maps to a row above, update `code-paths.md` and `change-to-test.md` with the runtime path and minimal validation command.

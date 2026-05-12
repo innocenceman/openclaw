@@ -1,0 +1,28 @@
+== compat-hooks-all ==
+src/hooks/bundled/boot-md/handler.gateway-startup.integration.test.ts
+src/hooks/bundled/boot-md/handler.test.ts
+src/hooks/bundled/bootstrap-extra-files/handler.test.ts
+src/hooks/bundled/session-memory/handler.test.ts
+src/hooks/fire-and-forget.test.ts
+src/hooks/frontmatter.test.ts
+src/hooks/gmail-setup-utils.test.ts
+src/hooks/gmail-watcher-lifecycle.test.ts
+src/hooks/gmail.test.ts
+src/hooks/hooks-install.test.ts
+src/hooks/import-url.test.ts
+src/hooks/install.test.ts
+src/hooks/internal-hooks.test.ts
+src/hooks/loader.test.ts
+src/hooks/message-hook-mappers.test.ts
+src/hooks/message-hooks.test.ts
+src/hooks/module-loader.test.ts
+src/hooks/plugin-hooks.test.ts
+src/hooks/policy.test.ts
+src/hooks/workspace.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/hooks/bundled/boot-md/handler.gateway-startup.integration.test.ts src/hooks/bundled/boot-md/handler.test.ts src/hooks/bundled/bootstrap-extra-files/handler.test.ts src/hooks/bundled/session-memory/handler.test.ts src/hooks/fire-and-forget.test.ts src/hooks/frontmatter.test.ts src/hooks/gmail-setup-utils.test.ts src/hooks/gmail-watcher-lifecycle.test.ts src/hooks/gmail.test.ts src/hooks/hooks-install.test.ts src/hooks/import-url.test.ts src/hooks/install.test.ts src/hooks/internal-hooks.test.ts src/hooks/loader.test.ts src/hooks/message-hook-mappers.test.ts src/hooks/message-hooks.test.ts src/hooks/module-loader.test.ts src/hooks/plugin-hooks.test.ts src/hooks/policy.test.ts src/hooks/workspace.test.ts
+
+[test-parallel] start unit workers=2 filters=20
+[test-parallel] done unit code=0 elapsed=14.6s
+--- exit=0 duration=16s ---

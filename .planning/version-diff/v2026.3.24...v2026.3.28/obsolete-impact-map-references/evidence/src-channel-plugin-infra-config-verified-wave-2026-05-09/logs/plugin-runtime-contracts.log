@@ -1,0 +1,9 @@
+=== plugin-runtime-contracts ===
+pnpm test -- src/plugins/contracts/catalog.contract.test.ts src/plugins/contracts/loader.contract.test.ts src/plugins/contracts/runtime.contract.test.ts src/plugins/schema-validator.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/plugins/contracts/catalog.contract.test.ts src/plugins/contracts/loader.contract.test.ts src/plugins/contracts/runtime.contract.test.ts src/plugins/schema-validator.test.ts
+
+[test-parallel] start unit workers=2 filters=4
+[test-parallel] done unit code=0 elapsed=8.2s
+--- exit=0 duration=9s ---

@@ -1,0 +1,7 @@
+# pnpm check:bundled-plugin-metadata
+
+> openclaw@2026.3.24 check:bundled-plugin-metadata /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/generate-bundled-plugin-metadata.mjs --check
+
+
+[exit:0]

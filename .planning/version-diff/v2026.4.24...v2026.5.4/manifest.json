@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "planning.versionDiff.manifest.v1",
+  "base": {
+    "version": "v2026.4.24",
+    "sourceSha": "cbcfdf62c7297bda66009ea7476f053c3e9addab",
+    "planningRef": "refs/planning/v2026.4.24",
+    "planningCommitSha": "49dc713f0a44f13d52c495877fa58e0364be459d"
+  },
+  "target": {
+    "version": "v2026.5.4",
+    "sourceSha": "325df3efefe9c0887d9357732e68fc8556e78d79",
+    "planningRef": "refs/planning/v2026.5.4",
+    "planningCommitSha": null,
+    "planningCommitResolution": "Resolved after the final one-commit planning squash by local and remote refs/planning/v2026.5.4; the commit cannot embed its own final SHA before creation."
+  },
+  "direction": "sidegrade",
+  "paths": {
+    "nameStatus": "name-status.txt",
+    "addedPaths": "added-paths.txt",
+    "deletedPaths": "deleted-paths.txt",
+    "modifiedPaths": "modified-paths.txt",
+    "renamedPaths": "renamed-paths.tsv",
+    "commits": "commits.txt"
+  },
+  "pathCounts": {
+    "nameStatusRows": 10409,
+    "changedPathCount": 10546
+  },
+  "synthesis": {
+    "leafImpact": "leaf-impact.json",
+    "humanReports": [
+      "SUMMARY.zh-CN.md",
+      "FEATURE-IMPACT.zh-CN.md",
+      "LEAF-IMPACT.md",
+      "COMPATIBILITY.zh-CN.md",
+      "LEAF-CHANGE-BRIEF.zh-CN.md",
+      "PLANNING-REFRESH.zh-CN.md",
+      "ref-anchors.md",
+      "obsolete-impact-map-references.md"
+    ],
+    "featureCount": 14,
+    "coveredPathCount": 10546,
+    "unclassifiedPathCount": 0,
+    "leafImpactSchemaVersion": "planning.versionDiff.leafImpact.v2",
+    "finalLeafCount": 232,
+    "highRiskFeatureCount": 7,
+    "highRiskLeafCount": 149,
+    "leafChangeBrief": "leaf-change-brief.json",
+    "readme": "README.md",
+    "obsoleteImpactMapReferences": "obsolete-impact-map-references.json",
+    "planningRefreshChecklist": "planning-refresh-checklist.json"
+  },
+  "codeIntelligence": {
+    "gitNexusAnalyze": {
+      "command": ["gitnexus", "analyze", "--max-file-size", "10240", "--embeddings"],
+      "commandString": "gitnexus analyze --max-file-size 10240 --embeddings",
+      "status": "passed",
+      "exitCode": 0,
+      "timeoutSec": 3600,
+      "elapsedSec": null,
+      "startedAt": null,
+      "finishedAt": "2026-05-11T13:35:08.035Z",
+      "log": ".planning/version-diff/v2026.4.24...v2026.5.4/code-intelligence/gitnexus-current-index-verification.json",
+      "summary": "Verified current GitNexus openclaw index after user rerun; stats={'files': 16403, 'nodes': 311865, 'edges': 862052, 'communities': 9342, 'processes': 300, 'embeddings': 0}; vectorSearch=unavailable",
+      "verification": "code-intelligence/gitnexus-current-index-verification.json",
+      "recoveryNote": "Updated from the earlier timeout record using current GitNexus registry/local metadata evidence."
+    },
+    "codeReviewGraphBuild": {
+      "command": ["code-review-graph", "build"],
+      "commandString": "code-review-graph build",
+      "status": "passed",
+      "exitCode": 0,
+      "timeoutSec": 1800,
+      "elapsedSec": 1153.504,
+      "startedAt": "2026-05-11T05:08:05.762114Z",
+      "finishedAt": "2026-05-11T05:27:19.266982Z",
+      "log": ".planning/version-diff/v2026.4.24...v2026.5.4/code-intelligence/code-review-graph-build.log",
+      "summary": "INFO: Progress: 15560/15560 files parsed | INFO: FTS index rebuilt: 150636 rows indexed | INFO: Loaded 135076 unique nodes, 1463224 edges | INFO: igraph not available, using file-based community detection | Full build: 15560 files, 152951 nodes, 1474015 edges (postprocess=full)"
+    }
+  },
+  "validation": {
+    "gitNexusAnalyze": "passed: current GitNexus openclaw index verified at 2026-05-11T13:35:08.035Z for commit bb0637bbb466bc3d898112202c614f4740d47328; evidence=.planning/version-diff/v2026.4.24...v2026.5.4/code-intelligence/gitnexus-current-index-verification.json; embeddings=0/vectorSearch unavailable recorded as a GitNexus capability limitation",
+    "codeReviewGraphBuild": "passed: code-review-graph build exit=0; log=.planning/version-diff/v2026.4.24...v2026.5.4/code-intelligence/code-review-graph-build.log",
+    "leafChangeBriefs": "passed: generated 232 per-leaf human-readable briefs",
+    "impactMapSemanticRefresh": "passed: refreshed 232 impacted final leaves; target-existing paths only; evidence at .planning/impact-map/evidence/version-diff-v2026-5-4-semantic-refresh/SEMANTIC-REFRESH.md",
+    "topology": "resolved-by-ref: validate after final commit with HEAD^ == target.sourceSha and refs/planning/v2026.5.4 == HEAD",
+    "remotePlanningRef": "resolved-by-ref: validate with git ls-remote origin refs/planning/v2026.5.4 after push"
+  },
+  "humanReports": {
+    "leafChangeBriefIndex": "LEAF-CHANGE-BRIEF.zh-CN.md",
+    "leafBriefsDir": "leaf-briefs/"
+  },
+  "workflow": {
+    "allowedPlanningIntelligencePaths": [
+      ".planning/**",
+      "AGENTS.md",
+      ".gitnexusignore",
+      ".gitnexus/**",
+      ".code-review-graph/**"
+    ],
+    "finalTopology": "<target-source-commit> + exactly one planning/intelligence-only commit",
+    "sidegradeAuthorization": "User authorized sidegrade recovery from v2026.4.24 baseline to v2026.5.4 target; v2026.4.24-only commits remain compatibility review items."
+  }
+}

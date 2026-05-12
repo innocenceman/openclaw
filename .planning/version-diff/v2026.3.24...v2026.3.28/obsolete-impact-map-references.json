@@ -1,0 +1,346 @@
+{
+  "schemaVersion": "planning.versionDiff.obsoleteImpactMapReferences.v1",
+  "count": 59,
+  "items": [
+    {
+      "originalPath": ".planning/impact-map/evidence/extensions-all-verified-wave-2026-05-09/logs/provider-individual/extensions_qwen-portal-auth_refresh_test_ts.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/extensions-all-verified-wave-2026-05-09/logs/provider-individual/extensions_qwen-portal-auth_refresh_test_ts.log",
+      "deletedPaths": ["extensions/qwen-portal-auth/refresh.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/extensions-all-verified-wave-2026-05-09/logs/provider-plugin-tests.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/extensions-all-verified-wave-2026-05-09/logs/provider-plugin-tests.log",
+      "deletedPaths": ["extensions/qwen-portal-auth/refresh.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/extensions-boundaries-tests.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/logs/extensions-boundaries-tests.log",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/extensions-memory-lancedb.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/logs/extensions-memory-lancedb.log",
+      "deletedPaths": [
+        "src/plugins/bundled-runtime-deps.test.ts",
+        "src/plugins/install-min-host-version-guardrails.test.ts"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/src-agents-runtime.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/logs/src-agents-runtime.log",
+      "deletedPaths": ["src/agents/cli-runner.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/p0-verified-wave-2026-05-08/logs/test-infra-fixtures.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/logs/test-infra-fixtures.log",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/p0-verified-wave-2026-05-08/run-validation.mjs",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/run-validation.mjs",
+      "deletedPaths": [
+        "src/agents/cli-runner.test.ts",
+        "src/plugins/bundled-runtime-deps.test.ts",
+        "src/plugins/contracts/catalog.contract.test.ts",
+        "src/plugins/install-min-host-version-guardrails.test.ts"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/p0-verified-wave-2026-05-08/validation-summary.json",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/p0-verified-wave-2026-05-08/validation-summary.json",
+      "deletedPaths": [
+        "src/agents/cli-runner.test.ts",
+        "src/plugins/bundled-runtime-deps.test.ts",
+        "src/plugins/contracts/catalog.contract.test.ts",
+        "src/plugins/install-min-host-version-guardrails.test.ts"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/PACKAGES-TEST-INFRA-VERIFIED-WAVE.md",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures-failure.json",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures-failure.json",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures-vite.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures-vite.log",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures.command",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures.command",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/rerun-test-infra-fixtures.log",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/single-src-plugins-contracts-catalog-contract-test-ts.command",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/single-src-plugins-contracts-catalog-contract-test-ts.command",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/single-src-plugins-contracts-catalog-contract-test-ts.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/single-src-plugins-contracts-catalog-contract-test-ts.log",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/test-infra-fixtures.command",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/test-infra-fixtures.command",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/test-infra-fixtures.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/test-infra-fixtures.log",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/vitest-extensions-include-1.json",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/vitest-extensions-include-1.json",
+      "deletedPaths": ["extensions/qwen-portal-auth/refresh.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/packages-test-infra-verified-wave-2026-05-09/logs/vitest-unit-fast-include-1-1.json",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/packages-test-infra-verified-wave-2026-05-09/logs/vitest-unit-fast-include-1-1.json",
+      "deletedPaths": [
+        "src/channels/plugins/actions/actions.test.ts",
+        "src/channels/plugins/contracts/registry-backed.contract.test.ts",
+        "src/cli/browser-cli-manage.timeout-option.test.ts",
+        "src/extensionAPI.test.ts",
+        "src/memory/prompt-section.test.ts",
+        "src/plugins/bundled-runtime-deps.test.ts",
+        "src/plugins/contracts/auth.contract.test.ts",
+        "src/plugins/contracts/catalog.contract.test.ts",
+        "src/plugins/contracts/provider.contract.test.ts",
+        "src/plugins/contracts/web-search-provider.contract.test.ts",
+        "src/plugins/install-min-host-version-guardrails.test.ts",
+        "src/security/dm-policy-channel-smoke.test.ts",
+        "src/tts/tts.test.ts",
+        "test/scripts/test-find-thread-candidates.test.ts"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/cli-runner.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/cli-runner.log",
+      "deletedPaths": ["src/agents/cli-runner.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-context-subagents.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-context-subagents.log",
+      "deletedPaths": ["src/agents/cli-runner.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-core-low.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-core-low.log",
+      "deletedPaths": ["src/agents/cli-runner.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-core.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-agent-runtime-remaining-verified-wave-2026-05-08/logs/runtime-core.log",
+      "deletedPaths": ["src/agents/cli-runner.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/context-cron-tts-all.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/context-cron-tts-all.log",
+      "deletedPaths": ["src/tts/tts.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/context-cron-tts.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/context-cron-tts.log",
+      "deletedPaths": ["src/tts/tts.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory-debug.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory-debug.log",
+      "deletedPaths": ["src/memory/prompt-section.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory-low.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory-low.log",
+      "deletedPaths": ["src/memory/prompt-section.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-capabilities-shared-verified-wave-2026-05-09/logs/memory.log",
+      "deletedPaths": ["src/memory/prompt-section.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/channel-plugin-bridge.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/channel-plugin-bridge.log",
+      "deletedPaths": ["src/channels/plugins/plugins-core.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/gitnexus-impact-definePluginEntry.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/gitnexus-impact-definePluginEntry.log",
+      "deletedPaths": ["extensions/qwen-portal-auth/index.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/plugin-runtime-boundary.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/plugin-runtime-boundary.log",
+      "deletedPaths": ["src/plugins/install-min-host-version-guardrails.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/plugin-runtime-contracts.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-channel-plugin-infra-config-verified-wave-2026-05-09/logs/plugin-runtime-contracts.log",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-reply-gateway-cli-verified-wave-2026-05-08/logs/cli-config-doctor.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-reply-gateway-cli-verified-wave-2026-05-08/logs/cli-config-doctor.log",
+      "deletedPaths": [
+        "src/commands/doctor.migrates-routing-allowfrom-channels-whatsapp-allowfrom.test.ts"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/evidence/src-reply-gateway-cli-verified-wave-2026-05-08/logs/reply-streaming.log",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/evidence/src-reply-gateway-cli-verified-wave-2026-05-08/logs/reply-streaming.log",
+      "deletedPaths": ["src/auto-reply/reply.heartbeat-typing.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/change-to-test.md",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/channel-plugins/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/channel-plugins/change-to-test.md",
+      "deletedPaths": [
+        "src/channels/plugins/contracts/registry-backed.contract.test.ts",
+        "src/plugins/contracts/catalog.contract.test.ts"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/channel-plugins/whatsapp/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/channel-plugins/whatsapp/change-to-test.md",
+      "deletedPaths": ["src/channels/plugins/contracts/registry-backed.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/memory-media-voice-plugins/memory-lancedb/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/memory-media-voice-plugins/memory-lancedb/change-to-test.md",
+      "deletedPaths": [
+        "src/plugins/bundled-runtime-deps.test.ts",
+        "src/plugins/install-min-host-version-guardrails.test.ts"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/package-runtime-deps/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/package-runtime-deps/change-to-test.md",
+      "deletedPaths": ["src/plugins/bundled-runtime-deps.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/package-runtime-deps/file-roles.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/package-runtime-deps/file-roles.md",
+      "deletedPaths": ["src/plugins/bundled-runtime-deps.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/plugin-boundaries/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/plugin-boundaries/change-to-test.md",
+      "deletedPaths": [
+        "src/plugins/contracts/auth.contract.test.ts",
+        "src/plugins/contracts/catalog.contract.test.ts"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/provider-plugins/google/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/provider-plugins/google/change-to-test.md",
+      "deletedPaths": ["src/plugins/contracts/web-search-provider.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/provider-plugins/qwen-portal-auth/code-paths.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/provider-plugins/qwen-portal-auth/code-paths.md",
+      "deletedPaths": [
+        "extensions/qwen-portal-auth/index.ts",
+        "extensions/qwen-portal-auth/openclaw.plugin.json"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/extensions/provider-plugins/qwen-portal-auth/file-roles.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/extensions/provider-plugins/qwen-portal-auth/file-roles.md",
+      "deletedPaths": [
+        "extensions/qwen-portal-auth/index.ts",
+        "extensions/qwen-portal-auth/openclaw.plugin.json"
+      ]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/agent-runtime/README.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/agent-runtime/README.md",
+      "deletedPaths": ["src/agents/tool-policy-sandbox.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/agent-runtime/runtime/cli-runner/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/agent-runtime/runtime/cli-runner/change-to-test.md",
+      "deletedPaths": ["src/agents/cli-runner.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/agent-runtime/sandbox/backend-policy/code-paths.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/agent-runtime/sandbox/backend-policy/code-paths.md",
+      "deletedPaths": ["src/agents/tool-policy-sandbox.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/agent-runtime/sandbox/backend-policy/file-roles.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/agent-runtime/sandbox/backend-policy/file-roles.md",
+      "deletedPaths": ["src/agents/tool-policy-sandbox.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/capability-modules/tts/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/capability-modules/tts/change-to-test.md",
+      "deletedPaths": ["src/tts/tts.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/capability-modules/tts/file-roles.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/capability-modules/tts/file-roles.md",
+      "deletedPaths": ["src/tts/tts.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/channel-abstraction/plugin-bridge/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/channel-abstraction/plugin-bridge/change-to-test.md",
+      "deletedPaths": ["src/channels/plugins/plugins-core.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/channel-abstraction/plugin-bridge/file-roles.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/channel-abstraction/plugin-bridge/file-roles.md",
+      "deletedPaths": ["src/channels/plugins/plugins-core.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/boundary-enforcement/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/plugin-runtime-sdk/plugins-runtime/boundary-enforcement/change-to-test.md",
+      "deletedPaths": ["src/plugins/install-min-host-version-guardrails.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/boundary-enforcement/file-roles.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/plugin-runtime-sdk/plugins-runtime/boundary-enforcement/file-roles.md",
+      "deletedPaths": ["src/plugins/install-min-host-version-guardrails.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/contracts/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/plugin-runtime-sdk/plugins-runtime/contracts/change-to-test.md",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/plugin-runtime-sdk/plugins-runtime/contracts/file-roles.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/plugin-runtime-sdk/plugins-runtime/contracts/file-roles.md",
+      "deletedPaths": ["src/plugins/contracts/catalog.contract.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/reply-orchestration/streaming/change-to-test.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/reply-orchestration/streaming/change-to-test.md",
+      "deletedPaths": ["src/auto-reply/reply.heartbeat-typing.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/reply-orchestration/streaming/file-roles.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/reply-orchestration/streaming/file-roles.md",
+      "deletedPaths": ["src/auto-reply/reply.heartbeat-typing.test.ts"]
+    },
+    {
+      "originalPath": ".planning/impact-map/src/shared-misc-runtime-support/web-provider-root/code-paths.md",
+      "archivePath": ".planning/version-diff/v2026.3.24...v2026.3.28/obsolete-impact-map-references/src/shared-misc-runtime-support/web-provider-root/code-paths.md",
+      "deletedPaths": ["src/bundled-web-search-registry.ts"]
+    }
+  ]
+}

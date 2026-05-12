@@ -1,0 +1,21 @@
+{
+  "entry": "unit",
+  "command": [
+    "pnpm",
+    "vitest",
+    "run",
+    "--config",
+    "--pool=threads",
+    "--isolate=false",
+    "--maxWorkers",
+    "2",
+    "--silent=passed-only"
+  ],
+  "elapsedMs": 6465,
+  "error": null,
+  "exitCode": 1,
+  "fatalSeen": false,
+  "logPath": "/tmp/openclaw-test-parallel-ppKdM1/unit-1778275139684.log",
+  "outputTail": "",
+  "signal": null
+}

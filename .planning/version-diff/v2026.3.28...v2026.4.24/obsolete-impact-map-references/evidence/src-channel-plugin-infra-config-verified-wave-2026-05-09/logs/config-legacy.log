@@ -1,0 +1,11 @@
+=== config-legacy ===
+pnpm test -- src/config/legacy-migrate.test.ts src/config/legacy.shared.test.ts src/commands/doctor-legacy-config.test.ts src/commands/doctor-legacy-config.migrations.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/config/legacy-migrate.test.ts src/config/legacy.shared.test.ts src/commands/doctor-legacy-config.test.ts src/commands/doctor-legacy-config.migrations.test.ts
+
+[test-parallel] start unit workers=2 filters=2
+[test-parallel] done unit code=0 elapsed=7.4s
+[test-parallel] start base workers=2 filters=2
+[test-parallel] done base code=0 elapsed=7.7s
+--- exit=0 duration=17s ---

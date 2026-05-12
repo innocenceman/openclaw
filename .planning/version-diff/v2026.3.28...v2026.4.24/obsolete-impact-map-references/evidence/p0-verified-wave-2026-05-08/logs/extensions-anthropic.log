@@ -1,0 +1,27 @@
+# extensions-anthropic
+
+Command: pnpm test -- src/commands/onboard-non-interactive.provider-auth.test.ts src/commands/models/list.status.test.ts
+Started: 2026-05-08T02:46:13.590Z
+Ended: 2026-05-08T02:46:31.379Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/commands/onboard-non-interactive.provider-auth.test.ts src/commands/models/list.status.test.ts
+
+[test-parallel] start base workers=2 filters=2
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  2 passed (2)
+      Tests  43 passed (43)
+   Start at  10:46:16
+   Duration  14.33s (transform 9.77s, setup 20.43s, import 466ms, tests 5.19s, environment 1ms)
+
+[test-parallel] done base code=0 elapsed=15.7s
+
+
+## stderr
+

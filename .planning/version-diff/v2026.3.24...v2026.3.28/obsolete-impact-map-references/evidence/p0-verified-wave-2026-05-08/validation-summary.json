@@ -1,0 +1,380 @@
+[
+  {
+    "name": "test-infra-config-runner",
+    "command": "pnpm test -- test/scripts/run-vitest-profile.test.ts test/test-runner-manifest.test.ts",
+    "started": "2026-05-08T02:25:00.768Z",
+    "ended": "2026-05-08T02:25:30.163Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/test-infra-config-runner.log"
+  },
+  {
+    "name": "test-infra-root-tests",
+    "command": "pnpm test -- src/entry.test.ts src/dockerfile.test.ts src/docker-build-cache.test.ts src/docker-image-digests.test.ts",
+    "started": "2026-05-08T02:25:30.163Z",
+    "ended": "2026-05-08T02:25:44.306Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/test-infra-root-tests.log"
+  },
+  {
+    "name": "test-infra-test-scripts",
+    "command": "pnpm test -- test/scripts/run-vitest-profile.test.ts test/test-runner-manifest.test.ts test/scripts/test-parallel.test.ts test/scripts/test-report-utils.test.ts",
+    "started": "2026-05-08T02:25:44.307Z",
+    "ended": "2026-05-08T02:25:59.491Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/test-infra-test-scripts.log"
+  },
+  {
+    "name": "test-infra-helpers-core",
+    "command": "pnpm test -- src/cli/command-source.test-helpers.test.ts src/channels/plugins/helpers.test.ts src/gateway/http-auth-helpers.test.ts src/infra/archive-helpers.test.ts",
+    "started": "2026-05-08T02:25:59.491Z",
+    "ended": "2026-05-08T02:26:34.599Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/test-infra-helpers-core.log"
+  },
+  {
+    "name": "test-infra-helpers-extensions",
+    "command": "pnpm test -- test/extension-plugin-sdk-boundary.test.ts test/plugin-extension-import-boundary.test.ts extensions/telegram/src/bot.helpers.test.ts extensions/msteams/src/media-helpers.test.ts",
+    "started": "2026-05-08T02:26:34.600Z",
+    "ended": "2026-05-08T02:27:11.495Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/test-infra-helpers-extensions.log"
+  },
+  {
+    "name": "test-infra-mocks",
+    "command": "pnpm test -- src/gateway/boot.test.ts src/gateway/http-auth-helpers.test.ts src/commands/agent.test.ts",
+    "started": "2026-05-08T02:27:11.495Z",
+    "ended": "2026-05-08T02:33:16.210Z",
+    "exitCode": 1,
+    "timedOut": false,
+    "log": "logs/test-infra-mocks.log"
+  },
+  {
+    "name": "test-infra-fixtures",
+    "command": "pnpm test -- src/plugins/bundled-plugin-metadata.test.ts src/plugins/contracts/catalog.contract.test.ts test/scripts/test-extension.test.ts",
+    "started": "2026-05-08T02:33:16.211Z",
+    "ended": "2026-05-08T02:33:46.917Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/test-infra-fixtures.log"
+  },
+  {
+    "name": "src-gateway-runtime",
+    "command": "pnpm test -- src/gateway/boot.test.ts src/gateway/server-close.test.ts src/gateway/control-ui.http.test.ts src/gateway/channel-health-monitor.test.ts",
+    "started": "2026-05-08T02:33:46.918Z",
+    "ended": "2026-05-08T02:34:10.260Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-gateway-runtime.log"
+  },
+  {
+    "name": "src-gateway-methods",
+    "command": "pnpm test -- src/gateway/server-methods/server-methods.test.ts src/gateway/server-methods/agent.test.ts src/gateway/server-methods/agents-mutate.test.ts src/gateway/server-methods/browser.profile-from-body.test.ts",
+    "started": "2026-05-08T02:34:10.260Z",
+    "ended": "2026-05-08T02:34:28.342Z",
+    "exitCode": 1,
+    "timedOut": false,
+    "log": "logs/src-gateway-methods.log"
+  },
+  {
+    "name": "src-gateway-protocol",
+    "command": "pnpm test -- src/gateway/protocol/index.test.ts src/gateway/protocol/push.test.ts src/gateway/protocol/connect-error-details.test.ts src/gateway/protocol/talk-config.contract.test.ts",
+    "started": "2026-05-08T02:34:28.342Z",
+    "ended": "2026-05-08T02:34:44.104Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-gateway-protocol.log"
+  },
+  {
+    "name": "src-routing",
+    "command": "pnpm test -- src/routing/resolve-route.test.ts src/routing/account-id.test.ts src/routing/account-lookup.test.ts src/routing/session-key.test.ts src/routing/session-key.continuity.test.ts",
+    "started": "2026-05-08T02:34:44.104Z",
+    "ended": "2026-05-08T02:35:00.574Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-routing.log"
+  },
+  {
+    "name": "src-agents-runtime",
+    "command": "pnpm test -- src/agents/acp-spawn.test.ts src/agents/agent-scope.test.ts src/agents/cli-runner.test.ts src/agents/command/delivery.test.ts",
+    "started": "2026-05-08T02:35:00.574Z",
+    "ended": "2026-05-08T02:35:27.196Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-agents-runtime.log"
+  },
+  {
+    "name": "src-agents-tools",
+    "command": "pnpm test -- src/agents/apply-patch.test.ts src/agents/bash-tools.exec.pty.test.ts src/agents/bash-tools.test.ts src/agents/openclaw-tools.agents.test.ts",
+    "started": "2026-05-08T02:35:27.196Z",
+    "ended": "2026-05-08T02:35:46.475Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-agents-tools.log"
+  },
+  {
+    "name": "src-agents-auth",
+    "command": "pnpm test -- src/agents/auth-health.test.ts src/agents/auth-profiles/oauth.test.ts src/agents/auth-profiles/order.test.ts src/agents/model-auth.test.ts",
+    "started": "2026-05-08T02:35:46.475Z",
+    "ended": "2026-05-08T02:36:05.214Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-agents-auth.log"
+  },
+  {
+    "name": "src-plugin-sdk-public",
+    "command": "pnpm test -- src/plugin-sdk/index.test.ts src/plugin-sdk/index.bundle.test.ts src/plugin-sdk/subpaths.test.ts src/plugin-sdk/runtime-api-guardrails.test.ts",
+    "started": "2026-05-08T02:36:05.214Z",
+    "ended": "2026-05-08T02:36:37.038Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-plugin-sdk-public.log"
+  },
+  {
+    "name": "src-plugin-sdk-provider",
+    "command": "pnpm test -- src/plugin-sdk/provider-entry.test.ts src/plugin-sdk/fetch-auth.test.ts src/plugin-sdk/request-url.test.ts src/plugin-sdk/runtime.test.ts",
+    "started": "2026-05-08T02:36:37.039Z",
+    "ended": "2026-05-08T02:36:58.094Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-plugin-sdk-provider.log"
+  },
+  {
+    "name": "src-plugin-sdk-channel",
+    "command": "pnpm test -- src/plugin-sdk/channel-lifecycle.test.ts src/plugin-sdk/channel-setup.test.ts src/plugin-sdk/channel-policy.test.ts src/plugin-sdk/channel-reply-pipeline.test.ts",
+    "started": "2026-05-08T02:36:58.094Z",
+    "ended": "2026-05-08T02:37:14.249Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-plugin-sdk-channel.log"
+  },
+  {
+    "name": "plugin-sdk-api-check",
+    "command": "pnpm plugin-sdk:api:check",
+    "started": "2026-05-08T02:37:14.249Z",
+    "ended": "2026-05-08T02:38:31.615Z",
+    "exitCode": 134,
+    "timedOut": false,
+    "log": "logs/plugin-sdk-api-check.log"
+  },
+  {
+    "name": "plugin-sdk-check-exports",
+    "command": "pnpm plugin-sdk:check-exports",
+    "started": "2026-05-08T02:38:31.616Z",
+    "ended": "2026-05-08T02:38:33.479Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/plugin-sdk-check-exports.log"
+  },
+  {
+    "name": "src-cli-program",
+    "command": "pnpm test -- src/cli/program/build-program.test.ts src/cli/program.smoke.test.ts src/cli/argv.test.ts src/cli/command-options.test.ts",
+    "started": "2026-05-08T02:38:33.479Z",
+    "ended": "2026-05-08T02:38:50.710Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-cli-program.log"
+  },
+  {
+    "name": "src-cli-commands",
+    "command": "pnpm test -- src/commands/agent.test.ts src/commands/channels.status.command-flow.test.ts src/commands/doctor-config-flow.test.ts src/commands/configure.gateway.test.ts",
+    "started": "2026-05-08T02:38:50.711Z",
+    "ended": "2026-05-08T02:43:38.339Z",
+    "exitCode": 1,
+    "timedOut": false,
+    "log": "logs/src-cli-commands.log"
+  },
+  {
+    "name": "src-cli-status",
+    "command": "pnpm test -- src/commands/channels.status.command-flow.test.ts src/cli/gateway-cli.coverage.test.ts src/cli/daemon-cli/status.test.ts src/commands/status-all/report-lines.test.ts",
+    "started": "2026-05-08T02:43:38.342Z",
+    "ended": "2026-05-08T02:44:04.488Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-cli-status.log"
+  },
+  {
+    "name": "src-cli-terminal",
+    "command": "pnpm test -- src/terminal/table.test.ts src/terminal/ansi.test.ts src/terminal/prompt-select-styled.test.ts src/cli/banner.test.ts",
+    "started": "2026-05-08T02:44:04.488Z",
+    "ended": "2026-05-08T02:44:21.251Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/src-cli-terminal.log"
+  },
+  {
+    "name": "extensions-boundaries-tests",
+    "command": "pnpm test -- src/plugins/bundled-plugin-naming.test.ts src/plugins/bundled-plugin-metadata.test.ts src/plugins/contracts/catalog.contract.test.ts",
+    "started": "2026-05-08T02:44:21.252Z",
+    "ended": "2026-05-08T02:44:39.015Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-boundaries-tests.log"
+  },
+  {
+    "name": "extensions-boundaries-import-tests",
+    "command": "pnpm test -- test/extension-plugin-sdk-boundary.test.ts test/plugin-extension-import-boundary.test.ts",
+    "started": "2026-05-08T02:44:39.015Z",
+    "ended": "2026-05-08T02:44:57.356Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-boundaries-import-tests.log"
+  },
+  {
+    "name": "lint-extensions-no-src-outside-plugin-sdk",
+    "command": "pnpm lint:extensions:no-src-outside-plugin-sdk",
+    "started": "2026-05-08T02:44:57.357Z",
+    "ended": "2026-05-08T02:45:03.510Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/lint-extensions-no-src-outside-plugin-sdk.log"
+  },
+  {
+    "name": "lint-extensions-no-plugin-sdk-internal",
+    "command": "pnpm lint:extensions:no-plugin-sdk-internal",
+    "started": "2026-05-08T02:45:03.511Z",
+    "ended": "2026-05-08T02:45:08.839Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/lint-extensions-no-plugin-sdk-internal.log"
+  },
+  {
+    "name": "lint-extensions-no-relative-outside-package",
+    "command": "pnpm lint:extensions:no-relative-outside-package",
+    "started": "2026-05-08T02:45:08.839Z",
+    "ended": "2026-05-08T02:45:14.179Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/lint-extensions-no-relative-outside-package.log"
+  },
+  {
+    "name": "test-contracts-plugins",
+    "command": "pnpm test:contracts:plugins",
+    "started": "2026-05-08T02:45:14.185Z",
+    "ended": "2026-05-08T02:45:41.880Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/test-contracts-plugins.log"
+  },
+  {
+    "name": "extensions-package-runtime-deps",
+    "command": "pnpm test -- test/scripts/stage-bundled-plugin-runtime-deps.test.ts src/plugins/stage-bundled-plugin-runtime.test.ts",
+    "started": "2026-05-08T02:45:41.881Z",
+    "ended": "2026-05-08T02:45:55.942Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-package-runtime-deps.log"
+  },
+  {
+    "name": "extensions-openai",
+    "command": "pnpm test -- extensions/openai/index.test.ts extensions/openai/openai-provider.test.ts extensions/openai/openai-codex-auth-identity.test.ts",
+    "started": "2026-05-08T02:45:55.942Z",
+    "ended": "2026-05-08T02:46:13.589Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-openai.log"
+  },
+  {
+    "name": "extensions-anthropic",
+    "command": "pnpm test -- src/commands/onboard-non-interactive.provider-auth.test.ts src/commands/models/list.status.test.ts",
+    "started": "2026-05-08T02:46:13.590Z",
+    "ended": "2026-05-08T02:46:31.379Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-anthropic.log"
+  },
+  {
+    "name": "extensions-google",
+    "command": "pnpm test -- extensions/google/oauth.test.ts extensions/google/image-generation-provider.test.ts extensions/google/google-shared.test.ts",
+    "started": "2026-05-08T02:46:31.379Z",
+    "ended": "2026-05-08T02:46:48.124Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-google.log"
+  },
+  {
+    "name": "extensions-openrouter",
+    "command": "pnpm test -- extensions/openrouter/index.test.ts",
+    "started": "2026-05-08T02:46:48.124Z",
+    "ended": "2026-05-08T02:47:00.357Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-openrouter.log"
+  },
+  {
+    "name": "extensions-ollama",
+    "command": "pnpm test -- extensions/ollama/index.test.ts",
+    "started": "2026-05-08T02:47:00.358Z",
+    "ended": "2026-05-08T02:47:12.680Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-ollama.log"
+  },
+  {
+    "name": "extensions-device-pair",
+    "command": "pnpm test -- extensions/device-pair/index.test.ts src/cli/qr-cli.test.ts src/infra/device-pairing.test.ts",
+    "started": "2026-05-08T02:47:12.680Z",
+    "ended": "2026-05-08T02:47:30.205Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-device-pair.log"
+  },
+  {
+    "name": "extensions-diagnostics-otel",
+    "command": "pnpm test -- extensions/diagnostics-otel/src/service.test.ts",
+    "started": "2026-05-08T02:47:30.205Z",
+    "ended": "2026-05-08T02:47:42.513Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-diagnostics-otel.log"
+  },
+  {
+    "name": "extensions-memory-core",
+    "command": "pnpm test -- extensions/memory-core/index.test.ts src/plugins/slots.test.ts src/plugins/config-state.test.ts src/commands/status.scan.test.ts",
+    "started": "2026-05-08T02:47:42.513Z",
+    "ended": "2026-05-08T02:48:05.348Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-memory-core.log"
+  },
+  {
+    "name": "extensions-memory-lancedb",
+    "command": "pnpm test -- extensions/memory-lancedb/index.test.ts src/plugins/bundled-runtime-deps.test.ts src/plugins/install-min-host-version-guardrails.test.ts",
+    "started": "2026-05-08T02:48:05.349Z",
+    "ended": "2026-05-08T02:48:23.913Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-memory-lancedb.log"
+  },
+  {
+    "name": "extensions-llm-task",
+    "command": "pnpm test -- extensions/llm-task/src/llm-task-tool.test.ts",
+    "started": "2026-05-08T02:48:23.913Z",
+    "ended": "2026-05-08T02:48:36.172Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-llm-task.log"
+  },
+  {
+    "name": "extensions-thread-ownership",
+    "command": "pnpm test -- extensions/thread-ownership/index.test.ts",
+    "started": "2026-05-08T02:48:36.172Z",
+    "ended": "2026-05-08T02:48:48.590Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/extensions-thread-ownership.log"
+  },
+  {
+    "name": "test-contracts-channels",
+    "command": "pnpm test:contracts:channels",
+    "started": "2026-05-08T02:48:48.590Z",
+    "ended": "2026-05-08T02:49:12.025Z",
+    "exitCode": 0,
+    "timedOut": false,
+    "log": "logs/test-contracts-channels.log"
+  }
+]

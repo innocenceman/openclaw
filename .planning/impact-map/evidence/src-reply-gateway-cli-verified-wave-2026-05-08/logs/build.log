@@ -1,0 +1,26 @@
+### pnpm build
+timeout 600s pnpm build
+
+> openclaw@2026.3.24 build /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> pnpm canvas:a2ui:bundle && node scripts/tsdown-build.mjs && node scripts/runtime-postbuild.mjs && node scripts/build-stamp.mjs && pnpm build:plugin-sdk:dts && node --import tsx scripts/write-plugin-sdk-entry-dts.ts && node --import tsx scripts/canvas-a2ui-copy.ts && node --import tsx scripts/copy-hook-metadata.ts && node --import tsx scripts/copy-export-html-templates.ts && node --import tsx scripts/write-build-info.ts && node --import tsx scripts/write-cli-startup-metadata.ts && node --import tsx scripts/write-cli-compat.ts
+
+
+> openclaw@2026.3.24 canvas:a2ui:bundle /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> bash scripts/bundle-a2ui.sh
+
+<DIR>/a2ui.bundle.js  chunk │ size: 457.10 kB
+
+✔ rolldown v1.0.0-rc.9 Finished in 76.06 ms
+  throw new Error(
+        ^
+
+Error: failed to stage bundled runtime deps for discord: npm install failed
+    at runRuntimePostBuild (file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/runtime-postbuild.mjs:12:3)
+    at file:///home/yanx/projects/openclaw/openclaw-v2026.3.24/scripts/runtime-postbuild.mjs:17:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+
+Node.js v22.22.2
+ ELIFECYCLE  Command failed with exit code 1.
+EXIT_CODE=1

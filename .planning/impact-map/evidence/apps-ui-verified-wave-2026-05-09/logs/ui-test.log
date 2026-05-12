@@ -1,0 +1,61 @@
+$ pnpm --dir ui test
+started_at=2026-05-08T20:31:56Z
+
+> openclaw-control-ui@ test /home/yanx/projects/openclaw/openclaw-v2026.3.24/ui
+> vitest run --config vitest.config.ts
+
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24/ui
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 2 unhandled errors during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: [vitest] No "GatewayRequestError" export is defined on the "./gateway.ts" mock. Did you forget to return it from "vi.mock"?
+If you need to partially mock a module, you can use "importOriginal" helper inside:
+
+vi.mock(import("./gateway.ts"), async (importOriginal) => {
+  const actual = await importOriginal()
+  return {
+    ...actual,
+    // your mocked methods
+  }
+})
+
+ ❯ VitestMocker.createError ../node_modules/vitest/dist/chunks/startVitestModuleRunner.C3ZR-4J3.js:62:17
+ ❯ Object.get ../node_modules/vitest/dist/chunks/startVitestModuleRunner.C3ZR-4J3.js:310:16
+ ❯ isMissingOperatorReadScopeError src/ui/controllers/scope-errors.ts:5:24
+ ❯ loadAgents src/ui/controllers/agents.ts:67:9
+ ❯ Object.onHello src/ui/app-gateway.ts:218:12
+ ❯ Object.emitHello src/ui/app-gateway.node.test.ts:59:21
+ ❯ src/ui/app-gateway.node.test.ts:412:12
+ ❯ ../node_modules/@vitest/runner/dist/index.js:296:11
+ ❯ ../node_modules/@vitest/runner/dist/index.js:1258:26
+ ❯ ../node_modules/@vitest/runner/dist/index.js:1681:20
+
+This error originated in "src/ui/app-gateway.node.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+
+⎯⎯⎯⎯⎯⎯ Unhandled Error ⎯⎯⎯⎯⎯⎯⎯
+Error: listen EPERM: operation not permitted 127.0.0.1:63315
+ ❯ Server.setupListenHandle [as _listen2] node:net:1918:21
+ ❯ listenInCluster node:net:1997:12
+ ❯ GetAddrInfoReqWrap.callback node:net:2206:7
+ ❯ GetAddrInfoReqWrap.onlookupall [as oncomplete] node:dns:134:8
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: 'EPERM', errno: -1, syscall: 'listen', address: '127.0.0.1', port: 63315 }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  51 passed (51)
+      Tests  535 passed (535)
+     Errors  2 errors
+   Start at  04:31:57
+   Duration  33.37s (transform 4.80s, setup 0ms, import 8.55s, tests 5.09s, environment 73.33s)
+
+ ELIFECYCLE  Test failed. See above for more details.
+finished_at=2026-05-08T20:32:31Z
+exit_code=1
+duration_seconds=35

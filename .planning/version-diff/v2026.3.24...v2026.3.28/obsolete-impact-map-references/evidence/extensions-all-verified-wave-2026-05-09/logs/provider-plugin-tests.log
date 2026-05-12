@@ -1,0 +1,11 @@
+# timeout 300s pnpm test -- extensions/amazon-bedrock/index.test.ts extensions/deepseek/index.test.ts extensions/fal/image-generation-provider.test.ts extensions/github-copilot/models.test.ts extensions/google/google-shared.test.ts extensions/google/image-generation-provider.test.ts extensions/google/oauth.test.ts extensions/minimax/model-definitions.test.ts extensions/mistral/model-definitions.test.ts extensions/moonshot/src/kimi-web-search-provider.test.ts extensions/ollama/index.test.ts extensions/openai/index.test.ts extensions/openai/openai-codex-auth-identity.test.ts extensions/openai/openai-provider.test.ts extensions/openrouter/index.test.ts extensions/qwen-portal-auth/refresh.test.ts extensions/xai/web-search.test.ts extensions/zai/model-definitions.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/amazon-bedrock/index.test.ts extensions/deepseek/index.test.ts extensions/fal/image-generation-provider.test.ts extensions/github-copilot/models.test.ts extensions/google/google-shared.test.ts extensions/google/image-generation-provider.test.ts extensions/google/oauth.test.ts extensions/minimax/model-definitions.test.ts extensions/mistral/model-definitions.test.ts extensions/moonshot/src/kimi-web-search-provider.test.ts extensions/ollama/index.test.ts extensions/openai/index.test.ts extensions/openai/openai-codex-auth-identity.test.ts extensions/openai/openai-provider.test.ts extensions/openrouter/index.test.ts extensions/qwen-portal-auth/refresh.test.ts extensions/xai/web-search.test.ts extensions/zai/model-definitions.test.ts
+
+[test-parallel] start extensions workers=4 filters=18
+[test-parallel] failure artifacts extensions log=/tmp/openclaw-test-parallel-0yGDD6/extensions-1778269162694.log meta=/tmp/openclaw-test-parallel-0yGDD6/extensions-1778269162694-failure.json
+[test-parallel] done extensions code=1 elapsed=12.0s
+ ELIFECYCLE  Test failed. See above for more details.
+
+[exit:1]

@@ -1,0 +1,42 @@
+# Test Mocks Code Paths
+
+Coverage: `exceptioned-deep-partial`
+Freshness: 2026-05-09 G009 targeted validation
+
+## Test invocation path
+
+1. A developer or CI path invokes a `pnpm test*` script or a scoped `pnpm test -- <filter>` command.
+2. Test wrapper/profile configuration selects setup, isolation, and target files.
+3. This leaf supplies either runner/config behavior, root tests, scripts tests, helpers, mocks, or fixtures.
+4. Failures here can indicate product regressions, guardrail drift, or broken test infrastructure.
+
+## Change impact path
+
+1. Identify whether the changed file is runner/config, a test file, a helper, a mock, or a fixture.
+2. Run the narrowest matching test/filter first.
+3. Broaden to `pnpm test` or the documented profile only when shared behavior is affected.
+
+## Evidence limits
+
+The behavior path is based on path/script inspection and repo conventions; no test output was generated in this wave.
+
+<!-- version-diff-refresh:v2026.4.24:start -->
+
+## v2026.4.24 target-existing changed source paths
+
+This target refresh maps `2` changed path(s) to this final leaf. `2` path(s) still exist in the target source and are listed below. Deleted or renamed-away paths remain only in version-diff artifacts, not active impact-map. Status counts: `{'M': 2}`.
+
+- `src/commands/agent.test.ts`
+- `test/mocks/baileys.ts`
+
+<!-- version-diff-refresh:v2026.4.24:end -->
+
+<!-- version-diff-refresh:v2026.5.4:start -->
+
+## Version diff target paths: v2026.5.4
+
+The following changed paths still exist in the target source and are active ownership evidence for this leaf.
+
+- `src/commands/agent.test.ts`
+- `test/mocks/baileys.ts`
+<!-- version-diff-refresh:v2026.5.4:end -->

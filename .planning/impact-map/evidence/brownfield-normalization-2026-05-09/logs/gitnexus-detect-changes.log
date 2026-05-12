@@ -1,0 +1,17 @@
+2026-05-09T19:57:37+08:00
+Changes: 2 files, 15 symbols
+Affected processes: 0
+Risk level: low
+
+Changed symbols:
+  undefined Repository Guidelines → AGENTS.md
+  undefined Collaboration / Safety Notes → AGENTS.md
+  undefined GitNexus — Code Intelligence → AGENTS.md
+  undefined Always Do → AGENTS.md
+  undefined Never Do → AGENTS.md
+  undefined Resources → AGENTS.md
+  undefined CLI → AGENTS.md
+  undefined AGENTS.md - Your Workspace → docs/reference/templates/AGENTS.md
+  undefined  Heartbeats - Be Proactive! → docs/reference/templates/AGENTS.md
+  undefined  Memory Maintenance (During Heartbeats) → docs/reference/templates/AGENTS.md
+  undefined Make It Yours → docs/reference/templates/AGENTS.md

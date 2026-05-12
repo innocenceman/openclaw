@@ -1,0 +1,47 @@
+# together Provider Plugin Code Paths
+
+Coverage: `partial`
+Freshness: 2026-05-07 repo-native structural inspection only
+
+| Path                           | Trace start                                             | Likely downstream impact                                       |
+| ------------------------------ | ------------------------------------------------------- | -------------------------------------------------------------- |
+| Manifest to provider catalog   | `extensions/together/openclaw.plugin.json`              | Provider lists, auth choices, onboarding, config docs/UI sync. |
+| Entrypoint to provider runtime | `extensions/together/index.ts`                          | Provider registry, model catalog, auth method behavior.        |
+| Auth/config path               | `extensions/together/index.ts` and manifest auth fields | Secrets, env vars, setup prompts, provider status.             |
+
+## Trace rule
+
+Start with repo-native `rg`/LSP/file inspection. Use GitNexus or code-review-graph only when the relevant slice has fresh indexed coverage recorded in `.planning/tools/GRAPH-COVERAGE.md`.
+
+<!-- version-diff-refresh:v2026.4.24:start -->
+
+## v2026.4.24 target-existing changed source paths
+
+This target refresh maps `10` changed path(s) to this final leaf. `9` path(s) still exist in the target source and are listed below. Deleted or renamed-away paths remain only in version-diff artifacts, not active impact-map. Status counts: `{'M': 5, 'A': 4, 'D': 1}`.
+
+- `extensions/together/index.ts`
+- `extensions/together/onboard.ts`
+- `extensions/together/openclaw.plugin.json`
+- `extensions/together/package.json`
+- `extensions/together/plugin-registration.contract.test.ts`
+- `extensions/together/provider-catalog.ts`
+- `extensions/together/tsconfig.json`
+- `extensions/together/video-generation-provider.test.ts`
+- `extensions/together/video-generation-provider.ts`
+
+<!-- version-diff-refresh:v2026.4.24:end -->
+
+<!-- version-diff-refresh:v2026.5.4:start -->
+
+## Version diff target paths: v2026.5.4
+
+The following changed paths still exist in the target source and are active ownership evidence for this leaf.
+
+- `extensions/together/models.ts`
+- `extensions/together/onboard.ts`
+- `extensions/together/openclaw.plugin.json`
+- `extensions/together/package.json`
+- `extensions/together/plugin-registration.contract.test.ts`
+- `extensions/together/provider-catalog.ts`
+- `extensions/together/video-generation-provider.test.ts`
+<!-- version-diff-refresh:v2026.5.4:end -->

@@ -1,0 +1,7 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/agents/cli-runner.test.ts src/agents/cli-backends.test.ts src/agents/claude-cli-runner.test.ts src/agents/cli-runner/bundle-mcp.test.ts
+
+[test-parallel] start base workers=2 filters=4
+[test-parallel] done base code=0 elapsed=10.4s
+[test-parallel] keeping temp artifacts at /tmp/openclaw-test-parallel-JRQVpZ

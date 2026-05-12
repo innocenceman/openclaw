@@ -1,0 +1,28 @@
+== startup-bootstrap-nodehost-process ==
+src/bootstrap/node-extra-ca-certs.test.ts
+src/bootstrap/node-startup-env.test.ts
+src/node-host/exec-policy.test.ts
+src/node-host/invoke-browser.test.ts
+src/node-host/invoke-system-run-plan.test.ts
+src/node-host/invoke-system-run.test.ts
+src/node-host/invoke.sanitize-env.test.ts
+src/node-host/runner.credentials.test.ts
+src/process/command-queue.test.ts
+src/process/exec.no-output-timer.test.ts
+src/process/exec.test.ts
+src/process/exec.windows.test.ts
+src/process/kill-tree.test.ts
+src/process/spawn-utils.test.ts
+src/process/supervisor/adapters/child.test.ts
+src/process/supervisor/adapters/pty.test.ts
+src/process/supervisor/registry.test.ts
+src/process/supervisor/supervisor.pty-command.test.ts
+src/process/supervisor/supervisor.test.ts
+src/process/windows-command.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- src/bootstrap/node-extra-ca-certs.test.ts src/bootstrap/node-startup-env.test.ts src/node-host/exec-policy.test.ts src/node-host/invoke-browser.test.ts src/node-host/invoke-system-run-plan.test.ts src/node-host/invoke-system-run.test.ts src/node-host/invoke.sanitize-env.test.ts src/node-host/runner.credentials.test.ts src/process/command-queue.test.ts src/process/exec.no-output-timer.test.ts src/process/exec.test.ts src/process/exec.windows.test.ts src/process/kill-tree.test.ts src/process/spawn-utils.test.ts src/process/supervisor/adapters/child.test.ts src/process/supervisor/adapters/pty.test.ts src/process/supervisor/registry.test.ts src/process/supervisor/supervisor.pty-command.test.ts src/process/supervisor/supervisor.test.ts src/process/windows-command.test.ts
+
+[test-parallel] start unit workers=2 filters=20
+[test-parallel] done unit code=0 elapsed=12.6s
+--- exit=0 duration=14s ---

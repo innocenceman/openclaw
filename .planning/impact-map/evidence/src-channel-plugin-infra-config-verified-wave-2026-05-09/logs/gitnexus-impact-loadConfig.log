@@ -1,0 +1,172 @@
+{
+  "status": "ambiguous",
+  "message": "Found 20 symbols matching 'loadConfig'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "loadConfig"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/config/io.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "Function",
+      "filePath": "src/config/io.ts",
+      "line": 1254,
+      "score": 0.56
+    },
+    {
+      "uid": "Function:ui/src/ui/controllers/config.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "Function",
+      "filePath": "ui/src/ui/controllers/config.ts",
+      "line": 38,
+      "score": 0.56
+    },
+    {
+      "uid": "Function:src/browser/server.control-server.test-harness.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "Function",
+      "filePath": "src/browser/server.control-server.test-harness.ts",
+      "line": 229,
+      "score": 0.56
+    },
+    {
+      "uid": "Method:extensions/telegram/src/bot-deps.ts:loadConfig#0",
+      "name": "loadConfig",
+      "kind": "Method",
+      "filePath": "extensions/telegram/src/bot-deps.ts",
+      "line": 35,
+      "score": 0.54
+    },
+    {
+      "uid": "Const:src/index.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/index.ts",
+      "line": 25,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/cli/qr-cli.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/cli/qr-cli.test.ts",
+      "line": 38,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/cli/memory-cli.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/cli/memory-cli.test.ts",
+      "line": 13,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/cli/security-cli.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/cli/security-cli.test.ts",
+      "line": 4,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:extensions/telegram/src/bot.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "extensions/telegram/src/bot.test.ts",
+      "line": 40,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/cli/plugins-cli-test-helpers.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/cli/plugins-cli-test-helpers.ts",
+      "line": 5,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/cli/daemon-cli/lifecycle.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/cli/daemon-cli/lifecycle.test.ts",
+      "line": 49,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/commands/models.list.e2e.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/commands/models.list.e2e.test.ts",
+      "line": 6,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/commands/configure.daemon.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/commands/configure.daemon.test.ts",
+      "line": 6,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/cli/daemon-cli/lifecycle-core.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/cli/daemon-cli/lifecycle-core.test.ts",
+      "line": 10,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/browser/server.control-server.test-harness.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/browser/server.control-server.test-harness.ts",
+      "line": 229,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:extensions/telegram/src/bot-message-dispatch.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "extensions/telegram/src/bot-message-dispatch.test.ts",
+      "line": 20,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/config/sessions/store.pruning.integration.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/config/sessions/store.pruning.integration.test.ts",
+      "line": 12,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:src/cli/daemon-cli/lifecycle-core.config-guard.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "src/cli/daemon-cli/lifecycle-core.config-guard.test.ts",
+      "line": 10,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:extensions/telegram/src/bot.create-telegram-bot.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "extensions/telegram/src/bot.create-telegram-bot.test.ts",
+      "line": 44,
+      "score": 0.5
+    },
+    {
+      "uid": "Const:extensions/telegram/src/bot.create-telegram-bot.channel-post-media.test.ts:loadConfig",
+      "name": "loadConfig",
+      "kind": "",
+      "filePath": "extensions/telegram/src/bot.create-telegram-bot.channel-post-media.test.ts",
+      "line": 17,
+      "score": 0.5
+    }
+  ]
+}

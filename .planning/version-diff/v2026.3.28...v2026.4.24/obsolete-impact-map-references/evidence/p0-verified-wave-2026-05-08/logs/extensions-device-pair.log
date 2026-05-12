@@ -1,0 +1,38 @@
+# extensions-device-pair
+
+Command: pnpm test -- extensions/device-pair/index.test.ts src/cli/qr-cli.test.ts src/infra/device-pairing.test.ts
+Started: 2026-05-08T02:47:12.680Z
+Ended: 2026-05-08T02:47:30.205Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/test-parallel.mjs -- extensions/device-pair/index.test.ts src/cli/qr-cli.test.ts src/infra/device-pairing.test.ts
+
+[test-parallel] start extensions workers=4 filters=1
+[test-parallel] start unit workers=2 filters=2
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  1 passed (1)
+      Tests  15 passed (15)
+   Start at  10:47:16
+   Duration  12.88s (transform 4.89s, setup 12.22s, import 283ms, tests 122ms, environment 0ms)
+
+[test-parallel] done extensions code=0 elapsed=14.2s
+
+ Test Files  2 passed (2)
+      Tests  37 passed (37)
+   Start at  10:47:16
+   Duration  13.84s (transform 7.15s, setup 23.63s, import 713ms, tests 1.39s, environment 0ms)
+
+[test-parallel] done unit code=0 elapsed=15.4s
+
+
+## stderr
+

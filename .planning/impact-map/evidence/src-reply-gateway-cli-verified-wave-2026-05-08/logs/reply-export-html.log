@@ -1,0 +1,8 @@
+### reply-export-html
+pnpm test -- src/auto-reply/reply/export-html/template.security.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start base workers=2 filters=1
+[test-parallel] done base code=0 elapsed=6.7s
+EXIT_CODE=0

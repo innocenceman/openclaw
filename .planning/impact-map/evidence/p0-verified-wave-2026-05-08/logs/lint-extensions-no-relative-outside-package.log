@@ -1,0 +1,18 @@
+# lint-extensions-no-relative-outside-package
+
+Command: pnpm lint:extensions:no-relative-outside-package
+Started: 2026-05-08T02:45:08.839Z
+Ended: 2026-05-08T02:45:14.179Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 lint:extensions:no-relative-outside-package /home/yanx/projects/openclaw/openclaw-v2026.3.24
+> node scripts/check-extension-plugin-sdk-boundary.mjs --mode=relative-outside-package
+
+Rule: production extensions/** must not use relative imports that escape their own extension package root
+No extension plugin-sdk boundary violations found.
+
+
+## stderr
+

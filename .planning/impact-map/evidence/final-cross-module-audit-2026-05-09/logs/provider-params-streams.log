@@ -1,0 +1,7 @@
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start base workers=2 filters=5
+[test-parallel] failure artifacts base log=/tmp/openclaw-test-parallel-Dxbwt4/base-1778276764891.log meta=/tmp/openclaw-test-parallel-Dxbwt4/base-1778276764891-failure.json
+[test-parallel] done base code=1 elapsed=159.7s
+ ELIFECYCLE  Test failed. See above for more details.

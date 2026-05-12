@@ -1,0 +1,10 @@
+# timeout 90s pnpm test -- extensions/google/oauth.test.ts
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start extensions workers=4 filters=1
+[test-parallel] failure artifacts extensions log=/tmp/openclaw-test-parallel-Ir55R1/extensions-1778270205532.log meta=/tmp/openclaw-test-parallel-Ir55R1/extensions-1778270205532-failure.json
+[test-parallel] done extensions code=1 elapsed=6.2s
+ ELIFECYCLE  Test failed. See above for more details.
+
+[exit:1]

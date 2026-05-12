@@ -1,0 +1,25 @@
+# test-infra-test-scripts
+
+Started: 2026-05-08T02:25:44.307Z
+Ended: 2026-05-08T02:25:59.491Z
+Exit code: 0
+
+## stdout
+
+> openclaw@2026.3.24 test /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+[test-parallel] start unit workers=2 filters=4
+
+ RUN  v4.1.0 /home/yanx/projects/openclaw/openclaw-v2026.3.24
+
+
+ Test Files  4 passed (4)
+      Tests  23 passed (23)
+   Start at  10:25:47
+   Duration  11.80s (transform 6.28s, setup 20.54s, import 139ms, tests 2.27s, environment 1ms)
+
+[test-parallel] done unit code=0 elapsed=13.1s
+
+
+## stderr
+

@@ -1,0 +1,29 @@
+browser-core	124	600
+memory	1	33
+media	1	31
+context-cron-tts	0	24
+startup-daemon-hooks	1	29
+docs-i18n-markdown-logging	0	15
+nodehost-process-shared-utils-testsupport	0	18
+product-build	1	359
+planning-diff-check	0	1
+planning-format-check	0	1
+context-cron-tts-all	0	44
+shared-support-all	1	53
+startup-process-all	1	23
+compat-hooks-all	0	16
+shared-primitives-all	0	21
+test-support-all	0	10
+startup-bootstrap-nodehost-process	0	14
+startup-daemon-only	1	16
+markdownlint-targets	254	
+media-only-all	1	13
+media-understanding-all	0	16
+media-without-telegram-network	1	13
+root-web-entrypoints	0	9
+web-provider-root	0	9
+final-diff-check-planning	0
+final-oxfmt-check	0
+product-source-diff-final	0
+evidence-link-coverage-audit	0
+evidence-link-coverage-audit-final	0
